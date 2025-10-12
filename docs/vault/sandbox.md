@@ -54,4 +54,4 @@ Todos eles podem ser baixados sem anúncios pelo site do [Tekmods.](https://www.
 
 ## 🔗 Veja também
 
-- **[🧰 Ferramentas e Recursos](/vault/mobile)** - Ferramentas e recursos que podem ser úteis para testes em ambientes controlados em dispositivos móveis
+- **[📱 Dispositivos Móveis](/vault/dispositivos-moveis)** - Ferramentas e recursos para Android e iOS

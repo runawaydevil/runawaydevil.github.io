@@ -58,8 +58,7 @@ export const sidebar = {
       text: "📚 Educação e Conhecimento",
       collapsed: true,
       items: [
-        { text: "Educacional", link: "/vault/educacional" },
-        { text: "Educational", link: "/vault/educational" },
+        { text: "Recursos Educacionais", link: "/vault/recursos-educacionais" },
         { text: "Livros", link: "/vault/livros" },
         { text: "Reading", link: "/vault/reading" },
         { text: "Publicações", link: "/vault/publicacoes" }
@@ -83,8 +82,7 @@ export const sidebar = {
       text: "🔒 Segurança e Privacidade",
       collapsed: true,
       items: [
-        { text: "Privacidade", link: "/vault/privacidade" },
-        { text: "Privacy", link: "/vault/privacy" },
+        { text: "Segurança", link: "/vault/seguranca" },
         { text: "Sites Inseguros", link: "/vault/sites-inseguros" },
         { text: "Unsafe", link: "/vault/unsafe" }
       ]
@@ -94,8 +92,7 @@ export const sidebar = {
       collapsed: true,
       items: [
         { text: "Linux MacOS", link: "/vault/linux-macos" },
-        { text: "Mobile", link: "/vault/mobile" },
-        { text: "Mobile1", link: "/vault/mobile1" }
+        { text: "Dispositivos Móveis", link: "/vault/dispositivos-moveis" }
       ]
     },
     {

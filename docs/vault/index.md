@@ -29,8 +29,7 @@ Bem-vindo ao Vault - uma coleção organizada de recursos, ferramentas e informa
 - [Video](video) - Recursos de vídeo
 
 ### 📚 Educação e Conhecimento
-- [Educacional](educacional) - Recursos educacionais
-- [Educational](educational) - Educational resources
+- [Recursos Educacionais](recursos-educacionais) - Cursos, documentários e recursos para aprendizado
 - [Livros](livros) - Livros e e-books
 - [Reading](reading) - Reading resources
 
@@ -46,15 +45,13 @@ Bem-vindo ao Vault - uma coleção organizada de recursos, ferramentas e informa
 - [Video Tools](video-tools) - Ferramentas de vídeo
 
 ### 🔒 Segurança e Privacidade
-- [Privacidade](privacidade) - Recursos de privacidade
-- [Privacy](privacy) - Privacy resources
+- [Segurança](seguranca) - Guia completo de privacidade e segurança digital
 - [Sites Inseguros](sites-inseguros) - Sites perigosos
 - [Unsafe](unsafe) - Unsafe resources
 
 ### 💻 Sistemas e Mobile
 - [Linux MacOS](linux-macos) - Recursos para Linux e macOS
-- [Mobile](mobile) - Recursos mobile
-- [Mobile1](mobile1) - Recursos mobile adicionais
+- [Dispositivos Móveis](dispositivos-moveis) - Ferramentas e recursos para Android e iOS
 
 ### 🌐 Recursos e Downloads
 - [Downloading](downloading) - Recursos de download

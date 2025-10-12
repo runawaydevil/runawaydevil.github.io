@@ -95,4 +95,4 @@ As ferramentas listadas oferecem uma ampla gama de funcionalidades para melhorar
 
 ## 🔗 Veja também
 
-- **[📱 Mobile](/vault/mobile1)** - Informações adicionais sobre ferramentas e recursos para dispositivos móveis, incluindo mídias sociais
+- **[📱 Dispositivos Móveis](/vault/dispositivos-moveis)** - Ferramentas e recursos para Android e iOS
