@@ -26,17 +26,8 @@ features:
     link: https://github.com/runawaydevil/gazela
 ---
 
-## 🏴‍☠️ Pablo.News Vault
+<div style="text-align: center; margin-top: 3rem; padding: 2rem; border-top: 1px solid rgba(0, 212, 255, 0.2);">
 
-Bem-vindo ao Vault - uma coleção organizada de recursos, ferramentas e informações úteis para desenvolvedores, hackers éticos e entusiastas de tecnologia.
+🏴‍☠️ **Desenvolvido por RunawayDevil - 2025**
 
-:::warning ⚠️ Aviso Importante
-- ✔️ **Todos os links** foram revisados e aprovados por contribuidores voluntários. Contudo, **proceda sempre com cautela**.
-- ⚠️ **Atenção:** Links confiáveis podem eventualmente se tornar perigosos, mesmo em fontes verificadas como a Megathread.
-- 🛡️ **Nosso compromisso:** Os colaboradores se esforçam ao máximo para garantir sua segurança, mas é essencial **navegar com prudência**.
-:::
-
-:::info ℹ️ Dicas Úteis
-- 🚨 **Problemas de acesso?** Se algum site não carregar, considere alterar seu DNS. Veja [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](vault/guias/dns.md).
-- 🌟 **Recomendações da Comunidade:** Links marcados com 🌟 são altamente recomendados pelos piratas experientes.
-:::
+</div>
