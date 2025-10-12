@@ -1,41 +1,169 @@
-# 💬 Feedback e Recursos de Software
+# 📝 Sistema de Feedback
 
-Este documento é uma consolidação de comentários anônimos e informações sobre recursos de software, combinando dados de plataformas como Reddit, Discord, X.com, nosso sistema de feedback e diversos sites de software. O objetivo é fornecer uma visão abrangente e útil para os usuários.
+O Pablo.News Vault possui um sistema integrado de feedback para coletar sugestões, reportar bugs e melhorar continuamente o conteúdo.
 
-## Comentários dos Usuários
+## 🎯 Como Funciona
 
-- "Seu site permitiu que eu desse ao meu pai todos os filmes e séries que ele pede. Coisas antigas da época dele e tudo mais. Coisas que eu não teria acesso de outra forma. Isso significa muito, já que ele fez uma cirurgia cardíaca em fevereiro de 2020 e não pode fazer muito mais, então é uma das poucas maneiras que ele tem de se manter ocupado. Obrigado."
-- "Melhor Wiki de todos os tempos. Minha esposa está com câncer em estágio 4. Sou um trabalhador comum mantendo nossa casa com salários de armazém enquanto sustento nossa família. Encontrar esta wiki nos manteve próximos ao nosso antigo modo de vida de graça. Livros para o paperwhite, filmes, TV, jogos, educação, etc. Há tanto aqui que melhorou nossas vidas. E eu encontro mais nas profundezas toda vez que exploro. Por favor, nunca pare de atualizar/adicionar a esta biblioteca de incríveis! De qualquer forma, eu só queria deixar um agradecimento anônimo por tudo aqui. Recurso incrível. Feliz por ter uma lista cuidadosamente curada em vez de vagar cego pelos desertos da internet. Você está fazendo um trabalho incrível aqui. Basicamente minha página inicial agora. Kudos infinitos!"
-- "É por isso que eu amo tanto FMHY. Antes eu passava horas e horas todos os dias tentando caçar sites úteis para mim."
-- "Eu amo tanto este site. Eu literalmente o tenho rotulado como 'Tudo' nos meus favoritos."
-- "Sem enrolação, e tem todas as informações que preciso para obter acesso gratuito à mídia."
-- "Você me salvou de tantas maneiras que não caberiam aqui em termos de quantidade de texto. Sou de um país pobre do 'terceiro mundo' e um portal como este me permite coisas infinitas que simplesmente não posso pagar! Mantenha o bom espírito e desejo tudo de melhor do fundo do meu coração!"
+### Botão de Feedback
+- **Localização**: Canto inferior direito de todas as páginas
+- **Ícone**: 💬 Feedback
+- **Funcionamento**: Clique para abrir o formulário de feedback
 
-## Softwares e Recursos
+### Tipos de Feedback Aceitos
 
-### Crackers
+1. **🐛 Bug/Erro**
+   - Links quebrados
+   - Problemas de navegação
+   - Erros de formatação
+   - Problemas técnicos
 
-- **[LRepacks](https://lrepacks.net/)**: Numerosos aplicativos portáteis e utilitários apreciados pelos usuários há mais de dez anos.
-- **[CRACKSurl](https://cracksurl.com/)**: Software atualizado diariamente.
-- **[Mobilism](https://forum.mobilism.org/index.php)**: Recurso obrigatório para aplicativos e livros, muito confiável.
-- **[Sanet](https://softarchive.is/)**: Reconhecido por novos lançamentos de software, jogos, músicas, filmes e eBooks.
+2. **💡 Sugestão**
+   - Novos recursos
+   - Melhorias na interface
+   - Novas categorias
+   - Otimizações
 
-### Patchers
+3. **📝 Conteúdo**
+   - Correções de texto
+   - Atualizações de informações
+   - Novos links para adicionar
+   - Melhorias na organização
 
-- **[GenP](https://gen.paramore.su/)**: Usado para estender a versão trial de aplicativos da Creative Cloud no Windows.
+4. **🔗 Link Quebrado**
+   - Sites que não carregam
+   - Links desatualizados
+   - Redirecionamentos incorretos
 
-### Pacotes de recursos
+5. **❓ Outro**
+   - Qualquer outro tipo de feedback
+   - Dúvidas gerais
+   - Comentários diversos
 
-- **[AERiver](https://aeriver.com/)**: Utilitários para _After Effects_ e templates Premiere Pro.
-- **[GFX Hub](https://gfx-hub.co/)**: Mega coleção de assets para Unity, Adobe e design gráfico em geral.
+## 📊 Dados Coletados
 
-### Torrents
+O sistema coleta as seguintes informações:
 
-- **[Rutracker](https://rutracker.net/)**: Tracker generalista russo, ativo desde 2004.
+- **Tipo de feedback**: Categoria selecionada
+- **Página**: URL onde o feedback foi enviado
+- **Mensagem**: Descrição detalhada
+- **Contato**: Email ou Telegram (opcional)
+- **Timestamp**: Data e hora do envio
+- **User Agent**: Informações do navegador
+- **URL completa**: Link da página atual
 
-## Avisos e Dicas
+## 🔒 Privacidade
 
-- **Todos os links** disponíveis foram analisados e aprovados por contribuidores voluntários. No entanto, **sempre prossiga com cautela**.
-- **Problemas de acesso?** Se algum site não carregar, tente mudar o seu DNS. Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
+- **Armazenamento local**: Feedback é salvo no navegador do usuário
+- **Sem coleta automática**: Dados não são enviados automaticamente
+- **Contato opcional**: Informações de contato são voluntárias
+- **Anonimato**: É possível enviar feedback sem identificação
 
-Este documento serve como um recurso abrangente para usuários que buscam informações e feedback sobre diversos softwares e sites. Ele combina experiências pessoais com dados técnicos para fornecer um panorama completo e útil.
+## 🚀 Melhorias Futuras
+
+### Integrações Planejadas
+
+1. **GitHub Issues**
+   - Criação automática de issues
+   - Integração com labels
+   - Rastreamento de status
+
+2. **Telegram Bot**
+   - Notificações em tempo real
+   - Respostas automáticas
+   - Canal de comunicação direta
+
+3. **Google Forms**
+   - Backup dos dados
+   - Análise estatística
+   - Relatórios automáticos
+
+4. **Discord Webhook**
+   - Notificações na comunidade
+   - Discussão colaborativa
+   - Feedback em tempo real
+
+### Funcionalidades Adicionais
+
+- **Sistema de votação**: Para priorizar melhorias
+- **Status tracking**: Acompanhar resolução de problemas
+- **Notificações**: Avisos sobre atualizações
+- **Histórico**: Ver feedback anterior enviado
+- **Categorização automática**: IA para classificar feedback
+
+## 📈 Estatísticas
+
+### Feedback Recebido (Exemplo)
+- **Total**: 47 feedbacks
+- **Bugs**: 12 (25%)
+- **Sugestões**: 18 (38%)
+- **Conteúdo**: 10 (21%)
+- **Links quebrados**: 5 (11%)
+- **Outros**: 2 (5%)
+
+### Melhorias Implementadas
+- ✅ Sistema de busca aprimorado
+- ✅ Navegação mobile otimizada
+- ✅ Categorias reorganizadas
+- ✅ Links quebrados corrigidos
+- ✅ Conteúdo atualizado
+
+## 🤝 Como Contribuir
+
+### Enviando Feedback
+1. Navegue até a página relevante
+2. Clique no botão "💬 Feedback"
+3. Selecione o tipo apropriado
+4. Descreva detalhadamente sua sugestão/problema
+5. Adicione contato se desejar resposta
+6. Clique em "Enviar"
+
+### Dicas para Feedback Eficaz
+
+- **Seja específico**: Descreva exatamente o problema/sugestão
+- **Inclua contexto**: Mencione a página e situação
+- **Forneça detalhes**: URLs, passos para reproduzir, etc.
+- **Seja construtivo**: Sugira soluções quando possível
+- **Use linguagem clara**: Facilite o entendimento
+
+## 📞 Contato Alternativo
+
+Se preferir contato direto:
+
+- **Telegram**: [@runawaydevil](https://t.me/runawaydevil)
+- **GitHub**: [Issues](https://github.com/runawaydevil/runawaydevil.github.io/issues)
+- **Email**: pablomurad@pm.me
+
+## 🔄 Processo de Resolução
+
+1. **Recebimento**: Feedback é coletado e categorizado
+2. **Análise**: Equipe analisa viabilidade e prioridade
+3. **Planejamento**: Implementação é planejada e agendada
+4. **Desenvolvimento**: Melhorias são desenvolvidas
+5. **Teste**: Mudanças são testadas
+6. **Deploy**: Atualizações são publicadas
+7. **Feedback**: Usuário é notificado sobre a resolução
+
+## 📋 Roadmap
+
+### Próximas Funcionalidades
+- [ ] Sistema de votação para sugestões
+- [ ] Notificações automáticas
+- [ ] Dashboard de feedback
+- [ ] Integração com GitHub Issues
+- [ ] Bot do Telegram
+- [ ] Análise de sentimento
+- [ ] Relatórios automáticos
+
+### Melhorias Planejadas
+- [ ] Interface mais intuitiva
+- [ ] Categorização automática
+- [ ] Sistema de prioridades
+- [ ] Histórico de feedback
+- [ ] Métricas de satisfação
+- [ ] Integração com analytics
+
+---
+
+**Obrigado por ajudar a melhorar o Pablo.News Vault!** 🚀
+
+Seu feedback é essencial para manter o projeto atualizado, funcional e útil para toda a comunidade.

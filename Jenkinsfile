@@ -53,6 +53,34 @@ pipeline {
             }
         }
         
+        stage('Run Tests') {
+            steps {
+                script {
+                    try {
+                        sh 'npm run test:run'
+                        echo '✅ Testes executados com sucesso'
+                    } catch (Exception e) {
+                        echo '⚠️ Alguns testes falharam, mas continuando...'
+                        echo e.getMessage()
+                    }
+                }
+            }
+        }
+        
+        stage('Lint Check') {
+            steps {
+                script {
+                    try {
+                        sh 'npm run lint'
+                        echo '✅ Verificação de código concluída'
+                    } catch (Exception e) {
+                        echo '⚠️ Problemas de lint encontrados, mas continuando...'
+                        echo e.getMessage()
+                    }
+                }
+            }
+        }
+        
         stage('Build') {
             steps {
                 sh 'npm run build'

@@ -62,3 +62,16 @@ temp/
 
 # Kiro AI specs
 .kiro/
+
+# Test coverage and reports
+coverage/
+test-results/
+vitest.config.ts.timestamp-*
+
+# Scripts de teste e correção (temporários)
+scripts/fix-*.js
+scripts/create-missing-files.js
+scripts/fix-all-issues.js
+
+# Backup de duplicatas
+backup_duplicates/
