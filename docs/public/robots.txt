@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /
+
+# Bloquear todos os mecanismos de busca
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+# Sem sitemap - site privado

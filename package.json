@@ -1,0 +1,39 @@
+{
+  "name": "pablo-news-vault",
+  "version": "0.0.1",
+  "description": "Pablo.News Vault - Uma coleção organizada de recursos, ferramentas e informações úteis",
+  "homepage": "https://pablo.news",
+  "author": {
+    "name": "Pablo Murad",
+    "email": "pablomurad@pm.me"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "vitepress",
+    "documentation",
+    "vault",
+    "resources",
+    "tools",
+    "pablo-news"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/runawaydevil/runawaydevil.github.io"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "terser": "^5.44.0",
+    "typescript": "^5.0.0",
+    "vitepress": "^1.0.0",
+    "vue": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

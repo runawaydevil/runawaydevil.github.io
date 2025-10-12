@@ -1,0 +1,27 @@
+{
+  "name": "Pablo.News Vault",
+  "short_name": "Pablo Vault",
+  "description": "Uma coleção organizada de recursos, ferramentas e informações úteis",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#00d4ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/pablo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/pablo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["productivity", "reference", "utilities"],
+  "lang": "pt-BR",
+  "dir": "ltr"
+}
