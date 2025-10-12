@@ -35,7 +35,7 @@ Este vault nasceu como **meu backup pessoal**, mas acabou virando um **presente 
 :::
 
 :::info ℹ️ Disclaimer
-**Este site não hospeda, não pirateia e não distribui nada** — só cataloga o caos de forma organizada. 😄 *Alô alô Polícia Federal, isso é só um arquivo.*
+**Este site não hospeda, não pirateia e não distribui nada** — só cataloga o caos de forma organizada. 😄 *Alô alô Polícia Federal, isso é só um arquivo.* Qualquer coisa, procurem Will Lacerda de Cruzília, ele me forçou a fazer isso 😭
 :::
 
 ---
