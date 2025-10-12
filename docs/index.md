@@ -28,6 +28,6 @@ features:
 
 <div style="text-align: center; margin-top: 3rem; padding: 2rem; border-top: 1px solid rgba(0, 212, 255, 0.2);">
 
-🏴‍☠️ **Desenvolvido por RunawayDevil - 2025**
+🏴‍☠️ **Desenvolvido por [RunawayDevil](https://pablo.space) - 2025**
 
 </div>
