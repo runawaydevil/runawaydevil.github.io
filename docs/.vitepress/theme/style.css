@@ -101,6 +101,11 @@ img[data-src].loaded {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Exceção para o avatar - evitar conflitos */
+.VPHero .image img {
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease !important;
+}
+
 /* Hover effects suaves */
 .VPSidebarItem .link:hover {
   background-color: rgba(0, 212, 255, 0.1);
@@ -222,7 +227,8 @@ hr,
     0 0 80px rgba(0, 212, 255, 0.05);
   animation: neonPulse 3s ease-in-out infinite alternate;
   border: 2px solid rgba(0, 212, 255, 0.3);
-  transition: all 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+  transform: scale(1);
 }
 
 .VPHero .image img:hover {
