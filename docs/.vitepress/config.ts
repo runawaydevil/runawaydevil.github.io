@@ -1,6 +1,29 @@
 import { defineConfig } from 'vitepress'
 import { meta } from './constants'
 import { sidebar } from './sidebar'
+import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
+
+const baseUrl = 'https://pablo.news'
+
+const RSS: RSSOptions = {
+  title: 'Pablo.News Vault',
+  baseUrl,
+  copyright: 'Copyright (c) 2023-2025 - Pablo Murad',
+  description: 'Uma coleção organizada de recursos, ferramentas e informações úteis para desenvolvedores, hackers éticos e entusiastas de tecnologia',
+  language: 'pt-BR',
+  author: {
+    name: 'Pablo Murad',
+    email: 'pablomurad@pm.me',
+    link: 'https://pablo.news'
+  },
+  filename: 'feed.rss',
+  log: true,
+  ignoreHome: true,
+  ignorePublish: false,
+  filter: (post, idx) => {
+    return true // Incluir todos os posts
+  }
+}
 
 export default defineConfig({
   title: meta.name,
@@ -42,7 +65,8 @@ export default defineConfig({
       { icon: 'twitter', link: 'https://x.com/runawayd3vil' },
       { icon: 'instagram', link: 'https://instagram.com/murad.pablo' },
       { icon: 'telegram', link: 'https://t.me/runawaydevil' },
-      { icon: 'reddit', link: 'https://reddit.com/user/runawaydevil' }
+      { icon: 'reddit', link: 'https://reddit.com/user/runawaydevil' },
+      { icon: 'rss', link: '/feed.rss' }
     ],
 
     search: {
@@ -93,5 +117,13 @@ export default defineConfig({
   cleanUrls: true,
   ignoreDeadLinks: [
     /^http:\/\/localhost/
-  ]
+  ],
+
+  vite: {
+    plugins: [RssPlugin(RSS)],
+    server: {
+      port: 5173,
+      host: true
+    }
+  }
 })
