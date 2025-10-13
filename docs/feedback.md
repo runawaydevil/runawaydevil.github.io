@@ -11,8 +11,7 @@ O piracy.live usa o sistema de **Issues do GitHub** para receber feedbacks, suge
 ## 🚀 Como criar um Issue (Feedback)
 
 ### 1️⃣ Acesse o repositório
-- Vá para: [https://github.com/runawaydevil/runawaydevil.github.io](https://github.com/runawaydevil/runawaydevil.github.io)
-- Clique na aba **"Issues"**
+- [Vá para os feedbacks](https://github.com/runawaydevil/runawaydevil.github.io/issues)
 - Clique em **"New Issue"**
 
 ### 2️⃣ Escolha o tipo de feedback
