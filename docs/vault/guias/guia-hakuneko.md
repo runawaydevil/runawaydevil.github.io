@@ -80,7 +80,6 @@ Agora seu mangá está pronto para ser lido no Kindle. Aproveite a experiência 
 
 ---
 
-**Créditos**: Este guia foi baseado em uma contribuição do usuário **u/hurricanesteaktoast** no Reddit. Confira o comentário original [aqui](https://www.reddit.com/r/pirataria/comments/18fu7b6/comment/kcxjbn3/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).
 
 **Links úteis:**
 

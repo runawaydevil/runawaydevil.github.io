@@ -159,7 +159,6 @@ Espero que este guia seja útil. Se houver erros (provavelmente de indentação)
 
 ---
 
-Todos os créditos aos criadores originais.
 
 Extraído de: https://old.reddit.com/r/pirataria/comments/1bclktc/guia_jellyfin_e_familia_arr_docker_compose/
 

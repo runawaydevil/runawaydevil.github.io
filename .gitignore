@@ -68,10 +68,39 @@ coverage/
 test-results/
 vitest.config.ts.timestamp-*
 
-# Scripts de teste e correção (temporários)
-scripts/fix-*.js
-scripts/create-missing-files.js
-scripts/fix-all-issues.js
+# Scripts personalizados (contêm chaves de API e são temporários)
+scripts/
+
+# Testes e configurações de teste
+tests/
+vitest.config.ts
+test-results/
+coverage/
+
+# Relatórios de detecção de duplicatas
+duplicate-detection-report.json
+duplicate-detection-report-v2.json
+content-analysis.db
+
+# Arquivos JSON gerados pela AI
+ai-analysis-*.json
+ai-response-*.json
+ai-generated-*.json
+openai-response-*.json
+ai-content-*.json
+ai-metadata-*.json
 
 # Backup de duplicatas
 backup_duplicates/
+
+# Pasta de artigos para organização
+in/
+
+# Arquivos temporários de processamento
+temp-articles/
+processed-articles/
+output-temp/
+
+# Sidebars gerados automaticamente
+docs/.vitepress/captain-sidebar.ts
+docs/.vitepress/cultura-sidebar.ts

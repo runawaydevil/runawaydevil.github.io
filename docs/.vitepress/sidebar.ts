@@ -1,4 +1,9 @@
+import { captainSidebar } from './captain-sidebar.js';
+import { culturaSidebar } from './cultura-sidebar.js';
+
 export const sidebar = {
+  '/captain/': captainSidebar['/captain/'],
+  '/cultura/': culturaSidebar['/cultura/'],
   '/vault/': [
     {
       text: "🔵 Home",

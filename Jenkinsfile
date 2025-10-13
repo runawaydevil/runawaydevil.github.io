@@ -4,7 +4,7 @@ pipeline {
     environment {
         NODE_VERSION = '18'
         BUILD_DIR = 'docs/.vitepress/dist'
-        DEPLOY_DIR = '/var/www/pablo-news'
+        DEPLOY_DIR = '/var/www/piracy-live'
     }
     
     stages {

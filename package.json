@@ -1,8 +1,9 @@
 {
-  "name": "pablo-news-vault",
+  "name": "piracy-live-vault",
   "version": "0.0.1",
-  "description": "Pablo.News Vault - Uma coleção organizada de recursos, ferramentas e informações úteis",
-  "homepage": "https://pablo.news",
+  "description": "Piracy.Live Vault - Uma coleção organizada de recursos, ferramentas e informações úteis",
+  "homepage": "https://piracy.live",
+  "license": "MIT",
   "author": {
     "name": "Pablo Murad",
     "email": "pablomurad@pm.me"
@@ -18,7 +19,9 @@
     "test:coverage": "vitest run --coverage",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "detect-duplicates": "node scripts/detect-duplicates-v2.js",
+    "organize-articles": "node scripts/organize-articles.js"
   },
   "keywords": [
     "vitepress",
@@ -28,7 +31,6 @@
     "tools",
     "pablo-news"
   ],
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/runawaydevil/runawaydevil.github.io"
@@ -42,14 +44,16 @@
     "jsdom": "^23.0.0",
     "terser": "^5.44.0",
     "typescript": "^5.0.0",
-    "vitest": "^1.0.0",
     "vitepress": "^1.0.0",
+    "vitest": "^1.0.0",
     "vue": "^3.4.0"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "dependencies": {
+    "openai": "^6.3.0",
+    "sqlite3": "^5.1.7",
     "vitepress-plugin-rss": "^0.3.2"
   }
 }

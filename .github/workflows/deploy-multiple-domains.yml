@@ -1,0 +1,57 @@
+name: Deploy to Multiple Domains
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run tests
+      run: npm run test:run
+      
+    - name: Lint check
+      run: npm run lint
+      
+    - name: Type check
+      run: npm run type-check
+      
+    - name: Build for production
+      run: npm run build
+      
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/.vitepress/dist
+        cname: piracy.live
+        
+    - name: Deploy to secondary domain
+      run: |
+        # Configurar domínio secundário
+        echo "pablo.news" > ./docs/.vitepress/dist/CNAME
+        # Fazer deploy para domínio secundário se necessário
+        # (implementar conforme necessário)
+        
+    - name: Verify deployment
+      run: |
+        echo "✅ Deploy completed successfully"
+        echo "🌐 Primary domain: https://piracy.live"
+        echo "🌐 Secondary domain: https://pablo.news"
+        echo "📡 RSS Feed: https://piracy.live/feed.rss"

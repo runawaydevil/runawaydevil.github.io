@@ -66,7 +66,3 @@ Caso utilize outro tracker, você pode usar add-ons para realizar a sincronizaç
 
 - [Animeo](https://stremio-addons.com/animeo.html) — Anilist.
 - [SyncriBullet](https://stremio-addons.com/syncribullet.html) — Anilist e SIMKL.
-
-> **Créditos:** > [viren070](https://guides.viren070.me/stremio) e [bye-sudo](https://rentry.co/bye-sudo)
->
-> Tradução por [yuzamei2854](https://github.com/yuzamei2854)

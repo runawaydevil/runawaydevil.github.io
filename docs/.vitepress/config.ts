@@ -2,11 +2,12 @@ import { defineConfig } from 'vitepress'
 import { meta } from './constants'
 import { sidebar } from './sidebar'
 import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
+import { vitepressConfig } from './environment'
 
-const baseUrl = 'https://pablo.news'
+const baseUrl = vitepressConfig.baseUrl
 
 const RSS: RSSOptions = {
-  title: 'Pablo.News Vault',
+  title: vitepressConfig.rssTitle,
   baseUrl,
   copyright: 'Copyright (c) 2023-2025 - Pablo Murad',
   description: 'Uma coleção organizada de recursos, ferramentas e informações úteis para desenvolvedores, hackers éticos e entusiastas de tecnologia',
@@ -14,7 +15,7 @@ const RSS: RSSOptions = {
   author: {
     name: 'Pablo Murad',
     email: 'pablomurad@pm.me',
-    link: 'https://pablo.news'
+    link: 'https://piracy.live'
   },
   filename: 'feed.rss',
   log: true,
@@ -37,6 +38,16 @@ export default defineConfig({
     ['meta', { name: 'theme-color', content: '#00d4ff' }],
     ['meta', { name: 'author', content: 'Pablo Murad' }],
     ['meta', { name: 'robots', content: 'noindex, nofollow' }],
+    
+    // Meta tags para domínios alternativos
+    ['link', { rel: 'canonical', href: vitepressConfig.canonicalUrl }],
+    ['meta', { property: 'og:url', content: vitepressConfig.canonicalUrl }],
+    ['meta', { name: 'twitter:url', content: vitepressConfig.canonicalUrl }],
+    
+    // URLs alternativas
+    ...vitepressConfig.alternateUrls.map(url => 
+      ['link', { rel: 'alternate', href: url }]
+    ),
     ['meta', { 'http-equiv': 'X-Content-Type-Options', content: 'nosniff' }],
     ['meta', { 'http-equiv': 'X-Frame-Options', content: 'DENY' }],
     ['meta', { 'http-equiv': 'X-XSS-Protection', content: '1; mode=block' }],
@@ -51,12 +62,13 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/pablo.png',
-    siteTitle: 'pablo.news',
+    siteTitle: 'piracy.live',
     
     nav: [
       { text: 'Início', link: '/' },
+      { text: 'Diário Do Capitão', link: '/captain/' },
       { text: 'Vault', link: '/vault/' },
-      { text: 'Guias', link: '/vault/guias/' }
+      { text: 'Cultura', link: '/cultura/' }
     ],
 
     sidebar,

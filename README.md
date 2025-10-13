@@ -1,6 +1,8 @@
-# 🏴‍☠️ Pablo.News Vault
+# 🏴‍☠️ Piracy.Live Vault
 
 Uma verdadeira arca digital repleta de descobertas - links, megathreads, ferramentas e recursos incríveis organizados para curiosos, desenvolvedores, hackers éticos e amantes da tecnologia.
+
+> **🌐 Domínios:** [piracy.live](https://piracy.live) (principal) | [pablo.news](https://pablo.news) (secundário)
 
 ## ✨ Características
 
@@ -17,6 +19,41 @@ Uma verdadeira arca digital repleta de descobertas - links, megathreads, ferrame
 - **[Vue.js](https://vuejs.org/)** - Framework frontend
 - **[TypeScript](https://www.typescriptlang.org/)** - Tipagem estática
 - **CSS3** - Estilos customizados com efeitos neon
+
+## 📄 Licença
+
+Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+**Resumo da licença:**
+- ✅ **Uso comercial** permitido
+- ✅ **Modificação** permitida
+- ✅ **Distribuição** permitida
+- ✅ **Uso privado** permitido
+- ✅ **Tradução** permitida
+- ❌ **Sem garantia** de funcionamento
+- ❌ **Sem responsabilidade** por danos
+
+**Você pode:**
+- Copiar e usar o código livremente
+- Modificar e adaptar conforme necessário
+- Distribuir versões modificadas
+- Usar em projetos comerciais
+- Traduzir o conteúdo para outros idiomas
+
+## 📖 Documentação Completa
+
+Para uma **documentação detalhada** sobre como modificar, customizar e usar toda a estrutura do projeto, consulte o arquivo **[DOCUMENTATION.md](DOCUMENTATION.md)**.
+
+A documentação inclui:
+- 🎯 Guia completo de instalação e configuração
+- 🏗️ Explicação detalhada da estrutura do projeto
+- 🎨 Tutorial de customização visual e funcional
+- 🤖 Como usar os scripts de automação com IA
+- 📝 Guia para adicionar conteúdo e artigos
+- 🚀 Instruções de deploy para diferentes plataformas
+- 🔧 Configurações avançadas e personalização
+- 🧪 Testes, qualidade e segurança
+- 🤝 Como contribuir com o projeto
 
 ## 📦 Instalação
 
