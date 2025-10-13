@@ -2,7 +2,7 @@
 
 Uma verdadeira arca digital repleta de descobertas - links, megathreads, ferramentas e recursos incríveis organizados para curiosos, desenvolvedores, hackers éticos e amantes da tecnologia.
 
-> **🌐 Domínios:** [piracy.live](https://piracy.live) (principal) | [pablo.news](https://pablo.news) (secundário)
+> **🌐 Domínio:** [piracy.live](https://piracy.live)
 
 ## ✨ Características
 

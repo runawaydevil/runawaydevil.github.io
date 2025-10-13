@@ -1,7 +1,6 @@
 export const meta = {
   name: '#hacking',
   hostname: 'piracy.live',
-  hostnameSecondary: 'pablo.news',
   description: 'Uma coleção organizada de recursos, ferramentas e informações úteis para desenvolvedores, hackers éticos e entusiastas de tecnologia',
   author: 'Pablo Murad',
   year: new Date().getFullYear(),

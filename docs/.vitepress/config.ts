@@ -44,8 +44,6 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: vitepressConfig.canonicalUrl }],
     ['meta', { name: 'twitter:url', content: vitepressConfig.canonicalUrl }],
     
-    // URLs alternativas
-    ['link', { rel: 'alternate', href: vitepressConfig.alternateUrls[0] }],
     ['meta', { 'http-equiv': 'X-Content-Type-Options', content: 'nosniff' }],
     ['meta', { 'http-equiv': 'X-Frame-Options', content: 'DENY' }],
     ['meta', { 'http-equiv': 'X-XSS-Protection', content: '1; mode=block' }],
