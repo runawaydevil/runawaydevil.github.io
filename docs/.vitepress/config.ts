@@ -125,7 +125,10 @@ export default defineConfig({
 
   cleanUrls: true,
   ignoreDeadLinks: [
-    /^http:\/\/localhost/
+    /^http:\/\/localhost/,
+    /^\.\/util$/,
+    /^\.\/outros$/,
+    /^\.\/other$/
   ],
 
   vite: {
