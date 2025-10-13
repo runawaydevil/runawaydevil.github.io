@@ -1,0 +1,62 @@
+# Checklist de Segurança Digital
+
+## ✅ Verificações Básicas
+
+### 🔐 Senhas e Autenticação
+- [ ] Senhas únicas para cada conta
+- [ ] Senhas com pelo menos 12 caracteres
+- [ ] Uso de gerenciador de senhas
+- [ ] Autenticação de dois fatores ativada
+- [ ] Backup das senhas em local seguro
+
+### 📱 Dispositivos Móveis
+- [ ] Bloqueio de tela configurado
+- [ ] Atualizações automáticas ativadas
+- [ ] Aplicativos de origem confiável
+- [ ] Backup automático configurado
+- [ ] Localização desativada quando não necessário
+
+### 💻 Computadores
+- [ ] Antivírus instalado e atualizado
+- [ ] Firewall ativado
+- [ ] Atualizações automáticas do sistema
+- [ ] Backup regular configurado
+- [ ] Criptografia de disco ativada
+
+### 🌐 Navegação na Internet
+- [ ] Navegador atualizado
+- [ ] Bloqueador de anúncios instalado
+- [ ] HTTPS em todos os sites
+- [ ] Cookies de terceiros bloqueados
+- [ ] DNS seguro configurado
+
+### 🔒 Privacidade
+- [ ] Configurações de privacidade revisadas
+- [ ] Compartilhamento de dados limitado
+- [ ] Perfis públicos configurados adequadamente
+- [ ] Dados pessoais protegidos
+- [ ] Política de privacidade lida
+
+## 📋 Manutenção Regular
+
+### Semanal
+- [ ] Verificar atualizações de segurança
+- [ ] Revisar logs de acesso
+- [ ] Backup de dados importantes
+- [ ] Limpeza de arquivos temporários
+
+### Mensal
+- [ ] Revisar configurações de segurança
+- [ ] Atualizar senhas principais
+- [ ] Verificar integridade dos backups
+- [ ] Revisar permissões de aplicativos
+
+### Anual
+- [ ] Auditoria completa de segurança
+- [ ] Revisão de políticas de privacidade
+- [ ] Atualização de ferramentas de segurança
+- [ ] Treinamento em segurança digital
+
+---
+
+*Este checklist deve ser usado como base para implementação de segurança digital pessoal.*
