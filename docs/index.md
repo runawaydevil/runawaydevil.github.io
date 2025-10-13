@@ -3,7 +3,7 @@ layout: home
 hero:
   name: "Bem-vindos ao Vault"
   text: "Uma verdadeira arca digital repleta de descobertas"
-  tagline: "Links, megathreads, ferramentas e recursos incríveis que encontrei pelo caminho. Tudo organizado para curiosos, desenvolvedores, hackers éticos e amantes da tecnologia."
+  tagline: "Links, compilado de diversas megathreads, ferramentas e recursos incríveis que encontrei pelo caminho. Tudo organizado para curiosos, desenvolvedores, hackers éticos e amantes da tecnologia."
   image:
     src: /pablo.png
     alt: Pablo Avatar
