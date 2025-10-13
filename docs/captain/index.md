@@ -1,6 +1,6 @@
 # 🧭 Diário Do Capitão
 
-Bem-vindo ao 🧭 Diário Do Capitão do Pablo.News!
+Bem-vindo ao 🧭 Diário Do Capitão do piracy.live
 
 Esta é uma seção dedicada a conteúdos especiais e textos exclusivos sobre segurança digital, privacidade e tecnologia.
 
