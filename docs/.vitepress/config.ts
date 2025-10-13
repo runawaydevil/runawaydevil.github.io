@@ -21,7 +21,7 @@ const RSS: RSSOptions = {
   log: true,
   ignoreHome: true,
   ignorePublish: false,
-  filter: (post, idx) => {
+  filter: () => {
     return true // Incluir todos os posts
   }
 }
@@ -45,9 +45,7 @@ export default defineConfig({
     ['meta', { name: 'twitter:url', content: vitepressConfig.canonicalUrl }],
     
     // URLs alternativas
-    ...vitepressConfig.alternateUrls.map(url => 
-      ['link', { rel: 'alternate', href: url }]
-    ),
+    ['link', { rel: 'alternate', href: vitepressConfig.alternateUrls[0] }],
     ['meta', { 'http-equiv': 'X-Content-Type-Options', content: 'nosniff' }],
     ['meta', { 'http-equiv': 'X-Frame-Options', content: 'DENY' }],
     ['meta', { 'http-equiv': 'X-XSS-Protection', content: '1; mode=block' }],

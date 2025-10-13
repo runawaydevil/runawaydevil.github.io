@@ -11,7 +11,6 @@ export interface FeedbackData {
 
 export class FeedbackManager {
   private static STORAGE_KEY = 'pablo-news-feedback'
-  private static PENDING_KEY = 'pablo-news-feedback-pending'
 
   // Salvar feedback localmente
   static saveFeedback(feedback: FeedbackData): void {

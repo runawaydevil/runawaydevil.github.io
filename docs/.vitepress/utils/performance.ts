@@ -66,7 +66,7 @@ export function optimizeFonts() {
     link.as = 'style'
     link.onload = function() {
       this.onload = null
-      this.rel = 'stylesheet'
+      ;(this as HTMLLinkElement).rel = 'stylesheet'
     }
     document.head.appendChild(link)
   })
