@@ -16,6 +16,9 @@ build:
   stage: build
   image: node:${NODE_VERSION}-alpine
   before_script:
+    - apk add --no-cache git
+    - git config --global user.email "ci@gitlab.com"
+    - git config --global user.name "GitLab CI"
     - npm ci --cache .npm --prefer-offline
   script:
     - npm run build
