@@ -1,9 +1,86 @@
-import { captainSidebar } from './captain-sidebar.js';
-import { culturaSidebar } from './cultura-sidebar.js';
-
 export const sidebar = {
-  '/captain/': captainSidebar['/captain/'],
-  '/cultura/': culturaSidebar['/cultura/'],
+  '/captain/': [
+    {
+      text: "🧭 Diário Do Capitão",
+      link: "/captain/"
+    },
+    {
+      text: "Segurança Digital",
+      collapsed: true,
+      items: [
+        {
+          text: "🔴 Segurança Digital: Fundamentos, Evolução e Práticas Essenciais",
+          link: "/captain/seguranca-digital-fundamentos-evolucao-e-praticas-essenciais"
+        },
+        {
+          text: "🔴 Proteção Digital: Melhores Práticas para Segurança Pessoal e de Dispositivos",
+          link: "/captain/protecao-digital-melhores-praticas-para-seguranca-pessoal-e-de-dispositivos"
+        },
+        {
+          text: "🔴 Guia Completo de Segurança em Redes e Servidores: Proteção Abrangente para a Era Digital",
+          link: "/captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital"
+        },
+        {
+          text: "🔴 Guia Completo de Ferramentas e Sistemas para Segurança Avançada: Construindo uma Fortaleza Digital",
+          link: "/captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital"
+        },
+        {
+          text: "🔴 Desvendando a Intersecção entre Segurança Digital e Privacidade Online",
+          link: "/captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online"
+        }
+      ]
+    },
+    {
+      text: "Privacidade Online",
+      collapsed: true,
+      items: [
+        {
+          text: "🔴 Guia Completo sobre Privacidade na Internet: Ferramentas e Técnicas para Navegação Anônima em 2024",
+          link: "/captain/guia-completo-sobre-privacidade-na-internet-ferramentas-e-tecnicas-para-navegacao-anonima-em-2024"
+        }
+      ]
+    },
+    {
+      text: "Legislação e Direitos Digitais",
+      collapsed: true,
+      items: [
+        {
+          text: "🔴 Guia Completo sobre Legislação e Direitos Digitais no Brasil",
+          link: "/captain/guia-completo-sobre-legislacao-e-direitos-digitais-no-brasil"
+        },
+        {
+          text: "🔴 O Futuro do Ciberativismo: Desafios e Oportunidades na Era Digital",
+          link: "/captain/o-futuro-do-ciberativismo-desafios-e-oportunidades-na-era-digital"
+        }
+      ]
+    }
+  ],
+  '/cultura/': [
+    {
+      text: "🎭 Cultura e Movimento",
+      link: "/cultura/"
+    },
+    {
+      text: "Cultura Hacker",
+      collapsed: true,
+      items: [
+        {
+          text: "🔴 A Cultura Digital: Da Origem Hacker ao Ciberativismo Moderno",
+          link: "/cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno"
+        }
+      ]
+    },
+    {
+      text: "Cultura Digital",
+      collapsed: true,
+      items: [
+        {
+          text: "🔴 A Cultura Digital e a Formação de Identidades Online",
+          link: "/cultura/a-cultura-digital-e-a-formacao-de-identidades-online"
+        }
+      ]
+    }
+  ],
   '/vault/': [
     {
       text: "🔵 Home",
