@@ -104,3 +104,8 @@ output-temp/
 # Sidebars gerados automaticamente
 docs/.vitepress/captain-sidebar.ts
 docs/.vitepress/cultura-sidebar.ts
+
+# GitLab CI/CD
+.gitlab-ci-basic.yml
+.gitlab-ci-backup.yml
+gitlab-ci-*.yml.bak

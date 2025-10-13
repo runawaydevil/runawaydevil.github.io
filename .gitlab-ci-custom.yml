@@ -1,0 +1,135 @@
+# GitLab CI/CD Pipeline para VitePress com domínio customizado
+# Deploy automático para GitLab Pages com configurações avançadas
+
+stages:
+  - build
+  - deploy
+  - cleanup
+
+variables:
+  NODE_VERSION: "18"
+  VITEPRESS_DIST_DIR: "docs/.vitepress/dist"
+  # Configure estas variáveis no GitLab CI/CD Settings
+  # CUSTOM_DOMAIN: "piracy.live"
+  # DEPLOY_TOKEN: "seu-token-aqui"
+
+# Cache para node_modules
+cache:
+  paths:
+    - node_modules/
+    - .npm/
+
+# Job de Build com otimizações
+build:
+  stage: build
+  image: node:18-alpine
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+    - echo "Building VitePress site..."
+  script:
+    - npm run build
+    - echo "Build completed successfully"
+  artifacts:
+    paths:
+      - $VITEPRESS_DIST_DIR
+    expire_in: 1 hour
+    reports:
+      # Opcional: relatório de cobertura se você tiver testes
+      # coverage_report:
+      #   coverage_format: cobertura
+      #   path: coverage/cobertura-coverage.xml
+  only:
+    - main
+    - master
+    - develop
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - stuck_or_timeout_failure
+
+# Job de Deploy para GitLab Pages
+pages:
+  stage: deploy
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache rsync curl
+  script:
+    - echo "Deploying to GitLab Pages..."
+    - rsync -av --delete $VITEPRESS_DIST_DIR/ public/
+    - echo "Deployment completed"
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+  dependencies:
+    - build
+  only:
+    - main
+    - master
+  environment:
+    name: production
+    url: https://$CI_PROJECT_NAMESPACE.gitlab.io/$CI_PROJECT_NAME
+
+# Job para deploy em branches de desenvolvimento
+deploy_preview:
+  stage: deploy
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache rsync
+  script:
+    - echo "Deploying preview for branch: $CI_COMMIT_REF_NAME"
+    - rsync -av --delete $VITEPRESS_DIST_DIR/ public/
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 day
+  dependencies:
+    - build
+  except:
+    - main
+    - master
+  when: manual
+  environment:
+    name: preview/$CI_COMMIT_REF_NAME
+    url: https://$CI_PROJECT_NAMESPACE.gitlab.io/$CI_PROJECT_NAME/-/jobs/$CI_JOB_ID/artifacts/public
+
+# Job para deploy com domínio customizado (requer configuração adicional)
+deploy_custom_domain:
+  stage: deploy
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache rsync curl
+  script:
+    - echo "Deploying to custom domain: $CUSTOM_DOMAIN"
+    - rsync -av --delete $VITEPRESS_DIST_DIR/ public/
+    # Adicionar CNAME para domínio customizado
+    - echo "$CUSTOM_DOMAIN" > public/CNAME
+    - echo "Custom domain deployment completed"
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+  dependencies:
+    - build
+  only:
+    - main
+    - master
+  when: manual
+  environment:
+    name: custom-domain
+    url: https://$CUSTOM_DOMAIN
+
+# Job de limpeza (opcional)
+cleanup:
+  stage: cleanup
+  image: alpine:latest
+  script:
+    - echo "Cleaning up temporary files..."
+    - rm -rf node_modules/
+    - rm -rf .npm/
+    - echo "Cleanup completed"
+  when: always
+  only:
+    - main
+    - master
