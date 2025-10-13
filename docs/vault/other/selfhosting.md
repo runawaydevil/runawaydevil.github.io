@@ -4,27 +4,27 @@
 
 Este documento oferece um guia completo para configurar e executar sua própria instância do FMHY localmente e também instruções para baixar e ativar o Windows e o Office usando métodos gratuitos.
 
-### Auto-hospedagem FMHY
+### [Auto-hospedagem FMHY](vault/other/selfhosting.md)
 
 :::warning
 É essencial que você diferencie sua instância do site oficial (fmhy.net) para evitar confusão. As etapas para isso são fornecidas abaixo.
 :::
 
-#### Docker (Experimental)
+#### [Docker](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md) (Experimental)
 
 Para executar uma instância local, você precisará instalar [Docker](https://docs.docker.com/get-docker/) e [Docker Compose](https://docs.docker.com/compose/install/).
 
 Após a instalação, execute os comandos:
 
 ```bash
-git clone https://github.com/fmhy/edit.git
+[Git](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md) clone https://github.com/fmhy/edit.git
 cd edit
 sudo docker compose up --build
 ```
 
 O processo pode levar alguns minutos para construir a imagem e iniciar o contêiner, funcionando na porta 4173.
 
-#### Nix Flake
+#### [Nix Flake](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md)
 
 Você pode usar [nix](https://nixos.org/) para configurar um ambiente de desenvolvimento. Temos um [flake](https://nixos.wiki/wiki/Flakes) que configura `nodejs` e `pnpm`.
 
@@ -38,7 +38,7 @@ Você pode usar [nix](https://nixos.org/) para configurar um ambiente de desenvo
 
 Você precisará instalar:
 - [Git](https://git-scm.com/downloads)
-- [Node.js](https://nodejs.org/en/download/) - Use a última versão LTS disponível.
+- [[Node.js](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md)](https://nodejs.org/en/download/) - Use a última versão LTS disponível.
 - [pnpm 9.12.2+](https://pnpm.io/installation)
 
 ##### Passo 1: Clonar o Repositório

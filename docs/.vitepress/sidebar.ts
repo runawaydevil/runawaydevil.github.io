@@ -27,6 +27,10 @@ export const sidebar = {
         {
           text: "🔴 Desvendando a Intersecção entre Segurança Digital e Privacidade Online",
           link: "/captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online"
+        },
+        {
+          text: "🔴 Guia Completo de Ferramentas Avançadas em Segurança Digital",
+          link: "/captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital"
         }
       ]
     },
@@ -37,6 +41,10 @@ export const sidebar = {
         {
           text: "🔴 Guia Completo sobre Privacidade na Internet: Ferramentas e Técnicas para Navegação Anônima em 2024",
           link: "/captain/guia-completo-sobre-privacidade-na-internet-ferramentas-e-tecnicas-para-navegacao-anonima-em-2024"
+        },
+        {
+          text: "🔴 Guia Completo de Privacidade Online: Ferramentas e Serviços para Proteger seus Dados",
+          link: "/captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados"
         }
       ]
     },
@@ -51,6 +59,14 @@ export const sidebar = {
         {
           text: "🔴 O Futuro do Ciberativismo: Desafios e Oportunidades na Era Digital",
           link: "/captain/o-futuro-do-ciberativismo-desafios-e-oportunidades-na-era-digital"
+        },
+        {
+          text: "🔴 Referências Institucionais em Temas de Direito Digital e Ética na Era da Informação",
+          link: "/captain/referencias-institucionais-em-temas-de-direito-digital-e-etica-na-era-da-informacao"
+        },
+        {
+          text: "📊 Auditoria de Organização do Conteúdo",
+          link: "/captain/auditoria-de-organizacao-do-conteudo"
         }
       ]
     }
@@ -67,6 +83,10 @@ export const sidebar = {
         {
           text: "🔴 A Cultura Digital: Da Origem Hacker ao Ciberativismo Moderno",
           link: "/cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno"
+        },
+        {
+          text: "🔴 A Cultura Digital e a Formação de Identidades Online",
+          link: "/cultura/a-cultura-digital-e-a-formacao-de-identidades-online"
         }
       ]
     },
@@ -216,12 +236,8 @@ export const sidebar = {
           ]
         },
     {
-      text: "📖 Informações",
-      collapsed: true,
-      items: [
-        { text: "Feedback", link: "/vault/feedback" },
-        { text: "Agradecimentos", link: "/vault/agradecimentos" }
-      ]
+      text: "🙏 *__Agradecimentos__*",
+      link: "/vault/agradecimentos"
     }
   ]
 }

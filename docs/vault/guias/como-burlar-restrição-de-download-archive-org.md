@@ -15,7 +15,7 @@ Faça login ou crie sua conta no Archive.org e certifique-se de clicar no botão
 
 
 
-Após clicar, você terá acesso ao livro por 1 hora ou 14 dias, dependendo do livro. É **OBRIGATÓRIO** realizar esse empréstimo, pois caso contrário, o tutorial não funcionará!!!
+Após clicar, você terá acesso ao livro por 1 hora ou 14 dias, dependendo do livro. É **OBRIGATÓRIO** realizar esse [empréstimo](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md), pois caso contrário, o tutorial não funcionará!!!
 
 ## Segundo Passo
 
@@ -41,7 +41,7 @@ https://archive.org/services/loans/loan/?action=media_url&identifier=engineering
 
 Ao navegar por essa URL, ela retornará um arquivo com a extensão .acsm, provavelmente nomeado como URLLink.acsm. Baixe-o em seu dispositivo e guarde, pois precisaremos dele!
 
-> Caso receba uma mensagem JSON {"error":"Request is not authorized."}, significa que você não está logado ou não pegou o livro emprestado!
+> Caso receba uma [mensagem JSON](captain/seguranca-digital-fundamentos-evolucao-e-praticas-essenciais.md) {"error":"Request is not authorized."}, significa que você não está logado ou não pegou o livro emprestado!
 
 ## Quarto Passo
 

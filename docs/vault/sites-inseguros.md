@@ -10,8 +10,8 @@
 
 :::danger Nunca se cadastre nesses sites
 
-- O registro de uma conta nesses sites acarreta um nível de perigo significativo, dadas as vulnerabilidades digitais presentes no mundo cibernético.
-- Os ataques de phishing geralmente exploram usuários que, sem saber, divulgam informações pessoais que podem ser abusadas sutilmente.
+- O registro de uma conta nesses sites acarreta um nível de perigo significativo, dadas as [vulnerabilidades digitais](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md) presentes no mundo cibernético.
+- Os [ataques de [phishing](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md) geralmente exploram usuários que, sem saber, divulgam informações pessoais que podem ser abusadas sutilmente.
   :::
 
 # 🧭 Uso Geral
@@ -36,7 +36,7 @@
 
 # 📚 Livros
 
-| 📋 \*_NOME_         | 🪢 **URL** (_Não clicável_) | 🚩 **PERIGOSO**                                                |
+| 📋 /*_NOME_         | 🪢 **URL** (_Não clicável_) | 🚩 **PERIGOSO**                                                |
 | :------------------ | :-------------------------- | :------------------------------------------------------------- |
 | "Z-Library Project" | zlibrary-to                 | **Clone falso** (_Criado para enganar usuários de propósito_). |
 

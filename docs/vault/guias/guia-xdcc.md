@@ -15,7 +15,7 @@ O **Internet Relay Chat (IRC)** é um protocolo de chat pela internet criado em 
 
 Primeiramente, é necessário instalar um cliente IRC. Existem vários clientes disponíveis para diversos sistemas operacionais, incluindo [**HexChat**](https://hexchat.github.io/), [**Konversation**](https://konversation.kde.org/), [**mIRC**](https://www.mirc.com/) e [**irssi**](https://irssi.org/).
 
-Após instalado e configurado, utiliza-se no cliente o comando `/SERVER <host>` para se conectar a um servidor, por exemplo: `/SERVER irc.rizon.net`. Os servidores da [**Rizon**](https://rizon.net/) e [**P2P-net**](https://p2p-network.net/) são especialmente populares na comunidade de compartilhamento de arquivos.
+Após instalado e configurado, utiliza-se no cliente o comando `/SERVER <host>` para se conectar a um servidor, por exemplo: `/SERVER irc.[Rizon](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md).net`. Os servidores da [**Rizon**](https://rizon.net/) e [**[P2P-net](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md)**](https://p2p-network.net/) são especialmente populares na comunidade de compartilhamento de arquivos.
 
 Uma vez conectado a um servidor, utiliza-se o comando `/JOIN #nome-do-canal` para entrar em um canal (similar a um grupo de WhatsApp/Telegram). No canal, além de outros usuários, haverá bots que compartilham arquivos em resposta a comandos especiais. Estes bots geralmente utilizam o software [**iroffer-dinoex**](https://github.com/dinoex/iroffer-dinoex) ou similares.
 
@@ -47,7 +47,7 @@ Para um exemplo prático, faremos o download do 1º episódio do anime _New Game
 
    **Packlist do Anime no Sekai (ANSK)**
 
-   Observamos que na tracklist consta o servidor (Rizon - irc.rizon.net) e o canal \#AnimeNSK com o qual devemos nos conectar.
+   Observamos que na tracklist consta o servidor (Rizon - irc.rizon.net) e o canal /#AnimeNSK com o qual devemos nos conectar.
 
 2. Abrimos então nosso cliente IRC e nos conectamos a este servidor e canal, conforme mostrado:
 
@@ -58,7 +58,7 @@ Para um exemplo prático, faremos o download do 1º episódio do anime _New Game
 
    **Pack do Anime New Game! Selecionado**
 
-4. Copiamos o comando na coluna "comando" da packlist, neste caso, `msg ANSK|Sora xdcc send \#1257`.
+4. Copiamos o comando na coluna "comando" da packlist, neste caso, `msg ANSK|Sora xdcc send /#1257`.
 
    **Enviando um comando para o bot**
 

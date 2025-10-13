@@ -1,4 +1,4 @@
-# 👨‍💻 Ferramentas e Recursos para Desenvolvedores e Profissionais de TI
+# 👨‍💻 [ferramentas](vault/ai.md) e Recursos para Desenvolvedores e Profissionais de TI
 
 ## Comunidades e Fóruns de Desenvolvimento
 
@@ -9,7 +9,7 @@
 - [DEV Community](https://dev.to/) - Fórum para desenvolvedores.
 - [Blind](https://www.teamblind.com/) - Fórum para desenvolvedores.
 - [IndieHackers](https://www.indiehackers.com/) - Fórum para desenvolvedores.
-- [CyberArsenal](https://cyberarsenal.org/) - Fóruns de cibersegurança.
+- [CyberArsenal](https://cyberarsenal.org/) - Fóruns de [[[cibersegurança](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md)](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md)](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md).
 - [TheSecMaster](https://x.com/TheSecMaster1) - Blog de cibersegurança.
 - [Tech-Blogs](https://tech-blogs.dev/) ou [HN Popularity](https://refactoringenglish.com/tools/hn-popularity/) - Blogs para desenvolvedores.
 - [The Devs Network](https://thedevs.network/) - Chat para desenvolvedores.

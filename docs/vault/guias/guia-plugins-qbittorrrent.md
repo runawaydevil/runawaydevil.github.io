@@ -1,6 +1,6 @@
-# Passos para instalar plugins de pesquisa para qBitTorrent versão 3.1.10 ou mais recente.
+# Passos para instalar [plugins de pesquisa](vault/other/wallpapers.md) para qBitTorrent versão 3.1.10 ou mais recente.
 
-1. Observe que os plugins/scripts de Python são, por sua natureza, considerados não seguros. Portanto, qualquer uso de plugins não oficiais é por sua conta e risco. É recomendável auditar/verificar os plugins/scripts antes de instalá-los.
+1. Observe que os plugins/scripts de [Python](vault/file-tools.md) são, por sua natureza, considerados não seguros. Portanto, qualquer uso de plugins não oficiais é por sua conta e risco. É recomendável auditar/verificar os plugins/scripts antes de instalá-los.
 
 2. Acesse: https://github.com/qbittorrent/search-plugins/wiki/Unofficial-search-plugins
 

@@ -11,13 +11,13 @@ Livros, como quadrinhos e romances, são um meio de registro de informações qu
 
 :::info ℹ️ Dicas Úteis
 
-- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu DNS. Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
+- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu [DNS](vault/guias/dns.md). Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
 - 🌟 **Recomendações da Comunidade:** Links marcados com 🌟 são altamente recomendados pelos piratas veteranos.
   :::
 
 ## 📥 ➜ Download direto
 
-### 🌟 [Projeto Z-Library](https://z-library.sk/) • Necessário Cadastrar-se
+### 🌟 [Projeto [Z-Library](vault/outros/zlibrary.md)](https://z-library.sk/) • Necessário Cadastrar-se
 
 :::tip **Dica:** A melhor forma de se usar o Z-Library é via [bot do Telegram](/outros/zlibrary.md)
 
@@ -27,13 +27,13 @@ Livros, como quadrinhos e romances, são um meio de registro de informações qu
 - [Checar URLs atualizadas](https://www.reddit.com/r/zlibrary/wiki/index/access/)
 - [Resultados de segurança da URL](https://www.urlvoid.com/scan/z-library.sk/)
 
-### 🌟 [Library Genesis](https://libgen.is/) / [2](https://libgen.rs/) / [3](https://libgen.st/)
+### 🌟 [[Library Genesis](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://libgen.is/) / [2](https://libgen.rs/) / [3](https://libgen.st/)
 
 - Mega volume de obras novas e antigas organizadas pela comunidade.
 - O site constantemente fica fora do ar. Para checar qualquer proxy que esteja funcionando, acesse o [SLUM](https://open-slum.org/).
 - [Resultados de segurança da URL](https://www.urlvoid.com/scan/libgen.is/)
 
-### 🔗 [Docero](https://doceru.com/)
+### 🔗 [[Docero](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md)](https://doceru.com/)
 
 - Após apertar F12, na aba console, aperte "Ctrl+F" e procure por getpdf, encontrará isso: `https://stream.doceru.com/getpdf/...` só copiar e colar em outra aba.
 - [Resultados de Segurança da URL](https://www.urlvoid.com/scan/doceru.com/)

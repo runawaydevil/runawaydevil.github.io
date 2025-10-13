@@ -16,7 +16,7 @@ Aqui você vai encontrar de tudo um pouco:
 
 ## 🍴 A História dos Forks
 
-E sim… **tudo aqui é um fork, do fork, do fork** de algum repositório perdido no GitHub, temperado com uma boa pitada de **loucura e curiosidade infinita**. 
+E sim… **tudo aqui é um fork, do fork, do fork** de algum repositório perdido no GitHub, temperado com uma boa pitada de **[loucura e curiosidade infinita](cultura/a-cultura-digital-e-a-formacao-de-identidades-online.md)**. 
 
 Este vault nasceu como **meu backup pessoal**, mas acabou virando um **presente aberto** a quem quiser explorar — porque é assim que a internet sobrevive: com gente **curiosa demais** pra deixar as boas ideias morrerem.
 
@@ -30,8 +30,8 @@ Este vault nasceu como **meu backup pessoal**, mas acabou virando um **presente 
 **Regras de Ouro:**
 - 🚫 **Evite fornecer informações pessoais**
 - 🛡️ **Use sempre bom senso**
-- 🔍 **Verifique a segurança dos sites**
-- 💻 **Mantenha seu antivírus atualizado**
+- 🔍 **Verifique a [segurança dos sites](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md)**
+- 💻 **Mantenha seu [antivírus atualizado](captain/protecao-digital-melhores-praticas-para-seguranca-pessoal-e-de-dispositivos.md)**
 :::
 
 :::info ℹ️ Disclaimer
@@ -46,10 +46,10 @@ Este vault nasceu como **meu backup pessoal**, mas acabou virando um **presente 
 
 ### 🏴‍☠️ Comunidades Brasileiras
 - **[r/pirataria](https://reddit.com/r/pirataria)** — A comunidade brasileira de pirataria
-- **[pirataria.link](https://pirataria.link)** — O repositório que inspirou tudo
+- **[[pirataria.link](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md)](https://pirataria.link)** — O repositório que inspirou tudo
 
 ### 🌍 Comunidades Internacionais  
-- **[r/piracy](https://reddit.com/r/piracy)** — A lendária comunidade internacional
+- **[r/piracy](https://reddit.com/r/piracy)** — A lendária [comunidade internacional](captain/o-futuro-do-ciberativismo-desafios-e-oportunidades-na-era-digital.md)
 - **[fmhy.net](https://fmhy.net)** — Free Media Heck Yeah!
 
 ---

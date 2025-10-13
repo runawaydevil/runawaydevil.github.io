@@ -1,4 +1,4 @@
-# Como Configurar o DNS no Windows e Android
+# Como Configurar o [DNS](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md) no Windows e Android
 
 **DNS**
 
@@ -18,7 +18,7 @@ Este guia apresenta o passo a passo de como configurar o DNS tanto no Windows qu
 
 A seguir, listamos os provedores de DNS com servidores no Brasil, que não bloqueiam sites piratas e/ou oferecem bom desempenho para usuários brasileiros:
 
-Cloudflare DNS
+[Cloudflare DNS](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)
 
 - IPv4: `1.1.1.1` e `1.0.0.1`
 
@@ -26,7 +26,7 @@ Cloudflare DNS
 
 - Excelente desempenho, mas não bloqueia anúncios em sites e apps.
 
-AdGuard DNS
+[AdGuard DNS](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)
 
 - IPv4: `94.140.14.14` e `94.140.15.15`
 
@@ -34,7 +34,7 @@ AdGuard DNS
 
 - Especializado em bloquear anúncios e rastreadores, ideal para uma navegação mais limpa.
 
-NextDNS
+[NextDNS](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)
 
 - IPv4: Obtido diretamente pelo site nextdns.io
 

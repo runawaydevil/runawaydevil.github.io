@@ -1,9 +1,9 @@
-# Segurança Digital: Fundamentos, Evolução e Práticas Essenciais
+# [Segurança Digital](captain/seguranca-digital-fundamentos-evolucao-e-praticas-essenciais.md): Fundamentos, Evolução e [práticas essenciais](captain/protecao-digital-melhores-praticas-para-seguranca-pessoal-e-de-dispositivos.md)
 
 :::info ℹ️ Informações do Artigo
 **Categoria:** Segurança Digital
 **Arquivo Original:** 1.md
-**Tags:** Segurança Digital, Proteção de Dados, Ameaças Cibernéticas
+**Tags:** Segurança Digital, Proteção de Dados, [ameaças cibernéticas](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md)
 **Resumo:** Exploração dos conceitos fundamentais, evolução das ameaças cibernéticas e práticas essenciais para proteção de dados e sistemas.
 :::
 
@@ -26,7 +26,7 @@
 
 # Introdução à Segurança Digital: Fundamentos, Evolução e Práticas Essenciais
 
-Em um mundo cada vez mais digitalizado, onde informações sensíveis transitam constantemente através de redes interconectadas, a segurança digital emerge como um pilar fundamental para a proteção de dados, sistemas e infraestruturas críticas. O crescimento exponencial de 44% nos ataques cibernéticos globais em 2025, conforme revelado pelo relatório da Check Point Research, evidencia a urgência de compreendermos profundamente os conceitos, práticas e desafios que permeiam este campo em constante evolução.
+Em um mundo cada vez mais digitalizado, onde informações sensíveis transitam constantemente através de redes interconectadas, a segurança digital emerge como um pilar fundamental para a proteção de dados, sistemas e infraestruturas críticas. O crescimento exponencial de 44% nos [ataques cibernéticos](captain/o-futuro-do-ciberativismo-desafios-e-oportunidades-na-era-digital.md) globais em 2025, conforme revelado pelo relatório da Check Point Research, evidencia a urgência de compreendermos profundamente os conceitos, práticas e desafios que permeiam este campo em constante evolução.
 
 ![Evolução das Ameaças Cibernéticas (1971-2025)](https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/a39c49ae7ed47f25c3351813bd0e1c92/63981f7a-f2c9-45b1-8d78-fdcbc5dd7e7f/693dcfd8.png)
 

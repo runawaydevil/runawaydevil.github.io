@@ -1,4 +1,4 @@
-# 📑 ➜ Coletânea de coisas úteis para privacidade e segurança
+# 📑 ➜ Coletânea de coisas úteis para [privacidade e segurança](vault/other/selfhosting.md)
 
 Aqui está uma coletânea de coisas úteis para privacidade e segurança que fui acumulando com o tempo.
 
@@ -6,7 +6,7 @@ Aqui está uma coletânea de coisas úteis para privacidade e segurança que fui
 
 ### Mais focado no Windows 10/11
 
-- [SophiApp](https://github.com/Sophia-Community/SophiApp) - ⚡ O tweaker de código aberto mais poderoso no GitHub para ajustes no Windows 10 e Windows 11.
+- [[SophiApp](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md)](https://github.com/Sophia-Community/SophiApp) - ⚡ O tweaker de código aberto mais poderoso no GitHub para ajustes no Windows 10 e Windows 11.
 
 - [privacy.sexy](https://privacy.sexy/) - Ferramenta de código aberto para aplicar práticas recomendadas de privacidade e segurança no Windows e macOS.
 
@@ -18,11 +18,11 @@ Aqui está uma coletânea de coisas úteis para privacidade e segurança que fui
 
 - [ShareX](https://getsharex.com/) - Alternativa melhor que o programa de captura de tela.
 
-- [Microsoft PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/) - Vários recursos interessantes da Microsoft que não são implementados no Windows.
+- [[Microsoft PowerToys](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md)](https://learn.microsoft.com/en-us/windows/powertoys/) - Vários recursos interessantes da Microsoft que não são implementados no Windows.
 
-- [KDE Connect](https://kdeconnect.kde.org/) - Uma forma de conectar seu smartphone e computador sem usar a ferramenta Link to Windows da Microsoft (já houve momentos em que as versões para Windows deste aplicativo não reconheciam nada, sua experiência pode variar).
+- [[KDE Connect](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md)](https://kdeconnect.kde.org/) - Uma forma de conectar seu smartphone e computador sem usar a ferramenta Link to Windows da Microsoft (já houve momentos em que as versões para Windows deste aplicativo não reconheciam nada, sua experiência pode variar).
 
-- [NVCleanstall](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) - para limpar os drivers NVIDIA.
+- [[NVCleanstall](captain/protecao-digital-melhores-praticas-para-seguranca-pessoal-e-de-dispositivos.md)](https://www.techpowerup.com/download/techpowerup-nvcleanstall/) - para limpar os drivers NVIDIA.
 
 - [Winaero Tweaker](https://winaero.com/winaero-tweaker/) - Alguns ajustes extras do Windows, como restaurar o antigo menu de contexto.
 

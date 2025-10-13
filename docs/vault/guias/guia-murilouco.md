@@ -2,25 +2,25 @@
 
 O objetivo deste post é apresentar às pessoas menos experientes todas as formas de pirataria de mídia atualmente e explicar o lado técnico disso.
 
-Para começar, é crucial entender que **hospedar vídeos na internet é muito caro**. Há uma razão pela qual até hoje não surgiram grandes concorrentes do YouTube. O fato é que vídeos, especialmente filmes em ultra HD, consomem muita internet e processamento, então é inviável que uma única pessoa crie um site tipo Netflix que seja 100% grátis e rápido.
+Para começar, é crucial entender que **[hospedar vídeos na internet](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md) é muito caro**. Há uma razão pela qual até hoje não surgiram grandes concorrentes do YouTube. O fato é que vídeos, especialmente filmes em ultra HD, consomem muita internet e processamento, então é inviável que uma única pessoa crie um site tipo Netflix que seja 100% grátis e rápido.
 
 ## Sites de streaming gratuitos, estilo MegaFilmesHD
 
 A primeira maneira de contornar esse problema é encher o site de anúncios até não poder mais, e oferecer vídeos em baixa qualidade ou que travam. Assim, o proprietário consegue manter o site funcionando com vários usuários acessando constantemente. Além dos inconvenientes dos anúncios e da baixa qualidade, esses sites têm um segundo problema: a qualquer momento, o governo pode derrubar o site, forçando os usuários a procurarem outra alternativa.
 
-Atualmente, o principal site desse tipo é o famoso RedeCanais, conhecido pela sua vasta gama de conteúdo e por ainda estar ativo. De fato, essa é a principal maneira que eu uso até hoje para assistir a desenhos animados como Bob Esponja, sem ter o compromisso de precisar baixar o conteúdo antes.
+Atualmente, o principal site desse tipo é o famoso [RedeCanais](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md), conhecido pela sua vasta gama de conteúdo e por ainda estar ativo. De fato, essa é a principal maneira que eu uso até hoje para assistir a desenhos animados como Bob Esponja, sem ter o compromisso de precisar baixar o conteúdo antes.
 
 > Sites podem ser encontrados em [🎦 ➜ Filmes e TV](../filmes-tv)
 
-Nem preciso dizer que você provavelmente vai precisar de um bloqueador de anúncios como o uBlock Origin para assistir qualquer coisa lá.
+Nem preciso dizer que você provavelmente vai precisar de um [bloqueador de anúncios](captain/protecao-digital-melhores-praticas-para-seguranca-pessoal-e-de-dispositivos.md) como o uBlock Origin para assistir qualquer coisa lá.
 
 ## Downloads
 
 Se acessar um site como o mencionado acima é um inconveniente (quando quero ver algo no celular, por exemplo, os sites são quase inutilizáveis), você vai querer baixar seu filme.
 
-## Google Drive
+## [Google Drive](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)
 
-Buscar Google Drives na internet é uma opção. Uma vantagem é que você nem precisa baixar o filme, pode assistir diretamente no navegador. O lado ruim é a enorme instabilidade disso, porque eles são frequentemente derrubados, já que o Google não quer hospedar filmes piratas para você. A verdade é que raramente você encontrará o que deseja em um drive.
+Buscar Google Drives na internet é uma opção. Uma vantagem é que você nem precisa baixar o filme, pode assistir diretamente no navegador. O lado ruim é a enorme [instabilidade](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md) disso, porque eles são frequentemente derrubados, já que o Google não quer hospedar filmes piratas para você. A verdade é que raramente você encontrará o que deseja em um drive.
 
 > Para buscar drives, a melhor técnica hoje é entrar no Twitter e usar palavras-chave como "Google Drive", "filmes".
 

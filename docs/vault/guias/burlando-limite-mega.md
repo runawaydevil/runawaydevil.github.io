@@ -6,7 +6,7 @@ description: "Burlando limite do Mega"
 ## Instalação
 
 ::: danger Aviso
-A utilização de proxy, VPN ou múltiplas contas para contornar a limitação diária de transferências do MEGA pode violar os seus Termos de Utilização. UTILIZE ESTE GUIA POR SUA PRÓPRIA CONTA E RISCO.
+A utilização de [proxy](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md), [VPN](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md) ou múltiplas contas para contornar a limitação diária de transferências do MEGA pode violar os seus [termos de utilização](captain/guia-completo-sobre-legislacao-e-direitos-digitais-no-brasil.md). UTILIZE ESTE GUIA POR SUA PRÓPRIA CONTA E RISCO.
 :::
 
 1. Faça o download do programa [MegaBasterd](https://github.com/tonikelope/megabasterd). Após clicar no link acima, basta clicar em "Download latest build" para selecionar o arquivo para o seu sistema operacional e baixá-lo.
@@ -37,7 +37,7 @@ Aqui você pode definir a pasta de downloads. Recomendo deixar a opção "Verify
 
 (Opção 1) ESPERE até que o MEGA permita o download novamente (normalmente 6/12 horas).
 
-(Opção 2) Compre uma conta MEGA PRO.
+(Opção 2) Compre uma conta [MEGA PRO](captain/protecao-digital-melhores-praticas-para-seguranca-pessoal-e-de-dispositivos.md).
 
 (Opção 3) Use proxies.
 

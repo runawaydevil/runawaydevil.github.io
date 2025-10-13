@@ -20,8 +20,8 @@ Esporte é definido como uma atividade física ou jogo, geralmente de natureza c
 ### 🌟 [Rede Canais TV](https://redecanaistv.gs/) / [2](https://redecanaistv.fi/) / [3](https://redecanaistv.ps/)
 
 - Transmissão de canais ao vivo em alta qualidade
-- Domínios atualizados frequentemente, para manter-se informado acesse o [discord oficial](https://discord.com/invite/kydZZBGwTy).
-- [Resultados de segurança da URL](https://www.urlvoid.com/scan/xn--90afacaz8cml9ac9f.xn--p1ai/)
+- [domínios](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md) atualizados frequentemente, para manter-se informado acesse o [discord oficial](https://discord.com/invite/kydZZBGwTy).
+- [[Resultados de segurança da URL](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md)](https://www.urlvoid.com/scan/xn--90afacaz8cml9ac9f.xn--p1ai/)
 
 ### 🌟 [Multicanais](https://multicanais.legal/) / [2](https://multicanais.forum/)
 

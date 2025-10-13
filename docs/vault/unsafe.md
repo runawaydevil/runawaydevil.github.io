@@ -1,8 +1,8 @@
 # ⚠️ Guia de Segurança e Recursos para Downloads e Streaming
 
-Este documento consolidado oferece informações detalhadas sobre a segurança de sites e aplicativos usados para downloads e streaming, além de recomendações para evitar malwares e outras ameaças online.
+Este documento consolidado oferece informações detalhadas sobre a segurança de sites e aplicativos usados para downloads e streaming, além de recomendações para evitar [malwares](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md) e outras ameaças online.
 
-## 🛡️ Segurança Online
+## 🛡️ [Segurança Online](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md)
 
 Para verificar quais sites são confiáveis e quais são perigosos, experimente a extensão **[FMHY SafeGuard](https://github.com/fmhy/FMHY-SafeGuard)** ou simplesmente adicione nossa **[Filterlist](https://github.com/fmhy/FMHYFilterlist)** ao seu bloqueador de anúncios.
 
@@ -16,10 +16,10 @@ Para verificar quais sites são confiáveis e quais são perigosos, experimente 
 - **GetIntoPC/GetIntoMAC, SadeemPC/SadeemAPK, KaranPC, AliTPB/AliPak/b4tman, FileCR, FTUApps, S0ft4PC/Portable4PC, CrackingCity, CracksHash, haxNode, IGI30, 4Download/Download93, MicroTech, Softgozar, Patoghu, AsanDL, Taiwebs, MainRepo/MRepo, YASDL, AllPCWorld, P30Download, RSLOAD, Pesktop, Appnee, AppValley/TutuBox/Ignition, CNET/Download.com/ZDNET/Softonic, IObit**: Capturados com malwares ou envolvidos em práticas questionáveis.
 
 ### Sites de Torrents e Clientes
-- **Kickass Torrents, VSTorrent, uTorrent, BitTorrent/BitComet, Frostwire, BitLord, Fake 1337x Sites**: Problemas de adware e malwares.
+- **Kickass Torrents, VSTorrent, uTorrent, BitTorrent/BitComet, Frostwire, BitLord, Fake 1337x Sites**: Problemas de [adware](captain/protecao-digital-melhores-praticas-para-seguranca-pessoal-e-de-dispositivos.md) e malwares.
 
 ### Software / Apps
-- **Opera, McAfee, Avast, AVG, Gen Digital/Norton, Avira, CCleaner, Private Internet Access/ExpressVPN/ZenMate/CyberGhost, BlueKik/Bluecord, Kik, Flix Vision, TLauncher, GShade, TotalAV/PC Protect/Protected, Watchug/Watchugofficial**: Práticas de privacidade pobres, adware ou outras questões de segurança.
+- **Opera, McAfee, Avast, AVG, Gen Digital/Norton, Avira, CCleaner, Private Internet Access/ExpressVPN/ZenMate/CyberGhost, BlueKik/Bluecord, Kik, Flix Vision, TLauncher, GShade, TotalAV/PC Protect/Protected, Watchug/Watchugofficial**: [práticas de privacidade pobres](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md), adware ou outras questões de segurança.
 
 ## 🎹 Música
 

@@ -3,8 +3,8 @@
 :::info ℹ️ Informações do Artigo
 **Categoria:** Legislação e Direitos Digitais
 **Arquivo Original:** 3.md
-**Tags:** LGPD, ANPD, Marco Civil da Internet, Direitos Digitais
-**Resumo:** Um guia abrangente sobre a LGPD, ANPD, Marco Civil da Internet e direitos do titular de dados no Brasil.
+**Tags:** [LGPD](captain/guia-completo-sobre-legislacao-e-direitos-digitais-no-brasil.md), [ANPD](captain/guia-completo-sobre-legislacao-e-direitos-digitais-no-brasil.md), [Marco Civil da Internet](captain/guia-completo-sobre-legislacao-e-direitos-digitais-no-brasil.md), Direitos Digitais
+**Resumo:** Um guia abrangente sobre a LGPD, ANPD, Marco Civil da Internet e [direitos do titular de dados](captain/guia-completo-sobre-legislacao-e-direitos-digitais-no-brasil.md) no Brasil.
 :::
 
 ## 📋 Índice
@@ -26,7 +26,7 @@
 
 # Legislação e Direitos Digitais
 
-A proteção dos dados e dos direitos digitais evoluiu para responder aos desafios de segurança, privacidade e desenvolvimento econômico na sociedade conectada. Atualmente, a legislação brasileira dialoga com regulações internacionais, um órgão fiscalizador competente e mecanismos claros para o usuário reivindicar seus direitos.
+A [proteção dos dados](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md) e dos direitos digitais evoluiu para responder aos desafios de segurança, privacidade e desenvolvimento econômico na sociedade conectada. Atualmente, a legislação brasileira dialoga com regulações internacionais, um órgão fiscalizador competente e mecanismos claros para o usuário reivindicar seus direitos.
 
 ---
 

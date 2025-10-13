@@ -17,13 +17,13 @@ Este documento consolidado reúne informações essenciais sobre privacidade e s
 
 1. [Panorama da Segurança](#panorama-da-segurança)
 2. [Navegadores Focados em Privacidade](#navegadores-focados-em-privacidade)
-3. [Gerenciadores de Senhas](#gerenciadores-de-senhas)
-4. [VPNs Recomendadas](#vpns-recomendadas)
+3. [[Gerenciadores de Senhas](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md)](#gerenciadores-de-senhas)
+4. [[VPNs Recomendadas](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md)](#vpns-recomendadas)
 5. [Bloqueadores de Anúncios e Rastreadores](#bloqueadores-de-anúncios-e-rastreadores)
 6. [Provedores de E-mail Seguros](#provedores-de-e-mail-seguros)
 7. [Sistemas Operacionais Focados em Privacidade](#sistemas-operacionais-focados-em-privacidade)
-8. [Criptomoedas e Privacidade](#criptomoedas-e-privacidade)
-9. [Criptografia de Disco](#criptografia-de-disco)
+8. [[Criptomoedas e Privacidade](captain/guia-completo-sobre-privacidade-na-internet-ferramentas-e-tecnicas-para-navegacao-anonima-em-2024.md)](#criptomoedas-e-privacidade)
+9. [[Criptografia de Disco](captain/seguranca-digital-fundamentos-evolucao-e-praticas-essenciais.md)](#criptografia-de-disco)
 10. [Ferramentas de Segurança e Privacidade](#ferramentas-de-segurança-e-privacidade)
 11. [Veja Também](#veja-também)
 

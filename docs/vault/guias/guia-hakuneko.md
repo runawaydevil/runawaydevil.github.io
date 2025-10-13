@@ -1,4 +1,4 @@
-# Guia Completo: Convertendo Mangás para Kindle com Hakuneko e KCC
+# Guia Completo: Convertendo Mangás para Kindle com [Hakuneko](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md) e KCC
 
 Se você é fã de mangás e deseja aproveitá-los em seu Kindle, este guia irá detalhar todas as etapas para realizar essa conversão de maneira eficiente. Siga os passos abaixo:
 
@@ -29,16 +29,16 @@ Depois de baixar as imagens:
 ### 3. Renomeie a extensão do arquivo de .zip para .cbr
 
 1. Localize o arquivo .zip criado.
-2. Renomeie a extensão do arquivo para .cbr (Comic Book Reader).
+2. Renomeie a extensão do arquivo para .cbr ([Comic Book Reader](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)).
    - Exemplo: `manga_capitulo1.zip` torna-se `manga_capitulo1.cbr`.
 
-**Atenção:** Certifique-se de que seu sistema exiba extensões de arquivo. Caso contrário, habilite essa opção nas configurações do explorador de arquivos.
+**Atenção:** Certifique-se de que seu [sistema exiba extensões de arquivo](captain/guia-completo-sobre-legislacao-e-direitos-digitais-no-brasil.md). Caso contrário, habilite essa opção nas configurações do explorador de arquivos.
 
 ---
 
-### 4. Converta para .epub com o Kindle Comic Converter (KCC)
+### 4. Converta para .epub com o [Kindle Comic Converter](captain/seguranca-digital-fundamentos-evolucao-e-praticas-essenciais.md) (KCC)
 
-Baixe o [Kindle Comic Converter (KCC)](https://github.com/ciromattia/kcc). Atenção: use uma versão antiga compatível com o Kindle, pois as versões mais recentes podem não funcionar com dispositivos Kindle devido a mudanças na política da Amazon.
+Baixe o [Kindle Comic Converter (KCC)](https://github.com/ciromattia/kcc). Atenção: use uma versão antiga compatível com o Kindle, pois as versões mais recentes podem não funcionar com dispositivos Kindle devido a [mudanças na política da Amazon](captain/o-futuro-do-ciberativismo-desafios-e-oportunidades-na-era-digital.md).
 
 1. Abra o KCC e selecione seu modelo de Kindle.
 2. Configure as opções de preferência:

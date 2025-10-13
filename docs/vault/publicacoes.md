@@ -8,23 +8,23 @@ Publicações úteis para ajudá-lo em suas jornadas digitais.
 
 - [Existe alguma maneira de aumentar minha velocidade de seeding?](https://www.reddit.com/r/qBittorrent/comments/11d14hu/is_there_a_way_i_can_boost_my_seeding/) - Feito por [u/Equivalent-Ad-4490](https://www.reddit.com/user/Equivalent-Ad-4490/)
 
-- [Como usar um DNS Privado no Android e bloquear anúncios + desbloquear sites censurados](https://www.reddit.com/r/pirataria/comments/1ip6236/como_trocar_o_dns_no_windows_e_android/) - Feito por [u/YuriRosas](https://www.reddit.com/user/YuriRosas/)
+- [Como usar um [DNS Privado](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md) no Android e bloquear anúncios + desbloquear sites censurados](https://www.reddit.com/r/pirataria/comments/1ip6236/como_trocar_o_dns_no_windows_e_android/) - Feito por [u/YuriRosas](https://www.reddit.com/user/YuriRosas/)
 
 - [Ah se eu pudesse traduzir conteúdos em tempo real!](https://phtn.app/post/lemmy.dbzer0.com/4186580) - Feito por [u/Dreadwhole](https://phtn.app/u/Dreadwhole@lemmy.dbzer0.com)
 
-- [Como verificar um arquivo no Virus Total corretamente](guias/virustotal.md) - Feito por [u/Heus-Sueh](https://phtn.app/u/Heus_Sueh@lemmy.dbzer0.com)
+- [Como verificar um arquivo no [Virus Total](captain/seguranca-digital-fundamentos-evolucao-e-praticas-essenciais.md) corretamente](guias/virustotal.md) - Feito por [u/Heus-Sueh](https://phtn.app/u/Heus_Sueh@lemmy.dbzer0.com)
 
 - [Coletânea de coisas úteis para privacidade e segurança](util/coletanea-uteis-privacidade-seguranca.md) - Feito por [u/Broering](https://phtn.app/u/broering@lemmy.eco.br)
 
 - [Porque não se pode confiar no Discord](outros/discord) - Traduzido por [u/Broering](https://phtn.app/u/broering@lemmy.eco.br)
 
-- [Streaming Doméstico Automatizado (Sonarr, Radarr e Plex)](https://www.reddit.com/r/pirataria/s/xzkgWdj1E1) - Feito por [u/lolado06](https://www.reddit.com/user/lolado06/)
+- [[Streaming Doméstico Automatizado](vault/guias/sonarr-radarr-plex.md) (Sonarr, Radarr e Plex)](https://www.reddit.com/r/pirataria/s/xzkgWdj1E1) - Feito por [u/lolado06](https://www.reddit.com/user/lolado06/)
 
-- [Como ativar Windows 10](https://www.reddit.com/r/pirataria/s/eaNUQ4V21B) - Feito por [u/Ozamatheus](https://www.reddit.com/u/Ozamatheus/s/dmrdBnmFz2)
+- [Como ativar [Windows 10](captain/protecao-digital-melhores-praticas-para-seguranca-pessoal-e-de-dispositivos.md)](https://www.reddit.com/r/pirataria/s/eaNUQ4V21B) - Feito por [u/Ozamatheus](https://www.reddit.com/u/Ozamatheus/s/dmrdBnmFz2)
 
 - [Como instalar aplicativos de terceiros e YouTube Mod na LG TV - WebOS](https://www.reddit.com/r/pirataria/s/RuZk6MrzMa) - Feito por [u/FunDirect1128](https://www.reddit.com/u/FunDirect1128/s/oGbRRue7ak)
 
-- [Guia de Jellyfin e família Arr em Docker Compose](https://www.reddit.com/r/pirataria/s/xzkgWdj1E1) - Feito por [u/PedroBt\_](https://www.reddit.com/u/PedroBt_/s/rSGbIvs3xw)
+- [Guia de Jellyfin e família Arr em Docker Compose](https://www.reddit.com/r/pirataria/s/xzkgWdj1E1) - Feito por [u/PedroBt/_](https://www.reddit.com/u/PedroBt_/s/rSGbIvs3xw)
 
 - [Utilizando a ferramenta de automação Autobrr para baixar automaticamente torrents que são lançados nos trackers.](https://copyrightbr.com/CFPpqO-yjNL)
 

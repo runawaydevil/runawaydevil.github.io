@@ -28,7 +28,21 @@ Esta é uma seção dedicada a conteúdos especiais e textos exclusivos sobre se
 
 - [Guia Completo sobre Privacidade na Internet: Ferramentas e Técnicas para Navegação Anônima em 2024](./guia-completo-sobre-privacidade-na-internet-ferramentas-e-tecnicas-para-navegacao-anonima-em-2024) - *Guia atualizado com ferramentas e técnicas modernas para navegação anônima e proteção da privacidade online.*
 
+- [Guia Completo de Privacidade Online: Ferramentas e Serviços para Proteger seus Dados](./guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados) - *Explore uma variedade de ferramentas e serviços para fortalecer sua privacidade online, desde navegadores anti-rastreamento até mensagens cifradas e proteção contra fingerprinting.*
+
 ### ⚖️ Legislação e Direitos Digitais
 
 - [Guia Completo sobre Legislação e Direitos Digitais no Brasil](./guia-completo-sobre-legislacao-e-direitos-digitais-no-brasil) - *Análise detalhada da legislação brasileira sobre direitos digitais, LGPD e proteção de dados pessoais.*
 
+- [Referências Institucionais em Temas de Direito Digital e Ética na Era da Informação](./referencias-institucionais-em-temas-de-direito-digital-e-etica-na-era-da-informacao) - *Lista organizada de sites institucionais e de referência em temas como LGPD, GDPR, Marco Civil da Internet, IA, Direitos Autorais, Cibercrimes, Transparência de Algoritmos e Privacidade por Design.*
+
+
+- 🔴 [Guia Completo de Ferramentas Avançadas em Segurança Digital](./guia-completo-de-ferramentas-avancadas-em-seguranca-digital) - *Um guia abrangente sobre ferramentas avançadas em segurança digital, incluindo monitoramento de rede, detecção de incidentes, análise de vulnerabilidades e muito mais.*
+
+### 📊 Auditoria e Qualidade
+
+- [Auditoria de Organização do Conteúdo](./auditoria-de-organizacao-do-conteudo) - *Relatório detalhado sobre a organização do conteúdo, identificando problemas de acessibilidade e sugerindo melhorias na navegação.*
+
+---
+
+**Navegue pelas categorias usando o menu lateral ou clique diretamente nos links acima.**

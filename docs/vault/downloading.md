@@ -10,7 +10,7 @@
 
 :::info ℹ️ Dicas Úteis
 
-- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu DNS. Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
+- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu [DNS](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md). Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
 - 🌟 **Recomendações da Comunidade:** Links marcados com 🌟 são altamente recomendados pelos piratas veteranos.
 
 :::
@@ -25,15 +25,15 @@
 - Software atualizado diariamente com o objetivo de proporcionar uma experiência rápida todos os dias.
 - [Resultados de Segurança da URL](https://www.urlvoid.com/scan/cracksurl.com/)
 
-### 🌟 [Mobilism](https://forum.mobilism.org/index.php) • Necessário Cadastro
+### 🌟 [[Mobilism](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md)](https://forum.mobilism.org/index.php) • Necessário Cadastro
 - Recurso obrigatório para aplicativos e livros. Muitas pessoas confiam nele e fornecem acesso às versões mais recentes dos arquivos.
 - [Resultados de Segurança da URL](https://www.urlvoid.com/scan/forum.mobilism.org/)
 
-### 🌟 [Sanet](https://softarchive.is/) / [2](https://sanet.lc/) / [3](https://sanet.st/) / [4](https://sanet.ws/)
+### 🌟 [[Sanet](captain/guia-completo-sobre-legislacao-e-direitos-digitais-no-brasil.md)](https://softarchive.is/) / [2](https://sanet.lc/) / [3](https://sanet.st/) / [4](https://sanet.ws/)
 - Site referência na cena fundado em 2004, reconhecido por novos lançamentos de software, jogos, músicas, filmes e eBooks.
 - [Resultados de Segurança da URL](https://www.urlvoid.com/scan/softarchive.is/)
 
-### 🔗 [4DOWNLOAD](https://4download.net/)
+### 🔗 [[4DOWNLOAD](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://4download.net/)
 - Softwares completos, amostras de áudio, tutoriais, e-books e vídeos podem ser encontrados aqui.
 - [Resultados de Segurança da URL](https://www.urlvoid.com/scan/4download.net/)
 

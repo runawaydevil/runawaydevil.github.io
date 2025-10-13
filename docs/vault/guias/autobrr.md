@@ -1,8 +1,8 @@
-# 📑 ➜ Aumente seu ratio com Autobrr
+# 📑 ➜ Aumente seu [ratio](vault/guias/ratio-melhor.md) com Autobrr
 
 ## 1. Introdução
 
-O autobrr é um aplicativo que se conecta ao seu tracker via RSS, IRC e outros tipos de conexões para baixar torrents assim que eles são disponibilizados nos trackers.
+O autobrr é um aplicativo que se conecta ao seu [tracker](vault/trackers.md) via RSS, IRC e outros tipos de conexões para baixar torrents assim que eles são disponibilizados nos trackers.
 
 **Os benefícios de utilizar o autobrr incluem:**
 
@@ -10,7 +10,7 @@ O autobrr é um aplicativo que se conecta ao seu tracker via RSS, IRC e outros t
 - Filtrar automaticamente o que você deseja baixar
 - Melhorar seu ratio sem a necessidade de acessar o tracker para baixar o arquivo .torrent e adicioná-lo ao seu cliente.
 
-:::info Neste tutorial, será necessário instalar o WSL e o Docker no seu computador. Caso você não seja um usuário Windows, pode pular para a etapa **DEPLOY AUTOBRR**.
+:::info Neste tutorial, será necessário instalar o [WSL](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md) e o [Docker](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md) no seu computador. Caso você não seja um usuário Windows, pode pular para a etapa **DEPLOY AUTOBRR**.
 :::
 
 ## Instalação
@@ -21,7 +21,7 @@ https://github.com/autobrr/autobrr/releases
 
 E baixe o pacote nomeado "windows_x86_64.zip". Clique em "show all assets" se não estiver visível.
 
-Descompacte e coloque tudo em "C:\autobrr" ou em outro diretório de sua escolha.
+Descompacte e coloque tudo em "C:/autobrr" ou em outro diretório de sua escolha.
 
 Execute o autobrr.exe.
 
@@ -75,16 +75,16 @@ Confirmado que o Docker está funcionando, copie e cole o comando a seguir:
 ### DEPLOY AUTOBRR
 
 ```batch
-  docker run -d \
-  --name autobrr \
+  docker run -d /
+  --name autobrr /
 
-  -v /home/SEU_USUARIO/autobrr/config:/config \
+  -v /home/SEU_USUARIO/autobrr/config:/config /
 
-  -p 7474:7474 \
+  -p 7474:7474 /
 
-  -e TZ=America/Sao_Paulo \
+  -e TZ=America/Sao_Paulo /
 
-  --restart unless-stopped \
+  --restart unless-stopped /
 
   ghcr.io/autobrr/autobrr:latest
 ```
@@ -198,7 +198,7 @@ Se estiver tudo OK, volte na aba de filtros para editar a ação de teste e modi
 
 1. Mude o tipo de ação para seu cliente torrent.
 2. Selecione o cliente torrent que você configurou no início.
-3. (opcional) Especifique onde deseja salvar. Se deixar em branco, será baixado na pasta padrão do seu cliente. Caso especifique, lembre-se de colocar o caminho completo. Ex: C:\User\Desktop\Filmes
+3. (opcional) Especifique onde deseja salvar. Se deixar em branco, será baixado na pasta padrão do seu cliente. Caso especifique, lembre-se de colocar o caminho completo. Ex: C:/User/Desktop/Filmes
 
 Pronto, seu autobrr está configurado e todo novo torrent que corresponder ao seu filtro será adicionado ao seu cliente torrent.
 

@@ -19,7 +19,7 @@ Aqui está o motivo pelo qual estou abandonando o Discord.
 
 ## O produto é mal gerido
 
-Existem tantos bugs pendentes no Discord que todos nós esquecemos coletivamente ao longo do tempo. Aqui está uma lista engraçada de alguns que me vêm à mente:
+Existem tantos [bugs pendentes](captain/seguranca-digital-fundamentos-evolucao-e-praticas-essenciais.md) no Discord que todos nós esquecemos coletivamente ao longo do tempo. Aqui está uma lista engraçada de alguns que me vêm à mente:
 
 - Menções fantasmas e não-leituras fantasmas! Você escreve uma mensagem, talvez com uma menção, e depois a deleta. Para todos os outros, o marcador de não lida e o emblema de menção permanecem, apesar de não haver nada quando se abre o canal.
 - Os bots não podem aceitar chamadas, no entanto, basta clicar com o botão direito do mouse em um bot em um servidor e selecionar "chamar" no menu de contexto. Esta é REALMENTE engraçada, você deveria tentar. É interessante notar que se deram ao trabalho de corrigir isso para o usuário do SISTEMA, mas não para os bots.
@@ -97,4 +97,4 @@ As consequências de "acabar de sair" são que
 
 ## 🔗 Veja também
 
-- **[🪶 ➜ Guia de Privacidade para Paranoicos](/vault/guias/quero-privacidade)** - Ambos os guias lidam com questões de privacidade e segurança online
+- **[🪶 ➜ Guia de [privacidade](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md) para Paranoicos](/vault/guias/quero-privacidade)** - Ambos os guias lidam com questões de privacidade e segurança online

@@ -11,7 +11,7 @@ Filmes e TV são formas de arte visual que utilizam imagens em movimento para si
 
 :::info ℹ️ Dicas Úteis
 
-- 🚨 **Problemas de acesso?** Se algum site não estiver carregando, experimente alterar seu DNS. Veja [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
+- 🚨 **Problemas de acesso?** Se algum site não estiver carregando, experimente alterar seu [DNS](vault/guias/dns.md). Veja [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
 - 🌟 **Recomendações da Comunidade:** Links marcados com 🌟 são altamente recomendados pelos piratas experientes.
   :::
 

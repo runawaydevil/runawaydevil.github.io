@@ -1,12 +1,12 @@
-# Jellyfin e Família Arr - Docker Compose
+# [Jellyfin](vault/guias/jellyfin-arr.md) e Família Arr - [Docker Compose](vault/guias/jellyfin-arr.md)
 
 Guia quase completo para configurar um servidor caseiro para assistir filmes e séries utilizando Docker. Neste guia, usaremos o Jellyfin e estarei utilizando o sistema operacional Ubuntu Server. Tentarei ser o mais claro possível, mas se houver algo que você não entenda, sinta-se à vontade para perguntar nos comentários. Nas configurações de cada aplicativo, recomendo seguir as configurações da megathread, pois aqui focaremos em como usar o Docker. Neste guia, utilizaremos:
 
 - **Docker**: Uma ferramenta que permite encapsular aplicações em containers, facilitando a distribuição através de um único arquivo ou comando que pode ser executado em qualquer sistema. (Usaremos o Docker Compose neste guia)
-- **Prowlarr**: Um aplicativo que roda em seu navegador e permite buscar torrents em diversos sites.
+- **[Prowlarr](vault/guias/jellyfin-arr.md)**: Um aplicativo que roda em seu navegador e permite buscar torrents em diversos sites.
 - **Flaresolverr**: Utilizado para acessar sites protegidos pelo Cloudflare.
-- **Radarr**: Aplicativo que busca filmes, coleta metadados e envia para o Prowlarr realizar o download.
-- **Sonarr**: Funciona como o Radarr, mas é focado em séries.
+- **[Radarr](vault/guias/jellyfin-arr.md)**: Aplicativo que busca filmes, coleta metadados e envia para o Prowlarr realizar o download.
+- **[Sonarr](vault/guias/jellyfin-arr.md)**: Funciona como o Radarr, mas é focado em séries.
 - **QBitTorrent**: Aplicativo usado para baixar os torrents que o Radarr e Sonarr encontram através do Prowlarr.
 - **Jellyfin**: Plataforma onde iremos transmitir todos os filmes e séries baixados. Veja um exemplo de como ficará abaixo:
 

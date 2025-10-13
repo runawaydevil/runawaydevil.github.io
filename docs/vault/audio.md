@@ -1,6 +1,6 @@
 # 🧰 Ferramentas e Recursos Técnicos
 
-Abaixo estão listadas ferramentas, scripts, gerenciadores de download, assistentes, sites, extensões e uma variedade de utilitários complementares para otimizar sua experiência digital, com foco em segurança, eficiência e acessibilidade.
+Abaixo estão listadas ferramentas, scripts, gerenciadores de download, assistentes, sites, extensões e uma variedade de utilitários complementares para otimizar sua experiência digital, com foco em [segurança](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md), eficiência e acessibilidade.
 
 :::warning ⚠️ Aviso Rápido
 
@@ -11,11 +11,11 @@ Abaixo estão listadas ferramentas, scripts, gerenciadores de download, assisten
 
 :::info ℹ️ Dicas Úteis
 
-- 🚨 **Problemas de acesso?** Se algum site não carregar, considere alterar seu DNS. Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
+- 🚨 **Problemas de acesso?** Se algum site não carregar, considere alterar seu [DNS](vault/guias/dns.md). Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
 - 🌟 **Recomendações da Comunidade:** Links com 🌟 são altamente recomendados pelos usuários experientes.
 - Tutoriais disponíveis em [Pirataria - Guias](guias.md).
 - Links em cache estão disponíveis para permitir que você visualize a página sem necessidade de login.
-- Muitas dessas ferramentas podem acionar alertas no seu navegador, Windows Defender e antivírus pessoal, que são frequentemente falsos positivos.
+- Muitas dessas ferramentas podem acionar alertas no seu navegador, Windows Defender e [antivírus](captain/protecao-digital-melhores-praticas-para-seguranca-pessoal-e-de-dispositivos.md) pessoal, que são frequentemente falsos positivos.
   :::
 
 ## ► Ferramentas para Windows / Office

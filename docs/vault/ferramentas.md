@@ -11,14 +11,14 @@ Ferramentas para ativação, scripts de usuário, gerenciadores de download, ass
 
 :::info ℹ️ Dicas Úteis
 
-- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu DNS. Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
+- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu [DNS](vault/guias/dns.md). Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
 - 🌟 **Recomendações da Comunidade:** Links marcados com 🌟 são altamente recomendados pelos piratas veteranos.
 - Tutoriais disponíveis em [Pirataria - Guias](guias.md).
 - Links em cache estão disponíveis para permitir que você visualize a página sem precisar fazer login.
-- Muitas dessas ferramentas que acionarem seu navegador, Windows Defender e antivírus pessoal, são falsos positivos.
+- Muitas dessas ferramentas que acionarem seu navegador, Windows Defender e [antivírus pessoal](captain/protecao-digital-melhores-praticas-para-seguranca-pessoal-e-de-dispositivos.md), são falsos positivos.
   :::
 
-## ► **Ferramentas para Windows / Office**
+## ► **[Ferramentas para Windows / Office](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md)**
 
 - 🌟 [**MAS**](https://github.com/massgravel/Microsoft-Activation-Scripts) - Ativa o Windows e o Office. O Ohook ativa a licença do Office, O HWID ativa permanentemente o Windows 10/11 e o modo KMS38 é mais voltado para LTSC/Enterprise. [**Guia**](guias/ativacao-office-win.md)
 - [Office C2R-R2V-AIO](https://github.com/abbodi1406/C2R-R2V-AIO) - Converte as instalações do Office Retail em licenças de volume.

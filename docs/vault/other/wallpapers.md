@@ -1,4 +1,4 @@
-# Wallpapers e Instalação de Plugins para qBitTorrent
+# Wallpapers e Instalação de Plugins para [qBitTorrent](vault/other/wallpapers.md)
 
 ## Wallpapers
 

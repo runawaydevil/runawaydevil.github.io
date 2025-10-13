@@ -2,12 +2,12 @@
 
 ## Windows
 
-### Desbostificando
+### [Desbostificando](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md)
 
 - [SophiApp](https://github.com/Sophia-Community/SophiApp)
 - [FuckWindowsHistory.reg](https://gist.github.com/orchestralblend/38b024d42f22b2f13b6525a273f498b5)
 
-### Softwares
+### [Softwares](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md)
 
 - Veracrypt (Criptografia de Disco)
 - Bitwarden (Gerenciador de Senhas)
@@ -72,7 +72,7 @@ Warez refere-se à distribuição de software, jogos, filmes, cursos e outros co
 
 ### Sites de Warez
 
-- [Megaturbo](https://megaturbo.org) - Mídia digital, aplicativos para dispositivos móveis e pirataria voltada a educação. Aberto para cadastros.
+- [[Megaturbo](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://megaturbo.org) - Mídia digital, aplicativos para dispositivos móveis e pirataria voltada a educação. Aberto para cadastros.
 - [FileWarez 2.0](https://filewarez.club/) | FW [📣](https://t.me/filewarezclub) - Livros jurídicos, filmes, modelos 3D. Cadastro apenas com convite.
 - [DirtyWarez](https://forum.dirtywarez.com/) - Mídia digital, programas, chaves de ativação. Aberto para cadastros.
 - [HubWarez](https://hubwarez.tv/forum/register.php) - Filmes, séries, jogos, software. Aberto para cadastros.

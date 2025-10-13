@@ -1,16 +1,16 @@
-# 📱 Ferramentas de Mídia Social e Discord
+# 📱 [Ferramentas de Mídia Social](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md) e Discord
 
 ## Ferramentas de Mídia Social
 
 - 🌐 **[Farside](https://farside.link/)** / [2](https://cf.farside.link/), [PrivacyRedirect](https://privacyredirect.com/) ou [alternative-frontends](https://github.com/ParniDEO/alternative-front-ends-unofficial) - Índices de Frontend
 - ↪️ **[Android](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/android/#wiki_.25B7_social_media_apps)** / **[iOS](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/android/#wiki_.25B7_social_media_apps2)** - Aplicativos Móveis de Mídia Social
 - ⭐ **[GrayJay](https://grayjay.app/desktop/)** - Combina YouTube, Twitch, Rumble, etc. / [Guia](https://youtu.be/EnZrv37u66c)
-- ⭐ **[SocialBlade](https://socialblade.com/)** - Estatísticas de Mídia Social
+- ⭐ **[SocialBlade](https://socialblade.com/)** - [Estatísticas de Mídia Social](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)
 - ⭐ **[LiveCounts](https://livecounts.io/)** - Estatísticas ao Vivo de Mídia Social
-- ⭐ **[LibRedirect](https://libredirect.github.io/)** / [GitHub](https://github.com/libredirect/browser_extension), [Predirect](https://github.com/libreom/predirect) ou [Proxy Redirect](https://openuserjs.org/scripts/sjehuda/Proxy_Redirect) - Extensões de Redirecionamento de Frontend
+- ⭐ **[LibRedirect](https://libredirect.github.io/)** / [GitHub](https://github.com/libredirect/browser_extension), [Predirect](https://github.com/libreom/predirect) ou [Proxy Redirect](https://openuserjs.org/scripts/sjehuda/Proxy_Redirect) - [Extensões de Redirecionamento de Frontend](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md)
 - [Numblr](https://github.com/heyLu/numblr) - Redirecionamento de Frontend Auto-Hospedado
-- [Proxitok](https://github.com/pablouser1/ProxiTok), [Urlebird](https://urlebird.com/) ou [OffTikTok](https://www.offtiktok.com/) - Frontends do TikTok
-- [Social-Searcher](https://www.social-searcher.com/) ou [WeVerify](https://cse.google.com/cse?cx=006976128084956795641:ad1xj14zfap) - Motores de Busca de Mídia Social
+- [Proxitok](https://github.com/pablouser1/ProxiTok), [Urlebird](https://urlebird.com/) ou [OffTikTok](https://www.offtiktok.com/) - [Frontends do TikTok](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)
+- [Social-Searcher](https://www.social-searcher.com/) ou [WeVerify](https://cse.google.com/cse?cx=006976128084956795641:ad1xj14zfap) - [Motores de Busca de Mídia Social](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md)
 - [ExportComments](https://exportcomments.com/) - Exportar Comentários de Mídia Social
 - [socid_extractor](https://github.com/soxoj/socid-extractor) - Extrair Informações de Usuário de Mídia Social de Páginas
 

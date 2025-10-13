@@ -21,7 +21,9 @@
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
     "type-check": "tsc --noEmit",
     "detect-duplicates": "node scripts/detect-duplicates-v2.js",
-    "organize-articles": "node scripts/organize-articles.js"
+    "organize-articles": "node scripts/organize-articles.js",
+    "generate-internal-links": "node scripts/generate-internal-links.js",
+    "audit-content": "node scripts/audit-content-organization.js"
   },
   "keywords": [
     "vitepress",

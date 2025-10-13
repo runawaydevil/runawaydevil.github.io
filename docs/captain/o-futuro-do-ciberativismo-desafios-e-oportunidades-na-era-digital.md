@@ -3,7 +3,7 @@
 :::info ℹ️ Informações do Artigo
 **Categoria:** Ciberativismo
 **Arquivo Original:** 3.md
-**Tags:** ciberativismo, tecnologias emergentes, inteligência artificial, criptografia, ativismo político
+**Tags:** ciberativismo, tecnologias emergentes, [inteligência artificial](captain/seguranca-digital-fundamentos-evolucao-e-praticas-essenciais.md), [criptografia](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md), ativismo político
 **Resumo:** Análise abrangente sobre o futuro do ciberativismo, abordando tecnologias emergentes, vigilância digital e resistência na era da informação.
 :::
 
@@ -13,7 +13,7 @@
   - [IA, Deepfakes e a Guerra da Desinformação](#ia-deepfakes-e-a-guerra-da-desinformacao)
     - [A Ameaça dos Deepfakes](#a-ameaca-dos-deepfakes)
     - [Contramedidas e Detecção](#contramedidas-e-deteccao)
-  - [Blockchain, Descentralização e Soberania Digital](#blockchain-descentralizacao-e-soberania-digital)
+  - [[blockchain](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md), Descentralização e Soberania Digital](#blockchain-descentralizacao-e-soberania-digital)
     - [Princípios da Soberania Digital](#principios-da-soberania-digital)
 
 ---
@@ -22,7 +22,7 @@
 
 # O Futuro do Ciberativismo: Uma Análise Estupenda dos Desafios e Oportunidades Emergentes
 
-Este capítulo final do guia documental apresenta uma análise abrangente sobre o futuro do ciberativismo, examinando como tecnologias emergentes, novas formas de vigilância e resistência digital estão redefinindo o ativismo político na era da informação. A pesquisa revela um cenário complexo onde inteligência artificial, blockchain, criptografia e arte digital convergem para criar tanto oportunidades quanto ameaças inéditas para a liberdade online.
+Este capítulo final do guia documental apresenta uma análise abrangente sobre o futuro do ciberativismo, examinando como tecnologias emergentes, novas formas de vigilância e [resistência digital](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md) estão redefinindo o ativismo político na era da informação. A pesquisa revela um cenário complexo onde inteligência artificial, blockchain, criptografia e arte digital convergem para criar tanto oportunidades quanto ameaças inéditas para a liberdade online.
 
 ![O Futuro do Ciberativismo: Desafios e Oportunidades na Era Digital](https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/4397914807bd47285d5c8be490a04238/d73a3a3a-8e1e-4a4b-86a2-f7e8df22bf9d/f94aa24b.png)
 

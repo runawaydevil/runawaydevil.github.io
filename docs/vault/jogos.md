@@ -12,18 +12,18 @@ Os jogos exigem interação com uma interface de usuário ou dispositivo de entr
 
 :::info ℹ️ Dicas Úteis
 
-- 🚨 **Problemas de acesso?** Se algum site não estiver carregando, considere alterar seu DNS. Veja [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
-- 🌟 **Recomendações da Comunidade:** Links marcados com 🌟 são altamente recomendados pelos piratas experientes.
+- 🚨 **Problemas de acesso?** Se algum site não estiver carregando, considere alterar seu [DNS](vault/guias/dns.md). Veja [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
+- 🌟 **Recomendações da Comunidade:** Links marcados com 🌟 são altamente recomendados pelos [piratas experientes](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md).
 
 :::
 
 ## 🌎 ➜ Traduções de Jogos
 
-Aqui estão alguns sites para encontrar traduções em PT-BR para seus jogos:
+Aqui estão alguns sites para encontrar [traduções em PT-BR](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md) para seus jogos:
 
 ### 🔗 [GAMEVICIO](https://www.gamevicio.com/traducoes/) • Fora de atividade
 
-- [Resultados de segurança da URL](https://www.urlvoid.com/scan/gamevicio.com/)
+- [Resultados de [segurança da URL](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md)](https://www.urlvoid.com/scan/gamevicio.com/)
 
 ### 🔗 [Brazil Alliance](https://brazilalliance.com.br/)
 

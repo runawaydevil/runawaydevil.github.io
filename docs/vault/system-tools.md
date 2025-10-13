@@ -2,7 +2,7 @@
 
 ## Ferramentas de Sistema
 
-### Ferramentas de Otimização e Personalização do Windows
+### [Ferramentas de Otimização e Personalização do Windows](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md)
 
 - **[PowerToys](https://learn.microsoft.com/pt-br/windows/powertoys/)** - Conjunto de utilitários para usuários avançados para personalizar e otimizar o sistema operacional Windows.
 - **[SophiApp](https://github.com/Sophia-Community/SophiApp)** - Ferramenta de código aberto para configuração e debloat do Windows 10 e Windows 11.
@@ -10,23 +10,23 @@
 - **[WinUtil](https://github.com/ChrisTitusTech/winutil)** - Utilitário Windows de Chris Titus Tech para instalar programas, ajustes, correções e atualizações.
 - **[Winaero Tweaker](https://winaero.com/winaero-tweaker/)** - Ferramenta para aplicar ajustes extras no sistema, como restaurar o antigo menu de contexto.
 
-### Ferramentas de Ativação do Windows e Office
+### [Ferramentas de Ativação do Windows e Office](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)
 
 - **[MAS](https://github.com/massgravel/Microsoft-Activation-Scripts)** - Ativa o Windows e o Office. O HWID ativa permanentemente o Windows 10/11.
 - **[KMS_VL_ALL](https://github.com/abbodi1406/KMS_VL_ALL_AIO)** - Automatiza ativações de licença do Office e Windows.
 - **[Microsoft Toolkit](https://gitlab.com/-/project/11037551/uploads/f73eea2588a1ba5e81e529658089b20d/MTKV274.7z)** - Utilitário multipropósito para ativar o Windows, editar componentes e gerir a licença.
 
-### Ferramentas de Limpeza e Manutenção
+### [Ferramentas de Limpeza e Manutenção](captain/protecao-digital-melhores-praticas-para-seguranca-pessoal-e-de-dispositivos.md)
 
 - **[BleachBit](https://www.bleachbit.org/)** - Limpador de arquivos focado em privacidade.
 - **[Bulk Crap Uninstaller](https://www.bcuninstaller.com/)** - Ferramenta para desinstalação em massa de programas.
 
-### Ferramentas de Informação do Sistema
+### [Ferramentas de Informação do Sistema](captain/seguranca-digital-fundamentos-evolucao-e-praticas-essenciais.md)
 
 - **[CPU-Z](https://www.cpuid.com/softwares/cpu-z.html)** - Fornece informações detalhadas sobre o hardware do sistema.
 - **[HWiNFO](https://www.hwinfo.com/)** - Monitoramento e diagnóstico de hardware.
 
-### Ferramentas de Gerenciamento de Tarefas e Automação
+### [Ferramentas de Gerenciamento de Tarefas e Automação](captain/o-futuro-do-ciberativismo-desafios-e-oportunidades-na-era-digital.md)
 
 - **[AutoHotkey](https://www.autohotkey.com/)** - Cria hotkeys para o mouse e o teclado, além de automatizar funções.
 - **[Task Scheduler](https://www.splinterware.com/products/scheduler.html)** - Agendador de tarefas do sistema.

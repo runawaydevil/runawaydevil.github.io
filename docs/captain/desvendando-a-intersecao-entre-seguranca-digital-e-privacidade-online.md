@@ -1,4 +1,4 @@
-# Desvendando a Interseção entre Segurança Digital e Privacidade Online
+# Desvendando a Interseção entre [segurança digital](captain/seguranca-digital-fundamentos-evolucao-e-praticas-essenciais.md) e [privacidade online](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)
 
 :::info ℹ️ Informações do Artigo
 **Categoria:** Privacidade Online
@@ -12,7 +12,7 @@
 - [Fundamentos da Privacidade Online: Compreendendo Dados, Rastreamento e Proteção Digital](#fundamentos-da-privacidade-online-compreendendo-dados-rastreamento-e-protecao-digital)
   - [Distinguindo Segurança Digital e Privacidade Online](#distinguindo-seguranca-digital-e-privacidade-online)
     - [Conceitos Fundamentais e Diferenciações](#conceitos-fundamentais-e-diferenciacao)
-    - [Intersecções e Complementaridade](#intersecoes-e-complementaridade)
+    - [[intersecções e complementaridade](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md)](#intersecoes-e-complementaridade)
   - [Dados Pessoais: O Novo Petróleo Digital](#dados-pessoais-o-novo-petroleo-digital)
 
 ---

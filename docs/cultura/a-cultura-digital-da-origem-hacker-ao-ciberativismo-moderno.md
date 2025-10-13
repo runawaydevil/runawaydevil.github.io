@@ -1,10 +1,10 @@
-# A Cultura Digital: Da Origem Hacker ao Ciberativismo Moderno
+# A Cultura Digital: Da Origem [hacker](cultura/a-cultura-digital-e-a-formacao-de-identidades-online.md) ao [ciberativismo](captain/o-futuro-do-ciberativismo-desafios-e-oportunidades-na-era-digital.md) Moderno
 
 :::info ℹ️ Informações do Artigo
 **Categoria:** Cultura Hacker
 **Arquivo Original:** 1.md
 **Tags:** hacker, ciberativismo, arte, cultura, digital
-**Resumo:** Exploração da evolução da cultura digital desde os hackers do MIT até o ciberativismo contemporâneo, destacando a transformação da internet em um ecossistema social e político.
+**Resumo:** Exploração da evolução da cultura digital desde os hackers do MIT até o ciberativismo contemporâneo, destacando a transformação da [internet](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md) em um [ecossistema social e político](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md).
 :::
 
 ## 📋 Índice

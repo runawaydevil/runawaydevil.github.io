@@ -1,6 +1,6 @@
-# 📚 Recursos Educacionais Consolidados
+# 📚 [Recursos Educacionais Consolidados](vault/recursos-educacionais.md)
 
-Este documento consolidado oferece uma visão abrangente sobre recursos educacionais, cursos online, documentários e ferramentas de aprendizado. Ele combina informações úteis de múltiplas fontes para fornecer um guia completo e bem organizado sobre educação.
+Este documento consolidado oferece uma visão abrangente sobre recursos educacionais, [Cursos Online](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md), documentários e ferramentas de aprendizado. Ele combina informações úteis de múltiplas fontes para fornecer um guia completo e bem organizado sobre educação.
 
 :::warning ⚠️ Avisos de Segurança
 - ✔️ **Todos os links** foram analisados e aprovados por contribuidores voluntários. No entanto, **sempre prossiga com cautela**.
@@ -9,7 +9,7 @@ Este documento consolidado oferece uma visão abrangente sobre recursos educacio
 :::
 
 :::info ℹ️ Dicas Úteis
-- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu DNS. Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
+- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu [DNS](vault/guias/dns.md). Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
 - 🌟 **Recomendações da Comunidade:** Links marcados com 🌟 são altamente recomendados pelos usuários.
 :::
 
@@ -21,7 +21,7 @@ Explore uma variedade de plataformas internacionais para cursos online:
 
 - 🌟 **[edX](https://www.edx.org/)** - Cursos de diversas áreas / [Downloader](https://github.com/rehmatworks/edx-downloader)
 - 🌟 **[MitOpenCourseWare](https://ocw.mit.edu/)** - Cursos do MIT
-- 🌟 **[Khan Academy](https://www.khanacademy.org/)** - Cursos gratuitos / [Downloader](https://github.com/rand-net/khan-dl) / [Solver](https://greasyfork.org/en/scripts/427964)
+- 🌟 **[[Khan Academy](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md)](https://www.khanacademy.org/)** - Cursos gratuitos / [Downloader](https://github.com/rand-net/khan-dl) / [Solver](https://greasyfork.org/en/scripts/427964)
 - 🌟 **[Class Central](https://www.classcentral.com/)** - Pesquisa de cursos online
 - 🌟 **[Awesome Courses](https://github.com/prakhar1989/awesome-courses/)** - Lista curada de cursos
 - 🌟 **[Limnology](https://limnology.co/)** - Canais educacionais no YouTube
@@ -232,6 +232,6 @@ Descubra uma vasta seleção de documentários em diversas plataformas:
 
 - **[📚 Livros](livros)** - Recursos adicionais sobre livros e leitura.
 - **[Champagne Wiki - Education and Learning](https://champagne.pages.dev/docs/getting-started/education)**
-- **[🔒 Segurança](/vault/seguranca)** - Guia completo de privacidade e segurança digital
+- **[🔒 Segurança](/vault/seguranca)** - Guia completo de privacidade e [Segurança Digital](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md)
 
 Este guia consolidado é uma referência completa e bem organizada sobre o tema "Educação", combinando o melhor de ambos os arquivos originais para oferecer uma experiência de aprendizado rica e segura.

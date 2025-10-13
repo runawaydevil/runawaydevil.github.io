@@ -4,14 +4,14 @@
 **Categoria:** Cultura Digital
 **Arquivo Original:** 2.md
 **Tags:** cultura digital, memética, identidade online, comunidades virtuais, linguagens digitais
-**Resumo:** Exploração da influência da cultura digital na formação de identidades online, abordando memes, linguagens específicas e comunidades virtuais.
+**Resumo:** Exploração da influência da cultura digital na formação de identidades online, abordando memes, [linguagens específicas](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md) e comunidades virtuais.
 :::
 
 ## 📋 Índice
 
 - [Guia Documental: A Cultura Digital como Movimento - Parte II](#guia-documental-a-cultura-digital-como-movimento-parte-ii)
-  - [Memética e Subcódigos: 4chan, Reddit, IRC e Fóruns Underground](#memetica-e-subcodigos-4chan-reddit-irc-e-foruns-underground)
-    - [As Raízes do Humor Digital: Copypastas, Greentexts, Shitposting](#as-raizes-do-humor-digital-copypastas-greentexts-shitposting)
+  - [Memética e Subcódigos: [4chan](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md), [Reddit](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md), [IRC](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md) e Fóruns Underground](#memetica-e-subcodigos-4chan-reddit-irc-e-foruns-underground)
+    - [As Raízes do Humor Digital: Copypastas, [greentexts](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md), Shitposting](#as-raizes-do-humor-digital-copypastas-greentexts-shitposting)
     - [O Papel das Comunidades na Criação de Jargões](#o-papel-das-comunidades-na-criacao-de-jargoes)
       - [4chan: Meca Virtual da Nerdologia e Cultura do 'Lulz'](#4chan-meca-virtual-da-nerdologia-e-cultura-do-lulz)
       - [Reddit: Democratização da Cultura Hacker e Comunidades Especializadas](#reddit-democratizacao-da-cultura-hacker-e-comunidades-especializadas)

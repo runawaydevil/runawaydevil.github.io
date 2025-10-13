@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Neste tutorial, você aprenderá como baixar e ativar o Windows e o Office utilizando os métodos gratuitos "HWID" (para Windows 10/11) e "Ohook" (para Office). Caso já tenha o Office ou Windows instalado, vá direto para a etapa 2.
+Neste tutorial, você aprenderá como baixar e ativar o Windows e o Office utilizando os métodos gratuitos "[HWID](vault/guias/ativacao-office-win.md)" (para Windows 10/11) e "[Ohook](vault/guias/ativacao-office-win.md)" (para Office). Caso já tenha o Office ou Windows instalado, vá direto para a etapa 2.
 
 ## 1. Download do Windows ou Office
 

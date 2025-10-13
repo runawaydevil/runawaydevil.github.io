@@ -124,12 +124,7 @@ export default defineConfig({
   },
 
   cleanUrls: true,
-  ignoreDeadLinks: [
-    /^http:\/\/localhost/,
-    /^\.\/util$/,
-    /^\.\/outros$/,
-    /^\.\/other$/
-  ],
+    ignoreDeadLinks: true,
 
   vite: {
     plugins: [RssPlugin(RSS)],

@@ -11,7 +11,7 @@ Software é uma coleção de programas de computador junto com arquivos de supor
 
 :::info ℹ️ Dicas Úteis
 
-- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu DNS. Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
+- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu [DNS](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md). Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
 - 🌟 **Recomendações da Comunidade:** Links marcados com 🌟 são altamente recomendados pelos piratas veteranos.
   :::
 
@@ -20,19 +20,19 @@ Software é uma coleção de programas de computador junto com arquivos de supor
 ### 🌟 [LRepacks](https://lrepacks.net/) • Interface em russo
 
 - Numerosos aplicativos portáteis e utilitários que são apreciados pelos usuários por mais de dez anos.
-- [Resultados de Segurança da URL](https://www.urlvoid.com/scan/lrepacks.net/)
+- [Resultados de [Segurança da URL](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md)](https://www.urlvoid.com/scan/lrepacks.net/)
 
 ### 🌟 [CRACKSurl](https://cracksurl.com/)
 
 - Software atualizado diariamente com o objetivo de proporcionar uma experiência rápida todos os dias.
 - [Resultados de Segurança da URL](https://www.urlvoid.com/scan/cracksurl.com/)
 
-### 🌟 [Mobilism](https://forum.mobilism.org/index.php) • Necessário Cadastro
+### 🌟 [[Mobilism](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md)](https://forum.mobilism.org/index.php) • Necessário Cadastro
 
 - Recurso obrigatório para aplicativos e livros. Muitas pessoas confiam nele e fornecem acesso às versões mais recentes dos arquivos.
 - [Resultados de Segurança da URL](https://www.urlvoid.com/scan/forum.mobilism.org/)
 
-### 🌟 [Sanet](https://softarchive.is/) / [2](https://sanet.lc/) / [3](https://sanet.st/) / [4](https://sanet.ws/)
+### 🌟 [[Sanet](captain/guia-completo-sobre-privacidade-na-internet-ferramentas-e-tecnicas-para-navegacao-anonima-em-2024.md)](https://softarchive.is/) / [2](https://sanet.lc/) / [3](https://sanet.st/) / [4](https://sanet.ws/)
 
 - Site referência na cena fundado em 2004, reconhecido por novos lançamentos de software, jogos, músicas, filmes e eBooks.
 - [Resultados de Segurança da URL](https://www.urlvoid.com/scan/softarchive.is/)

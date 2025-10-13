@@ -10,8 +10,8 @@
 ## 📋 Índice
 
 - [Guia Completo de Ferramentas e Sistemas para Segurança Avançada: Construindo uma Fortaleza Digital](#guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital)
-  - [Sistemas Operacionais Focados em Privacidade](#sistemas-operacionais-focados-em-privacidade)
-    - [Tails: O Sistema Amnésico Incógnito](#tails-o-sistema-amnesico-incognito)
+  - [[sistemas operacionais focados em privacidade](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md)](#sistemas-operacionais-focados-em-privacidade)
+    - [[Tails: O Sistema Amnésico Incógnito](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md)](#tails-o-sistema-amnesico-incognito)
       - [Arquitetura e Funcionamento](#arquitetura-e-funcionamento)
       - [Recursos de Segurança Avançados](#recursos-de-seguranca-avancados)
       - [Casos de Uso Ideais](#casos-de-uso-ideais)

@@ -2,7 +2,7 @@
 
 ## Sites de Streaming
 
-Para uma experiência completa em streaming, confira os sites listados abaixo. Lembre-se de verificar nosso [sistema de avaliação](https://github.com/fmhy/FMHY/wiki/Stream-Site-Grading) para ver as notas de cada site, além de seus prós e contras. É recomendável usar [emails descartáveis](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/internet-tools/#wiki_.25B7_temp_mail) ou [aliases](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/internet-tools/#wiki_.25B7_email_aliasing) ao se registrar em sites de streaming. Caso tenha problemas de acesso, tente usar uma [VPN](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/adblock-vpn-privacy/#wiki_.25BA_vpn).
+Para uma experiência completa em streaming, confira os sites listados abaixo. Lembre-se de verificar nosso [[sistema de avaliação](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md)](https://github.com/fmhy/FMHY/wiki/Stream-Site-Grading) para ver as notas de cada site, além de seus prós e contras. É recomendável usar [[emails descartáveis](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/internet-tools/#wiki_.25B7_temp_mail) ou [[aliases](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/internet-tools/#wiki_.25B7_email_aliasing) ao se registrar em sites de streaming. Caso tenha problemas de acesso, tente usar uma [[VPN](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/adblock-vpn-privacy/#wiki_.25BA_vpn).
 
 ### Principais Opções
 

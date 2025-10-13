@@ -2,13 +2,13 @@
 
 ## ► Ebooks e Sites de Leitura
 
-- 🌐 **[Open Slum](https://open-slum.org/)** - Índice de sites de livros / Rastreamento de uptime.
+- 🌐 **[[Open Slum](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://open-slum.org/)** - Índice de sites de livros / Rastreamento de uptime.
 - ⭐ **[Anna's Archive](https://annas-archive.org/)**, [2](https://annas-archive.li/), [3](https://annas-archive.se/) - Livros / Quadrinhos / [Auto-Expand](https://greasyfork.org/en/scripts/494262) / [Matrix](https://matrix.to/#/#annas:archivecommunication.org) / [Subreddit](https://www.reddit.com/r/Annas_Archive/).
-- ⭐ **[Z-Library](https://z-lib.gd/)**, [2](https://articles.sk/), [3](https://1lib.sk/), [4](https://z-lib.fm/) - Livros / Quadrinhos / [Apps / Extensões](https://go-to-library.sk/) / [.onion](http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion/), [2](http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/) / [Subreddit](https://www.reddit.com/r/zlibrary/).
-- ⭐ **[Mobilism](https://forum.mobilism.org)**, [2](https://forum.mobilism.me/) - Livros / Audiolivros / Revistas / Jornais / Quadrinhos / [Ranks](https://github.com/fmhy/FMHY/wiki/FMHY%E2%80%90Notes.md#mobilism-ranks).
+- ⭐ **[[Z-Library](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://z-lib.gd/)**, [2](https://articles.sk/), [3](https://1lib.sk/), [4](https://z-lib.fm/) - Livros / Quadrinhos / [Apps / Extensões](https://go-to-library.sk/) / [.onion](http://loginzlib2vrak5zzpcocc3ouizykn6k5qecgj2tzlnab5wcbqhembyd.onion/), [2](http://bookszlibb74ugqojhzhg2a63w5i2atv5bqarulgczawnbmsb6s6qead.onion/) / [Subreddit](https://www.reddit.com/r/zlibrary/).
+- ⭐ **[[Mobilism](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://forum.mobilism.org)**, [2](https://forum.mobilism.me/) - Livros / Audiolivros / Revistas / Jornais / Quadrinhos / [Ranks](https://github.com/fmhy/FMHY/wiki/FMHY%E2%80%90Notes.md#mobilism-ranks).
 - ⭐ **[MyAnonaMouse](https://www.myanonamouse.net/)** - Livros / Audiolivros / Quadrinhos / Partituras / [Convite Necessário](https://www.myanonamouse.net/inviteapp.php).
-- ⭐ **[Library Genesis](https://libgen.li/)** - Livros / Quadrinhos / Mangá / [Ferramentas](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_libgen_tools) / [Espelhos](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage/#wiki_libgen_mirrors) / [Subreddit](https://reddit.com/r/libgen).
-- [Internet Archive](https://archive.org/details/texts) - Livros / Audiolivros / Revistas / Jornais / [Ferramentas](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage/#wiki_internet_archive_tools).
+- ⭐ **[[Library Genesis](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://libgen.li/)** - Livros / Quadrinhos / Mangá / [Ferramentas](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage#wiki_libgen_tools) / [Espelhos](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage/#wiki_libgen_mirrors) / [Subreddit](https://reddit.com/r/libgen).
+- [[Internet Archive](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://archive.org/details/texts) - Livros / Audiolivros / Revistas / Jornais / [Ferramentas](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/storage/#wiki_internet_archive_tools).
 - [eBookBB](https://ebookbb.in/) - Livros / Download.
 - [iBookPile](https://ibookpile.in/) - Livros / Download.
 - [Liber3](https://liber3.eth.limo/) - Pesquisa de Livros / Download.

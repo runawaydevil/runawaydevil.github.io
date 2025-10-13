@@ -11,7 +11,7 @@ Links de múltiplos propósitos desde mecanismos de busca de torrent, agregadore
 
 :::info ℹ️ Dicas Úteis
 
-- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu DNS. Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
+- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu [DNS](vault/guias/dns.md). Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
 - 🌟 **Recomendações da Comunidade:** Links marcados com 🌟 são altamente recomendados pelos piratas veteranos.
   :::
 
@@ -20,7 +20,7 @@ Links de múltiplos propósitos desde mecanismos de busca de torrent, agregadore
 ### 🌟 [**Internet Archive**](https://archive.org/)
 
 - Milhões de livros gratuitos, filmes, músicas e outros tipos de arquivos estão disponíveis nesta biblioteca sem fins lucrativos.
-- [Resultados de Segurança da URL](https://www.urlvoid.com/scan/archive.org/)
+- [[Resultados de Segurança da URL](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md)](https://www.urlvoid.com/scan/archive.org/)
 
 ### 🌟 [**SoftArchive**](https://softarchive.is/) / [**2**](https://sanet.lc/) / [**3**](https://sanet.st/) / [4](https://sanet.ws/)
 
@@ -29,7 +29,7 @@ Links de múltiplos propósitos desde mecanismos de busca de torrent, agregadore
 
 ### 🌟 [**TRaSH Guides**](https://trash-guides.info/)
 
-- Aprenda a montar um media server, criar e organizar pastas nos programas Arr, configurar o qBittorrent e muito mais.
+- Aprenda a montar um [media server](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md), criar e organizar pastas nos programas Arr, configurar o [qBittorrent](vault/guias/guia-plugins-qbittorrrent.md) e muito mais.
 - [Resultados de Segurança da URL](https://www.urlvoid.com/scan/trash-guides.info/)
 
 ### 🌟 [**Hattered**](https://mefrraz.github.io/hattered/index.html)

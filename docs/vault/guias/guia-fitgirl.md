@@ -3,8 +3,8 @@ title: "Guia FitGirl"
 description: "Guia de Como Baixar e Instalar pela FitGirl"
 ---
 
-Se você chegou até aqui, provavelmente é novato no universo da pirataria e está enfrentando dificuldades com uma de nossas fontes mais confiáveis, a FitGirl.
-Neste guia, você aprenderá tudo o que precisa para utilizar o site e também os fundamentos do uso do Qbittorrent.
+Se você chegou até aqui, provavelmente é novato no universo da [pirataria](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md) e está enfrentando dificuldades com uma de nossas fontes mais confiáveis, a FitGirl.
+Neste guia, você aprenderá tudo o que precisa para utilizar o site e também os fundamentos do uso do [Qbittorrent](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md).
 
 ## Programas necessários
 
@@ -14,7 +14,7 @@ Neste guia, você aprenderá tudo o que precisa para utilizar o site e também o
 
 Simplificando, o Qbittorrent é utilizado para baixar arquivos torrent, que são conhecidos por sua estabilidade. Basicamente, um arquivo torrent continuará existindo enquanto houver alguém que o tenha baixado e esteja disposto a compartilhá-lo com a grande rede, processo que ocorre automaticamente e pode ser interrompido facilmente.
 
-Durante o compartilhamento dos arquivos (processo conhecido como seeding), seu IP ficará visível para quem quiser ver, o que pode ser arriscado em países que levam a pirataria a sério. No Brasil, a situação é mais tranquila e você pode usar sem grandes preocupações.
+Durante o compartilhamento dos arquivos (processo conhecido como seeding), seu [IP](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md) ficará visível para quem quiser ver, o que pode ser arriscado em países que levam a pirataria a sério. No [Brasil](captain/guia-completo-sobre-legislacao-e-direitos-digitais-no-brasil.md), a situação é mais tranquila e você pode usar sem grandes preocupações.
 
 **OK, MAS COMO EU INSTALO ESSE NEGÓCIO?**
 

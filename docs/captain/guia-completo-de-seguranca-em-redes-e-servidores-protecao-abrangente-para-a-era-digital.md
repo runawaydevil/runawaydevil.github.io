@@ -4,7 +4,7 @@
 **Categoria:** Segurança Digital
 **Arquivo Original:** 7.md
 **Tags:** Segurança em Redes, Servidores, Proteção de Dados, Segurança Cibernética
-**Resumo:** Explore medidas de segurança em redes e servidores, desde configurações básicas de roteadores domésticos até arquiteturas empresariais complexas, para proteger contra ameaças cibernéticas em constante evolução.
+**Resumo:** Explore [medidas de segurança](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md) em redes e servidores, desde configurações básicas de [roteadores domésticos](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md) até [arquiteturas empresariais](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md) complexas, para proteger contra [ameaças cibernéticas](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md) em constante evolução.
 :::
 
 ## 📋 Índice
@@ -20,7 +20,7 @@
 
 # Guia Completo de Segurança em Redes e Servidores: Proteção Abrangente para a Era Digital
 
-A segurança em redes e servidores constitui o alicerce de qualquer infraestrutura digital moderna. Com ataques cibernéticos crescendo 30% no segundo trimestre de 2024 e mais de 372.000 casos de DDoS registrados apenas no primeiro trimestre, a implementação de medidas robustas de proteção deixou de ser opcional para se tornar imperativa. Este guia abrangente explora desde configurações básicas de roteadores domésticos até arquiteturas empresariais complexas, oferecendo conhecimento prático para proteger dados, sistemas e infraestruturas contra ameaças em constante evolução.
+A segurança em redes e servidores constitui o alicerce de qualquer infraestrutura digital moderna. Com ataques cibernéticos crescendo 30% no segundo trimestre de 2024 e mais de 372.000 casos de [DDoS](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md) registrados apenas no primeiro trimestre, a implementação de medidas robustas de proteção deixou de ser opcional para se tornar imperativa. Este guia abrangente explora desde configurações básicas de roteadores domésticos até arquiteturas empresariais complexas, oferecendo conhecimento prático para proteger dados, sistemas e infraestruturas contra ameaças em constante evolução.
 
 ![Complete industrial cybersecurity solutions including key areas such as network security, endpoint protection, and situational awareness.](https://pplx-res.cloudinary.com/image/upload/v1754880072/pplx_project_search_images/ea0e52d9dff79e730ceb255fdd4946aa584d5a8f.png)
 

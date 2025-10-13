@@ -1,13 +1,13 @@
 # 🌐 Sites e Ferramentas para Torrents
 
 ## 🚨 Aviso Importante
-- É recomendável evitar sites de torrent para software e jogos, exceto RuTracker e m0nkrus. Utilize as seções específicas para [Software](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/download/#wiki_.25BA_software_sites) e [Jogos](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/games/#wiki_.25BA_download_games).
+- É recomendável evitar sites de torrent para software e jogos, exceto [RuTracker](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md) e [m0nkrus](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md). Utilize as seções específicas para [Software](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/download/#wiki_.25BA_software_sites) e [Jogos](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/games/#wiki_.25BA_download_games).
 
 ## Sites de Torrent
 - 🌟 **[RuTracker](https://rutracker.org/)** - Vídeo, Áudio, Quadrinhos, Revistas, Software. Requer cadastro.
 - Ferramentas RuTracker: [Wiki](http://rutracker.wiki/), [Regras](https://rutracker.org/forum/viewtopic.php?t=1045), [Tradutor](https://www.reddit.com/r/FREEMEDIAHECKYEAH/wiki/text-tools/#wiki_.25B7_translators)
 - 🌟 **[m0nkrus](https://monkrus.dvuzu.com/)** - Software da Adobe e Autodesk. Links adicionais: [GitHub](https://github.com/fmhy/FMHY/wiki/FMHY%E2%80%90Notes.md#m0nkrus), [VK Backup](https://vk.com/monkrus), [Telegram](https://t.me/real_monkrus)
-- [1337x](https://1337x.to/) - Vídeo, Áudio, NSFW. [Mirrors](https://1337x-status.org/), [.onion](http://l337xdarkkaqfwzntnfk5bmoaroivtl6xsbatabvlb52umg6v3ch44yd.onion/)
+- [1337x](https://1337x.to/) - Vídeo, Áudio, [NSFW](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md). [Mirrors](https://1337x-status.org/), [.onion](http://l337xdarkkaqfwzntnfk5bmoaroivtl6xsbatabvlb52umg6v3ch44yd.onion/)
 - Ferramentas 1337x: [Bot Telegram](https://t.me/search_content_bot), [Avaliações IMDb](https://github.com/kotylo/1337imdb), [Display Magnets](https://greasyfork.org/en/scripts/373230), [Correção de Timestamp](https://greasyfork.org/en/scripts/421635)
 - [RARBG Dump](https://rarbgdump.com/) - Vídeo, Áudio, Jogos, Livros, NSFW. Projeto de Continuação.
 - [LimeTorrents](https://www.limetorrents.lol/) - Vídeo, Áudio, Livros.

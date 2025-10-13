@@ -7,12 +7,12 @@ description: "Guia de como abrir portas no roteador em rede CGNAT"
 
 Dependendo do tipo de alocação de portas e com a colaboração do provedor, é possível abrir porta do cliente torrent em rede CGNAT. Primeiro verifique alguns itens abaixo para descobrir se há bloqueios em seu sistema.
 
-:::warning O processo de redirecionamento de portas pode expor sua rede a riscos do tipo _port scan_. Certifique-se de que você confia no solicitante (warez ou tracker) antes de realizar qualquer alteração. A extensão [Port Authority](https://github.com/ACK-J/Port_Authority) pode mitigar esse problema na maioria das vezes.
+:::warning O processo de redirecionamento de portas pode expor sua rede a riscos do tipo _port scan_. Certifique-se de que você confia no solicitante (warez ou tracker) antes de realizar qualquer alteração. A extensão [[Port Authority](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://github.com/ACK-J/Port_Authority) pode mitigar esse problema na maioria das vezes.
 :::
 
 ## Verificando configurações no próprio sistema
 
-**Habilitar UPnP ou UPnP/NAT no cliente torrent e no roteador**
+**Habilitar [UPnP](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md) ou UPnP/NAT no cliente torrent e no roteador**
 
 **UPnP roteador**
 
@@ -22,7 +22,7 @@ Dependendo do tipo de alocação de portas e com a colaboração do provedor, é
 
 Verifique no firewall do sistema operacional se o cliente torrent está autorizado... Se usar software de terceiros com firewall, verifique também e cuidado com esses antivírus cheios de frescuras, com vários módulos inúteis que bloqueiam tudo... menos os vírus.
 
-**Firewall do Windows (1)**
+**[Firewall do Windows](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md) (1)**
 
 **Firewall do Windows (2)**
 

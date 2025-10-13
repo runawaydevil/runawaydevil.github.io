@@ -8,12 +8,12 @@ Lista que engloba tudo referente à cultura japonesa, embora possa ter também s
 
 - ✔️ **Todos os links** disponíveis foram analisados e aprovados por contribuidores voluntários. No entanto, **sempre prossiga com cautela**.
 - ⚠️ **Atenção:** Links confiáveis podem, ocasionalmente, se tornar perigosos, mesmo em fontes verificadas como a Megathread.
-- 🛡️ **Nosso compromisso:** Os colaboradores fazem o máximo para garantir sua segurança, mas é indispensável **navegar com cuidado**.
+- 🛡️ **Nosso compromisso:** Os colaboradores fazem o máximo para garantir sua [segurança](captain/seguranca-digital-fundamentos-evolucao-e-praticas-essenciais.md), mas é indispensável **navegar com cuidado**.
   :::
 
 :::info ℹ️ Dicas Úteis
 
-- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu DNS. Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
+- 🚨 **Problemas de acesso?** Se algum site não carregar, tente mudar o seu [DNS](vault/guias/dns.md). Confira [opções de DNS aqui](https://www.privacyguides.org/en/dns/) e [um guia completo aqui](guias/dns.md).
 - 🌟 **Recomendações da Comunidade:** Links marcados com 🌟 são altamente recomendados pelos piratas veteranos.
   :::
 
@@ -27,7 +27,7 @@ Lista que engloba tudo referente à cultura japonesa, embora possa ter também s
 
 ### 🌟 [Better Anime](https://betteranime.net/)
 
-- Better Anime está com restrições de DMCA, mas funciona normalmente pelo aplicativo ou pelo site após login. Se não logar, ele não funcionará.
+- Better Anime está com restrições de [DMCA](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md), mas funciona normalmente pelo aplicativo ou pelo site após login. Se não logar, ele não funcionará.
 - [Verificação de segurança da URL](https://www.urlvoid.com/scan/betteranime.net/)
 
 ### 🌟 [Rede Canais](https://redecanais.gl/browse-animes-videos-1-date.html)
@@ -38,7 +38,7 @@ Lista que engloba tudo referente à cultura japonesa, embora possa ter também s
 
 ### ▶️ [AnimeDays](https://animedays.org/)
 
-- Site seguro para assistir animes **sem interrupções ou anúncios**.
+- Site seguro para assistir animes **sem interrupções ou [anúncios](captain/protecao-digital-melhores-praticas-para-seguranca-pessoal-e-de-dispositivos.md)**.
 - [Verificação de segurança da URL](https://www.urlvoid.com/scan/animedays.org/)
 
 ### ▶️ [4anime](https://4anime.gg/)
