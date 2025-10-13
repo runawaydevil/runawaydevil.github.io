@@ -12,7 +12,7 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 - Script de detecção de duplicatas usando OpenAI API
 - Sistema de feedback para usuários
 - Script de organização de artigos com IA
-- Suporte para múltiplos domínios (piracy.live e pablo.news)
+- Suporte para múltiplos domínios (piracy.live)
 - Licença MIT para uso livre
 - Documentação completa do projeto
 - Emblemas na homepage (Hacker Emblem e Abyss Emblem)
@@ -22,7 +22,7 @@ e este projeto adere ao [Semantic Versioning](https://semver.org/lang/pt-BR/).
 - Documentação para GitLab CI/CD
 
 ### Changed
-- Título do site de "pablo.news" para "#hacking"
+- Título do site de "piracy.live" para "#hacking"
 - Domínio principal para "piracy.live"
 - Navbar reorganizada: "Início", "Diário Do Capitão", "Vault"
 - Consolidação de conteúdo duplicado em português/inglês

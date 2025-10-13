@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script de Backup Automático
-# Criado para O Capitão - Pablo.News
+# Criado para O Capitão - piracy.live
 
 echo "🔧 Iniciando backup automático..."
 echo "📅 Data: $(date)"

@@ -4,7 +4,7 @@
 
 ## 🤔 O meu Vault... ou nosso?
 
-**Bem-vindo ao Pablo.News**, meu baú de tesouros digitais — ou, como gosto de pensar, **meu laboratório de insanidades organizadas**. 
+**Bem-vindo ao piracy.live**, meu baú de tesouros digitais — ou, como gosto de pensar, **meu laboratório de insanidades organizadas**. 
 
 Aqui você vai encontrar de tudo um pouco:
 - 🔗 **Links** cuidadosamente selecionados

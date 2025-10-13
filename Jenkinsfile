@@ -175,13 +175,13 @@ pipeline {
         success {
             echo '🎉 Pipeline executado com sucesso!'
             // Notificação de sucesso (opcional)
-            // slackSend channel: '#deployments', color: 'good', message: "✅ Pablo.News deployado com sucesso! Build #${BUILD_NUMBER}"
+            // slackSend channel: '#deployments', color: 'good', message: "✅ piracy.live deployado com sucesso! Build #${BUILD_NUMBER}"
         }
         
         failure {
             echo '❌ Pipeline falhou!'
             // Notificação de falha (opcional)
-            // slackSend channel: '#deployments', color: 'danger', message: "❌ Falha no deploy do Pablo.News! Build #${BUILD_NUMBER}"
+            // slackSend channel: '#deployments', color: 'danger', message: "❌ Falha no deploy do piracy.live! Build #${BUILD_NUMBER}"
         }
         
         unstable {

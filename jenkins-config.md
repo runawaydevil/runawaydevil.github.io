@@ -72,7 +72,7 @@ Exemplo de configuração Nginx:
 ```nginx
 server {
     listen 80;
-    server_name pablo.news www.pablo.news;
+    server_name piracy.live www.piracy.live;
     root /var/www/pablo-news;
     index index.html;
 
@@ -121,7 +121,7 @@ post {
     success {
         slackSend channel: '#deployments', 
                   color: 'good', 
-                  message: "✅ Pablo.News deployado! Build #${BUILD_NUMBER}"
+                  message: "✅ piracy.live deployado! Build #${BUILD_NUMBER}"
     }
     failure {
         slackSend channel: '#deployments', 
