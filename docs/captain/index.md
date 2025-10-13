@@ -43,6 +43,10 @@ Esta é uma seção dedicada a conteúdos especiais e textos exclusivos sobre se
 
 - [Auditoria de Organização do Conteúdo](./auditoria-de-organizacao-do-conteudo) - *Relatório detalhado sobre a organização do conteúdo, identificando problemas de acessibilidade e sugerindo melhorias na navegação.*
 
+### 💬 Feedback e Comunicação
+
+- [Feedback e Sugestões](../feedback) - *Sistema de feedback integrado com GitHub Issues para reportar bugs, sugerir melhorias e fazer perguntas.*
+
 ---
 
 **Navegue pelas categorias usando o menu lateral ou clique diretamente nos links acima.**

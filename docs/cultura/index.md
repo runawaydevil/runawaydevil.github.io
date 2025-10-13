@@ -52,6 +52,10 @@ Se você usa a internet, participa de comunidades online, ou simplesmente quer e
 Pra qualquer pessoa que quer entender **de onde veio** a cultura digital que vivemos hoje. Não precisa ser programador, não precisa ser "hacker" — só precisa ter curiosidade sobre como a tecnologia molda nossa sociedade.
 :::
 
+### 💬 Feedback e Comunicação
+
+- [Feedback e Sugestões](../feedback) - *Sistema de feedback integrado com GitHub Issues para reportar bugs, sugerir melhorias e fazer perguntas.*
+
 ---
 
 *Essa seção é tipo um **arquivo vivo** da cultura digital. Aqui preservamos o conhecimento sobre as origens do movimento hacker e como ele evoluiu para o que chamamos de ciberativismo hoje.*

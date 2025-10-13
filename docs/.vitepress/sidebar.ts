@@ -69,6 +69,10 @@ export const sidebar = {
           link: "/captain/auditoria-de-organizacao-do-conteudo"
         }
       ]
+    },
+    {
+      text: "💬 Feedback",
+      link: "/feedback"
     }
   ],
   '/cultura/': [
@@ -99,6 +103,10 @@ export const sidebar = {
           link: "/cultura/a-cultura-digital-e-a-formacao-de-identidades-online"
         }
       ]
+    },
+    {
+      text: "💬 Feedback",
+      link: "/feedback"
     }
   ],
   '/vault/': [
@@ -236,7 +244,11 @@ export const sidebar = {
           ]
         },
     {
-      text: "🙏 *__Agradecimentos__*",
+      text: "💬 Feedback",
+      link: "/feedback"
+    },
+    {
+      text: "🙏 Agradecimentos",
       link: "/vault/agradecimentos"
     }
   ]

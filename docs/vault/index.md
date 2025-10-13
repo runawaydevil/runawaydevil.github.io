@@ -80,6 +80,10 @@ Bem-vindo ao Vault - uma coleção organizada de recursos, ferramentas e informa
 - [Other](other) - Recursos adicionais diversos
 - [Explícito](explicito) - Conteúdo explícito (+18)
 
+### 💬 Feedback e Comunicação
+
+- [Feedback e Sugestões](../feedback) - *Sistema de feedback integrado com GitHub Issues para reportar bugs, sugerir melhorias e fazer perguntas.*
+
 ---
 
 **Navegue pelas categorias usando o menu lateral ou clique diretamente nos links acima.**

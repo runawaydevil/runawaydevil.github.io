@@ -46,7 +46,7 @@ Este vault nasceu como **meu backup pessoal**, mas acabou virando um **presente 
 
 ### 🏴‍☠️ Comunidades Brasileiras
 - **[r/pirataria](https://reddit.com/r/pirataria)** — A comunidade brasileira de pirataria
-- **[[pirataria.link](cultura/a-cultura-digital-da-origem-hacker-ao-ciberativismo-moderno.md)](https://pirataria.link)** — O repositório que inspirou tudo
+- **[pirataria.link](https://pirataria.link)** — O repositório que inspirou tudo
 
 ### 🌍 Comunidades Internacionais  
 - **[r/piracy](https://reddit.com/r/piracy)** — A lendária [comunidade internacional](captain/o-futuro-do-ciberativismo-desafios-e-oportunidades-na-era-digital.md)
