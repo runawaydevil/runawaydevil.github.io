@@ -67,16 +67,19 @@ Bem-vindo ao Vault - uma coleção organizada de recursos, ferramentas e informa
 - [Softwares](softwares) - Software geral
 
 ### 📖 Guias e Documentação
-
-
 - [Guias](guias) - Guias diversos
 - [Publicações](publicacoes) - Publicações
+- [Util](util) - Utilitários e recursos úteis
 
 ### 🎯 Categorias Específicas
 - [Esportes](esportes) - Recursos esportivos
 - [Feedback](feedback) - Feedback e sugestões
 - [Non English](non-english) - Recursos em outros idiomas
 - [Sandbox](sandbox) - Área de testes
+- [Agradecimentos](agradecimentos) - Agradecimentos e informações do projeto
+- [Outros](outros) - Recursos diversos adicionais
+- [Other](other) - Recursos adicionais diversos
+- [Explícito](explicito) - Conteúdo explícito (+18)
 
 ---
 
