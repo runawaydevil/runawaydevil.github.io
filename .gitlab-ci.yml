@@ -1,28 +1,32 @@
-# GitLab CI/CD Pipeline para VitePress
-# Deploy automático para GitLab Pages
+# CI/CD para VitePress no GitLab Pages self-hosted (pg.portalidea.top)
+# Inclui suporte a domínio customizado e cache otimizado
 
 stages:
   - build
   - deploy
+  - cleanup
 
 variables:
   NODE_VERSION: "18"
   VITEPRESS_DIST_DIR: "docs/.vitepress/dist"
 
-# Cache para node_modules
+# Cache global para acelerar builds
 cache:
+  key: ${CI_COMMIT_REF_SLUG}
   paths:
     - node_modules/
     - .npm/
 
-# Job de Build
+# 🏗️ Etapa de build
 build:
   stage: build
-  image: node:18-alpine
+  image: node:${NODE_VERSION}-alpine
   before_script:
     - npm ci --cache .npm --prefer-offline
   script:
+    - echo "🔨 Compilando site com VitePress..."
     - npm run build
+    - echo "✅ Build concluído com sucesso"
   artifacts:
     paths:
       - $VITEPRESS_DIST_DIR
@@ -30,15 +34,23 @@ build:
   only:
     - main
     - master
+  retry:
+    max: 2
+    when:
+      - runner_system_failure
+      - stuck_or_timeout_failure
 
-# Job de Deploy para GitLab Pages
+# 🚀 Deploy padrão para GitLab Pages
 pages:
   stage: deploy
   image: alpine:latest
   before_script:
     - apk add --no-cache rsync
   script:
+    - echo "🚀 Deploy para GitLab Pages..."
+    - mkdir -p public
     - rsync -av --delete $VITEPRESS_DIST_DIR/ public/
+    - echo "✅ Deploy concluído"
   artifacts:
     paths:
       - public
@@ -48,14 +60,45 @@ pages:
   only:
     - main
     - master
+  environment:
+    name: production
+    url: https://$CI_PROJECT_PATH_SLUG.pg.portalidea.top  # 🔧 domínio do GitLab Pages self-hosted
 
-# Job opcional para deploy em branches de desenvolvimento
+# 🌐 Deploy manual para domínio customizado (opcional)
+deploy_custom_domain:
+  stage: deploy
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache rsync
+  script:
+    - echo "🌍 Deploy para domínio customizado: $CUSTOM_DOMAIN"
+    - mkdir -p public
+    - rsync -av --delete $VITEPRESS_DIST_DIR/ public/
+    - echo "$CUSTOM_DOMAIN" > public/CNAME
+    - echo "✅ Deploy custom domain concluído"
+  artifacts:
+    paths:
+      - public
+    expire_in: 1 week
+  dependencies:
+    - build
+  only:
+    - main
+    - master
+  when: manual
+  environment:
+    name: custom-domain
+    url: https://$CUSTOM_DOMAIN
+
+# 👷 Pré-visualização de branches (manual)
 deploy_preview:
   stage: deploy
   image: alpine:latest
   before_script:
     - apk add --no-cache rsync
   script:
+    - echo "📦 Deploy de pré-visualização para branch $CI_COMMIT_REF_NAME"
+    - mkdir -p public
     - rsync -av --delete $VITEPRESS_DIST_DIR/ public/
   artifacts:
     paths:
@@ -67,3 +110,18 @@ deploy_preview:
     - main
     - master
   when: manual
+  environment:
+    name: preview/$CI_COMMIT_REF_NAME
+    url: https://$CI_PROJECT_PATH_SLUG.pg.portalidea.top/-/jobs/$CI_JOB_ID/artifacts/public
+
+# 🧹 Limpeza pós-pipeline (opcional)
+cleanup:
+  stage: cleanup
+  image: alpine:latest
+  script:
+    - echo "🧹 Limpando cache e dependências..."
+    - rm -rf node_modules/ .npm/
+  when: always
+  only:
+    - main
+    - master
