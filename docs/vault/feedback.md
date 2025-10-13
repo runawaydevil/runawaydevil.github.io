@@ -1,6 +1,6 @@
 # 📝 Sistema de Feedback
 
-O Pablo.News Vault possui um sistema integrado de feedback para coletar sugestões, reportar bugs e melhorar continuamente o conteúdo.
+O piracy.live's vault possui um sistema integrado de feedback para coletar sugestões, reportar bugs e melhorar continuamente o conteúdo.
 
 ## 🎯 Como Funciona
 
@@ -164,6 +164,6 @@ Se preferir contato direto:
 
 ---
 
-**Obrigado por ajudar a melhorar o Pablo.News Vault!** 🚀
+**Obrigado por ajudar a melhorar o piracy.live's vault!** 🚀
 
 Seu feedback é essencial para manter o projeto atualizado, funcional e útil para toda a comunidade.

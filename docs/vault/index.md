@@ -1,4 +1,4 @@
-# 🏴‍☠️ Pablo.News Vault
+# 🏴‍☠️ piracy.live's vault
 
 Bem-vindo ao Vault - uma coleção organizada de recursos, ferramentas e informações úteis para desenvolvedores, hackers éticos e entusiastas de tecnologia.
 

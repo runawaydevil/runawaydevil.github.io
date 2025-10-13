@@ -1,4 +1,4 @@
-# 🚀 Configuração Jenkins para Pablo.News Vault
+# 🚀 Configuração Jenkins para piracy.live's vault
 
 ## 📋 Pré-requisitos
 
