@@ -37,13 +37,7 @@ pages:
     - apk add --no-cache rsync
   script:
     - mkdir -p public
-    - rsync -av --delete $VITEPRESS_DIST_DIR/ public/
+    - rsync -av --delete docs/.vitepress/dist/ public/
   artifacts:
-    paths:
-      - public
-    expire_in: 1 week
-  dependencies:
-    - build
-  only:
-    - main
-    - master
+    paths: [public]
+  only: [main]
