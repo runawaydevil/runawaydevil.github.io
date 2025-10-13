@@ -39,9 +39,10 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/.vitepress/dist
+        force_orphan: true
         
     - name: Verify deployment
       run: |
         echo "✅ Deploy completed successfully"
-        echo "🌐 Site: https://piracy.live"
-        echo "📡 RSS Feed: https://piracy.live/feed.rss"
+        echo "🌐 Site: https://runawaydevil.github.io"
+        echo "📡 RSS Feed: https://runawaydevil.github.io/feed.rss"
