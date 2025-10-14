@@ -109,3 +109,11 @@ docs/.vitepress/cultura-sidebar.ts
 .gitlab-ci-basic.yml
 .gitlab-ci-backup.yml
 gitlab-ci-*.yml.bak
+
+# Pasta cat
+cat/
+
+# Emblemas não utilizados
+Hacker_Emblem.png
+abyss.png
+*.emblem

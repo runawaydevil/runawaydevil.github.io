@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
-import './catppuccin.css'
+import './style.css'
+import './mobile.css'
 
 export default {
   extends: DefaultTheme

@@ -1,0 +1,100 @@
+/* CSS específico para mobile - Avatar acima do título */
+@media (max-width: 768px) {
+  /* Hero Section Mobile */
+  .VPHero {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 2rem 1rem !important;
+  }
+  
+  .VPHero .container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  
+  /* Avatar primeiro */
+  .VPHero .image {
+    order: -1 !important;
+    margin-bottom: 1.5rem !important;
+    width: 120px !important;
+    height: 120px !important;
+  }
+  
+  .VPHero .image img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  
+  /* Título segundo */
+  .VPHero .text {
+    order: 0 !important;
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Tagline terceiro */
+  .VPHero .tagline {
+    order: 1 !important;
+    font-size: 1.1rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1.5rem !important;
+    padding: 0 0.5rem !important;
+  }
+  
+  /* Botões por último */
+  .VPHero .actions {
+    order: 2 !important;
+    margin-top: 1.5rem !important;
+  }
+  
+  .VPHero .action {
+    padding: 0.8rem 1.5rem !important;
+    font-size: 0.9rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPHero .image {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  
+  .VPHero .image img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  
+  .VPHero .text {
+    font-size: 2rem !important;
+  }
+  
+  .VPHero .tagline {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .VPHero .image {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  
+  .VPHero .image img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  
+  .VPHero .text {
+    font-size: 1.6rem !important;
+  }
+  
+  .VPHero .tagline {
+    font-size: 0.9rem !important;
+  }
+}

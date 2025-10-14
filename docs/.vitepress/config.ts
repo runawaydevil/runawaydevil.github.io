@@ -54,7 +54,7 @@ export default defineConfig({
     ['link', { rel: 'manifest', href: '/site.webmanifest' }]
   ],
 
-  appearance: false,
+  appearance: true,
 
   themeConfig: {
     logo: '/pablo.png',
