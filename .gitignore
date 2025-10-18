@@ -108,3 +108,7 @@ cat/
 Hacker_Emblem.png
 abyss.png
 *.emblem
+
+# Scripts de push locais
+push-all.ps1
+push-all.sh
