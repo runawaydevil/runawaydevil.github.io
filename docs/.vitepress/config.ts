@@ -65,7 +65,7 @@ export default defineConfig({
     nav: [
       { text: 'Início', link: '/' },
       { text: 'Vault', link: '/vault/' },
-      { text: 'Info', link: '/about' },
+      { text: 'Diário de Bordo', link: '/dbordo/' },
       {
         text: 'Redes',
         items: [

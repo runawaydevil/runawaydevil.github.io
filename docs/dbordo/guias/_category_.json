@@ -1,0 +1,11 @@
+{
+  "label": "Guias do Curador",
+  "collapsed": false,
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "Guias do Curador",
+    "description": "Tutoriais detalhados e guias especializados criados e revisados pelo Capitão",
+    "slug": "/dbordo/guias"
+  }
+}

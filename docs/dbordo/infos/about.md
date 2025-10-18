@@ -1,4 +1,12 @@
-# Manifesto dos Curiosos
+---
+sidebar_position: 1
+title: "😊 Manifesto dos Curiosos"
+description: "O manifesto pessoal sobre curiosidade, conhecimento e comunidade hacker"
+lang: pt-BR
+lastUpdated: true
+---
+
+# 😊 Manifesto dos Curiosos
 
 Sempre fui movido por um impulso quase obsessivo: **aprender algo novo**. A informação, especialmente aquela que envolve tecnologia, sempre exerceu sobre mim um fascínio indescritível. Sou um curioso nato — e acredito que os **hackers**, **ativistas digitais** e **navegantes da World Wide Web** compartilham comigo essa mesma chama: a **curiosidade**.
 
