@@ -8,21 +8,28 @@ lastUpdated: true
 
 # 📊 Informações
 
-Bem-vindos à seção **Informações**, onde você encontrará bases de dados, referências e informações organizadas para facilitar sua navegação pelo mundo digital. Aqui estão os recursos mais úteis para consulta rápida.
+Bem-vindos à seção **Informações**, o centro de inteligência do piratas.club! Aqui você encontrará bases de dados curadas, referências técnicas e informações organizadas para facilitar sua navegação pelo mundo digital. Esta é sua biblioteca de referência para consulta rápida e descoberta de recursos.
 
 ## 🎯 Características das Informações
 
-- **Dados organizados**: Informações estruturadas e fáceis de consultar
-- **Referências atualizadas**: Conteúdo sempre atualizado com as informações mais recentes
-- **Formato prático**: Apresentação otimizada para consulta rápida
-- **Cobertura ampla**: Diversos temas e categorias cobertos
+- **📚 Coleção curada**: Mais de 1.200 recursos internacionais organizados
+- **🔍 Busca inteligente**: Informações estruturadas para consulta rápida
+- **⚡ Atualizações constantes**: Conteúdo sempre atualizado com as últimas descobertas
+- **🌍 Escopo global**: Recursos de todas as partes do mundo
+- **🛡️ Segurança em foco**: Informações sobre privacidade e segurança digital
 
 ## 📋 Recursos Disponíveis
+
+### 🏴‍☠️ [Awesome Piracy - O Arsenal Completo](/dbordo/infos/awesome-piracy)
+A mais abrangente coleção de recursos digitais organizados por categoria - VPNs, trackers, streaming, software e muito mais. Uma lista curada com mais de 1.200 recursos internacionais.
 
 ### 🗂️ [Base de Dados de Trackers Privados](/dbordo/infos/infotracker)
 Interface amigável para explorar e gerenciar estatísticas de trackers privados BitTorrent
 
-### ℹ️ [Sobre](/dbordo/infos/about)
+### 📚 [Terminologia](/dbordo/infos/terminologia)
+Glossário completo com termos técnicos e definições importantes do mundo digital
+
+### ℹ️ [Sobre](/ref/about)
 Informações sobre o projeto e sua missão
 
 ---

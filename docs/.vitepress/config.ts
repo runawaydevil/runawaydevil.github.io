@@ -17,13 +17,13 @@ const baseUrl = 'https://piratas.club'
 const rssOptions: RSSOptions = {
   title: 'piratas.club',
   baseUrl,
-  copyright: 'Copyright © 2023-2025 Pablo Murad',
+  copyright: 'Copyright © 2023-2025 runawaydevil',
   description: 'Vault de Recursos Digitais - Feed de atualizações e novos guias',
   language: 'pt-BR',
   author: {
-    name: 'Pablo Murad',
+    name: 'runawaydevil',
     email: 'pablomurad@pm.me',
-    link: 'https://piratas.club/about'
+    link: 'https://github.com/runawaydevil'
   },
   filename: 'feed.rss',
   log: true,
@@ -34,7 +34,7 @@ const rssOptions: RSSOptions = {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "piratas.club",
+  title: "#navigating",
   description: "Uma coleção organizada de recursos, ferramentas e informações úteis para desenvolvedores, hackers éticos e entusiastas de tecnologia — explorando o lado criativo, técnico e livre da internet.",
   base: '/',
   ignoreDeadLinks: true,
@@ -75,12 +75,13 @@ export default defineConfig({
   },
   themeConfig: {
     logo: '/icon.png',
-    siteTitle: 'piratas.club',
+    siteTitle: '#navigating',
 
     nav: [
       { text: 'Início', link: '/' },
       { text: 'Vault', link: '/vault/' },
       { text: 'Diário de Bordo', link: '/dbordo/' },
+      { text: 'Sobre', link: '/ref/' },
       {
         text: 'Redes',
         items: [
@@ -117,7 +118,20 @@ export default defineConfig({
 
     footer: {
       message: `Feito com ❤️ para a comunidade | v${version}`,
-      copyright: 'Copyright © 2023-2025 Pablo Murad'
+      copyright: 'Copyright © 2023-2025 [runawaydevil](https://github.com/runawaydevil)'
+    },
+
+    sidebar: {
+      '/ref/': [
+        {
+          text: 'Referências',
+          items: [
+            { text: '📚 Referências', link: '/ref/' },
+            { text: '😊 Manifesto dos Curiosos', link: '/ref/about' },
+            { text: '🙏 Agradecimentos', link: '/ref/agradecimentos' }
+          ]
+        }
+      ]
     }
   }
 })
