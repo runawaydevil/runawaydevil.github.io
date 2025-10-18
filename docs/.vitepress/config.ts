@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress'
 import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar'
 import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
+import Icons from 'unplugin-icons/vite'
+import Components from 'unplugin-vue-components/vite'
+import IconsResolver from 'unplugin-icons/resolver'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
 
@@ -55,7 +58,19 @@ export default defineConfig({
         titleFromFile: true,         // usa o H1 do .md
         titleFromFileByYaml: true    // usa "title:" do frontmatter
       }),
-      RssPlugin(rssOptions)
+      RssPlugin(rssOptions),
+      Icons({
+        compiler: 'vue3',
+        autoInstall: true
+      }),
+      Components({
+        resolvers: [
+          IconsResolver({
+            prefix: 'i',
+            enabledCollections: ['mdi', 'carbon', 'fa-solid']
+          })
+        ]
+      })
     ]
   },
   themeConfig: {
