@@ -1,5 +1,5 @@
 {
-  "name": "piracy.live's vault",
+  "name": "piratas.club's vault",
   "short_name": "Pablo Vault",
   "description": "Uma coleção organizada de recursos, ferramentas e informações úteis",
   "start_url": "/",
@@ -9,13 +9,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/pablo.png",
+      "src": "/icon.png?v=2",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/pablo.png",
+      "src": "/icon.png?v=2",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

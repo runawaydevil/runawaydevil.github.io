@@ -60,22 +60,13 @@ temp/
 # TypeScript cache
 *.tsbuildinfo
 
-# Kiro AI specs
+# Kiro and Cursor specs
 .kiro/
+.cursor/ 
 
 # Test coverage and reports
 coverage/
 test-results/
-vitest.config.ts.timestamp-*
-
-# Scripts personalizados (contêm chaves de API e são temporários)
-scripts/
-
-# Testes e configurações de teste
-tests/
-vitest.config.ts
-test-results/
-coverage/
 
 # Relatórios de detecção de duplicatas
 duplicate-detection-report.json

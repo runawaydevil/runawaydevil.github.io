@@ -1,0 +1,11 @@
+{
+  "label": "Outros",
+  "collapsed": true,
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "Outros — Vault",
+    "description": "Coleções e notas diversas que não se encaixam nas demais categorias.",
+    "slug": "/vault/outros"
+  }
+}

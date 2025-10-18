@@ -1,107 +1,96 @@
-# 🪶 ➜ Guia do Orchestralblend e Warez
+---
+sidebar_position: 17
+title: "Guia do Orchestralblend"
+description: "Lista de softwares e ferramentas recomendadas para Windows e Android, com foco em privacidade, segurança e desempenho."
+---
 
-## Windows
+# Guia do Orchestralblend
 
-### [Desbostificando](captain/desvendando-a-intersecao-entre-seguranca-digital-e-privacidade-online.md)
-
-- [SophiApp](https://github.com/Sophia-Community/SophiApp)
-- [FuckWindowsHistory.reg](https://gist.github.com/orchestralblend/38b024d42f22b2f13b6525a273f498b5)
-
-### [Softwares](captain/guia-completo-de-ferramentas-avancadas-em-seguranca-digital.md)
-
-- Veracrypt (Criptografia de Disco)
-- Bitwarden (Gerenciador de Senhas)
-- Librewolf (Navegador)
-- 7-Zip (Compactador de Arquivos)
-- VLC ou MPV (Reprodutor de Áudio/Vídeo)
-- Thunderbird (Email)
-- Okular (PDF)
-- ImageGlass (Fotos)
-- .NET SDK 8.0 (necessário para ImageGlass)
-- ShareX (Capturas de Tela)
-- Cinny (Cliente Matrix)
-- NAPS2 (Scanner de Impressora)
-- qBitTorrent (Cliente de Torrent)
-- Visual Studio Code (Editor de Código-Fonte)
-- Git & GitHub Desktop (Implantação)
-- Visual Studio 2022 (Desenvolvimento C/C++)
-- OBS Studio (Gravação e Transmissão)
-- ProcessHacker2
-- Python
-- Git
-- Vesktop (cliente melhorado para Discord)
-- LibreOffice (Alternativa de código aberto ao Microsoft 365)
-- [Office-Tool](https://github.com/YerongAI/Office-Tool/releases/)
+Um guia prático e direto para configurar seus sistemas **Windows** e **Android** com foco em **privacidade**, **produtividade** e **desempenho**.  
+Baseado em ferramentas open-source e utilitários consagrados, este guia reúne o essencial para um ambiente seguro e funcional.
 
 ---
 
-- TIDAL (Provedor de Música Pago)
-- GeForce Experience, agora apenas NVIDIA (para fins de gravação)
+## 🪟 Windows
 
-## Android
+### ⚙️ Desbostificando o Sistema
 
-- Revanced stuff
-- gptAssist
-- HeliBoard
-- Librera FD
-- OpenKey-chain
-- K-9 Mail
-- Symphony
-- URLCheck
-- UltraSonic
-- Seal
-- Aurora Store
-- Moshidon
-- Eternity
-- Infinity
-- Mullvad VPN
-- FFUpdater
-- Firefox
-- Mull Browser
-- Cromite
-- Odysee
-- CakeWallet
-- VLC
-- Element ou Element X
-- Bitwarden
-- Breeze Weather
+Ferramentas para limpar e otimizar o Windows, removendo rastreadores e recursos desnecessários:
 
-## Warez
+- [**SophiApp**](https://github.com/Sophia-Community/SophiApp) — Aplicativo moderno para desativar telemetria e personalizar o sistema.
+- [**FuckWindowsHistory.reg**](https://gist.github.com/orchestralblend/38b024d42f22b2f13b6525a273f498b5) — Script para eliminar registros de histórico e rastros de uso.
 
-Warez refere-se à distribuição de software, jogos, filmes, cursos e outros conteúdos digitais pirateados.
+---
 
-### Sites de Warez
+### 🧰 Softwares Essenciais
 
-- [[Megaturbo](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)](https://megaturbo.org) - Mídia digital, aplicativos para dispositivos móveis e pirataria voltada a educação. Aberto para cadastros.
-- [FileWarez 2.0](https://filewarez.club/) | FW [📣](https://t.me/filewarezclub) - Livros jurídicos, filmes, modelos 3D. Cadastro apenas com convite.
-- [DirtyWarez](https://forum.dirtywarez.com/) - Mídia digital, programas, chaves de ativação. Aberto para cadastros.
-- [HubWarez](https://hubwarez.tv/forum/register.php) - Filmes, séries, jogos, software. Aberto para cadastros.
-- [MyWarez](https://mywarez.org/ucp.php?mode=register) - Música, cursos e shows de TV em língua estrangeira. Aberto para cadastros.
-- [Share Flash](https://www.shareflash.xyz/) - Filmes e desenhos. Aberto para cadastros.
-- [Tela de Cinema](https://teladecinema.forumeiros.com/) | TDC - Filmes e TV. Aberto para cadastros.
-- [TheToonZ](https://www.thetoonz.com/) | TTZ - Desenhos antigos e novos, desenhos nacionais. Cadastro apenas com convite.
-- [WarezBook](https://www.warezbook.org/) - Livros e helpdesk. Aberto para cadastros.
-- [Usina Virtual](https://usinavirtual.com/) - Séries e Filmes. Cadastro apenas com convite.
+Ferramentas recomendadas para produtividade, segurança e multimídia:
 
-:::info ⚠️ Lembrete rápido
-Participe de nosso [canal do Telegram](https://t.me/trackerslist) para ser avisado quando surgir novos cadastros para Warez.
-:::
+- **VeraCrypt** — Criptografia de discos e partições.
+- **Bitwarden** — Gerenciador de senhas seguro e multiplataforma.
+- **LibreWolf** — Navegador focado em privacidade, fork do Firefox.
+- **7-Zip** — Compactador leve e open-source.
+- **VLC / MPV** — Reprodutores de áudio e vídeo sem telemetria.
+- **Thunderbird** — Cliente de e-mails robusto e personalizável.
+- **Okular** — Leitor de PDFs multiplataforma.
+- **ImageGlass** — Visualizador de imagens moderno (requer .NET SDK 8.0).
+- **ShareX** — Captura de tela e gravação de vídeo open-source.
+- **Cinny** — Cliente Matrix leve e bonito.
+- **NAPS2** — Escaneamento de documentos e PDFs.
+- **qBittorrent** — Cliente torrent sem anúncios.
+- **Visual Studio Code** — Editor de código moderno e extensível.
+- **Git & GitHub Desktop** — Controle de versão e publicação.
+- **Visual Studio 2022** — Desenvolvimento C/C++ completo.
+- **OBS Studio** — Gravação e streaming de alta qualidade.
+- **Process Hacker 2** — Monitor de processos avançado.
+- **Python** — Linguagem versátil e essencial para automação.
+- **LibreOffice** — Alternativa gratuita ao Microsoft 365.
+- [**Office Tool**](https://github.com/YerongAI/Office-Tool/releases/) — Gerenciador de instalação e ativação do Office.
 
-### Resultados de Segurança da URL
+---
 
-- [Megaturbo](https://www.urlvoid.com/scan/megaturbo.org/)
-- [FileWarez 2.0](https://www.urlvoid.com/scan/filewarez.club/)
-- [DirtyWarez](https://www.urlvoid.com/scan/dirtywarez.com/)
-- [HubWarez](https://www.urlvoid.com/scan/hubwarez.tv/)
-- [MyWarez](https://www.urlvoid.com/scan/mywarez.org/)
-- [Share Flash](https://www.urlvoid.com/scan/shareflash.xyz/)
-- [Tela de Cinema](https://www.urlvoid.com/scan/teladecinema.forumeiros.com/)
-- [TheToonZ](https://www.urlvoid.com/scan/thetoonz.com/)
-- [WarezBook](https://www.urlvoid.com/scan/warezbook.org/)
-- [Usina Virtual](https://www.urlvoid.com/scan/usinavirtual.com/)
+### 🎧 Extras
 
-Este documento consolidado oferece uma visão abrangente tanto de softwares e aplicativos recomendados para sistemas Windows e Android, quanto de plataformas de distribuição de conteúdo digital pirateado, conhecidas como Warez.
+- **TIDAL** — Streaming de música em alta fidelidade (pago).
+- **NVIDIA / GeForce Experience** — Captura de tela e otimização de jogos.
 
-## 🔗 Veja também
+---
 
-- **[Guia de Auto-hospedagem e Ativação de Software](/vault/other/selfhosting)** - Ambos os guias lidam com software e sua ativação
+## 🤖 Android
+
+Aplicativos focados em privacidade, produtividade e independência de big techs:
+
+- **ReVanced** — YouTube e outros apps sem anúncios.
+- **gptAssist** — Interface leve para interação com IA.
+- **HeliBoard** — Teclado seguro e open-source.
+- **Librera FD** — Leitor de livros e PDFs offline.
+- **OpenKeychain** — Criptografia e gerenciamento de chaves PGP.
+- **K-9 Mail** — Cliente de e-mail open-source.
+- **Symphony** — Cliente Matrix alternativo.
+- **URLCheck** — Verificador de links e segurança online.
+- **UltraSonic** — Player de música local e streaming.
+- **Seal** — Downloader de vídeos.
+- **Aurora Store** — Alternativa anônima à Play Store.
+- **Moshidon / Eternity / Infinity** — Clientes Mastodon e Reddit.
+- **Mullvad VPN** — VPN anônima sem logs.
+- **FFUpdater** — Atualizador de navegadores alternativos.
+- **Firefox / Mull / Cromite** — Navegadores focados em privacidade.
+- **Odysee** — Plataforma de vídeos descentralizada.
+- **Cake Wallet** — Carteira de criptomoedas segura.
+- **VLC** — Player multimídia versátil.
+- **Element / Element X** — Mensageiro Matrix moderno.
+- **Bitwarden** — Gerenciador de senhas.
+- **Breeze Weather** — Aplicativo de clima simples e sem rastreadores.
+
+---
+
+> “**Privacidade não é um luxo, é um direito digital.**”  
+> — *runawaydevil — [https://pablo.space](https://pablo.space)*
+
+---
+
+**Autor:** runawaydevil — [https://pablo.space](https://pablo.space)
+
+
+
+

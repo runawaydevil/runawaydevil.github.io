@@ -153,7 +153,7 @@ pipeline {
                     
                     // Verificar se o site está respondendo
                     sh '''
-                        HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://runawaydevil.github.io/ || echo "000")
+                        HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://piratas.club/ || echo "000")
                         if [ "$HTTP_CODE" = "200" ]; then
                             echo "✅ Site respondendo corretamente (HTTP $HTTP_CODE)"
                         else

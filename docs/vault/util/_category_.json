@@ -1,0 +1,11 @@
+{
+  "label": "Útil",
+  "collapsed": true,
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "title": "Útil — Vault",
+    "description": "Ferramentas, segurança, nomenclaturas e referências rápidas.",
+    "slug": "/vault/util"
+  }
+}

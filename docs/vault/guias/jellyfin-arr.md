@@ -1,130 +1,168 @@
-# [Jellyfin](vault/guias/jellyfin-arr.md) e Família Arr - [Docker Compose](vault/guias/jellyfin-arr.md)
+---
+sidebar_position: 8
+title: "Jellyfin e Família Arr - Docker Compose"
+description: "Guia detalhado para montar um servidor multimídia caseiro com Jellyfin, Radarr, Sonarr, Prowlarr, QBitTorrent e Flaresolverr usando Docker Compose."
+---
 
-Guia quase completo para configurar um servidor caseiro para assistir filmes e séries utilizando Docker. Neste guia, usaremos o Jellyfin e estarei utilizando o sistema operacional Ubuntu Server. Tentarei ser o mais claro possível, mas se houver algo que você não entenda, sinta-se à vontade para perguntar nos comentários. Nas configurações de cada aplicativo, recomendo seguir as configurações da megathread, pois aqui focaremos em como usar o Docker. Neste guia, utilizaremos:
+# 🎬 Jellyfin e Família Arr — Docker Compose
 
-- **Docker**: Uma ferramenta que permite encapsular aplicações em containers, facilitando a distribuição através de um único arquivo ou comando que pode ser executado em qualquer sistema. (Usaremos o Docker Compose neste guia)
-- **[Prowlarr](vault/guias/jellyfin-arr.md)**: Um aplicativo que roda em seu navegador e permite buscar torrents em diversos sites.
-- **Flaresolverr**: Utilizado para acessar sites protegidos pelo Cloudflare.
-- **[Radarr](vault/guias/jellyfin-arr.md)**: Aplicativo que busca filmes, coleta metadados e envia para o Prowlarr realizar o download.
-- **[Sonarr](vault/guias/jellyfin-arr.md)**: Funciona como o Radarr, mas é focado em séries.
-- **QBitTorrent**: Aplicativo usado para baixar os torrents que o Radarr e Sonarr encontram através do Prowlarr.
-- **Jellyfin**: Plataforma onde iremos transmitir todos os filmes e séries baixados. Veja um exemplo de como ficará abaixo:
+Guia quase completo para montar um **servidor caseiro de mídia** com **Docker** e **Jellyfin**. Usaremos o **Ubuntu Server** como base e mostraremos como configurar os principais aplicativos que compõem o ecossistema *Arr* (Radarr, Sonarr, Prowlarr, etc). Este guia foca na estrutura do Docker Compose — as configurações detalhadas de cada app podem ser encontradas na megathread.
 
+---
 
+## 🧱 O que Usaremos
 
-Primeiramente, criaremos a estrutura de pastas do nosso servidor na pasta home, utilizando os seguintes comandos (remova o "#" e o texto após ele, que são apenas comentários explicativos):
+- **Docker** — Ferramenta de containers que permite empacotar e executar aplicações de forma isolada e portátil. (usaremos o **Docker Compose**)  
+- **Prowlarr** — Indexador que gerencia e busca torrents em múltiplas fontes.  
+- **Flaresolverr** — Resolve proteções Cloudflare para o Prowlarr.  
+- **Radarr** — Gerencia filmes, metadados e automação de downloads.  
+- **Sonarr** — Faz o mesmo para séries.  
+- **qBittorrent** — Cliente torrent que efetua os downloads.  
+- **Jellyfin** — Servidor de streaming de mídia local (alternativa open-source ao Plex).  
 
-```
-$ cd ~ # Nos levará ao diretório home (pode ser criado em qualquer lugar)
-$ mkdir media_server # Criará nossa pasta no home
-$ cd media_server # Entrando na pasta media_server
-$ mkdir media media/downloads media/movies media/shows # Criará nossa estrutura de arquivos (explicarei cada uma abaixo)
-$ touch docker-compose.yml # Cria o arquivo que o Docker Compose usará
-```
+![Exemplo do Jellyfin](/img/jellyfin-arr.png)
 
-A estrutura de diretórios ficará assim, com comentários explicando cada parte:
+---
 
-├── docker-compose.yml -> Arquivo usado pelo Docker Compose para rodar os aplicativos
+## 📂 Estrutura de Pastas
 
-└── media -> Pasta onde salvaremos os arquivos de mídia
+Criaremos a estrutura de diretórios dentro da pasta `home`. Execute os comandos abaixo (remova o `#` e os comentários ao copiar):
 
-├── downloads -> Local onde o QBitTorrent fará o download dos torrents
-
-├── movies -> Local onde o Radarr moverá os filmes após o download ser concluído pelo QBitTorrent
-
-└── shows -> Local onde o Sonarr moverá as séries após o download ser concluído pelo QBitTorrent
-
-Antes de editar o arquivo `docker-compose.yml`, certifique-se de ter o Docker instalado na versão mais recente com os seguintes comandos:
-
-```
-$ sudo apt-get update # Atualiza nossa lista de aplicativos e verifica por atualizações
-$ sudo apt-get upgrade # Atualiza nossos aplicativos com base na lista que atualizamos
-$ sudo apt-get install docker # Instala o Docker, caso ainda não esteja instalado
+```bash
+cd ~ # Vai para a pasta home
+mkdir media_server # Cria a pasta principal
+cd media_server # Entra nela
+mkdir media media/downloads media/movies media/shows # Estrutura de mídia
+nano docker-compose.yml # Cria o arquivo de configuração do Docker Compose
 ```
 
-Para começar a editar o arquivo, usaremos o comando `$ nano docker-compose.yml` para abrir o editor de texto nano (embora eu prefira o vim, o nano é mais amigável para iniciantes, mas sinta-se livre para usar o editor de sua preferência):
-
-Aqui está a configuração inicial para o Jellyfin, com comentários feitos com "#", que são opcionais e não serão lidos pelo Docker:
-
+### Estrutura final:
 ```
-version: "3.5" # Versão do Docker Compose que usaremos
+media_server/
+├── docker-compose.yml              # Arquivo principal de containers
+└── media/
+    ├── downloads/  # Onde o qBittorrent salva torrents
+    ├── movies/     # Filmes organizados pelo Radarr
+    └── shows/      # Séries organizadas pelo Sonarr
+```
 
-services: # Lista de aplicativos que serão usados
-  jellyfin: # Aplicativo para assistir filmes e séries
-    image: lscr.io/linuxserver/jellyfin:latest # Imagem do aplicativo
-    container_name: jellyfin # Nome do container
-    environment: # Configurações internas do aplicativo
+---
+
+## 🐳 Instalando o Docker e o Docker Compose
+
+Atualize o sistema e instale o Docker:
+
+```bash
+sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get install docker docker-compose -y
+```
+
+Verifique se está tudo certo:
+```bash
+docker --version
+docker compose version
+```
+
+---
+
+## ⚙️ Configurando o `docker-compose.yml`
+
+Abra o arquivo:
+```bash
+nano docker-compose.yml
+```
+
+### 🧩 Jellyfin
+
+```yaml
+version: "3.5"
+
+services:
+  jellyfin:
+    image: lscr.io/linuxserver/jellyfin:latest
+    container_name: jellyfin
+    environment:
       - PUID=1000
       - PGID=1000
-      - TZ=INSIRA SEU FUSO HORÁRIO AQUI # Encontre seu fuso em: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-    volumes: # Configuração de acesso a pastas
-      - ./jellyfin/config:/config # Pasta de configurações do Jellyfin
-      - ./media:/media # Pasta onde a mídia será armazenada
-    ports: # Portas de acesso
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./jellyfin/config:/config
+      - ./media:/media
+    ports:
       - 8096:8096
-    expose: # Para expor o Jellyfin na internet (requer configurações adicionais no roteador)
-      - 8096:8096
-    restart: unless-stopped # O container será reiniciado automaticamente a menos que seja parado manualmente
+    expose:
+      - 8096
+    restart: unless-stopped
 ```
 
-Recomendo ler os comentários se você não estiver familiarizado com o Docker. Se tiver dúvidas, poste nos comentários para que eu possa ajudar. A configuração dos demais aplicativos segue o mesmo padrão, então haverá menos comentários daqui para frente. Para salvar o arquivo no nano, pressione Ctrl+O e depois Enter; para sair, Ctrl+X.
+> 💡 **Dica:** No campo `TZ`, use seu fuso horário conforme a lista: [Wikipedia - TZ Database](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
-Agora, vamos adicionar as configurações dos aplicativos que farão o download dos torrents (Prowlarr, QBitTorrent, Flaresolverr), lembrando de colocá-los dentro do "services", no mesmo nível do "Jellyfin":
+---
 
-```
+### 🔎 Prowlarr
+
+```yaml
   prowlarr:
     image: lscr.io/linuxserver/prowlarr:latest
     container_name: prowlarr
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=INSIRA SEU FUSO HORÁRIO AQUI
+      - TZ=America/Sao_Paulo
     volumes:
       - ./prowlarr/config:/config
     ports:
       - 9696:9696
     restart: unless-stopped
+```
 
+### 🧲 qBittorrent
+
+```yaml
   qbittorrent:
     image: lscr.io/linuxserver/qbittorrent:latest
     container_name: qbittorrent
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=INSIRA SEU FUSO HORÁRIO AQUI
-      - WEBUI_PORT=8080 # Porta para acessar a interface web, necessária pois o QBitTorrent será controlado via web por aplicativos como Sonarr e Radarr
+      - TZ=America/Sao_Paulo
+      - WEBUI_PORT=8080
       - TORRENTING_PORT=6881
     volumes:
       - ./qbittorrent/config:/config
       - ./media/downloads:/downloads
-      - ./media/movies:/movies # Não tenho certeza se são necessários, mas recomendo manter por precaução
+      - ./media/movies:/movies
       - ./media/shows:/shows
     ports:
       - 8080:8080
       - 6881:6881
       - 6881:6881/udp
     restart: unless-stopped
+```
 
+### 🧠 Flaresolverr
+
+```yaml
   flaresolverr:
     image: ghcr.io/flaresolverr/flaresolverr:latest
     container_name: flaresolverr
     environment:
-      - TZ=INSIRA SEU FUSO HORÁRIO AQUI
+      - TZ=America/Sao_Paulo
     ports:
       - 8191:8191
     restart: unless-stopped
 ```
 
-Estamos quase prontos, agora só precisamos do Radarr e do Sonarr para gerenciar os filmes e séries que queremos baixar:
+### 🎬 Radarr
 
-```
+```yaml
   radarr:
     image: lscr.io/linuxserver/radarr:latest
     container_name: radarr
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=INSIRA SEU FUSO HORÁRIO AQUI
+      - TZ=America/Sao_Paulo
     volumes:
       - ./radarr/config:/config
       - ./media/movies:/movies
@@ -132,16 +170,20 @@ Estamos quase prontos, agora só precisamos do Radarr e do Sonarr para gerenciar
     ports:
       - 7878:7878
     restart: unless-stopped
+```
 
+### 📺 Sonarr
+
+```yaml
   sonarr:
     image: lscr.io/linuxserver/sonarr:latest
     container_name: sonarr
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=INSIRA SEU FUSO HORÁRIO AQUI
+      - TZ=America/Sao_Paulo
     volumes:
-      - ./radarr/config:/config
+      - ./sonarr/config:/config
       - ./media/shows:/shows
       - ./media/downloads:/downloads
     ports:
@@ -149,21 +191,76 @@ Estamos quase prontos, agora só precisamos do Radarr e do Sonarr para gerenciar
     restart: unless-stopped
 ```
 
-Para iniciar os containers, execute: `$ sudo docker compose up -d`
+---
 
-As configurações dos aplicativos devem seguir as da megathread, exceto para o Jellyfin. Aqui está um vídeo que recomendo para configurar o Jellyfin: [https://www.youtube.com/watch?v=mAHGh2hBFdY&t=493](https://www.youtube.com/watch?v=mAHGh2hBFdY&t=493), começando em 7:17. Lembre-se de configurar os diretórios de filmes e séries para /movies e /shows, respectivamente, conforme configuramos.
+## 🚀 Executando os Containers
 
-Para descobrir seu IP privado no Linux, execute `$ hostname -I`. No Windows, execute `$ ipconfig` e procure pelo "Endereço IPv4" do seu adaptador.
+Após salvar o arquivo, inicie tudo com:
 
-Espero que este guia seja útil. Se houver erros (provavelmente de indentação), por favor, avise nos comentários. Não sou um especialista, faço isso porque gosto, então me perdoem por eventuais erros.
+```bash
+sudo docker compose up -d
+```
+
+Todos os serviços serão baixados e executados automaticamente. Use `docker ps` para verificar se estão ativos.
+
+> ⚠️ Se algo falhar, revise a indentação (espaços e níveis). YAML é sensível a isso.
 
 ---
 
+## 🔧 Conectando o Flaresolverr ao Prowlarr
 
-Extraído de: https://old.reddit.com/r/pirataria/comments/1bclktc/guia_jellyfin_e_familia_arr_docker_compose/
+1. Acesse o Prowlarr em `http://<seu_ip>:9696`
+2. Vá em **Settings → Indexers → + → Flaresolverr**
+3. Configure:
+   - **Tag:** `flaresolverr`
+   - **Host:** `http://flaresolverr:8191`
 
-Backup do vídeo: https://odysee.com/mAHGh2hBFdY:eb1d0f15f287d30b9969d5b151599bceea54b145
+Agora, qualquer indexador protegido por Cloudflare será acessado normalmente.
 
-## 🔗 Veja também
+---
 
-- **[🎥 Sites de Streaming e Ferramentas Associadas](/vault/video)** - Jellyfin é uma ferramenta para criar um servidor de streaming caseiro.
+## 🎥 Configurando o Jellyfin
+
+Assista ao vídeo a partir de **7:17** para aprender a configurar o Jellyfin:  
+📺 [https://www.youtube.com/watch?v=mAHGh2hBFdY&t=493](https://www.youtube.com/watch?v=mAHGh2hBFdY&t=493)
+
+> Use `/movies` para filmes e `/shows` para séries conforme os volumes definidos no Docker Compose.
+
+Para descobrir o IP local:
+```bash
+hostname -I   # Linux
+ipconfig       # Windows (procure por Endereço IPv4)
+```
+
+Acesse cada aplicação no navegador:
+- Jellyfin → `http://<ip>:8096`
+- Radarr → `http://<ip>:7878`
+- Sonarr → `http://<ip>:8989`
+- Prowlarr → `http://<ip>:9696`
+- qBittorrent → `http://<ip>:8080`
+
+---
+
+## 🧭 Dicas Finais
+
+- Faça backup das pastas `config/` periodicamente.  
+- Use DNSs rápidos como **1.1.1.1** ou **8.8.8.8** para evitar lentidão.  
+- Atualize os containers com:  
+  ```bash
+  sudo docker compose pull && sudo docker compose up -d
+  ```
+
+---
+
+> “**Automatizar é transformar tempo perdido em liberdade.**”  
+> — *Engenheiro anônimo do Vale do Silício*
+
+---
+
+**Autor:** runawaydevil — [https://pablo.space](https://pablo.space)  
+**Fonte original:** [Reddit - r/pirataria](https://old.reddit.com/r/pirataria/comments/1bclktc/guia_jellyfin_e_familia_arr_docker_compose/)  
+**Backup de vídeo:** [Odysee - Guia Jellyfin](https://odysee.com/mAHGh2hBFdY:eb1d0f15f287d30b9969d5b151599bceea54b145)
+
+
+
+

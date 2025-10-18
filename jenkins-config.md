@@ -1,4 +1,4 @@
-# 🚀 Configuração Jenkins para piracy.live's vault
+# 🚀 Configuração Jenkins para piratas.club's vault
 
 ## 📋 Pré-requisitos
 

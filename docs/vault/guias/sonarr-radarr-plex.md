@@ -1,144 +1,241 @@
 ---
+sidebar_position: 6
 title: "Guia do Streaming Doméstico Automatizado (Sonarr, Radarr e Plex)"
-description: "(Sonarr, Radarr e Plex)"
+description: "Automatize seu servidor de mídia pessoal com Sonarr, Radarr, Prowlarr, Bazarr e Plex."
 ---
 
-# Guia do Streaming Doméstico Automatizado (Sonarr, Radarr e Plex)
+# 🎬 Guia do Streaming Doméstico Automatizado (Sonarr, Radarr e Plex)
 
-Desde o início da pandemia, venho montando e aprimorando um servidor de mídias automatizado que se tornou minha principal fonte de filmes e séries. Os softwares necessários são bastante conhecidos, mas percebi uma falta de guias focados em streaming doméstico. Neste tutorial, utilizo um computador Dell de mais de 10 anos, o que torna o processo acessível para a maioria.
+Automatizar o consumo de mídia é o sonho de qualquer entusiasta de tecnologia — e com ferramentas como **Sonarr**, **Radarr**, **Prowlarr**, **Bazarr** e **Plex**, esse sonho é totalmente possível. Desde 2020, venho aperfeiçoando um sistema que busca, baixa, organiza e exibe automaticamente meus filmes e séries. Tudo isso em um computador antigo que qualquer um poderia ter em casa.
 
-Antes de começar, farei um breve resumo de cada software que utilizaremos.
+Neste guia, você aprenderá a montar seu próprio **sistema de streaming doméstico automatizado**, com recursos de legendas, integração com listas e metadados perfeitos. Ideal para quem quer independência dos streamings pagos.
 
-**qBitTorrent** - Um dos mais famosos clientes de torrent, usado para baixar mídias. Radarr e Sonarr enviarão automaticamente o magnet link dos filmes e séries desejados para ele. Após o download, o torrent é automaticamente excluído.
+> “**Automatizar é libertar tempo. Organizar é libertar espaço.**”  
+> — *runawaydevil — [https://pablo.space](https://pablo.space)*
 
-**Radarr** - Gerenciador de filmes. Após adicionar os filmes desejados, o Radarr busca constantemente pelas melhores versões nos mais diversos sites e envia para o qBitTorrent.
+---
 
-**Sonarr** - Funciona como o Radarr, mas é focado em séries.
+## ⚙️ Arquitetura do Sistema
 
-**Prowlarr** - Indexador de fontes de torrent. É por meio dele que o Radarr e o Sonarr acessam os sites e grupos que disponibilizam torrents.
+O fluxo completo funciona assim:
 
-**Bazarr** - Software que acompanha o Radarr e o Sonarr para o download de legendas, buscando constantemente pelas melhores disponíveis nos sites cadastrados.
-
-**Plex** - Onde você assistirá seus filmes e séries. Organiza automaticamente suas mídias em uma biblioteca, acessível local ou remotamente. O Plex possui uma versão paga, mas a gratuita sempre me atendeu bem. Há alternativas de código aberto, como o Jellyfin, mas prefiro o Plex pela performance.
-
-**Letterboxd** - Site e aplicativo para registrar e avaliar filmes, criar listas e ver avaliações de amigos. Usaremos a função de listas do Letterboxd para integrar ao Radarr e automatizar ainda mais o processo.
-
-**Opensubtitles** - Site que oferece legendas em diversos idiomas.
-
-**Os tutoriais de instalação dos programas podem ser encontrados facilmente com uma busca por "Nome do programa + download" no Google.**
-
-**Sumário**
-
-1. Requisitos Recomendados
-2. qBitTorrent - Configurações
-3. Radarr - Configurações
-4. Sonarr - Configurações
-5. Prowlarr - Configurações
-6. Bazarr - Configurações
-7. Plex - Configurações
-
-## 1. REQUISITOS RECOMENDADOS
-
-- Computador básico já é suficiente
-- Mínimo de 1TB de armazenamento (depende do tamanho da biblioteca desejada)
-- Conexão de internet via cabo
-
-## 2. QBITTORRENT - CONFIGURAÇÕES
-
-O qBitTorrent foi escolhido por sua confiabilidade e facilidade de uso. Primeiro, crie três pastas no seu computador:
-
-1. qBitTorrent - para downloads de filmes
-2. Filmes - onde o Radarr moverá os filmes após o download
-3. Séries - onde o Sonarr moverá as séries após o download
-
-**Pastas**
-
-> Configure o qBitTorrent conforme abaixo:
-
-### Preferências -> Download
-
-**Preferências de download**
-
-Pré-alocar espaço no disco para garantir espaço para o download completo. É crucial que o gerenciamento de torrents esteja configurado para automático.
-
-**Configurações**
-
-Defina a pasta **qBitTorrent** como local padrão para downloads.
-
-### Preferências -> Interface de Usuário
-
-Ative a interface web e defina um usuário e senha. Acesse a interface pelo endereço http://localhost:8080 ou http://(seu_ip):8080 (após iniciar o serviço).
-
-**As demais configurações do qBitTorrent são de preferência pessoal.**
-
-## 3. RADARR - CONFIGURAÇÕES
-
-Após instalar o Radarr, acesse-o por http://localhost:7878 ou http://(seu_ip):7878 (após iniciar o serviço).
-
-**Interface do Radarr**
-
-Vá em **Configurações -> Interface** e altere o idioma para Português (Brasil). Salve e recarregue a página.
-
-### **NOMENCLATURA DE FILME**
-
-**Nomenclatura de filme**
-
-Ative a renomeação de filmes e substitua caracteres ilegais. Use o seguinte formato para nome de filmes e pastas, garantindo que o Plex reconheça e organize corretamente:
-
-**Formato padrão de filme:**
 ```
-{Movie CleanTitle} {(Release Year)} {imdb-{ImdbId}} {edition-{Edition Tags}} {[Custom Formats]}{[Quality Full]}{[MediaInfo 3D]}{[MediaInfo VideoDynamicRangeType]}{[Mediainfo AudioCodec}{ Mediainfo AudioChannels]}[{Mediainfo VideoCodec}]{-Release Group}
+Letterboxd List → Radarr/Sonarr → Prowlarr → qBitTorrent → Bazarr → Plex
 ```
 
-**Formato padrão de pasta de filme:**
+Ou seja:
+1. Você adiciona filmes/séries a uma lista no **Letterboxd** ou manualmente no **Radarr/Sonarr**.
+2. O **Prowlarr** encontra os torrents disponíveis.
+3. O **qBitTorrent** baixa o conteúdo.
+4. O **Bazarr** adiciona legendas automaticamente.
+5. O **Plex** organiza e exibe tudo de forma elegante na sua TV, PC ou celular.
+
+---
+
+## 🧱 Requisitos Recomendados
+
+- **Hardware mínimo:** qualquer PC dual-core com 4GB de RAM.
+- **Armazenamento:** mínimo 1TB (recomenda-se HD externo ou NAS dedicado).
+- **Sistema:** Linux (preferencial), Windows ou macOS.
+- **Rede:** conexão cabeada (Ethernet) e IP estático local.
+- **Acesso remoto (opcional):** DynDNS, Cloudflare Tunnel ou VPN WireGuard.
+
+💡 **Dica:** em servidores Linux, usar **Docker Compose** simplifica tudo e garante portabilidade. Veja o guia [Jellyfin e Família Arr - Docker Compose](/docs/megathread/guias/jellyfin-arr).
+
+---
+
+## 🧲 O Papel de Cada Aplicativo
+
+### 🌀 qBitTorrent
+Cliente torrent robusto e open-source. Será o motor de download. Permite integração via WebUI (`localhost:8080`).
+
+### 🎥 Radarr
+Gerencia e automatiza **filmes**. Monitora sites e baixa automaticamente o melhor release.
+
+### 📺 Sonarr
+Equivalente ao Radarr, mas especializado em **séries e animes**.
+
+### 🔎 Prowlarr
+O cérebro indexador. Conecta Radarr/Sonarr a dezenas de fontes de torrent (trackers públicos e privados).
+
+### 💬 Bazarr
+Cuida das **legendas**, sincroniza automaticamente e faz upgrade quando versões melhores são encontradas.
+
+### 🎬 Plex
+Interface visual e player de mídia. Organiza e exibe toda sua biblioteca com pôsteres, sinopses, trilhas sonoras e integração remota.
+
+### 🎞️ Letterboxd (Integração Extra)
+Permite que suas listas de filmes sejam importadas automaticamente para o Radarr.
+
+---
+
+## 🌐 Automação Avançada: Integrações e Scripts Úteis
+
+- **Trakt.tv** — sincroniza o que você assistiu entre Plex, Radarr e Letterboxd.
+- **Overseerr** — interface web onde amigos podem pedir filmes/séries e o Radarr/Sonarr baixa automaticamente.
+- **Tautulli** — estatísticas detalhadas do Plex (quem assistiu o quê, quando e por quanto tempo).
+- **qbit-manage** — script que remove torrents antigos, verifica ratio e move arquivos automaticamente.
+- **cross-seed** — detecta filmes/séries duplicados em outros trackers e adiciona seed automaticamente.
+
+> 💡 **Curiosidade:** existe uma versão completa dessa automação em **Docker** chamada **ArrSuite** ou **Servarr Stack**, que instala todos esses serviços de uma vez com um único comando.
+
+---
+
+## 🛠️ Otimizações e Dicas Avançadas
+
+### 🎞️ 1. Codificação Inteligente
+Se você possui pouco espaço, use o **Tdarr**, um transcodificador que converte automaticamente arquivos para codecs mais leves (como HEVC/H.265), mantendo qualidade e reduzindo até 70% do tamanho.
+
+### 🌈 2. Metadados Locais
+Habilite a opção *Usar recursos locais* no Plex. Assim, capas e descrições serão armazenadas junto ao arquivo — útil para acesso offline.
+
+### 🧩 3. Backup e Resiliência
+Faça backup periódico das pastas `config/` de cada app. São elas que armazenam todas as configurações, listas e históricos.
+
+Sugestão de backup automatizado (Linux):
+```bash
+rsync -av /opt/servarr/configs/ /mnt/backup/servarr/ --delete
 ```
-{Movie CleanTitle} ({Release Year}) {imdb-{ImdbId}}
+
+### 🔐 4. Segurança e Acesso Remoto
+- Configure autenticação no Plex e senhas fortes em todos os apps.
+- Use HTTPS reverso com **Caddy** ou **Nginx Proxy Manager**.
+- Ative autenticação 2FA quando possível.
+- Evite expor portas diretamente na internet — prefira VPN.
+
+### 📡 5. Notificações Automáticas
+Integre o **Radarr** e **Sonarr** ao **Discord** ou **Telegram** via Webhooks para receber alertas de novos downloads, erros ou atualizações.
+
+### 🧠 6. Machine Learning e Recomendação
+Com o script **Plex Meta Manager**, é possível criar coleções automáticas baseadas em IA — como “filmes mais bem avaliados no IMDB”, “novidades do mês”, etc.
+
+---
+
+## 🧰 Alternativas e Comparativos
+
+| Categoria | Padrão | Alternativas Open Source |
+|------------|---------|--------------------------|
+| Streaming | Plex | Jellyfin, Emby |
+| Filmes | Radarr | CouchPotato, Medusa |
+| Séries | Sonarr | SickChill, FlexGet |
+| Indexadores | Prowlarr | Jackett |
+| Legendas | Bazarr | Subliminal |
+
+💡 **Curiosidade:** o **Jellyfin**, embora open-source e sem limite de dispositivos, ainda não alcança o mesmo nível de refinamento e integração do Plex — mas evolui rapidamente.
+
+---
+
+## 🖥️ Automação Completa com Docker Compose
+
+Crie um arquivo `docker-compose.yml` com todos os serviços integrados:
+
+```yaml
+version: "3.5"
+services:
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./radarr/config:/config
+      - ./media/movies:/movies
+      - ./downloads:/downloads
+    ports:
+      - 7878:7878
+    restart: unless-stopped
+
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:latest
+    container_name: sonarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./sonarr/config:/config
+      - ./media/shows:/shows
+      - ./downloads:/downloads
+    ports:
+      - 8989:8989
+    restart: unless-stopped
+
+  prowlarr:
+    image: lscr.io/linuxserver/prowlarr:latest
+    container_name: prowlarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./prowlarr/config:/config
+    ports:
+      - 9696:9696
+    restart: unless-stopped
+
+  bazarr:
+    image: lscr.io/linuxserver/bazarr:latest
+    container_name: bazarr
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./bazarr/config:/config
+      - ./media/movies:/movies
+      - ./media/shows:/shows
+    ports:
+      - 6767:6767
+    restart: unless-stopped
+
+  plex:
+    image: lscr.io/linuxserver/plex:latest
+    container_name: plex
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Sao_Paulo
+    volumes:
+      - ./plex/config:/config
+      - ./media:/media
+    ports:
+      - 32400:32400
+    restart: unless-stopped
 ```
 
-### **Gerenciamento de Arquivo**
+Para iniciar:
+```bash
+sudo docker compose up -d
+```
 
-Configure o Radarr para ignorar a verificação de espaço livre e usar links rígidos em vez de cópias. Não prefira arquivos PROPER ou REPACK, a menos que sejam de sua preferência específica.
+---
 
-### **CONFIGURAÇÕES -> QUALIDADE**
+## 💬 Curiosidades e Recursos Extras
 
-Defina os tamanhos mínimos e máximos de arquivo para cada perfil de qualidade. O Radarr evitará baixar arquivos fora desses limites.
+- **Trash Guides** ([trash-guides.info](https://trash-guides.info)) — documentação definitiva da Servarr Stack.
+- **arrstack.dev** — instância pública de demonstração.
+- **tinyMediaManager** — alternativa desktop ao Plex, útil para organizar antes do upload.
+- **ArrWiki** — wiki colaborativa com guias de integrações e scripts customizados.
+- **r/sonarr, r/radarr, r/plex** — comunidades extremamente ativas no Reddit.
 
-### **CONFIGURAÇÕES -> FORMATOS PERSONALIZADOS**
+> 💡 Alguns usuários criam automações com *AI assistants* via Home Assistant e Plex API para **sugerir filmes baseados no humor atual** ou até **acender luzes automaticamente** quando um filme começa.
 
-Você pode importar formatos personalizados para evitar ou preferir certos tipos de releases. Por exemplo, para evitar releases em 3D ou BR-DISK, que são pesados e podem não rodar bem no Plex.
+---
 
-### **CONFIGURAÇÕES -> PERFIS**
+## 🏁 Conclusão
 
-Defina os perfis de qualidade para os filmes, permitindo que o Radarr atualize automaticamente os filmes para a melhor qualidade disponível até o limite que você definir.
+Com esse ecossistema, você terá um verdadeiro **Netflix pessoal**, livre de mensalidades, algoritmos invasivos e remoções repentinas de catálogo. A automação economiza tempo e transforma o consumo de mídia em uma experiência fluida, integrada e elegante.
 
-### **CONFIGURAÇÕES -> INDEXADORES E CLIENTES DE DOWNLOAD**
+> “**Domine suas mídias, não seja dominado por elas.**”  
+> — *runawaydevil — [https://pablo.space](https://pablo.space)*
 
-Configure os indexadores e clientes de download após adicionar e configurar o Prowlarr, que gerenciará essas conexões.
+---
 
-### **CONFIGURAÇÕES -> LISTAS (OPCIONAL)**
+**Autor:** runawaydevil — [https://pablo.space](https://pablo.space)  
+**Fontes adicionais:** [Trash-Guides](https://trash-guides.info), [Servarr Wiki](https://wiki.servarr.com), [Plex Docs](https://support.plex.tv).
 
-Você pode integrar listas do Letterboxd para automatizar ainda mais a adição de filmes ao Radarr.
 
-## 4. SONARR - CONFIGURAÇÕES
 
-O processo de configuração do Sonarr é similar ao do Radarr, mas focado em séries. Acesse o Sonarr por http://localhost:8989 ou http://(seu_ip):8989 (após iniciar o serviço) e configure os perfis de qualidade, formatos de episódios e pastas de séries.
 
-## 5. PROWLARR - CONFIGURAÇÕES
-
-Instale e configure o Prowlarr para gerenciar os indexadores de torrents. Acesse por http://localhost:9696 ou http://(seu_ip):9696 (após iniciar o serviço). Adicione os indexadores desejados e sincronize-os com o Radarr e o Sonarr.
-
-## 6. BAZARR - CONFIGURAÇÕES
-
-Configure o Bazarr para o download automático de legendas, integrando-o com o Radarr e o Sonarr. Acesse por http://localhost:6767 ou http://(seu_ip):6767 (após iniciar o serviço). Adicione o idioma desejado para as legendas e configure os provedores de legendas, como o Opensubtitles.
-
-## 7. PLEX - CONFIGURAÇÕES
-
-Finalmente, configure o Plex para assistir aos filmes e séries baixados. Acesse por http://localhost:32400, http://(seu_ip):32400 ou app.plex.tv (após iniciar o serviço). Adicione suas bibliotecas de filmes e séries e ajuste as configurações de biblioteca para otimizar a experiência de uso.
-
-## CONCLUSÃO
-
-Espero que este guia ajude você a montar e automatizar seu próprio servidor de streaming doméstico. Para mais informações e dicas avançadas, consulte o site [trash guides](https://trash-guides.info). Agradeço a leitura e desejo sucesso na sua configuração!
-
-## 🔗 Veja também
-
-- **[Guia de Auto-hospedagem e Ativação de Software](/vault/other/selfhosting)** - Ambos os guias lidam com a configuração de software para fins de streaming e hospedagem

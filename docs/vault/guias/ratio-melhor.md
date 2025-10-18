@@ -1,53 +1,146 @@
-# Um Guia Simples Para Melhorar Seu Ratio
+---
+sidebar_position: 15
+title: "Um Guia Simples Para Um Ratio Melhor"
+description: "Dicas e técnicas eficazes para melhorar seu ratio em trackers privados de torrent, aumentar o upload e manter uma boa reputação."
+---
 
-> Um bom [tracker](vault/other/selfhosting.md) exige que você faça o upload na mesma proporção do que baixou. Este guia explica vários métodos para manter o controle dessa tarefa às vezes complicada.
+# 🧭 Um Guia Simples Para Um Ratio Melhor
 
-#
+> Um bom rastreador requer que você carregue o que você baixou. Este guia explica métodos e estratégias para manter um **ratio saudável** — fundamental para preservar sua conta e contribuir com a comunidade.
 
-> Entre cedo em um torrent
+---
 
-Quando um torrent tem mais seeders do que leechers, pode ser difícil alcançar uma boa velocidade de upload. Ao examinar sua lista de trackers recentemente carregados, tente encontrar um torrent que tenha muitos leechers iniciais (ou que possa se tornar popular), comece a baixar e você provavelmente começará a fazer upload imediatamente. Este método é geralmente mais eficaz com uma conexão de internet rápida ou uma [Seedbox](vault/other/selfhosting.md), pois com uma conexão mais lenta você pode não conseguir fazer um upload significativo antes de haver muitos seeders. Programas gerenciadores de mídia ajudam nesse processo de adicionar um torrent. O [autobrr](https://autobrr.com) é um programa especializado para isso, utilizando os canais de anúncio dos trackers para adicionar torrents assim que são lançados.
+## 🚀 Entre Cedo em um Torrent
 
-#
+Quanto mais cedo você entra em um torrent, **maior é a chance de upload**. Torrents novos com muitos *leechers* (usuários baixando) são ideais. Assim que o torrent é anunciado, baixe imediatamente — quanto menos *seeders*, melhor sua oportunidade de enviar dados.
 
-> [encaminhamento de porta](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md)
+Ferramentas como **[autobrr](https://autobrr.com)** podem automatizar esse processo, monitorando os canais de *announce* dos trackers e adicionando novos torrents assim que são lançados.
 
-O encaminhamento de porta é essencial para permitir que outros usuários se conectem a você para fazer upload. Ao encaminhar portas, você facilita o acesso aos dados que baixou e se conecta aos seus pares. O encaminhamento de porta é um processo simples, mas varia de acordo com as configurações de seus computadores e roteadores. As portas recomendadas variam de 49152 a 65534 para evitar conflitos de programa, e lembre-se de alterar a configuração dos clientes de torrent para a porta encaminhada.
+💡 **Dica:** Combine o autobrr com gerenciadores de mídia como [Prowlarr](/pages/ferramentas#►-gerenciadores-de-midia) ou Radarr/Sonarr para automatizar totalmente a adição de torrents.
 
-#
+---
 
-> [Cross Seeding](captain/guia-completo-de-seguranca-em-redes-e-servidores-protecao-abrangente-para-a-era-digital.md)
+## ⚙️ Encaminhamento de Porta (*Port Forwarding*)
 
-O Cross Seeding envolve a propagação de dados já baixados. Ao baixar um arquivo idêntico de outra fonte (ou seja, um tracker onde você já tem um bom ratio) ou obtê-lo localmente, você pode usar os dados já adquiridos para semear em outro torrent idêntico, o que rastreia apenas a largura de banda de upload, pois nada foi efetivamente 'baixado'. Há um [script](https://cross-seed.org) que usa o Prowlarr para automatizar esse processo.
+O **port forwarding** permite que outros usuários se conectem ao seu cliente de torrent, **maximizando o upload**. Sem ele, seu cliente pode ficar limitado, resultando em baixa taxa de envio.
 
-#
+1. Acesse seu roteador e procure por “Encaminhamento de Porta” ou “Port Forwarding”.  
+2. Crie uma regra para a porta usada pelo seu cliente de torrent.  
+3. Use uma faixa de portas entre `49152-65534` para evitar conflitos.  
+4. Teste se sua porta está aberta em [yougetsignal.com/tools/open-ports/](https://www.yougetsignal.com/tools/open-ports/).
 
-> Tenha uma SeedBox
+> **Importante:** Habilite o uso de criptografia (ou "forçar encriptação") no cliente de torrent. Isso evita *throttling* por parte do seu provedor de internet.
 
-Um Seedbox é um servidor dedicado privado usado para download e upload de dados, operando com um cliente de torrent remoto. O Seedbox trabalha baixando e fazendo o upload dos dados em seus próprios servidores, geralmente a velocidades de 100Mbit/s ou mais. Usando o Seedbox em conjunto com o torrenting inicial, os dados são baixados rapidamente. Os dados ficam armazenados nos servidores, que podem ser acessados via servidor FTP.
+---
 
-#
+## 🔁 Cross Seeding
 
-> Verifique as Regras
+O **cross-seeding** é o método de **reutilizar arquivos já baixados** para semear em outro tracker.  
+Se dois torrents têm o mesmo conteúdo, você pode “apontar” o cliente para os arquivos existentes e começar a enviar sem precisar baixar novamente.
 
-Obter um bom ratio nem sempre é difícil ou consome muita largura de banda. Ao verificar as regras de seus trackers, você pode descobrir que alguns têm uma regra de 'tempo'. Isso significa que, ao permanecer em um torrent e tentar semear, você receberá, após um certo período, os dados de upload restantes apenas pela dedicação de permanecer no torrent. A maioria dos trackers modernos tem esse ou um recurso semelhante, então fique atento às regras.
+🧩 Ferramentas úteis:
+- [**cross-seed**](https://cross-seed.org) — automatiza o processo.
+- Integração com **Prowlarr** e **qBittorrent** via API.
 
-#
+> 💡 Isso é essencial para quem participa de múltiplos trackers e quer manter ratio alto sem usar largura de banda extra.
 
-> Throttle
+---
 
-Throttle é o método pelo qual você ajusta a configuração do seu cliente de torrent para baixar apenas na mesma velocidade que você faz upload. Isso garante que uma proporção maior que um seja mantida, mas só é recomendado se você tiver uma conexão de internet decente ou corre o risco de ter sua conta desativada.
+## 🌐 SeedBox — Seu Melhor Aliado
 
-#
+Uma **Seedbox** é um servidor remoto de alta velocidade (geralmente 1Gbps+), usado para **upar 24h/dia**. Ela baixa e compartilha torrents por você, garantindo upload constante mesmo quando seu PC está desligado.
 
-> Download Parcial
+Vantagens:
+- Altíssima velocidade de upload/download.
+- IP dedicado e anônimo.
+- Funciona 24/7 sem depender da sua conexão local.
+- Pode sincronizar os arquivos via **FTP/SFTP** ou **rclone**.
 
-O download parcial consiste em baixar apenas alguns arquivos de um torrent com múltiplos arquivos e fazer o upload. Ao alterar as prioridades dos arquivos dentro de um torrent, os downloads especificados podem ser 'pulados'. Dessa forma, apenas quantidades mínimas são baixadas e o upload é priorizado. (verifique as regras do tracker)
+> 💡 Seedboxes com suporte a VPN integrada ou instaladores automáticos (como QuickBox, Swizzin, Feral, UltraSeedbox) facilitam a configuração.
 
-#
+---
 
-> Freeleech
+## 📜 Verifique as Regras do Tracker
 
-Os torrents Freeleech podem ser encontrados na maioria dos trackers. Um torrent (ou em casos de sites inteiros) pode ser especificado como 'freeleech' por um certo tempo, ocasionalmente de forma permanente, e quaisquer dados baixados não contam para o uso, mas o upload sim.
+Cada tracker tem suas próprias regras sobre **ratio**, **tempo de seeding** e **políticas de bônus**.  
+Alguns oferecem o sistema de **“seedtime”** — você ganha crédito apenas por manter o torrent ativo por um período mínimo (mesmo sem upload real).
 
-_[Texto original](https://www.reddit.com/r/trackers/comments/fthja/a_simple_guide_to_a_better_ratio/)_
+> Verifique se o tracker oferece *seed bonus points*: eles podem ser trocados por **upload fictício**, **invites** ou **freeleech tokens**.
+
+---
+
+## ⚖️ Throttling Inteligente
+
+O **throttling** (limitar velocidade de download) é uma estratégia para **priorizar o upload**.  
+Configure seu cliente para baixar lentamente e enviar o máximo possível, mantendo um ratio acima de 1:1.
+
+Configuração sugerida no **qBittorrent**:
+- Upload ilimitado ou 90% da sua banda disponível.
+- Download limitado a 50–60% da banda.
+
+> ⚠️ Não exagere no limite — alguns trackers penalizam conexões que pareçam inativas ou artificiais.
+
+---
+
+## 🎯 Download Parcial
+
+Em torrents grandes (com múltiplos arquivos), é possível **baixar apenas partes específicas** — por exemplo, apenas os primeiros episódios de uma série. Assim, você baixa menos e começa a enviar mais rápido.
+
+1. Clique com o botão direito → *Selecionar arquivos...*
+2. Desmarque o que não quer baixar.
+3. Priorize o upload para os arquivos completos.
+
+> ⚠️ Alguns trackers proíbem *partial downloads* — sempre verifique as regras antes.
+
+---
+
+## 🪙 Freeleech — Ouro do Ratio
+
+O **Freeleech** é o evento onde **downloads não contam**, mas **uploads sim**.  
+Ou seja: você pode baixar à vontade e ainda aumentar o ratio.
+
+Tipos comuns:
+- **Torrents Freeleech individuais.**
+- **Eventos globais (Freeleech Weekends).**
+- **Tokens Freeleech** (resgatáveis por pontos).
+
+💡 Aproveite torrents populares durante o Freeleech — mais *leechers* significam mais upload para você.
+
+---
+
+## 🧮 Bônus: Ferramentas e Métricas
+
+### 🔍 Monitoramento e Automação
+- **autobrr** — adiciona torrents automaticamente.
+- **qbit-manage** — organiza torrents e monitora ratio.
+- **Jackett/Prowlarr** — integração com indexadores.
+
+### 📊 Métricas de Ratio e Estatísticas
+- **trackarr** — painel de estatísticas de trackers.
+- **Tracker Checker** — monitora status de trackers.
+- **Tautulli (com Plex)** — pode ser combinado com logs de torrent.
+
+### 🧱 Boas Práticas Gerais
+- Evite usar Wi-Fi para upload — prefira conexão cabeada.
+- Mantenha torrents ativos por pelo menos 72h.
+- Limite o número de torrents simultâneos (10–20 ativos é o ideal).
+- Atualize sempre o cliente de torrent.
+- Evite VPNs que bloqueiam portas — use Mullvad ou ProtonVPN com port forwarding.
+
+---
+
+## 🧠 Conclusão
+
+Manter um bom ratio é uma arte de **disciplina e técnica**. Não se trata apenas de enviar dados, mas de entender como funcionam os trackers e as oportunidades que cada um oferece.
+
+> “**O ratio é a moeda de honra dos trackers. Compartilhar é o que mantém a pirataria viva.**”  
+> — *runawaydevil — [https://pablo.space](https://pablo.space)*
+
+---
+
+**Baseado em:** [Texto original do Reddit](https://www.reddit.com/r/trackers/comments/fthja/a_simple_guide_to_a_better_ratio/)  
+**Autor:** runawaydevil — [https://pablo.space](https://pablo.space)
+
+
+
+

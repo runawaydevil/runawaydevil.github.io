@@ -1,136 +1,70 @@
 import { defineConfig } from 'vitepress'
-import { meta } from './constants'
-import { sidebar } from './sidebar'
-import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
-import { vitepressConfig } from './environment'
+import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar'
 
-const baseUrl = vitepressConfig.baseUrl
-
-const RSS: RSSOptions = {
-  title: vitepressConfig.rssTitle,
-  baseUrl,
-  copyright: 'Copyright (c) 2023-2025 - Pablo Murad',
-  description: 'Uma coleção organizada de recursos, ferramentas e informações úteis para desenvolvedores, hackers éticos e entusiastas de tecnologia',
-  language: 'pt-BR',
-  author: {
-    name: 'Pablo Murad',
-    email: 'pablomurad@pm.me',
-    link: 'https://piracy.live'
-  },
-  filename: 'feed.rss',
-  log: true,
-  ignoreHome: true,
-  ignorePublish: false,
-  filter: () => {
-    return true // Incluir todos os posts
-  }
-}
-
+// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: meta.name,
-  description: meta.description,
-  lang: 'pt-BR',
-  lastUpdated: true,
+  title: "piratas.club",
+  description: "Uma coleção organizada de recursos, ferramentas e informações úteis para desenvolvedores, hackers éticos e entusiastas de tecnologia — explorando o lado criativo, técnico e livre da internet.",
   base: '/',
-  
+  ignoreDeadLinks: true,
+  cleanUrls: true,
   head: [
-    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
-    ['meta', { name: 'theme-color', content: '#00d4ff' }],
-    ['meta', { name: 'author', content: 'Pablo Murad' }],
-    ['meta', { name: 'robots', content: 'noindex, nofollow' }],
-    
-    // Meta tags para domínios alternativos
-    ['link', { rel: 'canonical', href: vitepressConfig.canonicalUrl }],
-    ['meta', { property: 'og:url', content: vitepressConfig.canonicalUrl }],
-    ['meta', { name: 'twitter:url', content: vitepressConfig.canonicalUrl }],
-    
-    ['meta', { 'http-equiv': 'X-Content-Type-Options', content: 'nosniff' }],
-    ['meta', { 'http-equiv': 'X-Frame-Options', content: 'DENY' }],
-    ['meta', { 'http-equiv': 'X-XSS-Protection', content: '1; mode=block' }],
-    ['meta', { 'http-equiv': 'Referrer-Policy', content: 'strict-origin-when-cross-origin' }],
-    ['meta', { name: 'Content-Security-Policy', content: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'" }],
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favico.ico' }],
-    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/pablo.png' }],
-    ['link', { rel: 'manifest', href: '/site.webmanifest' }]
+    ['link', { rel: 'icon', href: '/favico.ico', type: 'image/x-icon' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
+    ['link', { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Special+Elite&display=swap' }]
   ],
+  vite: {
+    plugins: [
+      AutoSidebar({
+        // caminho da pasta docs (default já é /docs)
+        path: '/docs',
+        ignoreList: ['index.md'],
+        collapsed: false,
 
-  appearance: true,
-
+        // 👇 habilite um (ou os dois) conforme preferir
+        titleFromFile: true,         // usa o H1 do .md
+        titleFromFileByYaml: true    // usa "title:" do frontmatter
+      })
+    ]
+  },
   themeConfig: {
-    logo: '/pablo.png',
-    siteTitle: 'piracy.live',
-    
+    logo: '/icon.png',
+    siteTitle: 'piratas.club',
+
     nav: [
       { text: 'Início', link: '/' },
-      { text: 'Diário Do Capitão', link: '/captain/' },
       { text: 'Vault', link: '/vault/' },
-      { text: 'Cultura', link: '/cultura/' }
+      {
+        text: 'Redes',
+        items: [
+          { text: '🌐 Site Pessoal', link: 'https://pablo.space' },
+          { text: '🐙 GitHub', link: 'https://github.com/runawaydevil' },
+          { text: '🐦 Twitter (X)', link: 'https://x.com/runawayd3vil' },
+          { text: '🧠 Reddit', link: 'https://reddit.com/u/runawaydevil' },
+          { text: '📸 Flickr', link: 'https://flickr.com/photos/pablomub/' }
+        ]
+      }
     ],
-
-    sidebar,
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/runawaydevil' },
       { icon: 'twitter', link: 'https://x.com/runawayd3vil' },
-      { icon: 'instagram', link: 'https://instagram.com/murad.pablo' },
-      { icon: 'telegram', link: 'https://t.me/runawaydevil' },
-      { icon: 'reddit', link: 'https://reddit.com/user/runawaydevil' },
-      { icon: 'rss', link: '/feed.rss' }
+      { icon: 'globe', link: 'https://pablo.space' }
     ],
 
     search: {
-      provider: 'local',
-      options: {
-        locales: {
-          root: {
-            translations: {
-              button: {
-                buttonText: 'Buscar',
-                buttonAriaLabel: 'Buscar'
-              },
-              modal: {
-                noResultsText: 'Nenhum resultado encontrado'
-              }
-            }
-          }
-        }
-      }
+      provider: 'local'
     },
 
     outline: {
-      level: [2, 3],
+      level: [2, 4],
       label: 'Nesta página'
     },
 
-    lastUpdated: {
-      text: 'Atualizado em'
-    },
-
-    docFooter: {
-      prev: 'Página anterior',
-      next: 'Próxima página'
-    }
-  },
-
-  markdown: {
-    lineNumbers: true,
-    container: {
-      tipLabel: 'Dica',
-      warningLabel: 'Aviso',
-      dangerLabel: 'Perigo',
-      infoLabel: 'Info',
-      detailsLabel: 'Detalhes'
-    }
-  },
-
-  cleanUrls: true,
-    ignoreDeadLinks: true,
-
-  vite: {
-    plugins: [RssPlugin(RSS)],
-    server: {
-      port: 5173,
-      host: true
+    footer: {
+      message: 'Feito com ❤️ para a comunidade',
+      copyright: 'Copyright © 2023-2025 Pablo Murad'
     }
   }
 })

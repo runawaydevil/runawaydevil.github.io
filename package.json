@@ -1,8 +1,8 @@
 {
-  "name": "piracy-live-vault",
-  "version": "0.0.1",
-  "description": "Piracy.Live Vault - Uma coleção organizada de recursos, ferramentas e informações úteis",
-  "homepage": "https://piracy.live",
+  "name": "piratas-club-vault",
+  "version": "0.0.2",
+  "description": "Piratas.Club Vault - Uma coleção organizada de recursos, ferramentas e informações úteis",
+  "homepage": "https://piratas.club",
   "license": "MIT",
   "author": {
     "name": "Pablo Murad",
@@ -10,23 +10,15 @@
   },
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev docs",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs",
-    "test": "vitest",
-    "test:run": "vitest run",
-    "test:watch": "vitest watch",
-    "test:coverage": "vitest run --coverage",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
     "type-check": "tsc --noEmit",
-    "detect-duplicates": "node scripts/detect-duplicates-v2.js",
-    "organize-articles": "node scripts/organize-articles.js",
-    "generate-internal-links": "node scripts/generate-internal-links.js",
-    "audit-content": "node scripts/audit-content-organization.js"
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "keywords": [
-    "vitepress",
     "documentation",
     "vault",
     "resources",
@@ -41,21 +33,16 @@
     "@types/node": "^20.0.0",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
-    "@vitest/coverage-v8": "^1.0.0",
     "eslint": "^8.0.0",
-    "jsdom": "^23.0.0",
-    "terser": "^5.44.0",
     "typescript": "^5.0.0",
-    "vitepress": "^1.0.0",
-    "vitest": "^1.0.0",
-    "vue": "^3.4.0"
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.22"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "openai": "^6.3.0",
     "sqlite3": "^5.1.7",
-    "vitepress-plugin-rss": "^0.3.2"
+    "vite-plugin-vitepress-auto-sidebar": "^1.7.1"
   }
 }

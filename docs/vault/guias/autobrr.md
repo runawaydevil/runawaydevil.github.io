@@ -1,211 +1,229 @@
-# 📑 ➜ Aumente seu [ratio](vault/guias/ratio-melhor.md) com Autobrr
+---
+sidebar_position: 4
+---
+# Aumente Seu Ratio com o Autobrr
 
-## 1. Introdução
+## 💡 1. O Que é o Autobrr
 
-O autobrr é um aplicativo que se conecta ao seu [tracker](vault/trackers.md) via RSS, IRC e outros tipos de conexões para baixar torrents assim que eles são disponibilizados nos trackers.
+O **Autobrr** é uma ferramenta moderna projetada para quem leva a automação de downloads a sério. Ele se conecta diretamente aos seus trackers através de **RSS**, **IRC** e outros métodos, permitindo que você baixe torrents automaticamente assim que são lançados.
 
-**Os benefícios de utilizar o autobrr incluem:**
+### ⚡ Por que usar o Autobrr?
 
-- Participar do swarm inicial, que é a melhor oportunidade para enviar mais dados a outros leechers
-- Filtrar automaticamente o que você deseja baixar
-- Melhorar seu ratio sem a necessidade de acessar o tracker para baixar o arquivo .torrent e adicioná-lo ao seu cliente.
+- 🌀 **Entre cedo no swarm** e maximize o upload desde o início.
+- 🎯 **Defina filtros inteligentes** para baixar apenas o conteúdo que você realmente quer.
+- 📈 **Melhore seu ratio** sem precisar acessar o tracker manualmente.
 
-:::info Neste tutorial, será necessário instalar o [WSL](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md) e o [Docker](captain/guia-completo-de-ferramentas-e-sistemas-para-seguranca-avancada-construindo-uma-fortaleza-digital.md) no seu computador. Caso você não seja um usuário Windows, pode pular para a etapa **DEPLOY AUTOBRR**.
+::: tip **Pré-requisito**
+Para este tutorial, você precisará ter **WSL** e **Docker Desktop** instalados no Windows.  
+Se estiver em **Linux**, pode pular direto para a etapa **Deploy do Autobrr**.
 :::
 
-## Instalação
+---
 
-Acesse a página de lançamentos no GitHub:
+## ⚙️ 2. Instalando o Autobrr
 
-https://github.com/autobrr/autobrr/releases
+Acesse o repositório oficial:
 
-E baixe o pacote nomeado "windows_x86_64.zip". Clique em "show all assets" se não estiver visível.
+🔗 [https://github.com/autobrr/autobrr/releases](https://github.com/autobrr/autobrr/releases)
 
-Descompacte e coloque tudo em "C:/autobrr" ou em outro diretório de sua escolha.
+Procure o pacote com o nome **windows_x86_64.zip**  
+(clique em *Show all assets* se não aparecer de imediato).
 
-Execute o autobrr.exe.
+1. Extraia o conteúdo em um diretório, por exemplo:
+   
+   ```bash
+   C:\autobrr
+   ```
+2. Execute o arquivo `autobrr.exe`
 
-Para mais informações, acesse: https://autobrr.com/installation/windows
+Mais detalhes em: [https://autobrr.com/installation/windows](https://autobrr.com/installation/windows)
 
-Após a instalação, prossiga para a seção **CONFIGURANDO AUTOBRR**.
+Após concluir, siga para **Configurando o Autobrr**.
 
-## Instalação do WSL
+---
 
-Pressione "Win+X" e selecione "powershell admi".
+## 🧩 3. Instalando o WSL
 
-**autobrr1**
+Pressione `Win + X` e selecione **PowerShell (Admin)**.
 
-Execute o comando:
+![autobrr1](/img/autobrr1.png)
 
-`wsl --install`
+Digite o comando abaixo:
 
-Reinicie seu computador após a conclusão da instalação.
+```bash
+wsl --install
+```
 
-**INSTALANDO DOCKER DESKTOP**
-Acesse: https://www.docker.com/products/docker-desktop/
+Reinicie o computador ao final do processo.
 
-Baixe e instale o executável.
+### 🐋 Instalando o Docker Desktop
 
-**BAIXANDO UBUNTU 20.04**
-Acesse a loja de aplicativos do Windows e procure por "UBUNTU 20.04".
+Baixe e instale através de: [https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
 
-Instale e execute. Uma janela será exibida pedindo que você aguarde alguns minutos. Em seguida, defina o usuário e senha desejados.
+### 🐧 Instalando o Ubuntu 20.04
 
-**INTEGRANDO UBUNTU COM DOCKER**
+Abra a Microsoft Store e procure por **Ubuntu 20.04**.  
+Instale, execute e aguarde alguns minutos.  
+Depois, crie um **usuário** e uma **senha** quando solicitado.
 
-**autobrr2**
+### 🔗 Integrando Ubuntu com Docker
 
-Siga as instruções conforme a imagem acima. Se a janela do Ubuntu 20.04 estiver aberta, feche e abra novamente. Você encontrará no menu iniciar, basta pesquisar.
+![autobrr2](/img/autobrr2.png)
 
-### INSTALANDO AUTOBRR
+Siga as instruções conforme a imagem.  
+Se o Ubuntu estiver aberto, feche e reabra.
 
-Com o UBUNTU 20.04 aberto, no terminal digite:
+---
 
-`mkdir -p autobrr/config`
-Teste se o Docker está funcionando com o comando:
+## ⚙️ 4. Deploy do Autobrr
 
-`docker`
+Abra o **Ubuntu 20.04** e execute:
 
-**autobrr3**
+```bash
+mkdir -p autobrr/config
+```
 
-A saída deve ser como mostrado na imagem acima.
+Teste o Docker:
 
-Confirmado que o Docker está funcionando, copie e cole o comando a seguir:
+```bash
+docker
+```
 
-### DEPLOY AUTOBRR
+![autobrr3](/img/autobrr3.png)
 
-```batch
-  docker run -d /
-  --name autobrr /
+Se a saída for semelhante à imagem acima, prossiga.
 
-  -v /home/SEU_USUARIO/autobrr/config:/config /
+Agora execute o comando abaixo:
 
-  -p 7474:7474 /
-
-  -e TZ=America/Sao_Paulo /
-
-  --restart unless-stopped /
-
+```bash
+docker run -d \
+  --name autobrr \
+  -v /home/SEU_USUARIO/autobrr/config:/config \
+  -p 7474:7474 \
+  -e TZ=America/Sao_Paulo \
+  --restart unless-stopped \
   ghcr.io/autobrr/autobrr:latest
 ```
 
-**SUBSTITUA "SEU_USUARIO" PELO USUÁRIO QUE VOCÊ CRIOU.**
+> **Substitua** `SEU_USUARIO` pelo nome do usuário criado no Ubuntu.
 
-Aguarde e abra o Docker Desktop.
+Verifique se o container está ativo no Docker Desktop:
 
-**autobrr4**
+![autobrr4](/img/autobrr4.png)
 
-Se tudo estiver correto, aparecerá como na imagem acima.
+---
 
-## 2. Configurando o Autobrr
+## 🔧 5. Configurando o Autobrr
 
-Acesse: http://localhost:7474 (após iniciar o serviço)
+Acesse o painel pelo navegador:
 
-Você verá a tela a seguir:
+👉 [http://localhost:7474](http://localhost:7474)
 
-**autobrr5**
+Você verá a tela inicial:
 
-Crie seu usuário e senha.
+![autobrr5](/img/autobrr5.png)
 
-**ADICIONE SEU CLIENTE TORRENT**
+Crie seu usuário e senha para começar.
 
-**autobrr6**
+### 🔗 Adicionando o Cliente Torrent
 
-Selecione o cliente que deseja configurar, no exemplo usaremos o qBittorrent.
+![autobrr6](/img/autobrr6.png)
 
-**autobrr7**
+Selecione o cliente desejado (no exemplo, **qBittorrent**):
 
-**autobrr8-1**
+![autobrr7](/img/autobrr7.png)
 
-1. Insira o IP do seu computador, não utilize localhost.
-2. Clique em testar para validar a conexão, se estiver tudo ok, clique em criar.
+![autobrr8-1](/img/autobrr8-1.png)
 
-## 3. Adicionando Trackers
+1. Informe o **IP do seu computador** (não use *localhost*).
+2. Clique em **Test** para validar.
+3. Clique em **Create**.
 
-Não seremos específicos neste ponto, pois cada tracker tem suas particularidades de configuração. Mostraremos as possibilidades e os campos a serem preenchidos. Em caso de dificuldades, consulte o fórum do seu tracker ou peça suporte em nosso grupo.
+---
 
-Considerações:
+## 🌍 6. Adicionando Trackers
 
-- Você pode adicionar um tracker usando RSS / IRC / modelo pré-configurado para trackers famosos.
-- Recomendamos sempre o uso de IRC para trackers que suportam, pois o atraso é menor.
+Cada tracker possui configurações específicas, mas o Autobrr suporta múltiplas formas:
 
-**1. Exemplo usando RSS**
-Busque no seu tracker como obter o RSS. Não citaremos trackers específicos aqui neste tutorial.
+- RSS Feeds  
+- IRC  
+- Modelos pré-configurados para trackers conhecidos
 
-Após conseguir o RSS do seu tracker, vá em "INDEXERS" e siga o fluxo abaixo:
+> ⚙️ Recomendamos sempre o uso de **IRC**, pois o delay é menor.
 
-**autobrr8**
+### Exemplo com RSS
 
-**ATIVE O FEED E AJUSTE O TEMPO DE ATUALIZAÇÃO**
+Obtenha o link RSS do seu tracker e vá em **Indexers**:
 
-**autobrr9**
+![autobrr8](/img/autobrr8.png)
 
-Siga a orientação conforme a imagem Feeds > Editar
+Ative o feed e ajuste o tempo de atualização:
 
-**autobrr10**
+![autobrr9](/img/autobrr9.png)
 
-1. Ative o feed
-2. Defina o tempo de atualização (verifique as regras do seu tracker para não usar um tempo muito curto). Sugerimos 5 minutos.
-3. Teste a conexão e salve.
+![autobrr10](/img/autobrr10.png)
 
-**ATIVANDO FILTROS**
-Uma das principais funções do autobrr são os filtros. Aqui é onde a "mágica" acontece. Mostraremos um exemplo de configuração, mas isso não significa que funcionará no seu tracker. Caso não funcione, será necessário ajustar para conseguir identificar. Use os logs para verificar o que está acontecendo.
+1. Ative o feed.  
+2. Defina o tempo de atualização (sugerido: **5 minutos**).  
+3. Teste e salve.
 
-**autobrr11**
+---
 
-- Após clicar, defina um nome e salve.
-  Selecione seu feed:
+## 🎚️ 7. Filtros do Autobrr
 
-**autobrr12**
+Os **filtros** são o coração do Autobrr — é aqui que toda a automação acontece.
 
-**autobrr13**
+![autobrr11](/img/autobrr11.png)
 
-Nos campos acima, você pode definir qual o tamanho mínimo/máximo que deseja baixar.
+Crie um filtro e selecione o feed:
 
-**ABA "MOVIES & TV"**
+![autobrr12](/img/autobrr12.png)
 
-**autobrr14**
+![autobrr13](/img/autobrr13.png)
 
-No exemplo acima, está definido para baixar filmes entre os anos 2015 e 2024, com resolução 1080p e o tipo de arquivo sendo .mkv.
+Defina o tamanho mínimo e máximo dos arquivos desejados.
 
-**ABA "ADVANCED"**
-Esta aba possui vários filtros que você pode utilizar valores usando "," ou regex.
-Abaixo está um exemplo para baixar filmes de todos os tipos **(aplicável somente em determinado tracker)**
+### 🎬 Aba “Movies & TV”
 
-**autobrr15**
+![autobrr14](/img/autobrr14.png)
 
-Reforçando... os filtros variam de acordo com cada tracker adicionado. Caso não esteja baixando algo que você definiu ou não esteja identificando corretamente, analise os logs.
+Exemplo: baixar filmes entre **2015 e 2024**, com resolução **1080p** e formato **.mkv**.
 
-**ABA "ACTIONS"**
-:::info Na aba de ações, é onde são executados os comandos para enviar o arquivo para seu cliente torrent, testar para validar seu filtro, etc.
-:::
-Comece testando, conforme definido na imagem abaixo, e salve:
+### ⚙️ Aba “Advanced”
 
-**autobrr16**
+![autobrr15](/img/autobrr15.png)
 
-Lembre-se de ativar o filtro:
+Utilize filtros personalizados, valores separados por vírgula ou expressões regex.
 
-**autobrr17**
+> 💡 Os filtros variam conforme o tracker. Se algo não estiver funcionando, verifique os **logs** do Autobrr.
 
-:::info Você pode definir filtros para cada tracker adicionado.
+### 🧰 Aba “Actions”
+
+::: info **Aba de Ações**
+É aqui que você define o que fazer com os resultados — enviar para o cliente torrent, testar filtros, etc.
 :::
 
-Deixe o autobrr ativo e aguarde novas atualizações do RSS. Se tudo estiver correto, você verá os lançamentos filtrados na aba **RELEASES**.
+![autobrr16](/img/autobrr16.png)
 
-Se estiver tudo OK, volte na aba de filtros para editar a ação de teste e modificar para enviar para seu cliente torrent.
+Lembre-se de **ativar o filtro**:
 
-**autobrr18**
+![autobrr17](/img/autobrr17.png)
 
-1. Mude o tipo de ação para seu cliente torrent.
-2. Selecione o cliente torrent que você configurou no início.
-3. (opcional) Especifique onde deseja salvar. Se deixar em branco, será baixado na pasta padrão do seu cliente. Caso especifique, lembre-se de colocar o caminho completo. Ex: C:/User/Desktop/Filmes
+Você pode criar filtros específicos para cada tracker.
 
-Pronto, seu autobrr está configurado e todo novo torrent que corresponder ao seu filtro será adicionado ao seu cliente torrent.
+Ao detectar um novo release que corresponda aos filtros, o Autobrr enviará o torrent automaticamente para o seu cliente.
 
-Para mais informações, acesse a documentação oficial: https://autobrr.com
+![autobrr18](/img/autobrr18.png)
 
-[**Artigo original do CopyrightBR**](https://copyrightbr.com/CFPpqO-yjNL)
+1. Mude o **Action Type** para o cliente torrent.  
+2. Escolha o cliente configurado.  
+3. (Opcional) Defina o diretório de download.
 
-## 🔗 Veja também
+---
 
-- **[🌊 Trackers](/vault/trackers)** - Autobrr se conecta a trackers para baixar torrents.
+> “**A melhor maneira de prever o futuro é criá-lo.**”  
+> — *Alan Kay, pioneiro da computação pessoal*
+
+
+
+

@@ -1,136 +1,142 @@
-# Como Configurar o [DNS](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md) no Windows e Android
+---
+sidebar_position: 1
+title: "Como Configurar o DNS no Windows e Android"
+description: "Guia prático para alterar DNS em Windows e Android"
+---
 
-**DNS**
+# 🌐 Como Configurar o DNS no Windows e Android
 
-Ajustar as configurações de DNS pode oferecer diversos benefícios, como:
+![DNS](/img/dns1.png)
 
-- Melhoria na velocidade da navegação.
+Ajustar as configurações de DNS pode trazer benefícios como:
 
-- Aumento da privacidade;
+- Melhora na velocidade de navegação
+- Aumento da privacidade
+- Contorno de bloqueios de sites (ex.: Rede Canais, Bludv)
+- Bloqueio de anúncios em aplicativos Android
 
-- Contorno de bloqueios de sites, como Rede Canais e Bludv;
+Este guia mostra, passo a passo, como configurar DNS no **Windows** e em dispositivos **Android**.
 
-- Bloqueio de anúncios em aplicativos de dispositivos Android.
+---
 
-Este guia apresenta o passo a passo de como configurar o DNS tanto no Windows quanto em dispositivos Android.
+## 1 - Principais provedores de DNS
 
-## 1 - Principais Provedores de DNS
+Abaixo uma seleção de provedores com boa presença no Brasil e opções úteis para quem busca desempenho e/ou bloqueio de anúncios:
 
-A seguir, listamos os provedores de DNS com servidores no Brasil, que não bloqueiam sites piratas e/ou oferecem bom desempenho para usuários brasileiros:
+### Cloudflare DNS
 
-[Cloudflare DNS](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)
+- IPv4: `1.1.1.1` / `1.0.0.1`
+- Hostname DoT: `security.cloudflare-dns.com`
+- Boa performance; não bloqueia anúncios por padrão.
 
-- IPv4: `1.1.1.1` e `1.0.0.1`
+### AdGuard DNS
 
-- Nome do host: `security.cloudflare-dns.com`
+- IPv4: `94.140.14.14` / `94.140.15.15`
+- Hostname DoT: `dns.adguard-dns.com`
+- Focado em bloquear anúncios e rastreadores.
 
-- Excelente desempenho, mas não bloqueia anúncios em sites e apps.
+### NextDNS
 
-[AdGuard DNS](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)
+- IPv4/IPv6: configurado via painel em https://nextdns.io
+- Semelhante ao AdGuard, com listas personalizáveis (atenção a efeitos em serviços como YouTube).
 
-- IPv4: `94.140.14.14` e `94.140.15.15`
+### Google Public DNS
 
-- Nome do host: `dns.adguard-dns.com`
+- IPv4: `8.8.8.8` / `8.8.4.4`
+- IPv6: `2001:4860:4860::8888` / `2001:4860:4860::8844`
+- Alta disponibilidade e desempenho; não bloqueia anúncios.
 
-- Especializado em bloquear anúncios e rastreadores, ideal para uma navegação mais limpa.
-
-[NextDNS](captain/guia-completo-de-privacidade-online-ferramentas-e-servicos-para-proteger-seus-dados.md)
-
-- IPv4: Obtido diretamente pelo site nextdns.io
-
-- Funciona de maneira similar ao AdGuard, mas possui limitações no plano gratuito. Ao utilizar listas de bloqueios adicionais, alguns redirecionadores podem deixar de funcionar – inclusive o histórico do app YouTube – sendo necessário incluir o domínio s.youtube.com na whitelist.
-
-DNS público do Google
-
-- IPv4: `8.8.8.8` e `8.8.4.4`
-
-- IPv6: `2001:4860:4860::8888` e `2001:4860:4860::8844`
-
-- IPv6 [2]: `2001:4860:4860:0:0:0:0:8888` e `2001:4860:4860:0:0:0:0:8844`
-
-- Aproveite uma internet com download e upload rápidos (às vezes, até mais rápido que VPS) sem restrições de ISP.
-
-- Não bloqueia anúncios.
-
-:::info Nota:
-Os servidores públicos do Cloudflare e do AdGuard não apresentam tantos inconvenientes; como tal, serão o foco deste guia, salvo indicação contrária.
+:::info Nota
+Este guia foca em **Cloudflare** e **AdGuard** por serem simples de configurar e estáveis para a maioria dos usuários.
 :::
 
-Embora alguns desses provedores bloqueiem a maioria dos anúncios, eles podem não ser 100% eficazes (por exemplo, no YouTube). Para uma remoção mais completa de propagandas em páginas web, a extensão uBlock continua sendo a melhor opção.
+---
 
-## 2 - Configurando o DNS no Windows 10
+## 2 - Configurando DNS no Windows 10 (aplicável ao sistema todo)
 
-A alteração do DNS no Windows afeta todo o sistema – todos os navegadores e aplicativos utilizarão os novos servidores.
+> Alterar o DNS no Windows afeta todo o sistema — navegadores e apps usarão os servidores configurados.
 
-1. Abrir Conexões de Rede: Pressione Alt+S e pesquise por Exibir Conexões de Rede.
-2. Selecionar a Interface: Escolha a interface utilizada (Wi-Fi ou Ethernet), clique com o botão direito e selecione Propriedades. (Print abaixo).
-3. Configurar IPv4:
+1. Abra **Exibir Conexões de Rede** (pressione `Win + R`, digite `ncpa.cpl` ou pesquise no menu Iniciar).
+2. Clique na interface usada (Wi‑Fi ou Ethernet) → botão direito → **Propriedades**.
+3. Selecione **Protocolo IP Versão 4 (TCP/IPv4)** → **Propriedades** → marque **Usar os seguintes endereços de servidor DNS** e insira os IPs IPv4 (primário e secundário).
 
-   - Selecione Protocolo IP Versão 4 (TCP/IPv4) com dois cliques.
-   - Marque a opção Usar os seguintes endereços de servidores DNS e insira os endereços do DNS escolhido (IPs IPv4 primário e secundário do tópico 1). (Print abaixo).
+```text
+Exemplo Cloudflare IPv4:
+  Servidor DNS preferido: 1.1.1.1
+  Servidor DNS alternativo: 1.0.0.1
+```
 
-4. Configurar IPv6 :
+4. (Opcional) Para IPv6, volte à lista de propriedades → **Protocolo IP Versão 6 (TCP/IPv6)** → **Propriedades** e insira os endereços IPv6:
 
-- Retorne à lista de propriedades, selecione Protocolo IP Versão 6 (TCP/IPv6) e repita o procedimento:
+```text
+Cloudflare IPv6:
+  2606:4700:4700::1111
+  2606:4700:4700::1001
 
-  - Para Cloudflare: `2606:4700:4700::1111` e `2606:4700:4700::1001`
+AdGuard IPv6:
+  2a10:50c0::ad1:ff
+  2a10:50c0::ad2:ff
+```
 
-  - Para AdGuard: `2a10:50c0::ad1:ff` e `2a10:50c0::ad2:ff`
+5. Clique em **OK** para salvar.
 
-- Para outros endereços (IPv4 e IPv6) que não foram listados aqui, consulte os sites oficiais dos provedores.
+![Configurar DNS Windows](/img/dns2.png)
 
-- Recapitulando: Acesse Exibir Conexões de Rede > Selecione o seu adaptador de rede WiFi ou por cabo Ethernet > Propriedades > Dois cliques em (TCP/IPv4) e coloque o DNS IPv4 > Volte e vá em (TCP/IPv6) > coloque o endereço IPv6 do DNS desejado > Salve com OK.
+**Resumo rápido:** Exibir Conexões de Rede → selecione adaptador → Propriedades → TCP/IPv4 → inserir DNS → (TCP/IPv6) → inserir IPv6 → OK.
 
-**DNS2**
+---
 
-## 3 - Configurando o DNS no Android:
+## 3 - Configurando DNS no Android (DNS over TLS — Hostname)
 
-A configuração do DNS no Android pode variar conforme a interface – seja a One UI da Samsung, o HyperOS da Xiaomi ou versões mais próximas do Android puro. A seguir, detalhamos dois métodos usando o endereço DNS Over TLS, que é o Hostname DoT ao invés do IPv4 ou IPv6 usado no Windows, nesse caso, `dns.adguard-dns.com` ou `security.cloudflare-dns.com`.
+O Android oferece a opção **DNS Privado** (DoT) que funciona para todo o sistema móvel.
 
-**BÔNUS**: Configuração no HyperOS (Xiaomi):
+### Método (HyperOS / Xiaomi)
 
-1. Acesse as Configurações: Abra o menu Configurações do dispositivo.
+1. Configurações → **Mais opções de conectividade** → **DNS Privado**.
+2. Em **Nome do host do provedor de DNS privado**, insira:
+   - Cloudflare: `security.cloudflare-dns.com`
+   - AdGuard: `dns.adguard-dns.com`
+3. Salve.
 
-2. Opções de Conectividade: Selecione Mais opções de conectividade.
+![DNS Android HyperOS](/img/dns3.png)
 
-3. Ativar DNS Privado: Toque em DNS Privado.
+### Android Puro (Pixel, OnePlus, etc.)
 
-4. Inserir o Nome do Host: Em Nome do host do provedor de DNS privado, digite:
+1. Configurações → **Rede e Internet** → **DNS Privado**.
+2. Selecione **Nome do host do provedor** e digite o hostname DoT desejado.
+3. Salve.
 
-   - Para Cloudflare: `security.cloudflare-dns.com`
+![DNS Android Puro](/img/dns4.png)
 
-   - Para AdGuard: `dns.adguard-dns.com`
+---
 
-**DNS3**
+## 4 - Configuração manual por rede Wi‑Fi (Android)
 
-## 4 - Configuração no Android Puro (ex.: Motorola, Google Pixel, OnePlus, Custom ROMs)
+Este método altera apenas a rede Wi‑Fi atual e usa entradas IPv4:
 
-1.  Acessar Configurações de Rede: Abra Configurações e toque em Rede e Internet.
+1. Configurações → **Wi‑Fi** → selecione a rede conectada → **Editar**.
+2. Em **Configuração de IP**, escolha **Estático**.
+3. Preencha os campos **DNS 1** e **DNS 2** com os IPs desejados.
 
-2.  Configurar DNS Privado: Selecione a opção DNS Privado, e em `...Provedor Hostname` digite o endereço DNS desejado.
+![Configurar DNS WiFi](/img/dns5.png)
 
-3.  Salvar a Configuração: Toque em Salvar para confirmar a alteração
-
-**DNS4**
-
-## 5 - Configuração Manual para Redes Wi-Fi
-
-Esse método utiliza o protocolo IPv4 usado no Windows e altera a configuração apenas para a rede Wi-Fi atual:
-
-1. Acesse as Configurações de Wi-Fi: Vá em Configurações > Wi-Fi.
-
-2. Editar a Rede Conectada: Toque na seta ou ícone de configurações da rede Wi-Fi em uso.
-
-3. Configurar IP Estático: Em Configuração de IP, selecione Estático.
-
-4. Inserir os Endereços de DNS: Preencha os campos DNS 1 e DNS 2 com os endereços desejados.
-
-**DNS5**
-
-:::info Nota:
-O método de DNS Privado altera a configuração para todo o sistema, incluindo a rede móvel, enquanto a configuração manual na rede Wi-Fi altera apenas essa conexão específica.
+:::info Nota
+A opção **DNS Privado (DoT)** altera a configuração para todo o sistema (Wi‑Fi + rede móvel). A configuração manual na rede Wi‑Fi altera apenas aquela conexão específica.
 :::
 
-Em outros sistemas operacionais, como iOS e Linux, o processo de configuração do DNS é semelhante ao descrito neste guia. Embora as etapas específicas possam variar, os princípios fundamentais permanecem os mesmos, permitindo que você adapte as instruções para esses sistemas.
+---
 
-> Guia feito por [u/YuriRosas](https://www.reddit.com/r/pirataria/comments/1ip6236/como_trocar_o_dns_no_windows_e_android/)
+## 5 - Observações e dicas finais
+
+- Para bloquear anúncios em páginas web, use também extensões como **uBlock Origin** no navegador.
+- Se usar NextDNS com listas agressivas, alguns serviços (YouTube, etc.) podem apresentar comportamento inesperado — mantenha domínios essenciais em whitelist.
+- Teste sua nova configuração em sites como `https://1.1.1.1/help` ou `https://www.dnsleaktest.com`.
+
+---
+
+> “A Web não conecta apenas máquinas — ela conecta pessoas.”  
+> — *Tim Berners‑Lee*
+
+
+
+
