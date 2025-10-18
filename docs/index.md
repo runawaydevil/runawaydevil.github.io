@@ -12,9 +12,6 @@ hero:
     - theme: brand
       text: Explorar Vault
       link: /vault/
-    - theme: alt
-      text: GitHub
-      link: https://github.com/runawaydevil
 features:
   - icon: ✖
     title: Vault de Recursos
