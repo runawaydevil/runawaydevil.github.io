@@ -16,7 +16,10 @@
     "type-check": "tsc --noEmit",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "push:all": "git push origin main && git push forgejo main",
+    "push:github": "git push origin main",
+    "push:forgejo": "git push forgejo main"
   },
   "keywords": [
     "documentation",
