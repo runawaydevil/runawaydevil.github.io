@@ -65,6 +65,30 @@
 }
 
 /**
+ * Barras de Rolagem Invisíveis
+ * -------------------------------------------------------------------------- */
+
+/* Para navegadores baseados em WebKit (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* Para Internet Explorer e Edge */
+* {
+  -ms-overflow-style: none;
+}
+
+/* Garantir que todos os elementos mantenham a funcionalidade de rolagem */
+html, body, #app, .VPSidebar, .VPContent, .VPSidebarItem, .VPSidebarGroup {
+  overflow: auto;
+}
+
+/**
  * Component: Button
  * -------------------------------------------------------------------------- */
 

@@ -11,22 +11,19 @@
   "type": "module",
   "scripts": {
     "build": "vitepress build docs",
+    "dev": "vitepress dev docs",
+    "preview": "vitepress preview docs",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
-    "type-check": "tsc --noEmit",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "push:all": "git push origin main && git push forgejo main",
-    "push:github": "git push origin main",
-    "push:forgejo": "git push forgejo main"
+    "type-check": "tsc --noEmit"
   },
   "keywords": [
     "documentation",
     "vault",
     "resources",
     "tools",
-    "pablo-news"
+    "vitepress",
+    "piratas-club"
   ],
   "repository": {
     "type": "git",
@@ -47,10 +44,9 @@
     "vue": "^3.5.22"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=20.0.0"
   },
   "dependencies": {
-    "sqlite3": "^5.1.7",
     "vite-plugin-vitepress-auto-sidebar": "^1.7.1"
   }
 }
