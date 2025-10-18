@@ -51,8 +51,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/runawaydevil' },
-      { icon: 'twitter', link: 'https://x.com/runawayd3vil' },
-      { icon: 'globe', link: 'https://pablo.space' }
+      { icon: 'twitter', link: 'https://x.com/runawayd3vil' }
     ],
 
     search: {
