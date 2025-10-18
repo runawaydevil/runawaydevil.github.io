@@ -4,7 +4,7 @@ title: piratas.club
 hero:
   name: piratas.club
   text: Vault de Recursos Digitais
-  tagline: O maior compêndio digital do mundo em português de ferramentas, guias e conhecimentos essenciais para a cultura hacker.
+  tagline: O maior compêndio digital do mundo e em português de ferramentas, guias e conhecimentos essenciais para a cultura hacker.
   image:
     src: /dl1.png
     alt: Navio pirata RD do piratas.club
