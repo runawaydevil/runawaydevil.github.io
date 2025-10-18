@@ -1,5 +1,33 @@
 import { defineConfig } from 'vitepress'
 import AutoSidebar from 'vite-plugin-vitepress-auto-sidebar'
+import { RssPlugin, RSSOptions } from 'vitepress-plugin-rss'
+import { readFileSync } from 'fs'
+import { resolve } from 'path'
+
+// Lê a versão do package.json
+const packageJson = JSON.parse(readFileSync(resolve(__dirname, '../../package.json'), 'utf-8'))
+const version = packageJson.version
+
+// Configuração do RSS
+const baseUrl = 'https://piratas.club'
+
+const rssOptions: RSSOptions = {
+  title: 'piratas.club',
+  baseUrl,
+  copyright: 'Copyright © 2023-2025 Pablo Murad',
+  description: 'Vault de Recursos Digitais - Feed de atualizações e novos guias',
+  language: 'pt-BR',
+  author: {
+    name: 'Pablo Murad',
+    email: 'pablomurad@pm.me',
+    link: 'https://piratas.club/about'
+  },
+  filename: 'feed.rss',
+  log: true,
+  ignoreHome: true,
+  ignorePublish: false,
+  filter: (post, idx) => true
+}
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -26,7 +54,8 @@ export default defineConfig({
         // 👇 habilite um (ou os dois) conforme preferir
         titleFromFile: true,         // usa o H1 do .md
         titleFromFileByYaml: true    // usa "title:" do frontmatter
-      })
+      }),
+      RssPlugin(rssOptions)
     ]
   },
   themeConfig: {
@@ -72,7 +101,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Feito com ❤️ para a comunidade',
+      message: `Feito com ❤️ para a comunidade | v${version}`,
       copyright: 'Copyright © 2023-2025 Pablo Murad'
     }
   }
