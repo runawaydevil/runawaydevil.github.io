@@ -8,6 +8,7 @@ export default defineConfig({
   base: '/',
   ignoreDeadLinks: true,
   cleanUrls: true,
+  lastUpdated: true, // ativa a funcionalidade
   head: [
     ['link', { rel: 'icon', href: '/favico.ico', type: 'image/x-icon' }],
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
@@ -35,6 +36,7 @@ export default defineConfig({
     nav: [
       { text: 'Início', link: '/' },
       { text: 'Vault', link: '/vault/' },
+      { text: 'Info', link: '/about' },
       {
         text: 'Redes',
         items: [
@@ -60,6 +62,14 @@ export default defineConfig({
     outline: {
       level: [2, 4],
       label: 'Nesta página'
+    },
+
+    lastUpdated: {
+      text: 'Última atualização', // legenda exibida
+      formatOptions: {
+        dateStyle: 'long',
+        timeStyle: 'short'
+      }
     },
 
     footer: {
