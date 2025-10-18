@@ -4,7 +4,7 @@ title: "Como abrir portas no roteador em rede CGNAT"
 description: "Guia de como abrir portas no roteador em rede CGNAT"
 ---
 
-# 🌐 **Como Abrir Portas no Roteador em Rede CGNAT**
+# Como Abrir Portas no Roteador em Rede CGNAT
 
 Dependendo do tipo de alocação de portas e com a colaboração do provedor, é possível abrir a porta do cliente torrent mesmo em uma rede **CGNAT**. Siga as etapas abaixo para verificar bloqueios e entender como proceder.
 

@@ -4,7 +4,7 @@ title: "Como burlar restricao de download Archive.org"
 description: "Baixando livros com restricao do Archive.org"
 ---
 
-# 📚 **Como Burlar restricao de Download no Archive.org**
+# Como Burlar restricao de Download no Archive.org
 
 > Este guia tem como objetivo auxiliar usuários a contornar a restricao de download imposta em alguns livros no Archive.org, que exibem mensagens como **“No suitable files to display here.”** ou **“PDF access not available for this item.”**, conforme o exemplo abaixo:
 

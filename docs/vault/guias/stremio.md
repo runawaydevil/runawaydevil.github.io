@@ -4,7 +4,7 @@ title: "Guia Básico de Uso do Stremio"
 description: "Aprenda a configurar e otimizar o Stremio com add-ons, catálogos e rastreadores."
 ---
 
-# 🎬 Guia Básico de Uso do Stremio
+# Guia Básico de Uso do Stremio
 
 ![Stremio](/img/Stremio-logo.png)
 

@@ -4,7 +4,7 @@ title: "Instalando Plugins de Pesquisa no qBittorrent"
 description: "Aprenda a instalar e gerenciar plugins de busca no qBittorrent de forma segura e eficiente."
 ---
 
-# ⚙️ Como Instalar Plugins de Pesquisa no qBittorrent
+# Como Instalar Plugins de Pesquisa no qBittorrent
 
 Os **plugins de pesquisa** do qBittorrent permitem buscar torrents diretamente dentro do programa, sem precisar abrir o navegador. A seguir, você aprenderá a instalá-los corretamente e com segurança.
 

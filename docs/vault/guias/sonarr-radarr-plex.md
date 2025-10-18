@@ -4,7 +4,7 @@ title: "Guia do Streaming Doméstico Automatizado (Sonarr, Radarr e Plex)"
 description: "Automatize seu servidor de mídia pessoal com Sonarr, Radarr, Prowlarr, Bazarr e Plex."
 ---
 
-# 🎬 Guia do Streaming Doméstico Automatizado (Sonarr, Radarr e Plex)
+# Guia do Streaming Doméstico Automatizado (Sonarr, Radarr e Plex)
 
 Automatizar o consumo de mídia é o sonho de qualquer entusiasta de tecnologia — e com ferramentas como **Sonarr**, **Radarr**, **Prowlarr**, **Bazarr** e **Plex**, esse sonho é totalmente possível. Desde 2020, venho aperfeiçoando um sistema que busca, baixa, organiza e exibe automaticamente meus filmes e séries. Tudo isso em um computador antigo que qualquer um poderia ter em casa.
 

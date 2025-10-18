@@ -5,7 +5,7 @@ lang: pt-BR
 lastUpdated: true
 ---
 
-# 📚 Recursos Educacionais
+# Recursos Educacionais
 
 A educação é um processo essencial e multifacetado que envolve a aquisição de conhecimento, habilidades e valores fundamentais, fundamentais para o desenvolvimento tanto pessoal quanto social do indivíduo. Este processo não se limita apenas ao ambiente escolar, mas se estende a várias experiências de vida que moldam nosso entendimento do mundo e nossa capacidade de interagir de forma eficaz com ele.
 

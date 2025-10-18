@@ -4,7 +4,7 @@ title: "Jellyfin e Família Arr - Docker Compose"
 description: "Guia detalhado para montar um servidor multimídia caseiro com Jellyfin, Radarr, Sonarr, Prowlarr, QBitTorrent e Flaresolverr usando Docker Compose."
 ---
 
-# 🎬 Jellyfin e Família Arr — Docker Compose
+# Jellyfin e Família Arr — Docker Compose
 
 Guia quase completo para montar um **servidor caseiro de mídia** com **Docker** e **Jellyfin**. Usaremos o **Ubuntu Server** como base e mostraremos como configurar os principais aplicativos que compõem o ecossistema *Arr* (Radarr, Sonarr, Prowlarr, etc). Este guia foca na estrutura do Docker Compose — as configurações detalhadas de cada app podem ser encontradas na megathread.
 

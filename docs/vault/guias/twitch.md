@@ -4,7 +4,7 @@ title: "Como bloquear anúncios na Twitch (uBlock, Pi-hole e DNS)"
 description: "Guia completo para eliminar anúncios da Twitch usando uBlock Origin, Pi-hole, AdGuard e players alternativos."
 ---
 
-# 🚫 Como Bloquear Anúncios na Twitch
+# Como Bloquear Anúncios na Twitch
 
 Este guia reúne métodos comprovados e **seguros** para remover anúncios da Twitch — seja no navegador, celular ou até em toda a rede doméstica. A base original foi escrita por **u/Dreadwhole**, e esta versão expandida foi revisada e ampliada por **runawaydevil ([https://pablo.space](https://pablo.space))** com adições técnicas sobre bloqueio via DNS e Pi-hole.
 

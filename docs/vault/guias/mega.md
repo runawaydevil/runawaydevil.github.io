@@ -4,7 +4,7 @@ title: "Guia de como baixar arquivos do Mega sem limite"
 description: "Burlando limite do mega"
 ---
 
-# ⚡ **Guia de Como Baixar Arquivos do MEGA Sem Limite**
+# Guia de Como Baixar Arquivos do MEGA Sem Limite
 
 ## ⚙️ Instalação
 

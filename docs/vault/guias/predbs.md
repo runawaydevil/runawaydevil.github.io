@@ -4,7 +4,7 @@ title: "Verificando lançamentos de jogos usando PreDBs"
 description: "Aprenda a identificar lançamentos piratas de jogos e verificar sua autenticidade usando bancos de dados públicos da warez scene."
 ---
 
-# 🕹️ Verificando Lançamentos de Jogos Usando PreDBs
+# Verificando Lançamentos de Jogos Usando PreDBs
 
 Muitas vezes surge a dúvida: *“Já saiu o crack do jogo X?”* ou *“Por que ainda não apareceu no FitGirl?”*.  
 Neste guia, vamos entender **como verificar a existência de um lançamento pirata** de forma segura e precisa — e como identificar se um jogo realmente foi lançado na *warez scene*.

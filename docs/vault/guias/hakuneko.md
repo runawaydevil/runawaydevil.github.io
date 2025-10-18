@@ -4,7 +4,7 @@ title: "Guia Completo: Convertendo Mangás para Kindle com Hakuneko e KCC"
 description: "Aprenda a converter mangás para o Kindle usando Hakuneko, KCC e Calibre, com dicas extras e métodos alternativos."
 ---
 
-# 📚 Guia Completo: Convertendo Mangás para Kindle com Hakuneko e KCC
+# Guia Completo: Convertendo Mangás para Kindle com Hakuneko e KCC
 
 Se você é fã de mangás e deseja aproveitá-los em seu **Kindle**, este guia detalha todas as etapas necessárias para realizar a conversão com qualidade e compatibilidade máxima. Além dos métodos tradicionais, incluímos novas dicas e ferramentas opcionais para facilitar o processo.
 

@@ -4,7 +4,7 @@ title: "Aplicativos Comp Study para Android (Alternativas sem anúncios)"
 description: "Lista de aplicativos de streaming alternativos e cuidados de segurança para usuários Android."
 ---
 
-# 🎬 Aplicativos do tipo "Comp Study" para Android
+# Aplicativos do tipo "Comp Study" para Android
 
 Esses aplicativos oferecem acesso a conteúdos de streaming como filmes, séries, novelas e canais de TV, muitas vezes sem assinatura e com foco em simplicidade e leveza. Abaixo está uma lista atualizada de apps populares, junto com recomendações de segurança para instalação e uso.
 

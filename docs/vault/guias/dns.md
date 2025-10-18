@@ -4,7 +4,7 @@ title: "Como Configurar o DNS no Windows e Android"
 description: "Guia prático para alterar DNS em Windows e Android"
 ---
 
-# 🌐 Como Configurar o DNS no Windows e Android
+# Como Configurar o DNS no Windows e Android
 
 ![DNS](/img/dns1.png)
 

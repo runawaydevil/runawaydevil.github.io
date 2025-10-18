@@ -4,7 +4,7 @@ title: "Como baixar arquivos de bots IRC/XDCC"
 description: "Guia sobre como usar Fservers para baixar animes"
 ---
 
-# 💾 Como Baixar Arquivos de Bots IRC/XDCC
+# Como Baixar Arquivos de Bots IRC/XDCC
 
 Dentro da chamada **“pirâmide da pirataria”**, no mesmo nível dos trackers públicos, existem os **canais de IRC** que utilizam **bots XDCC** — também conhecidos como *Fservers*. Esses bots compartilham arquivos diretamente entre usuários e continuam sendo muito usados, especialmente por fãs de animes e material mais raro. Este guia explica, de forma prática, como baixar seus primeiros arquivos por IRC.
 
