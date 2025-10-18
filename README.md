@@ -125,4 +125,7 @@ Este site serve como um diretório organizado de recursos e ferramentas. Todo o 
 
 *Copyright © 2023-2025 Pablo Murad*
 
+---
+*Última atualização: $(Get-Date -Format "dd/MM/yyyy HH:mm")*
+
 </div>
