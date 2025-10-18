@@ -18,8 +18,8 @@ hero:
 features:
   - icon: ✖
     title: Vault de Recursos
-    details: Ferramentas, guias e recursos organizados para devs e entusiastas.
+    details: Um espaço dedicado a quem cria, aprende e experimenta tecnologia. Aqui você encontra ferramentas, guias e materiais organizados para impulsionar seus projetos.
   - icon: ⚒
     title: Guias Práticos
-    details: Tutoriais sobre privacidade, segurança e automação.
+    details: Tutoriais diretos sobre tecnologia underground, automação e cultura hacker. Aprenda truques, métodos e ferramentas que ampliam seus limites digitais.
 ---
