@@ -1,5 +1,5 @@
 ---
-title: Agradecimentos
+title: 🙏 Agradecimentos
 description: Uma carta de gratidão à comunidade — conhecimento aberto, preservação digital, criatividade e liberdade.
 outline: deep
 ---
