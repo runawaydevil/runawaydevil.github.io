@@ -73,6 +73,7 @@ export default defineConfig({
       })
     ]
   },
+  appearance: 'dark', // FORÇAR TEMA ESCURO
   themeConfig: {
     logo: '/icon.png',
     siteTitle: '#hacking',
@@ -118,7 +119,7 @@ export default defineConfig({
 
     footer: {
       message: `Feito com ❤️ para a comunidade | v${version}`,
-      copyright: 'Copyright © 2023-2025 <a href="https://github.com/runawaydevil" target="_blank" rel="noopener noreferrer">runawaydevil</a>'
+      copyright: '2023-2025 • runawaydevil'
     },
 
     sidebar: {

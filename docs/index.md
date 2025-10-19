@@ -58,9 +58,9 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 224px;
+  min-height: clamp(180px, 25vh, 280px);
   position: relative;
-  padding: 20px;
+  padding: clamp(16px, 3vw, 24px);
   overflow: hidden;
 }
 
@@ -71,8 +71,8 @@ onMounted(() => {
   bottom: -10px; /* Reduzido para parecer que sai da borda */
   left: 50%;
   transform: translateX(-50%);
-  width: 104px;
-  height: 104px;
+  width: clamp(80px, 12vw, 120px);
+  height: clamp(80px, 12vw, 120px);
   background-image: url('/nerd.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -87,8 +87,8 @@ onMounted(() => {
   bottom: -10px; /* Reduzido para parecer que sai da borda */
   left: 50%;
   transform: translateX(-50%);
-  width: 104px;
-  height: 104px;
+  width: clamp(80px, 12vw, 120px);
+  height: clamp(80px, 12vw, 120px);
   background-image: url('/hack1.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -96,44 +96,40 @@ onMounted(() => {
   z-index: 10;
 }
 
-/* Efeito gradiente atrás dos ícones */
-.vault-card::before,
-.guias-card::before {
-  content: "";
-  position: absolute;
-  bottom: -20px; /* Reduzido para parecer que sai da borda */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 130px;
-  height: 130px;
-  background:
-    radial-gradient(
-      circle at 55% 45%,
-      rgba(155, 60, 255, 0.7) 0%,
-      rgba(0, 183, 199, 0.6) 40%,
-      rgba(0, 0, 0, 0) 70%
-    );
-  filter: blur(16px);
-  z-index: 9;
+/* Cards com efeito sutil no fundo preto */
+.VPFeature {
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 12px !important;
+  transition: all 0.3s ease !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(10px) !important;
 }
 
-/* Efeito hover */
+.VPFeature:hover {
+  border-color: rgba(255, 255, 255, 0.25) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  transform: translateY(-3px) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Efeito hover dos ícones - mais sutil */
 .vault-card:hover::after,
 .guias-card:hover::after {
-  transform: translateX(-50%) scale(1.05);
-  transition: transform 0.25s ease;
+  transform: translateX(-50%) scale(1.1);
+  transition: transform 0.3s ease;
+  filter: brightness(1.1);
 }
 
 /* Ajustar espaçamento dos textos para dar espaço ao ícone */
 .VPFeature h2,
 .VPFeature h3,
 .VPFeature .title {
-  margin-bottom: 12px;
+  margin-bottom: clamp(8px, 2vw, 16px);
   margin-top: 0;
 }
 
 .VPFeature p {
   margin-bottom: 0;
-  padding-bottom: 90px; /* Ajustado para cards menores */
+  padding-bottom: clamp(60px, 12vw, 100px); /* Responsivo para diferentes tamanhos */
 }
 </style>

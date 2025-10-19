@@ -1,0 +1,56 @@
+/* VitePress Theme Variables - Solução Unificada */
+
+:root {
+  /* Marca (tema claro) */
+  --vp-c-brand-1: #A17718;
+  --vp-c-brand-2: #F9B74B;
+  --vp-c-brand-3: #D4941A;
+  --vp-c-brand-soft: color-mix(in srgb, var(--vp-c-brand-1) 15%, transparent);
+
+  /* Base (tema claro) */
+  --vp-c-bg: #ffffff;
+  --vp-c-text-1: #111827;
+  --vp-c-text-2: #374151;
+}
+
+.dark {
+  /* Marca (tema escuro) */
+  --vp-c-brand-1: #E6C775;
+  --vp-c-brand-2: #E29C3B;
+  --vp-c-brand-3: #D37A2D;
+  --vp-c-brand-soft: color-mix(in srgb, var(--vp-c-brand-1) 20%, transparent);
+
+  /* Base (tema escuro) - FUNDO MARÍTIMO */
+  --vp-c-bg: #000000;
+  --vp-c-bg-alt: #000000;
+  --vp-c-bg-soft: #000000;
+  --vp-c-bg-elv: #000000;
+  --vp-c-bg-elv-up: #000000;
+  --vp-c-bg-elv-mute: #000000;
+  --vp-c-bg-elv-down: #000000;
+  --vp-layout-bg-color: transparent;
+  --vp-nav-bg-color: rgba(0, 0, 0, 0.8);
+  --vp-sidebar-bg-color: rgba(0, 0, 0, 0.8);
+  
+  /* Texto (tema escuro) */
+  --vp-c-text-1: #f1f5f9;
+  --vp-c-text-2: #e2e8f0;
+  --vp-c-text-3: #cbd5e1;
+  
+  /* Links (tema escuro) - cor branca */
+  --vp-c-brand-1: #ffffff;
+  --vp-c-brand-2: #f8f8f8;
+  --vp-c-brand-3: #e8e8e8;
+  
+  /* Bordas (tema escuro) */
+  --vp-c-border: #1e293b;
+  --vp-c-divider: #1e293b;
+  
+  /* Código (tema escuro) - PRETO PURO */
+  --vp-c-code-bg: #000000;
+  --vp-c-code-text: #f1f5f9;
+  
+  /* Garantir preto em todos os elementos restantes */
+  --vp-c-bg-code: #000000;
+  --vp-c-bg-code-block: #000000;
+}

@@ -29,7 +29,7 @@ Mas nada disso é muito quando se faz com **amor, admiração e uma teimosia que
 Criei este projeto com a mesma energia que move os **piratas e hackers** deste mundo: a curiosidade insaciável, o desejo de entender, desmontar e recriar.
 
 :::tip 💡 Filosofia
-> "Que este trabalho inspire, sirva e sobreviva — como todo bom artefato digital que se recusa a desaparecer."
+> "Toda tecnologia é um imperativo categórico do espírito: tornar o finito capaz do infinito." — **Pablo Murad**
 :::
 
 ## 📞 Contato
@@ -46,6 +46,6 @@ Com respeito e admiração a todos que desafiam o óbvio,
 
 <div align="center">
 
-<img src="/dl1old.png" alt="Navio pirata dl1old" style="width: 80px; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+<img src="/dl1old.png" alt="Navio pirata dl1old" style="width: clamp(60px, 8vw, 120px); height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
 
 </div>

@@ -1,91 +1,99 @@
 /**
- * Customize default theme styling by overriding CSS variables:
- * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ * VitePress Theme Customizations
+ * Variáveis CSS movidas para ./styles/vars.css seguindo documentação oficial
  */
 
-/**
- * Colors
- *
- * Each colors have exact same color scale system with 3 levels of solid
- * colors with different brightness, and 1 soft color.
- *
- * - `XXX-1`: The most solid color used mainly for colored text. It must
- *   satisfy the contrast ratio against when used on top of `XXX-soft`.
- *
- * - `XXX-2`: The color used mainly for hover state of the button.
- *
- * - `XXX-3`: The color for solid background, such as bg color of the button.
- *   It must satisfy the contrast ratio with pure white (#ffffff) text on
- *   top of it.
- *
- * - `XXX-soft`: The color used for subtle background such as custom container
- *   or badges. It must satisfy the contrast ratio when putting `XXX-1` colors
- *   on top of it.
- *
- *   The soft color must be semi transparent alpha channel. This is crucial
- *   because it allows adding multiple "soft" colors on top of each other
- *   to create a accent, such as when having inline code block inside
- *   custom containers.
- *
- * - `default`: The color used purely for subtle indication without any
- *   special meanings attached to it such as bg color for menu hover state.
- *
- * - `brand`: Used for primary brand colors, such as link text, button with
- *   brand theme, etc.
- *
- * - `tip`: Used to indicate useful information. The default theme uses the
- *   brand color for this by default.
- *
- * - `warning`: Used to indicate warning to the users. Used in custom
- *   container, badges, etc.
- *
- * - `danger`: Used to show error, or dangerous message to the users. Used
- *   in custom container, badges, etc.
- * -------------------------------------------------------------------------- */
-
-:root {
-  /* Tema Claro - Paleta Pirata */
-  --vp-c-brand-1: #A17718;
-  --vp-c-brand-2: #F9B74B;
-  --vp-c-brand-3: #D4941A;
-  --vp-c-brand-soft: rgba(161, 119, 24, 0.14);
-
-  --vp-c-tip-1: var(--vp-c-brand-1);
-  --vp-c-tip-2: var(--vp-c-brand-2);
-  --vp-c-tip-3: var(--vp-c-brand-3);
-  --vp-c-tip-soft: var(--vp-c-brand-soft);
-}
-
-.dark {
-  /* Tema Escuro - Paleta Pirata */
-  --vp-c-brand-1: #E6C775;
-  --vp-c-brand-2: #E29C3B;
-  --vp-c-brand-3: #D37A2D;
-  --vp-c-brand-soft: rgba(230, 199, 117, 0.14);
-}
-
-/**
- * Barras de Rolagem Invisíveis
- * -------------------------------------------------------------------------- */
-
-/* Para navegadores baseados em WebKit (Chrome, Safari, Opera) */
+/* Barras de rolagem invisíveis */
 ::-webkit-scrollbar {
-  display: none;
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
 }
 
 /* Para Firefox */
-* {
+html {
   scrollbar-width: none;
 }
 
-/* Para Internet Explorer e Edge */
+/* Para todos os elementos */
 * {
+  scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
-/* Garantir que todos os elementos mantenham a funcionalidade de rolagem */
-html, body, #app, .VPSidebar, .VPContent, .VPSidebarItem, .VPSidebarGroup {
-  overflow: auto;
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Fundo marítimo noturno apenas para o layout principal */
+.dark .VPLayout {
+  background: 
+    radial-gradient(ellipse at top, rgba(15, 23, 42, 0.8) 0%, transparent 50%),
+    linear-gradient(180deg, #0f172a 0%, #1e293b 30%, #334155 60%, #0f172a 100%),
+    radial-gradient(ellipse at bottom, rgba(30, 58, 138, 0.3) 0%, transparent 70%),
+    #000000 !important;
+  min-height: 100vh;
+}
+
+/* Fundo preto para navbar e sidebar */
+.dark .VPNav,
+.dark .VPSidebar {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Efeito de estrelas no céu */
+.dark .VPLayout::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, #ffffff, transparent),
+    radial-gradient(2px 2px at 40px 70px, #ffffff, transparent),
+    radial-gradient(1px 1px at 90px 40px, #ffffff, transparent),
+    radial-gradient(1px 1px at 130px 80px, #ffffff, transparent),
+    radial-gradient(2px 2px at 160px 30px, #ffffff, transparent);
+  background-repeat: repeat;
+  background-size: 200px 100px;
+  opacity: 0.2;
+  z-index: -10;
+  pointer-events: none;
+}
+
+/* Permitir cards com fundo personalizado */
+.dark .VPFeature {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+/* Links com cor branca */
+.dark a {
+  color: #ffffff !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.dark a:hover {
+  color: #f8f8f8 !important;
+  text-decoration: underline;
+}
+
+.dark a:visited {
+  color: #e8e8e8 !important;
 }
 
 /**
@@ -109,12 +117,8 @@ html, body, #app, .VPSidebar, .VPContent, .VPSidebarItem, .VPSidebarGroup {
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    #bd34fe 30%,
-    #41d1ff
-  );
+  --vp-home-hero-name-color: #ffffff;
+  --vp-home-hero-name-background: none;
 
   --vp-home-hero-image-background-image: none;
   --vp-home-hero-image-filter: none;
@@ -148,8 +152,10 @@ html, body, #app, .VPSidebar, .VPContent, .VPSidebarItem, .VPSidebarGroup {
  * -------------------------------------------------------------------------- */
 
 /* Efeito sutil nos títulos principais */
-h1, h2, h3 {
-  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+h1,
+h2,
+h3 {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
 }
 
 /**
@@ -166,30 +172,91 @@ h1, h2, h3 {
 
 /* 1) garante camada atrás do navio */
 .VPHomeHero .image {
-  position: relative;        /* cria contexto pro ::before */
-  max-width: 440px;          /* o que você já está usando */
+  position: relative;
+  /* cria contexto pro ::before */
+  max-width: 440px;
+  /* o que você já está usando */
 }
 
-/* 3) mantém o navio por cima do glow */
+/* Logo dl1.png - apenas efeito visual no hover */
 .VPHomeHero .image .image-src {
   position: relative;
   z-index: 1;
-  /* seus efeitos anteriores podem ficar aqui */
-  transform: translateY(6px) rotate(-2deg) scale(1.03);
-  filter: drop-shadow(0 18px 40px rgba(0,0,0,.5))
-          drop-shadow(0 0 22px rgba(120, 80, 255, .25));
-  transition: transform .25s ease;
+  transition: filter 0.6s ease;
 }
 
-/* efeito hover sutil (opcional) */
+/* Efeito visual marítimo - apenas brilho, sem movimento */
 .VPHomeHero .image:hover .image-src {
-  transform: translateY(0) rotate(-1deg) scale(1.05);
+  filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.4)) 
+          drop-shadow(0 8px 25px rgba(0, 0, 0, 0.3));
 }
 
-/* Responsivo */
+/* Ondulações removidas para evitar problemas de posicionamento */
+
+/* Efeito especial para o título "piratas.club" - branco chapado com sombra marfim */
+.VPHome .name {
+  color: #ffffff !important;
+  text-shadow: 
+    0 0 8px rgba(248, 246, 240, 0.4),
+    0 0 15px rgba(245, 243, 237, 0.3),
+    0 0 25px rgba(242, 240, 234, 0.2);
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+/* Efeito de pulsação no hover */
+.VPHome .name:hover {
+  animation: titlePulse 1.5s ease-in-out infinite;
+}
+
+/* Animação de pulsação */
+@keyframes titlePulse {
+  0%, 100% {
+    transform: scale(1);
+    text-shadow: 
+      0 0 8px rgba(248, 246, 240, 0.4),
+      0 0 15px rgba(245, 243, 237, 0.3),
+      0 0 25px rgba(242, 240, 234, 0.2);
+  }
+  50% {
+    transform: scale(1.05);
+    text-shadow: 
+      0 0 12px rgba(248, 246, 240, 0.6),
+      0 0 20px rgba(245, 243, 237, 0.5),
+      0 0 30px rgba(242, 240, 234, 0.4);
+  }
+}
+
+/* Responsivo - apenas tamanho, sem efeitos */
+@media (max-width: 1440px) {
+  .VPHomeHero .image {
+    max-width: 70vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .VPHomeHero .image {
+    max-width: 72vw;
+  }
+}
+
 @media (max-width: 960px) {
-  .VPHomeHero .image { max-width: 68vw; }
-  .VPHomeHero .image .image-src { transform: translateY(4px) rotate(-1.5deg) scale(1.02); }
+  .VPHomeHero .image {
+    max-width: 68vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .VPHomeHero .image {
+    max-width: 75vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .VPHomeHero .image {
+    max-width: 80vw;
+  }
 }
 
 /**
@@ -214,6 +281,3 @@ h1, h2, h3 {
   background: #6d28d9 !important;
   transform: translateY(0) !important;
 }
-
-
-

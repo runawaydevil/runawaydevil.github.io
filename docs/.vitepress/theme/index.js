@@ -1,10 +1,19 @@
+// https://vitepress.dev/guide/custom-theme
+import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
+import './styles/vars.css'  // FUNDAMENTAL: isso faz as cores entrarem no bundle
+import './style.css'
 import './custom.css'
 
 export default {
-  ...DefaultTheme,
+  extends: DefaultTheme,
+  Layout: () => {
+    return h(DefaultTheme.Layout, null, {
+      // https://vitepress.dev/guide/extending-default-theme#layout-slots
+    })
+  },
   enhanceApp({ app, router }) {
-    // Adicionar script para customizar o rodapé após o carregamento
+    // Configuração limpa - deixar o CSS fazer o trabalho
     if (typeof window !== 'undefined') {
       // Aguardar o DOM estar pronto
       const updateFooter = () => {
