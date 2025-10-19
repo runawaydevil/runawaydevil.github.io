@@ -1,27 +1,33 @@
----
-sidebar_position: 1
-title: "😊 Manifesto dos Curiosos"
-description: "O manifesto pessoal sobre curiosidade, conhecimento e comunidade hacker"
-lang: pt-BR
-lastUpdated: true
----
+# 🏴‍☠️ Aos Piratas e Hackers do Planeta
 
-# 😊 Manifesto dos Curiosos
-
-Sempre fui movido por um impulso quase obsessivo: **aprender algo novo**. A informação, especialmente aquela que envolve tecnologia, sempre exerceu sobre mim um fascínio indescritível. Sou um curioso nato — e acredito que os **hackers**, **ativistas digitais** e **navegantes da World Wide Web** compartilham comigo essa mesma chama: a **curiosidade**.
-
-A pirataria não nasceu ontem, e tampouco vai desaparecer amanhã. Mas convenhamos — nesse vasto oceano digital, há **piratas e piratas**. Assim como em qualquer outro território humano, há quem destrua e há quem preserve. E é aí que me coloco.
-
-Não estou aqui como pirata, mas como **curador** de um vasto acervo de conhecimento que o mundo já oferece — apenas o **organizo**, **reviso** e **recompilo**. Tudo o que você encontrará aqui foi **extraído de fontes públicas**, repensado e reapresentado sob uma nova luz.
-
-Durante quase uma semana inteira, mergulhei sem descanso nessa missão. O resultado é o reflexo de algo maior: **um amor profundo por uma comunidade mundial de curiosos**, de mentes inquietas que não se contentam em aceitar o que lhes é dado, mas buscam entender como tudo realmente funciona.
-
-Bem-vindo ao **Vault dos Curiosos**. Aqui, a curiosidade não é pecado — é combustível.
+Chegar até aqui foi uma longa travessia — e concluir este projeto, ou melhor, **alcançar a versão 1.0**, é como avistar terra firme após dias e noites em mar aberto.  
+Foram jornadas intensas, apenas eu e minha obsessão em ver isso nascer.  
+E, de alguma forma, **valeu cada segundo**.  
+Talvez, pela primeira vez em muito tempo, eu esteja quase satisfeito — e digo *quase*, porque amanhã haverá algo novo a ser explorado… e ainda bem que é assim.
 
 ---
 
-<div align="center">
+### ⚙️ Transformar esta ideia em realidade custou-me o essencial:
 
-<img src="/pablo.png" alt="Pablo Murad" style="width: 30%; height: auto;">
+- 💸 **R$ 500,00** em APIs do Google Translate — o preço de dar voz a cada idioma.  
+- 🌙 **16 noites e dias sem dormir**, navegando entre códigos e cafeína.  
+- ❤️‍🔥 **Tudo isso**, e um pouco mais da minha sanidade.
 
-</div>
+---
+
+Mas nada disso é muito quando se faz com **amor, admiração e uma teimosia que beira a loucura**.  
+Criei este projeto com a mesma energia que move os **piratas e hackers** deste mundo:  
+a curiosidade insaciável, o desejo de entender, desmontar e recriar.
+
+---
+
+> “Que este trabalho inspire, sirva e sobreviva — como todo bom artefato digital que se recusa a desaparecer.”
+
+---
+
+Com respeito e admiração a todos que desafiam o óbvio,  
+**Pablo**
+
+📡 [piratas.club](https://piratas.club)  
+✉️ contato@piratas.club  
+🗓️ 18 de outubro de 2025
