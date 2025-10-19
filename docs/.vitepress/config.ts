@@ -127,8 +127,8 @@ export default defineConfig({
           text: 'Referências',
           items: [
             { text: 'Referências', link: '/ref/' },
-            { text: 'Manifesto dos Curiosos', link: '/ref/about' },
-            { text: 'Agradecimentos', link: '/ref/agradecimentos' }
+            { text: '🏴‍☠️ A todos os navegantes...', link: '/ref/about' },
+            { text: '🙏 Agradecimentos', link: '/ref/agradecimentos' }
           ]
         }
       ]
