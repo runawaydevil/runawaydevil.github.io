@@ -1,5 +1,5 @@
 ---
-title: "🚀 Guia para Iniciantes em Pirataria (Atualmente em Atualização!)"
+title: "Guia para Iniciantes em Pirataria (Atualmente em Atualização!)"
 description: "# 🚀 Guia para Iniciantes em Pirataria (Atualmente em Atualização. )
 
 ## O que você precisa saber:

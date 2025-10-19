@@ -18,7 +18,7 @@ tags:
 - music
 - manga
 - software
-title: 🎵 Guia Completo de EAC (Exact Audio Copy)
+title: Guia Completo de EAC (Exact Audio Copy)
 ---
 
 

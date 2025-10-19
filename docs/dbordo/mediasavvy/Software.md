@@ -1,5 +1,5 @@
 ---
-title: "💾 Software"
+title: "Software"
 description: "# 💾 Software
 
 ### Esta lista mostra como obter recursos premium / software pago gratuitamente. ***

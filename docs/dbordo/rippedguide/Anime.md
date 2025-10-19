@@ -18,7 +18,7 @@ tags:
 - linux
 - manga
 - emulation
-title: 🎬 Guia Completo de Anime
+title: Guia Completo de Anime
 ---
 
 

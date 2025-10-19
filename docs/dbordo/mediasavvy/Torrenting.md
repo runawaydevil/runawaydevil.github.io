@@ -1,5 +1,5 @@
 ---
-title: "🌀 Torrenting"
+title: "Torrenting"
 description: "# 🌀 Torrenting
 ### Clientes de Torrent, Trackers, Sites
 

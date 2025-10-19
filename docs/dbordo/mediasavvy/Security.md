@@ -1,5 +1,5 @@
 ---
-title: "🛡️ Segurança (Atualizações em andamento...)"
+title: "Segurança (Atualizações em andamento...)"
 description: "# 🛡️ Segurança (Atualizações em andamento. )
 
 ### Apresenta os melhores programas e sites para segurança."

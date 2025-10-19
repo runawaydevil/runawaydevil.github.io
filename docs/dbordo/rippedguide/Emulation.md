@@ -18,7 +18,7 @@ tags:
 - manga
 - software
 - roms
-title: 🎮 Guia Completo de Emulação
+title: Guia Completo de Emulação
 ---
 
 

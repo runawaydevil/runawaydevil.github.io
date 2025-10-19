@@ -18,7 +18,7 @@ tags:
 - manga
 - software
 - emulation
-title: 🏴‍☠️ Guia Completo de Trackers Privados
+title: Guia Completo de Trackers Privados
 ---
 
 

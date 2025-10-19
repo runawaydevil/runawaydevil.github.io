@@ -18,7 +18,7 @@ tags:
 - crypto
 - software
 - emulation
-title: 💻 Guia Completo de Software
+title: Guia Completo de Software
 ---
 
 

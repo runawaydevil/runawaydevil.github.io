@@ -1,5 +1,5 @@
 ---
-title: "🧩 Bloqueio de Anúncios / Extensões / Ferramentas de Desvio"
+title: "Bloqueio de Anúncios / Extensões / Ferramentas de Desvio"
 description: "st=0&sk=t&sd=d&sr=topics&keywords=adguard&sf=titleonly): Um bloqueador de anúncios em todo o sistema. Este aplicativo é reconhecido por sua eficiência em remover anúncios indesejados em aplicativos..."
 lang: pt-BR
 lastUpdated: true

@@ -18,7 +18,7 @@ tags:
 - linux
 - software
 - game
-title: 🎮 Guia Completo de Jogos
+title: Guia Completo de Jogos
 ---
 
 

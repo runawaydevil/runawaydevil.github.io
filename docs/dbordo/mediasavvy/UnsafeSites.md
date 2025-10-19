@@ -1,5 +1,5 @@
 ---
-title: "⚠️ Websites e Programas Inseguros"
+title: "Websites e Programas Inseguros"
 description: "# ⚠️ Websites e Programas Inseguros
 ### Websites e programas que você nunca deve usar. - **TheRarBG:** Trata-se de uma clonagem falsa do RarBG, um site conhecido por compartilhar arquivos torrent."
 lang: pt-BR

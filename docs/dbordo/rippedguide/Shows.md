@@ -18,7 +18,7 @@ tags:
 - game
 - video
 - movie
-title: 📺 Guia Completo de Séries
+title: Guia Completo de Séries
 ---
 
 

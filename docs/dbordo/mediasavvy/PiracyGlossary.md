@@ -1,5 +1,5 @@
 ---
-title: "🔠 Glossário de Pirataria"
+title: "Glossário de Pirataria"
 description: "Abaixo, você encontrará definições e explicações que podem ajudar a esclarecer esses termos. :::warning Créditos a FMHY por criar este Glossário de Pirataria
 :::
 

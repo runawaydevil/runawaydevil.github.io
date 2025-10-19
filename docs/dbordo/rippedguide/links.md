@@ -18,7 +18,7 @@ tags:
 - imagens
 - plaintext
 - exemplo
-title: 🔗 Links Úteis
+title: Links Úteis
 ---
 
 

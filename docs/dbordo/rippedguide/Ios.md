@@ -1,4 +1,4 @@
----
+﻿---
 category: piracy
 description: Descubra 79 recursos essenciais para downloads seguros e ferramentas
   de pirataria. Guia completo com links verificados e tutoriais passo a passo.
@@ -18,7 +18,7 @@ tags:
 - music
 - manga
 - software
-title: 📱 Guia Completo de iOS
+title: Guia Completo de iOS
 ---
 
 

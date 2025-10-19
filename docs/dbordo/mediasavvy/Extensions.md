@@ -1,5 +1,5 @@
 ---
-title: "🧩 Extensões"
+title: "Extensões"
 description: "# 🧩 Extensões
 ### Extensões Para Seu Navegador
 

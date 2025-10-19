@@ -1,5 +1,5 @@
 ---
-title: "🎵 Música / Rádios / Podcasts"
+title: "Música / Rádios / Podcasts"
 description: "Aqui estão algumas opções:
 
 - ⭐ [YTMP](https://ytmp. in/): Uma ferramenta útil para converter vídeos do YouTube em arquivos de áudio."

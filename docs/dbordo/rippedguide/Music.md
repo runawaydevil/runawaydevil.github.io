@@ -18,7 +18,7 @@ tags:
 - linux
 - music
 - manga
-title: 🎵 Guia Completo de Música
+title: Guia Completo de Música
 ---
 
 

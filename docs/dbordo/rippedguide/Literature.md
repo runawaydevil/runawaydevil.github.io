@@ -18,7 +18,7 @@ tags:
 - manga
 - software
 - java
-title: 📚 Guia Completo de Literatura
+title: Guia Completo de Literatura
 ---
 
 

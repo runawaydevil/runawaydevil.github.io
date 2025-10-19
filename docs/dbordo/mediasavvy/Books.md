@@ -1,5 +1,5 @@
 ---
-title: "📚 Livros / Quadrinhos / Audiolivros e Mais"
+title: "Livros / Quadrinhos / Audiolivros e Mais"
 description: "Abaixo estão algumas plataformas onde você pode encontrar diversos tipos de ebooks, incluindo livros, quadrinhos e mangás. - ⭐ [Anna's Archive](https://annas-archive."
 lang: pt-BR
 lastUpdated: true

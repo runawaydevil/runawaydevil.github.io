@@ -18,7 +18,7 @@ tags:
 - manga
 - software
 - privacy
-title: 🧹 Guia Completo de Debloating
+title: Guia Completo de Debloating
 ---
 
 

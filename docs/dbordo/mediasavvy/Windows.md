@@ -1,5 +1,5 @@
 ---
-title: "🪟 Windows (Atualização em andamento...)"
+title: "Windows (Atualização em andamento...)"
 description: "# 🪟 Windows (Atualização em andamento. )
 ### Ferramentas, guias e mais para Windows."
 lang: pt-BR

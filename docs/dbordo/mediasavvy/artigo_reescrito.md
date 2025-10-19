@@ -1,5 +1,5 @@
 ---
-title: "🤖 Inteligência Artificial"
+title: "Inteligência Artificial"
 description: "# 🤖 Inteligência Artificial
 
 ## Chatbots de IA

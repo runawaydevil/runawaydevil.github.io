@@ -18,7 +18,7 @@ tags:
 - linux
 - software
 - java
-title: 🔧 Guia Completo de Miscelânea
+title: Guia Completo de Miscelânea
 ---
 
 

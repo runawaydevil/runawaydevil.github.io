@@ -18,7 +18,7 @@ tags:
 - tool
 - manga
 - software
-title: 📖 Glossário da Scene
+title: Glossário da Scene
 ---
 
 

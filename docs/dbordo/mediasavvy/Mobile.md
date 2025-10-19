@@ -1,5 +1,5 @@
 ---
-title: "📱 Mobile (Atualmente em atualização...)"
+title: "Mobile (Atualmente em atualização...)"
 description: "# 📱 Mobile (Atualmente em atualização. )
 
 ## Android APKS

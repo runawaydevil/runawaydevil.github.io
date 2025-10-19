@@ -1,5 +1,5 @@
 ---
-title: "🔒 Privacidade: Atualização em andamento..."
+title: "Privacidade: Atualização em andamento..."
 description: "# 🔒 Privacidade: Atualização em andamento. A privacidade na internet é um tema cada vez mais relevante em nosso mundo conectado."
 lang: pt-BR
 lastUpdated: true

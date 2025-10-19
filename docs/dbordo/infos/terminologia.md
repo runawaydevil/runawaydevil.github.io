@@ -1,5 +1,5 @@
 ```markdown
-# 🪶 ➜ Terminologia
+# Terminologia
 Avance com firmeza e preste atenção, seus patifes! É hora de conquistar o conhecimento e abandonar os modos inexperientes!
 
 # 🖋️ ➜ Vocabulário Coletivo

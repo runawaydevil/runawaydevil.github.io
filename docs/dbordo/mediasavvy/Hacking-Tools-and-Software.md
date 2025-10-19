@@ -1,5 +1,5 @@
 ---
-title: "💻 Ferramentas de Hacking (Atualizações principais em andamento...)"
+title: "Ferramentas de Hacking (Atualizações principais em andamento...)"
 description: "# 💻 Ferramentas de Hacking (Atualizações principais em andamento. )
 
 ***

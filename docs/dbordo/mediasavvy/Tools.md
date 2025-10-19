@@ -1,5 +1,5 @@
 ---
-title: "🧰 Ferramentas"
+title: "Ferramentas"
 description: "# 🧰 Ferramentas
 ### Ferramentas para download, userscripts e muito mais. ## Userscripts
 

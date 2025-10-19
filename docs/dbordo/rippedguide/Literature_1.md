@@ -18,7 +18,7 @@ tags:
 - book
 - emulation
 - books
-title: 🏴‍☠️ Guia Completo de Book
+title: Guia Completo de Book
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-title: "🎮 Mega Thread de Jogos Piratas"
+title: "Mega Thread de Jogos Piratas"
 description: "Thread completa com recursos para downloads de jogos, incluindo sites, ferramentas e guias essenciais"
 lang: pt-BR
 lastUpdated: true

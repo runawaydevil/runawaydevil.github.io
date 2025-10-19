@@ -18,7 +18,7 @@ tags:
 - emulation
 - lançamento
 - predb
-title: 📅 Guia Completo de PreDBs
+title: Guia Completo de PreDBs
 ---
 
 

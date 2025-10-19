@@ -1,5 +1,5 @@
 ---
-title: "🎦 Filmes / Programas de TV / TV ao Vivo"
+title: "Filmes / Programas de TV / TV ao Vivo"
 description: ":::
 
 ### Exemplos de Sites de Streaming:

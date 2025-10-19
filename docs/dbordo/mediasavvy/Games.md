@@ -1,5 +1,5 @@
 ---
-title: "🎮 Jogos / Repacks / Emulação"
+title: "Jogos / Repacks / Emulação"
 description: "# 🎮 Jogos / Repacks / Emulação
 
 ***

@@ -1,5 +1,5 @@
 ---
-title: "🏴‍☠️ Awesome Piracy - O Arsenal Completo"
+title: "Awesome Piracy - O Arsenal Completo"
 description: "A mais abrangente coleção de recursos digitais organizados por categoria - VPNs, trackers, streaming, software e muito mais. Desculpe pela falta de tradução completa, mas a qualidade do conteúdo compensa!"
 lang: pt-BR
 lastUpdated: true

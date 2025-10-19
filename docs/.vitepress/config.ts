@@ -55,7 +55,7 @@ export default defineConfig({
         collapsed: false,
 
         // 👇 habilite um (ou os dois) conforme preferir
-        titleFromFile: true,         // usa o H1 do .md
+        titleFromFile: false,         // usa o H1 do .md
         titleFromFileByYaml: true    // usa "title:" do frontmatter
       }),
       RssPlugin(rssOptions),
@@ -126,9 +126,9 @@ export default defineConfig({
         {
           text: 'Referências',
           items: [
-            { text: '📚 Referências', link: '/ref/' },
-            { text: '😊 Manifesto dos Curiosos', link: '/ref/about' },
-            { text: '🙏 Agradecimentos', link: '/ref/agradecimentos' }
+            { text: 'Referências', link: '/ref/' },
+            { text: 'Manifesto dos Curiosos', link: '/ref/about' },
+            { text: 'Agradecimentos', link: '/ref/agradecimentos' }
           ]
         }
       ]

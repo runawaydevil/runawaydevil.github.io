@@ -18,7 +18,7 @@ tags:
 - music
 - manga
 - software
-title: 🏴‍☠️ Guia Completo de Music
+title: Guia Completo de Music
 ---
 
 
