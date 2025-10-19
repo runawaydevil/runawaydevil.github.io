@@ -1,42 +1,106 @@
-/* Estilos personalizados para o tema */
-
-/* Fonte Special Elite para títulos */
-h1,
-h2,
-h3 {
-  font-family: 'Special Elite', monospace;
-  letter-spacing: 0.05em;
-  line-height: 1.2;
+/* Tipografia enxuta e legível no dark */
+:root {
+  --vp-c-bg: #0b0c10;         /* fundo escuro */
+  --vp-c-text-1: #e6e6e6;     /* texto principal */
+  --vp-c-text-2: #b5b5b5;     /* texto secundário */
+  --vp-c-brand-1: #ffffff;    /* branco para consistência */
+  --vp-c-brand-2: #ffffff;
+  --vp-c-brand-3: #ffffff;
 }
 
-/* Títulos específicos da homepage */
-.VPHome .name,
-.VPHome .text {
-  font-family: 'Special Elite', monospace;
-  letter-spacing: 0.05em;
-  line-height: 1.2;
+.VPDoc .content h1,
+.VPDoc .content h2,
+.VPDoc .content h3 {
+  letter-spacing: 0.2px;
+  font-family: 'Special Elite', monospace !important;
 }
 
-/* Customizar o rodapé */
-.VPFooter .copyright a {
-  color: var(--vp-c-text-2);
+/* Links discretos, sem sublinhado agressivo */
+.VPDoc .content a {
   text-decoration: none;
-  transition: color 0.25s ease;
+  border-bottom: 1px dashed rgba(0, 183, 199, 0.35);
 }
-
-.VPFooter .copyright a:hover {
+.VPDoc .content a:hover {
   color: var(--vp-c-brand-1);
-  text-decoration: underline;
+  border-bottom-color: var(--vp-c-brand-1);
 }
 
-/* Garantir que não há camadas escuras sobrepondo */
-.VPHomeHero .image-container {
-  background: transparent !important;
+/* Citações com "fio" sutil */
+.VPDoc .content blockquote {
+  border-left: 2px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.03);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
 }
 
-.VPHomeHero .image-container .image-bg {
-  background: transparent !important;
-  display: none !important;
+/* Sidebar mais compacta */
+.VPSidebar .items .link {
+  line-height: 1.2;
 }
 
-/* Logo dl1.png - configuração movida para style.css */
+/* Links da sidebar em branco */
+.VPSidebar .items .link a {
+  color: #ffffff !important;
+}
+
+.VPSidebar .items .link a:hover {
+  color: #f8f8f8 !important;
+}
+
+/* Links ativos da sidebar */
+.VPSidebar .items .link.is-active a {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* Grupos de links da sidebar */
+.VPSidebar .items .group .title {
+  color: #ffffff !important;
+}
+
+.VPSidebar .items .group .items .link a {
+  color: #e4e4e7 !important;
+}
+
+.VPSidebar .items .group .items .link a:hover {
+  color: #ffffff !important;
+}
+
+/* Botões de navegação do blog - FORÇAR BRANCO */
+.VPDoc .content .next-and-prev-link {
+  border: 1px dashed rgba(255, 255, 255, 0.2) !important;
+  background: rgba(255, 255, 255, 0.03) !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.VPDoc .content .next-and-prev-link:hover {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Forçar TODOS os textos para branco */
+.VPDoc .content .next-and-prev-link *,
+.VPDoc .content .next-and-prev-link .title,
+.VPDoc .content .next-and-prev-link .subtitle,
+.VPDoc .content .next-and-prev-link a,
+.VPDoc .content .next-and-prev-link span {
+  color: #ffffff !important;
+}
+
+.VPDoc .content .next-and-prev-link:hover *,
+.VPDoc .content .next-and-prev-link:hover .title,
+.VPDoc .content .next-and-prev-link:hover .subtitle,
+.VPDoc .content .next-and-prev-link:hover a,
+.VPDoc .content .next-and-prev-link:hover span {
+  color: #f8f8f8 !important;
+}
+
+/* Sobrescrever qualquer cor azul */
+.VPDoc .content .next-and-prev-link,
+.VPDoc .content .next-and-prev-link * {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}

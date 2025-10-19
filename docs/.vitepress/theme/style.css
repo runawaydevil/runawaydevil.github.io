@@ -3,6 +3,9 @@
  * Variáveis CSS movidas para ./styles/vars.css seguindo documentação oficial
  */
 
+/* Importar fonte Special Elite */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
 /* Barras de rolagem invisíveis */
 ::-webkit-scrollbar {
   width: 0px;
@@ -47,11 +50,97 @@ html {
   min-height: 100vh;
 }
 
-/* Fundo preto para navbar e sidebar */
-.dark .VPNav,
+/* Sidebar com cores brancas consistentes */
 .dark .VPSidebar {
   background-color: rgba(0, 0, 0, 0.8) !important;
   backdrop-filter: blur(10px);
+}
+
+.dark .VPSidebar .items .link a,
+.dark .VPSidebar .items .group .title,
+.dark .VPSidebar .items .group .items .link a {
+  color: #ffffff !important;
+  font-family: 'Special Elite', monospace !important;
+}
+
+.dark .VPSidebar .items .link a:hover,
+.dark .VPSidebar .items .group .items .link a:hover {
+  color: #f8f8f8 !important;
+}
+
+.dark .VPSidebar .items .link.is-active a {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+/* Fundo preto para navbar */
+.dark .VPNav {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(10px);
+}
+
+/* Links da navbar com fonte Special Elite */
+.dark .VPNav .nav .link,
+.dark .VPNav .nav .link:hover {
+  color: #ffffff !important;
+  font-family: 'Special Elite', monospace !important;
+}
+
+/* Botões de navegação do blog em branco - FORÇAR ESTILO */
+.dark .VPDoc .content .next-and-prev-link,
+.dark .VPDoc .content .next-and-prev-link * {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  color: #ffffff !important;
+}
+
+.dark .VPDoc .content .next-and-prev-link:hover,
+.dark .VPDoc .content .next-and-prev-link:hover * {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #f8f8f8 !important;
+}
+
+.dark .VPDoc .content .next-and-prev-link .title,
+.dark .VPDoc .content .next-and-prev-link .subtitle {
+  color: #ffffff !important;
+}
+
+.dark .VPDoc .content .next-and-prev-link:hover .title,
+.dark .VPDoc .content .next-and-prev-link:hover .subtitle {
+  color: #f8f8f8 !important;
+}
+
+/* Forçar todos os elementos do botão para branco */
+.dark .VPDoc .content .next-and-prev-link a,
+.dark .VPDoc .content .next-and-prev-link a *,
+.dark .VPDoc .content .next-and-prev-link span,
+.dark .VPDoc .content .next-and-prev-link span * {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* REGRAS ULTRA ESPECÍFICAS PARA SOBRESCREVER VITEPRESS */
+.dark .VPDoc .content .next-and-prev-link,
+.dark .VPDoc .content .next-and-prev-link *,
+.dark .VPDoc .content .next-and-prev-link a,
+.dark .VPDoc .content .next-and-prev-link span,
+.dark .VPDoc .content .next-and-prev-link div,
+.dark .VPDoc .content .next-and-prev-link p {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Sobrescrever qualquer estilo inline ou específico do VitePress */
+.dark .VPDoc .content .next-and-prev-link[style*="color"],
+.dark .VPDoc .content .next-and-prev-link *[style*="color"] {
+  color: #ffffff !important;
+}
+
+.dark .VPDoc .content .next-and-prev-link[style*="border"],
+.dark .VPDoc .content .next-and-prev-link *[style*="border"] {
+  border-color: rgba(255, 255, 255, 0.2) !important;
 }
 
 /* Efeito de estrelas no céu */
@@ -94,6 +183,68 @@ html {
 
 .dark a:visited {
   color: #e8e8e8 !important;
+}
+
+/* Botões brand personalizados - FORÇAR ESTILO */
+.dark .VPButton.brand,
+.dark .VPButton.brand:not(:disabled):hover,
+.dark .VPButton.brand:not(:disabled):active {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+  transition: all 0.3s ease !important;
+}
+
+.dark .VPButton.brand:not(:disabled):hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.dark .VPButton.brand:not(:disabled):active {
+  background: rgba(255, 255, 255, 0.15) !important;
+  transform: translateY(0) !important;
+}
+
+/* Sobrescrever todas as variáveis CSS do botão */
+.dark {
+  --vp-button-brand-bg: rgba(255, 255, 255, 0.1) !important;
+  --vp-button-brand-hover-bg: rgba(255, 255, 255, 0.2) !important;
+  --vp-button-brand-active-bg: rgba(255, 255, 255, 0.15) !important;
+  --vp-button-brand-border: rgba(255, 255, 255, 0.2) !important;
+  --vp-button-brand-hover-border: rgba(255, 255, 255, 0.3) !important;
+  --vp-button-brand-text: #ffffff !important;
+  --vp-button-brand-hover-text: #ffffff !important;
+  --vp-button-brand-active-text: #ffffff !important;
+}
+
+/* Sobrescrever também as variáveis globais */
+:root {
+  --vp-button-brand-bg: rgba(255, 255, 255, 0.1) !important;
+  --vp-button-brand-hover-bg: rgba(255, 255, 255, 0.2) !important;
+  --vp-button-brand-active-bg: rgba(255, 255, 255, 0.15) !important;
+  --vp-button-brand-border: rgba(255, 255, 255, 0.2) !important;
+  --vp-button-brand-hover-border: rgba(255, 255, 255, 0.3) !important;
+  --vp-button-brand-text: #ffffff !important;
+  --vp-button-brand-hover-text: #ffffff !important;
+  --vp-button-brand-active-text: #ffffff !important;
+}
+
+/* Forçar estilo em todos os botões brand */
+.dark button.VPButton.brand,
+.dark a.VPButton.brand,
+.dark .VPButton.brand {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
+}
+
+.dark button.VPButton.brand:hover,
+.dark a.VPButton.brand:hover,
+.dark .VPButton.brand:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 /**
@@ -203,11 +354,12 @@ h3 {
   font-weight: 900;
   letter-spacing: 0.05em;
   transition: all 0.3s ease;
+  font-family: 'Special Elite', monospace !important;
 }
 
 /* Efeito de pulsação no hover */
 .VPHome .name:hover {
-  animation: titlePulse 1.5s ease-in-out infinite;
+  animation: titlePulse 3s ease-in-out infinite;
 }
 
 /* Animação de pulsação */
@@ -280,4 +432,55 @@ h3 {
 .VPHome .actions .VPButton.brand:active {
   background: #6d28d9 !important;
   transform: translateY(0) !important;
+}
+
+/* REGRA FINAL - MÁXIMA ESPECIFICIDADE PARA SOBRESCREVER TUDO */
+html.dark .VPDoc .content .next-and-prev-link,
+html.dark .VPDoc .content .next-and-prev-link *,
+html.dark .VPDoc .content .next-and-prev-link a,
+html.dark .VPDoc .content .next-and-prev-link span,
+html.dark .VPDoc .content .next-and-prev-link div,
+html.dark .VPDoc .content .next-and-prev-link p,
+html.dark .VPDoc .content .next-and-prev-link .title,
+html.dark .VPDoc .content .next-and-prev-link .subtitle {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+html.dark .VPDoc .content .next-and-prev-link:hover,
+html.dark .VPDoc .content .next-and-prev-link:hover *,
+html.dark .VPDoc .content .next-and-prev-link:hover a,
+html.dark .VPDoc .content .next-and-prev-link:hover span,
+html.dark .VPDoc .content .next-and-prev-link:hover div,
+html.dark .VPDoc .content .next-and-prev-link:hover p,
+html.dark .VPDoc .content .next-and-prev-link:hover .title,
+html.dark .VPDoc .content .next-and-prev-link:hover .subtitle {
+  color: #f8f8f8 !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* CORRIGIR COR VERDE EM TODAS AS BORDAS DE BOTÕES */
+.dark button,
+.dark .VPButton,
+.dark .VPButton.brand,
+.dark button:focus,
+.dark .VPButton:focus,
+.dark .VPButton.brand:focus,
+.dark button:active,
+.dark .VPButton:active,
+.dark .VPButton.brand:active,
+.dark button:hover,
+.dark .VPButton:hover,
+.dark .VPButton.brand:hover {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+  outline-color: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: none !important;
+}
+
+/* Remover qualquer cor verde de foco */
+.dark *:focus {
+  outline-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
 }

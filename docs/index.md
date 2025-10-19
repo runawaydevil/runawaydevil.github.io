@@ -52,6 +52,13 @@ onMounted(() => {
 })
 </script>
 
+## Posts Recentes
+
+### [Aos Piratas e Hackers do Planeta](/blog/posts/aos-piratas-e-hackers)
+*19 de Janeiro, 2025*
+
+Chegar até aqui foi uma longa travessia — e concluir este projeto, ou melhor, alcançar a versão 1.0, é como avistar terra firme após dias e noites em mar aberto.
+
 <style>
 /* Layout dos cards - textos em cima, ícones embaixo */
 .VPFeature {
@@ -131,5 +138,44 @@ onMounted(() => {
 .VPFeature p {
   margin-bottom: 0;
   padding-bottom: clamp(60px, 12vw, 100px); /* Responsivo para diferentes tamanhos */
+}
+
+/* Estilos para os posts na página inicial */
+h2 {
+  color: #ffffff;
+  font-size: 0.8rem;
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+h3 {
+  color: #ffffff;
+  font-size: 0.75rem;
+  margin: 1.5rem 0 0.5rem 0;
+  font-weight: 500;
+}
+
+h3 a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+h3 a:hover {
+  color: #f8f8f8;
+  text-decoration: underline;
+}
+
+p {
+  color: #e4e4e7;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+em {
+  color: #a1a1aa;
+  font-size: 0.75rem;
 }
 </style>

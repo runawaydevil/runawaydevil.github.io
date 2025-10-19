@@ -39,12 +39,25 @@
   
   /* Links (tema escuro) - cor branca */
   --vp-c-brand-1: #ffffff;
-  --vp-c-brand-2: #f8f8f8;
-  --vp-c-brand-3: #e8e8e8;
+  --vp-c-brand-2: #ffffff;
+  --vp-c-brand-3: #ffffff;
   
-  /* Bordas (tema escuro) */
-  --vp-c-border: #1e293b;
-  --vp-c-divider: #1e293b;
+  /* Forçar cores dos botões de navegação para branco */
+  --vp-c-text-1: #ffffff;
+  --vp-c-text-2: #ffffff;
+  --vp-c-text-3: #ffffff;
+  
+  /* Botões (tema escuro) - cores personalizadas */
+  --vp-button-brand-bg: rgba(255, 255, 255, 0.1);
+  --vp-button-brand-hover-bg: rgba(255, 255, 255, 0.2);
+  --vp-button-brand-active-bg: rgba(255, 255, 255, 0.15);
+  --vp-button-brand-border: rgba(255, 255, 255, 0.2);
+  --vp-button-brand-hover-border: rgba(255, 255, 255, 0.3);
+  --vp-button-brand-text: #ffffff;
+  
+  /* Bordas (tema escuro) - BRANCO EM VEZ DE VERDE */
+  --vp-c-border: rgba(255, 255, 255, 0.2);
+  --vp-c-divider: rgba(255, 255, 255, 0.2);
   
   /* Código (tema escuro) - PRETO PURO */
   --vp-c-code-bg: #000000;

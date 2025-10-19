@@ -83,6 +83,7 @@ export default defineConfig({
       { text: 'Vault', link: '/vault/' },
       { text: 'Diário de Bordo', link: '/dbordo/' },
       { text: 'Sobre', link: '/ref/' },
+      { text: 'Blog', link: '/blog/' },
       {
         text: 'Redes',
         items: [
@@ -117,12 +118,26 @@ export default defineConfig({
       }
     },
 
-    footer: {
-      message: `Feito com ❤️ para a comunidade | v${version}`,
-      copyright: '2023-2025 • runawaydevil'
-    },
-
+    // Sidebar específico para diferentes rotas
     sidebar: {
+      '/blog/': [
+        { text: 'Início do Blog', link: '/blog/' },
+        {
+          text: '2025',
+          items: [
+            { text: 'Aos Piratas e Hackers do Planeta', link: '/blog/posts/aos-piratas-e-hackers' },
+            // acrescente novos posts aqui:
+            // { text: 'Título do Post', link: '/blog/posts/titulo-do-post' },
+          ]
+        },
+        // Opcional: seções por ano/tema
+        // {
+        //   text: 'Ensaios',
+        //   items: [
+        //     { text: 'Manifesto do Vault', link: '/blog/posts/manifesto' }
+        //   ]
+        // }
+      ],
       '/ref/': [
         {
           text: 'Referências',
@@ -133,6 +148,11 @@ export default defineConfig({
           ]
         }
       ]
-    }
+    },
+
+    footer: {
+      message: `Feito com ❤️ para a comunidade | v${version}`,
+      copyright: '2023-2025 • runawaydevil'
+    },
   }
 })
