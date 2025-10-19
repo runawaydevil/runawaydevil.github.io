@@ -40,58 +40,100 @@ onMounted(() => {
       }
       
       if (iconSrc) {
-        let iconElement = card.querySelector('.icon')
-        if (!iconElement) {
-          iconElement = document.createElement('div')
-          iconElement.className = 'icon'
-          card.insertBefore(iconElement, card.firstChild)
+        // Adicionar classe específica ao card para CSS
+        if (title.includes('Vault')) {
+          card.classList.add('vault-card')
+        } else if (title.includes('Guias')) {
+          card.classList.add('guias-card')
         }
-        iconElement.innerHTML = `<img src="${iconSrc}" alt="${altText}" class="feature-icon" style="width: 64px; height: 64px; display: block; margin: 16px auto 16px auto;">`
       }
     })
-  }, 500)
+  }, 100)
 })
 </script>
 
 <style>
-/* Replicando o efeito da logo dl1.png para os ícones */
-.feature-icon {
+/* Layout dos cards - textos em cima, ícones embaixo */
+.VPFeature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 224px;
   position: relative;
-  z-index: 2;
-  transition: transform 0.25s ease;
+  padding: 20px;
+  overflow: hidden;
 }
 
-/* Glow colorido atrás dos ícones (igual ao da logo) */
-.icon::before {
+/* Ícone do Vault de Recursos */
+.vault-card::after {
   content: "";
   position: absolute;
-  width: 80px;
-  height: 80px;
-  top: 50%;
+  bottom: -10px; /* Reduzido para parecer que sai da borda */
   left: 50%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 0;
+  transform: translateX(-50%);
+  width: 104px;
+  height: 104px;
+  background-image: url('/nerd.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
 
-  /* Mesmo gradiente da logo, mas menor */
+/* Ícone dos Guias Práticos */
+.guias-card::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Reduzido para parecer que sai da borda */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 104px;
+  height: 104px;
+  background-image: url('/hack1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
+
+/* Efeito gradiente atrás dos ícones */
+.vault-card::before,
+.guias-card::before {
+  content: "";
+  position: absolute;
+  bottom: -20px; /* Reduzido para parecer que sai da borda */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 130px;
   background:
     radial-gradient(
       circle at 55% 45%,
-      rgba(155, 60, 255, 0.55) 0%,   /* #9B3CFF violeta */
-      rgba(0, 183, 199, 0.45) 40%,   /* #00B7C7 ciano */
+      rgba(155, 60, 255, 0.7) 0%,
+      rgba(0, 183, 199, 0.6) 40%,
       rgba(0, 0, 0, 0) 70%
     );
-  filter: blur(8px);
+  filter: blur(16px);
+  z-index: 9;
 }
 
-/* Efeito hover sutil (igual ao da logo) */
-.feature-icon:hover {
-  transform: scale(1.05);
+/* Efeito hover */
+.vault-card:hover::after,
+.guias-card:hover::after {
+  transform: translateX(-50%) scale(1.05);
+  transition: transform 0.25s ease;
 }
 
-/* Garantir que o container do ícone tenha posição relativa */
-.icon {
-  position: relative;
-  z-index: 1;
+/* Ajustar espaçamento dos textos para dar espaço ao ícone */
+.VPFeature h2,
+.VPFeature h3,
+.VPFeature .title {
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.VPFeature p {
+  margin-bottom: 0;
+  padding-bottom: 90px; /* Ajustado para cards menores */
 }
 </style>

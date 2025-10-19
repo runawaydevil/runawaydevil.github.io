@@ -1,0 +1,24 @@
+Salve este arquivo como
+docs/.vitepress/theme/components/BlogList.vue
+
+Crie um arquivo de índice para o blog:
+docs/blog/index.md com:
+
+---
+title: Blog
+---
+<BlogList />
+
+
+Cada post deve estar em docs/blog/ com frontmatter como:
+
+---
+title: Meu Primeiro Post
+description: Um teste de blog no VitePress
+date: 2025-10-18
+tags: [VitePress, Blog]
+---
+Conteúdo do post em Markdown...
+
+
+Se quiser, posso gerar também um sistem

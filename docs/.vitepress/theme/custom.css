@@ -1,0 +1,76 @@
+/* Estilos personalizados para o tema */
+
+/* Fonte Special Elite para títulos */
+h1, h2, h3 {
+  font-family: 'Special Elite', monospace;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+/* Títulos específicos da homepage */
+.VPHome .name,
+.VPHome .text {
+  font-family: 'Special Elite', monospace;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+/* Customizar o rodapé */
+.VPFooter .copyright a {
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.VPFooter .copyright a:hover {
+  color: var(--vp-c-brand-1);
+  text-decoration: underline;
+}
+
+/* Garantir que não há camadas escuras sobrepondo */
+.VPHomeHero .image-container {
+  background: transparent !important;
+}
+
+.VPHomeHero .image-container .image-bg {
+  background: transparent !important;
+  display: none !important;
+}
+
+/* Efeito gradiente especificamente atrás da imagem dl1.png */
+.VPHomeHero .image-container::before {
+  content: "";
+  position: absolute;
+  width: 315px;
+  height: 315px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 0; /* Atrás da imagem */
+  background:
+    radial-gradient(
+      circle at 55% 45%,
+      rgba(255, 140, 0, 0.312) 0%,    /* Laranja dourado - +30% */
+      rgba(255, 215, 0, 0.273) 30%,   /* Dourado - +30% */
+      rgba(255, 69, 0, 0.234) 50%,    /* Laranja vermelho - +30% */
+      rgba(255, 20, 147, 0.156) 70%,  /* Rosa quente - +30% */
+      rgba(0, 0, 0, 0) 85%
+    );
+  filter: blur(20px);
+}
+
+/* Garantir que a imagem dl1.png fique na frente do gradiente */
+.VPHomeHero .image-container .image-src {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsivo para a logo */
+@media (max-width: 960px) {
+  .VPHomeHero .image-container::before {
+    width: 45.5vw;
+    height: 45.5vw;
+    filter: blur(16px);
+  }
+}

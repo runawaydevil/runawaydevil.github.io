@@ -34,7 +34,7 @@ const rssOptions: RSSOptions = {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "#navigating",
+  title: "#hacking",
   description: "Uma coleção organizada de recursos, ferramentas e informações úteis para desenvolvedores, hackers éticos e entusiastas de tecnologia — explorando o lado criativo, técnico e livre da internet.",
   base: '/',
   ignoreDeadLinks: true,
@@ -75,7 +75,7 @@ export default defineConfig({
   },
   themeConfig: {
     logo: '/icon.png',
-    siteTitle: '#navigating',
+    siteTitle: '#hacking',
 
     nav: [
       { text: 'Início', link: '/' },
@@ -118,7 +118,7 @@ export default defineConfig({
 
     footer: {
       message: `Feito com ❤️ para a comunidade | v${version}`,
-      copyright: 'Copyright © 2023-2025 [runawaydevil](https://github.com/runawaydevil)'
+      copyright: 'Copyright © 2023-2025 <a href="https://github.com/runawaydevil" target="_blank" rel="noopener noreferrer">runawaydevil</a>'
     },
 
     sidebar: {
