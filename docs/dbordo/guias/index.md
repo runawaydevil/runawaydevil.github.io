@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Guias do Curador"
+title: "📜 Guias do Curador"
 description: "Tutoriais detalhados e guias especializados criados e revisados pelo Capitão"
 lang: pt-BR
 lastUpdated: true

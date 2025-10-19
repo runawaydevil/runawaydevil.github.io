@@ -6,6 +6,18 @@
 /* Importar fonte Special Elite */
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
+/* Fonte Special Elite APENAS para títulos de categorias */
+.dark .VPNav .title,
+.dark .VPNav .site-title,
+.dark .VPNav .title-text,
+.dark .VPNav .site-title-text,
+.dark .VPDoc .content h1,
+.dark .VPDoc .content .title,
+.dark .VPDoc .content .page-title,
+.dark .VPDoc .content .category-title {
+  font-family: 'Special Elite', monospace !important;
+}
+
 /* Barras de rolagem invisíveis */
 ::-webkit-scrollbar {
   width: 0px;
@@ -60,7 +72,6 @@ html {
 .dark .VPSidebar .items .group .title,
 .dark .VPSidebar .items .group .items .link a {
   color: #ffffff !important;
-  font-family: 'Special Elite', monospace !important;
 }
 
 .dark .VPSidebar .items .link a:hover,
@@ -79,11 +90,10 @@ html {
   backdrop-filter: blur(10px);
 }
 
-/* Links da navbar com fonte Special Elite */
+/* Links da navbar */
 .dark .VPNav .nav .link,
 .dark .VPNav .nav .link:hover {
   color: #ffffff !important;
-  font-family: 'Special Elite', monospace !important;
 }
 
 /* Botões de navegação do blog em branco - FORÇAR ESTILO */
@@ -347,7 +357,7 @@ h3 {
 /* Efeito especial para o título "piratas.club" - branco chapado com sombra marfim */
 .VPHome .name {
   color: #ffffff !important;
-  text-shadow: 
+  text-shadow:
     0 0 8px rgba(248, 246, 240, 0.4),
     0 0 15px rgba(245, 243, 237, 0.3),
     0 0 25px rgba(242, 240, 234, 0.2);

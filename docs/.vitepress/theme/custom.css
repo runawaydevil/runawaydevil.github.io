@@ -8,13 +8,6 @@
   --vp-c-brand-3: #ffffff;
 }
 
-.VPDoc .content h1,
-.VPDoc .content h2,
-.VPDoc .content h3 {
-  letter-spacing: 0.2px;
-  font-family: 'Special Elite', monospace !important;
-}
-
 /* Links discretos, sem sublinhado agressivo */
 .VPDoc .content a {
   text-decoration: none;
@@ -56,6 +49,17 @@
 /* Grupos de links da sidebar */
 .VPSidebar .items .group .title {
   color: #ffffff !important;
+}
+
+/* Reduzir espaçamento entre itens do menu */
+.VPSidebar .items .link {
+  line-height: 1.1;
+  margin-bottom: 0.2rem;
+}
+
+.VPSidebar .items .group .items .link {
+  line-height: 1.1;
+  margin-bottom: 0.2rem;
 }
 
 .VPSidebar .items .group .items .link a {

@@ -1,11 +1,11 @@
 ---
-title: "📖 Guias e Tutoriais"
+title: "📘 Guias e Tutoriais"
 description: "Tutoriais detalhados e guias passo-a-passo sobre ferramentas, tecnologias e técnicas essenciais"
 lang: pt-BR
 lastUpdated: true
 ---
 
-# 📖 Guias e Tutoriais
+# 📘 Guias e Tutoriais
 
 Bem-vindos à seção **Guias e Tutoriais**, sua biblioteca de conhecimento técnico! Aqui você encontrará tutoriais detalhados, guias passo-a-passo e instruções completas para dominar ferramentas e técnicas essenciais.
 

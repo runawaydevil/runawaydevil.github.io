@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Champagne - Coleção Premium"
+title: "💎 Champagne – Coleção Premium"
 description: "Coleção completa de recursos e guias organizados por categoria - entretenimento, software, educação e muito mais"
 lang: pt-BR
 lastUpdated: true

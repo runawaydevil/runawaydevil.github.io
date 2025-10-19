@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Informações"
+title: "ℹ️ Informações"
 description: "Bases de dados, referências e informações organizadas para facilitar sua navegação"
 lang: pt-BR
 lastUpdated: true

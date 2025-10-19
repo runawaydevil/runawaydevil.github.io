@@ -1,11 +1,11 @@
 ---
-title: "🔧 Utilitários"
+title: "🛠️ Utilitários"
 description: "Ferramentas úteis, utilitários e aplicativos para facilitar o dia a dia e aumentar a produtividade"
 lang: pt-BR
 lastUpdated: true
 ---
 
-# 🔧 Utilitários
+# 🛠️ Utilitários
 
 Bem-vindos à seção **Utilitários**, sua caixa de ferramentas digital! Aqui você encontrará aplicativos, ferramentas e utilitários essenciais para facilitar seu dia a dia e aumentar sua produtividade.
 

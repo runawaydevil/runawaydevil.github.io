@@ -1,5 +1,5 @@
 ---
-title: "Geral"
+title: "📁 Geral"
 description: "# 👋 Geral
 
 Bem-vindo ao MediaSavvy, uma fonte confiável para guias cuidadosamente elaborados sobre pirataria e outros conteúdos informativos. dev/Wiki/Adblocking/)** antes de acessar qualquer s..."

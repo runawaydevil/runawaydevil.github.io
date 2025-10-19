@@ -1,5 +1,5 @@
 ---
-title: "Ripped Guide"
+title: "💽 Ripped Guide"
 description: "Guias técnicos traduzidos e adaptados do Ripped.guide para português brasileiro"
 lang: pt-BR
 lastUpdated: true

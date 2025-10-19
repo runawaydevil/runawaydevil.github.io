@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "Piracy"
+title: "🏴‍☠️ Piracy"
 description: "A maior coleção de recursos gratuitos da internet organizados por categoria"
 lang: pt-BR
 lastUpdated: true

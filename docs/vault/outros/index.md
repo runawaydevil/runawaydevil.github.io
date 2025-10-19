@@ -1,11 +1,11 @@
 ---
-title: "🎲 Outros Recursos"
+title: "🧩 Outros Recursos"
 description: "Recursos diversos e especiais que não se encaixam nas outras categorias principais"
 lang: pt-BR
 lastUpdated: true
 ---
 
-# 🎲 Outros Recursos
+# 🧩 Outros Recursos
 
 Bem-vindos à seção **Outros Recursos**, onde você encontrará conteúdos especiais e recursos diversos que não se encaixam nas categorias principais do vault.
 
