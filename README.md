@@ -68,10 +68,10 @@ cd runawaydevil.github.io
 npm install
 
 # Execute em modo desenvolvimento
-npm run docs:dev
+npm run dev
 
 # Build para produção
-npm run docs:build
+npm run build
 ```
 
 ## 🌍 Deploy Automático
