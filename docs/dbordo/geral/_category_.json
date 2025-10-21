@@ -1,0 +1,11 @@
+{
+  "label": "Geral",
+  "collapsed": false,
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "title": "Geral",
+    "description": "Recursos gerais e ferramentas diversas",
+    "slug": "/dbordo/geral"
+  }
+}

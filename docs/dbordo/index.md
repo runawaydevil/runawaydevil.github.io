@@ -12,11 +12,38 @@ Bem-vindos ao **Diário de Bordo**, uma seção especial onde você encontrará 
 
 ## 📚 O Que Você Encontrará
 
+### 🍾 [Champagne](/dbordo/champagne/)
+Coleção premium de recursos e ferramentas de alta qualidade.
+
 ### 📖 [Guias do Curador](/dbordo/guias/)
 Tutoriais detalhados e guias especializados criados e revisados pelo Capitão. Conteúdo de alta qualidade com explicações passo-a-passo.
 
+### 🎯 [Guias Avançados](/dbordo/guias_good/)
+Guias técnicos especializados para usuários avançados.
+
 ### 📊 [Informações](/dbordo/infos/)
 Bases de dados, referências e informações organizadas para facilitar sua navegação pelo mundo digital.
+
+### 🎬 [Media Savvy](/dbordo/mediasavvy/)
+Recursos e guias para entretenimento digital.
+
+### 🏴‍☠️ [Piracy](/dbordo/piracy/)
+Recursos e ferramentas para navegação digital.
+
+### 📚 [Ripped Guide](/dbordo/rippedguide/)
+Guias especializados e recursos técnicos.
+
+### 🌍 [Geral](/dbordo/geral/)
+Recursos gerais e ferramentas diversas.
+
+### 🌎 [Gringa](/dbordo/gringa/)
+Conteúdo internacional e recursos globais.
+
+### 🔧 [Outros](/dbordo/outros/)
+Ferramentas e recursos diversos.
+
+### 🛠️ [Util](/dbordo/util/)
+Utilitários e ferramentas práticas.
 
 ---
 

@@ -1,0 +1,11 @@
+{
+  "label": "Outros",
+  "collapsed": false,
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "title": "Outros",
+    "description": "Ferramentas e recursos diversos",
+    "slug": "/dbordo/outros"
+  }
+}
