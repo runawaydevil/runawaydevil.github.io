@@ -4,14 +4,14 @@ description: "Lista curada de frameworks, bibliotecas e recursos incríveis para
 icon: "🐍"
 ---
 
-<div alinhar="centro">
-<sup>Especial graças a:</sup>
+<div align="center">
+<sup>Special thanks to:</sup>
 <br>
 <a href="https://go.warp.dev/awesome-python" target="_blank">
-<img alt="Warp patrocínio" src="https://raw.githubusercontent.com/warpdotdev/brand-assets/refs/heads/main/Github/Sponsor/Warp-Github-LG-01.png">
+<img alt="Warp sponsorship" src="https://raw.githubusercontent.com/warpdotdev/brand-assets/refs/heads/main/Github/Sponsor/Warp-Github-LG-01.png">
 </a>
 <br>
-<a href="https://go.warp.dev/awesome-python" target="_blank"> Warp, construído para codificação com vários agentes de IA.</a>
+<a href="https://go.warp.dev/awesome-python" target="_blank"> Warp, built for coding with multiple AI agents.</a>
 </div>
 <br>
 

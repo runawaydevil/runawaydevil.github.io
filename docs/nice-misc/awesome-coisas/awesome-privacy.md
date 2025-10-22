@@ -4,18 +4,18 @@ description: "Lista curada de recursos para privacidade e segurança digital"
 icon: "🔒"
 ---
 
-# Privacidade impressionante
-<p alinhar="centro"><img width="500" src="https://raw.githubusercontent.com/pluja/awesome-privacy/main/misc/logo.png"> </img></p>
-<p alinhar="centro">
+# Awesome Privacy
+<p align="center"><img width="500" src="https://raw.githubusercontent.com/pluja/awesome-privacy/main/misc/logo.png"> </p>
+<p align="center">
 <img src="https://awesome.re/badge.svg" alt="Awesome">
-<a href="https://codeberg.org/pluja/awesome-privacy"><img alt="Mirror" src="https://img.shields.io/badge/Mirror-Codeberg-blue"></img></a>
+<a href="https://codeberg.org/pluja/awesome-privacy"><img alt="Mirror" src="https://img.shields.io/badge/Mirror-Codeberg-blue"></a>
 </p>
-<p alinhar="centro"> Lista de serviços gratuitos, de código aberto e de privacidade respeitando os serviços e alternativas aos serviços privatizativos.</p>
-<p alinhar="centro">
-<a href="https://github.com/pluja/awesome-privacy/blob/main/misc/ABOUT.md"> Sobre </a>
-<a href="https://github.com/pluja/awesome-privacy/blob/main/misc/Contributing.md"> Contribuir </a>
-<a href="https://github.com/pluja/awesome-privacy/blob/main/misc/QUOTES.md"> Citações </a>
-<a href="https://github.com/pluja/awesome-privacy/discussions"> Discussão </a>
+<p align="center"> List of free, open source and privacy-respecting services and alternatives to privacy-invasive services.</p>
+<p align="center">
+<a href="https://github.com/pluja/awesome-privacy/blob/main/misc/ABOUT.md"> About </a>
+<a href="https://github.com/pluja/awesome-privacy/blob/main/misc/Contributing.md"> Contributing </a>
+<a href="https://github.com/pluja/awesome-privacy/blob/main/misc/QUOTES.md"> Quotes </a>
+<a href="https://github.com/pluja/awesome-privacy/discussions"> Discussion </a>
 </p>
 
 > [!Importante]
