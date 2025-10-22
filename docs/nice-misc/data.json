@@ -1,0 +1,69 @@
+{
+  "title": "Miscelânea",
+  "description": "Coleção de recursos úteis, listas curadas e ferramentas diversas",
+  "icon": "📚",
+  "sections": {
+    "awesome_lists": {
+      "title": "🌟 Awesome Lists",
+      "description": "Listas curadas de recursos incríveis para diferentes tecnologias e plataformas",
+      "items": [
+        {
+          "title": "Awesome Coisas",
+          "description": "Coleção geral de recursos úteis e ferramentas para desenvolvedores",
+          "icon": "🌟",
+          "path": "/nice-misc/awesome-coisas/awesome-coisas"
+        },
+        {
+          "title": "Awesome Mac",
+          "description": "Lista curada de recursos incríveis para macOS e desenvolvimento na plataforma Apple",
+          "icon": "🍎",
+          "path": "/nice-misc/awesome-coisas/awesome-mac"
+        },
+        {
+          "title": "Awesome Nuxt",
+          "description": "Lista curada de recursos incríveis para o framework Nuxt.js",
+          "icon": "⚡",
+          "path": "/nice-misc/awesome-coisas/awesome-nuxt"
+        },
+        {
+          "title": "Awesome Privacy",
+          "description": "Lista curada de recursos para privacidade e segurança digital",
+          "icon": "🔒",
+          "path": "/nice-misc/awesome-coisas/awesome-privacy"
+        },
+        {
+          "title": "Awesome Python",
+          "description": "Lista curada de frameworks, bibliotecas e recursos incríveis para Python",
+          "icon": "🐍",
+          "path": "/nice-misc/awesome-coisas/awesome-python"
+        },
+        {
+          "title": "Awesome Selfhosted",
+          "description": "Lista curada de aplicações que podem ser hospedadas em servidor próprio",
+          "icon": "🏠",
+          "path": "/nice-misc/awesome-coisas/awesome-selfhosted"
+        }
+      ]
+    },
+    "promptking": {
+      "title": "🤖 PromptKing",
+      "description": "Recursos de IA e prompts para diferentes plataformas",
+      "items": [
+        {
+          "title": "ChatGPT Prompts",
+          "description": "Coleção de prompts úteis para ChatGPT",
+          "icon": "💬",
+          "path": "/nice-misc/PromptKing/chatgpt-prompts"
+        },
+        {
+          "title": "Nano Banana",
+          "description": "Guia de geração de imagens com IA",
+          "icon": "🍌",
+          "path": "/nice-misc/PromptKing/nano-banana"
+        }
+      ]
+    }
+  },
+  "lastUpdated": "2025-01-27",
+  "version": "1.0.0"
+}

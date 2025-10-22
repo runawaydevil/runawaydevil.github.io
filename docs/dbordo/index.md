@@ -45,6 +45,9 @@ Ferramentas e recursos diversos.
 ### 🛠️ [Util](/dbordo/util/)
 Utilitários e ferramentas práticas.
 
+### 🛡️ [Pluja Files](/dbordo/pluja_files/)
+Coleção completa de ferramentas de privacidade e segurança do desenvolvedor Pluja.
+
 ---
 
 ## 🎯 Características Especiais

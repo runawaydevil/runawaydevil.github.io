@@ -81,6 +81,7 @@ export default defineConfig({
     nav: [
       { text: 'Início', link: '/' },
       { text: 'Diário de Bordo', link: '/dbordo/' },
+      { text: 'Misc', link: '/nice-misc/' },
       { text: 'Blog', link: '/blog/' },
       { text: 'Sobre', link: '/ref/' },
       {
