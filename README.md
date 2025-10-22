@@ -17,13 +17,29 @@ Este não é apenas mais um site de documentação — é um **tesouro digital**
 
 ## 🗺️ O Que Você Encontrará
 
-### 📚 **Guias Detalhados**
+### 📖 **Diário de Bordo**
 Tutoriais passo-a-passo sobre ferramentas essenciais:
 - **Autobrr** — Automatize seus downloads e melhore seu ratio
 - **Sonarr/Radarr/Plex** — Streaming doméstico automatizado
 - **FitGirl** — Guia completo para repacks de jogos
 - **DNS** — Configuração e otimização
 - **Privacidade** — Proteção digital e navegação segura
+
+### 📚 **Miscelânea**
+Coleção curada de recursos úteis e ferramentas diversas:
+
+#### 🌟 **Awesome Lists**
+Listas curadas de recursos incríveis para diferentes tecnologias:
+- **Awesome Mac** — Recursos para macOS e desenvolvimento Apple
+- **Awesome Nuxt** — Framework Vue.js para desenvolvimento web
+- **Awesome Privacy** — Ferramentas de privacidade e segurança digital
+- **Awesome Python** — Bibliotecas e frameworks Python
+- **Awesome Selfhosted** — Aplicações para hospedagem própria
+
+#### 🤖 **PromptKing**
+Recursos para inteligência artificial e geração de conteúdo:
+- **ChatGPT Prompts** — Coleção de prompts eficazes
+- **Nano Banana** — Guia completo para geração de imagens com IA
 
 ### 🔧 **Utilitários Práticos**
 Ferramentas que facilitam o dia a dia:
@@ -46,6 +62,16 @@ Categorias organizadas por interesse:
 - **[TypeScript](https://www.typescriptlang.org/)** — Tipagem estática para JavaScript
 - **[Node.js 18+](https://nodejs.org/)** — Runtime JavaScript
 - **GitHub Pages** — Hospedagem estática gratuita
+
+## 📊 Estatísticas do Projeto
+
+- **📚 Seções Principais:** 3 (Diário de Bordo, Miscelânea, Blog)
+- **🌟 Awesome Lists:** 6 listas curadas
+- **🤖 Recursos IA:** 2 guias PromptKing
+- **📖 Documentos:** 50+ páginas de conteúdo
+- **🔗 Links Úteis:** 1000+ recursos organizados
+- **🌐 Idiomas:** Português (pt-BR)
+- **📅 Última Atualização:** Janeiro 2025
 
 ## 🚀 Como Contribuir
 
@@ -78,7 +104,8 @@ npm run build
 
 O projeto está configurado para deploy automático em múltiplas plataformas:
 
-- **GitHub Pages** — Deploy principal
+- **GitHub Pages** — Deploy principal ([piratas.club](https://piratas.club))
+- **Teu.cool** — Mirror alternativo ([git.teu.cool](https://git.teu.cool))
 - **GitLab CI/CD** — Pipeline alternativo
 - **Jenkins** — Configuração para servidores próprios
 
