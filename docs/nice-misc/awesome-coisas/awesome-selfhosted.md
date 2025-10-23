@@ -3,7 +3,7 @@ title: "Awesome Selfhosted"
 description: "Lista curada de aplicações que podem ser hospedadas em servidor próprio"
 icon: "🏠"
 Impressionante-selfhosted
-[](https://github.com/sindresorhus/awesome) [](https://github.com/awesome-self-hosted/awesome-self-hosted-data/issues/1) [https://gi-self-host.
+  [https://gi-self-host.
 Self-hosting é a prática de hospedagem e gerenciamento de aplicativos em seu próprio servidor(s) em vez de consumir de [SaaSS](https://www.gnu.org/philosophy/who-does-that-server-realmente-serve.html) provedores.
 Esta é uma lista de [Free](https://en.wikipedia.org/wiki/Free_software) Software [serviços de rede](https://en.wikipedia.org/wiki/Network_service) e [aplicações web](https://en.wikipedia.org/wiki/Web_application) que podem ser hospedadas em seu próprio servidor(s). O software não-livre está listado na página [Não-livre](https://github.com/awesome-selfhosted/awesome-selfhosted/blob/master/non-free.md).
 **[Versão HTML](https://awesome-selfhosted.net/) (recomendado)**, [Versão Markdown](https://github.com/awesome-selfhosted/awesome-selfhosted) (legacy).

@@ -2,17 +2,12 @@
 title: "Awesome Python"
 description: "Lista curada de frameworks, bibliotecas e recursos incríveis para Python"
 icon: "🐍"
-<div align="center">
-<sup>Special thanks to:</sup>
-<br>
-<a href="https://go.warp.dev/awesome-python" target="_blank">
-<img alt="Warp sponsorship" src="https://raw.githubusercontent.com/warpdotdev/brand-assets/refs/heads/main/Github/Sponsor/Warp-Github-LG-01.png">
-</a>
-<br>
-<a href="https://go.warp.dev/awesome-python" target="_blank"> Warp, built for coding with multiple AI agents.</a>
-</div>
-<br>
-# Awesome Python [](https://github.com/sindresorhus/awesome)
+
+Special thanks to:
+
+ Warp, built for coding with multiple AI agents.
+
+# Awesome Python 
 Uma lista opinada de frameworks, bibliotecas, software e recursos incríveis Python.
 Inspirado por [awesome-php](https://github.com/ziadoz/awesome-php).
 - [Awesome Python](#awesome-python)
@@ -134,7 +129,7 @@ Inspirado por [awesome-php](https://github.com/ziadoz/awesome-php).
 * [multiprocessamento](https://docs.python.org/3/library/multiprocessing.html) - (Biblioteca padrão Python) Paralelismo baseado em processos.
 * [trio](https://github.com/python-trio/trio) - Uma biblioteca amigável para assync concurrence e I/O.
 * [twisted](https://github.com/twisted/twisted) - Um motor de rede orientado por eventos.
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 * [eventlet](https://github.com/eventlet/eventlet) - Framework assíncrono com suporte WSGI.
 * [gevent](https://github.com/gevent/gevent) - Uma biblioteca de rede Python baseada em coroutine que usa [greenlet](https://github.com/python-greenlet/greenlet).
 # # Áudio
@@ -181,12 +176,12 @@ Inspirado por [awesome-php](https://github.com/ziadoz/awesome-php).
 * [dotcheddict](https://github.com/carlosescri/DotchedDict) - Uma biblioteca que fornece um método de acesso a listas e dicts com uma notação de caminho pontilhada.
 # # CMS
 * Sistemas de Gestão de Conteúdo. *
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 * [indico](https://github.com/indico/indico) - Um sistema de gerenciamento de eventos rico em recursos, feito [CERN](https://en.wikipedia.org/wiki/CERN).
 * [wagtail](https://github.com/wagtail/wagtail) - Um sistema de gerenciamento de conteúdo Django.
 # # Caching
 *Bibliotecas para dados de cache. *
-<br clear=left>== Ligações externas ==.
+== Ligações externas ==.
 * [django-cache-machine](https://github.com/django-cache-machine/django-cache-machine) - Caching automático e invalidação para modelos Django.
 * [django-cacheops](https://github.com/Suor/django-cacheops) - Um cache ORM liso com anulação automática por eventos granulares.
 * [dogpile.cache](https://github.com/sqlalchemy/dogpile.cache) - dogpile.cache é uma substituição de próxima geração para Beaker feita pelos mesmos autores.
@@ -239,7 +234,7 @@ Inspirado por [awesome-php](https://github.com/ziadoz/awesome-php).
 * [copiadora](https://github.com/copier-org/copier) - Uma biblioteca e utilitário de linha de comando para modelos de projetos de renderização.
 * [cookiecutter](https://github.com/cookiecutter/cookiecutter) - Um utilitário de linha de comando que cria projetos de cookiecutters (modelos de projeto).
 * [doitlive](https://github.com/sloria/doitlive) - Uma ferramenta para apresentações ao vivo no terminal.
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 * [invoke](https://github.com/pyinvoke/invoke) - Uma ferramenta para gerenciar subprocessos orientados para shell e organizar o código Python executável em tarefas invocáveis CLI.
 * [pathpicker](https://github.com/facebook/PathPicker) - Selecione arquivos fora da saída bash.
 * [thefuck](https://github.com/nvbn/thefuck) - Corrigindo seu comando de console anterior.
@@ -287,7 +282,7 @@ Inspirado por [awesome-php](https://github.com/ziadoz/awesome-php).
 *Bibliotecas para visualização de dados. Veja também [awesome-javascript](https://github.com/sorrycc/awesome-javascript#data-visualization). *
 * [altair](https://github.com/altair-viz/altair) - Biblioteca declarativa de visualização estatística para Python.
 * [bokeh](https://github.com/bokeh/bokeh) - Plotagem Interactiva Web para Python.
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 * [cartopy](https://github.com/SciTools/cartopy) - Uma biblioteca python cartográfica com suporte matplotlib.
 * [diagramas](https://github.com/mingramer/diagrams) - Diagrama como código.
 * [matplotlib](https://github.com/matplotlib/matplotlib) - Uma biblioteca de gráficos Python 2D.
@@ -306,7 +301,7 @@ Inspirado por [awesome-php](https://github.com/ziadoz/awesome-php).
 *Bibliotecas para conectar e operar bases de dados. *
 * MySQL - [awesome-mysql](http://shlomi-noach.github.io/awesome-mysql/)
 * [mysqlclient](https://github.com/PyMySQL/mysqlclient) - Conector MySQL com suporte Python 3 ([mysql-python](https://sourceforge.net/projects/mysql-python/) fork).
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 * PostgreSQL - [awesome-postgres](https://github.com/dhamaniasad/awesome-postgres)
 * [psycopg](https://github.com/psycopg/psycopg) - O adaptador PostgreSQL mais popular para Python.
 * SQlite - [awesome-sqlite](https://github.com/planetopendata/awesome-sqlite)
@@ -456,7 +451,7 @@ IDE
 * [Tkinter](https://wiki.python.org/moin/TkInter) - Tkinter é o pacote GUI padrão do Python.
 * [Toga](https://github.com/pybee/toga) - Um kit de ferramentas nativo do sistema operacional Python.
 * [urwid](http://urwid.org/) - Uma biblioteca para criar aplicativos GUI terminais com forte suporte para widgets, eventos, cores ricas, etc.
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 * [DearPyGui](https://github.com/RaylockLLC/DearPyGui/) - Uma simples GPU acelerada Python GUI framework
 # # GraphQL
 *Bibliotecas para trabalhar com GraphQL. *
@@ -465,7 +460,7 @@ IDE
 *Bibliotecas de desenvolvimento de jogos incríveis. *
 * [Arcade](https://api.arcade.academy/en/latest/) - Arcade é um framework Python moderno para a criação de jogos com gráficos atraentes e som.
 * [Cocos2d](https://www.cocos.com/en/cocos2d-x) - cocos2d é um framework para a construção de jogos 2D, demos e outras aplicações gráficas/interativas.
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 * [Panda3D](https://www.panda3d.org/) - Motor de jogo 3D desenvolvido pela Disney.
 * [Pygame](http://www.pygame.org/news.html) - Pygame é um conjunto de módulos Python projetados para escrever jogos.
 * [PyOgre](http://www.ogre3d.org/tikiwiki/PyOgre) - Ligações Python para o motor de renderização Ogre 3D, pode ser usado para jogos, simulações, qualquer coisa 3D.
@@ -483,7 +478,7 @@ IDE
 * [beautifulsoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - Fornecendo expressões em Python para iterar, pesquisar e modificar HTML ou XML.
 * [bleach](https://github.com/mozilla/bleach) - Uma biblioteca de hibridização HTML baseada em listas brancas e linkificação de texto.
 * [cssutils](https://pypi.org/project/cssutils/) - Uma biblioteca CSS para Python.
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 * [lxml](http://lxml.de/) - Uma biblioteca muito rápida, fácil de usar e versátil para lidar com HTML e XML.
 * [markupsafe](https://github.com/pallets/markupsafe) - Implementa uma string segura XML/HTML/XHTML Markup para Python.
 * [pyquery](https://github.com/gawel/pyquery) - Uma biblioteca tipo jQuery para analisar HTML.
@@ -496,7 +491,7 @@ IDE
 * [httpx](https://github.com/encode/httpx) - Um cliente HTTP de próxima geração para Python.
 * [pedidos](https://github.com/psf/requests) - Pedidos HTTP para Humanos.
 * [treq](https://github.com/twisted/treq) - Solicitações em Python como API construída em cima do cliente HTTP do Twisted.
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 # # Hardware
 *Bibliotecas para programação com hardware. *
 * [teclado](https://github.com/boppreh/keyboard) - Hook e simular eventos globais de teclado no Windows e Linux.
@@ -596,7 +591,7 @@ Implementação
 * [Stanza](https://github.com/stanfordnlp/stanza) - Biblioteca Python oficial do Grupo NLP de Stanford, suportando mais de 60 idiomas.
 - Chinês.
 * [funNLP](https://github.com/fighting41love/funNLP) - Uma coleção de ferramentas e conjuntos de dados para o NLP chinês.
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 * [pkuseg-python](https://github.com/lancopku/pkuseg-python) - Um kit de ferramentas para a segmentação de palavras chinesas em vários domínios.
 * [snownlp](https://github.com/isnowfy/snownlp) - Uma biblioteca para o processamento de texto chinês.
 # # Virtualização de Rede
@@ -617,7 +612,7 @@ Implementação
 * [conjunto de dados](https://github.com/pudo/dataset) - Armazene dicts Python em um banco de dados - trabalha com SQLite, MySQL e PostgreSQL.
 * [orator](https://github.com/sdispater/orator) - O Orator ORM oferece uma implementação simples e bonita do ActiveRecord.
 * [orm](https://github.com/encode/orm) - Um ORM assync.
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 * [pony](https://github.com/panyorm/pony/) - ORM que fornece uma interface orientada para o gerador para SQL.
 * [pydal](https://github.com/web2py/pydal/) - Uma Camada de Abstração em Base de Dados Python.
 * Bases de dados NoSQL
@@ -636,7 +631,7 @@ Gestão de Pacotes
 # # Repositórios de Pacotes
 * Servidor de repositório local PyPI e proxies. *
 * [bandersnatch](https://github.com/pypa/bandersnatch/) - PyPI ferramenta de espelhamento fornecida pela Python Packaging Authority (PyPA).
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 * [localshop](https://github.com/jazzband/localshop) - Servidor PyPI local (pacotes personalizados e auto-espelho de pypi).
 * [warehouse](https://github.com/pypa/warehouse) - Repositório de Pacotes Python de próxima geração (PyPI).
 # # Teste de penetração
@@ -697,7 +692,7 @@ Pirâmide
 *Bibliotecas para computação científica. Ver também [Python-for-Scientists](https://github.com/TomNicholas/Python-for-Scientists).*
 * [astropia](http://www.astropy.org/) - Uma biblioteca comunitária Python para Astronomia.
 * [bcbio-nextgen](https://github.com/chapmanb/bcbio-nextgen) - Fornecendo pipelines de melhor prática para análise de sequenciamento totalmente automatizada de alta produtividade.
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 * [Biopython](http://biopython.org/wiki/Main_Page) - Biopython é um conjunto de ferramentas livremente disponíveis para computação biológica.
 * [cclib](http://cclib.github.io/) - Uma biblioteca para analisar e interpretar os resultados de pacotes de química computacional.
 * [Cor](http://color-science.org/) - Implementação de um número abrangente de transformações e algoritmos da teoria da cor.
@@ -715,5 +710,5 @@ Pirâmide
 * [SimPy](https://gitlab.com/team-simpy/simpy) - Um framework de simulação discreto baseado em processos.
 * [statsmodels](https://github.com/statsmodels/statsmodels) - Modelagem estatística e econometria em Python.
 * [SymPy](https://github.com/sympy/sympy) - Uma biblioteca Python para matemática simbólica.
-<br clear=left>== Ligações externas ==
+== Ligações externas ==
 # #

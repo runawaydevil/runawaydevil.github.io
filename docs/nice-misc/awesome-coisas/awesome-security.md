@@ -2,7 +2,7 @@ title: Awesome Security
 description: Lista curada de recursos incríveis sobre Security
 category: security
 # Incrível segurança
-[!](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)(https://github.com/sindresorhus/awesome)
+
 Uma coleção incrível de software, bibliotecas, documentos, livros, recursos e coisas interessantes sobre segurança.
 Inspirado por [awesome-php](https://github.com/ziadoz/awesome-php), [awesome-python](https://github.com/vinta/awesome-python).
 Graças a todos [contributores](https://github.com/sbilly/awesome-security/graphs/contributors), você é incrível e não seria possível sem você! O objetivo é construir uma coleção coletiva categorizada de recursos muito conhecidos.

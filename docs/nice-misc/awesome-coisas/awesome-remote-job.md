@@ -1,7 +1,7 @@
 title: Awesome Remote Job
 description: Lista curada de recursos incríveis sobre Remote Job
 category: security
-# Amazing Remote Job [](https://github.com/sindresorhus/awesome) [](https://www.trackawesomelist.com/lukasz-madon/awesome-remote-job/)
+# Amazing Remote Job  
 Uma lista com curadoria de recursos impressionantes [remote working](https://en.wikipedia.org/wiki/Telecommuting).
 * Para contribuir, clique em README.md e, em seguida, no ícone lápis. Faça suas alterações e clique no botão "Propor mudança de arquivo" para enviar uma solicitação de pull. Assegure-se de seguir [as diretrizes de contribuições](awesome-remote-job-tributing-md.md). *
 # # Sumário

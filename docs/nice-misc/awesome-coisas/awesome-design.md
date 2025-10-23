@@ -2,9 +2,7 @@ title: Awesome Design
 description: Lista curada de recursos incríveis sobre Design
 category: gaming
 Desenho Impressionante
-[](https://github.com/sindresorhus/awesome)
-[](https://travis-ci.org/gztchan/awesome-design)
-[](https://github.com/gztchan/awesome-design/pulls)
+
 > Awesome Design foca em coletar recursos e ferramentas de alta qualidade que podem ser usados por designers de UI/UX no trabalho diário. Graças à comunidade, o repositório continua sendo atualizado continuamente por pessoas de todo o mundo que fornecem recursos surpreendentes. Não hesite em abrir uma [edição](https://github.com/gztchan/awesome-design/issues/new) ou criar [pedido pular](https://github.com/gztchan/awesome-design/pulls) para compartilhar a sua inteligência.
 [design](https://raw.githubusercontent.com/gztchan/awesome-design/master/design.png)
 # # # # O que devo fazer com os recursos curados?
@@ -463,7 +461,7 @@ Prémio
 - [tumblr](https://www.tumblr.com/) Vem pelo que amas. Fica para o que descobrires.
 # # Contribuidores
 Obrigado por contribuir para o AwesomeDesign.
-[](https://github.com/gztchan/awesome-design/graphs/contributors)
+
 # # Licença
-[](https://creativecommons.org/publicdomain/zero/1.0/)
+
 Na medida do possível, [Tony Chan](https://github.com/gztchan) dispensou todos os direitos autorais e direitos relacionados ou vizinhos a este trabalho.

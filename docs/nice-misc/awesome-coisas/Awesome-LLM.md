@@ -1,8 +1,8 @@
 title: Awesome LLM
 description: Lista curada de recursos incríveis sobre LLM
 category: security
-# Awesome-LLM [](https://awesome.re)
-[](https://raw.githubusercontent.com/Hannibal046/Awesome-LLM/main/resources/image8.gif)
+# Awesome-LLM 
+
 Modelos de linguagem grandes (LLM) tomaram a comunidade ~~NLP~~ A comunidade da AI, o mundo inteiro, por tempestade. Aqui está uma lista de artigos sobre grandes modelos de linguagem, especialmente relacionados ao ChatGPT. Ele também contém frameworks para treinamento LLM, ferramentas para implantar LLM, cursos e tutoriais sobre LLM e todos os postos de controle LLM disponíveis publicamente e APIs.
 # # Trending LLM Projects
 - [TinyZero](https://github.com/Jiayi-Pan/TinyZero) - Reprodução limpa, mínima e acessível de DeepSeek R1-Zero
