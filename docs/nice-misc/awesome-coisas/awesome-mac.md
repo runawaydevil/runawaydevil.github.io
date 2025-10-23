@@ -1,15 +1,9 @@
----
 title: "Awesome Mac"
 description: "Lista curada de recursos incríveis para macOS e desenvolvimento na plataforma Apple"
 icon: "🍎"
----
-
 # Awesome Mac
-
 Lista curada de recursos incríveis para macOS e desenvolvimento na plataforma Apple.
-
 ## Plataformas
-
 - [Node.js](https://github.com/sindresorhus/awesome-nodejs#readme) - Async não-bloqueando o tempo de execução JavaScript orientado para eventos construído no motor JavaScript V8 do Chrome.
 - [Cross-Platform](https://github.com/bcoe/awesome-cross-platform-nodejs#readme) - Escrevendo código multiplatform em Node.js.
 - [Desenvolvimento de Frontend](https://github.com/dypsilon/frontend-dev-bookmarks#readme)
@@ -69,9 +63,7 @@ Lista curada de recursos incríveis para macOS e desenvolvimento na plataforma A
 - [Plataforma Uno](https://github.com/MartinZikmund/awesome-uno-platform#readme) - Open-source .NET UI plataforma para a construção de aplicativos multi-plataforma.
 - [Google Cloud](https://github.com/GoogleCloudPlatform/awesome-google-cloud#readme) - Serviços de computação em nuvem do Google.
 - [Firebase Genkit](https://github.com/xavidop/awesome-firebase-genkit#readme) - Um framework de código aberto para a construção de aplicativos e recursos alimentados por IA.
-
 ## Linguagens de Programação
-
 - [JavaScript](https://github.com/sorrycc/awesome-javascript#readme)
 - [Promises](https://github.com/wbinnssmith/awesome-promises#readme)
 - [Standard Style](https://github.com/standard/awesome-standard#readme) - Guia e linter.
@@ -152,9 +144,7 @@ Lista curada de recursos incríveis para macOS e desenvolvimento na plataforma A
 - [Move](https://github.com/MystenLabs/awesome-move#readme) - Linguagem de programação específica para escrever contratos inteligentes seguros.
 - [Esolangs](https://github.com/angrykoala/awesome-esolangs#readme) - Linguagens de programação concebidas para experimentação ou como piadas em vez de uso real.
 - [VBA](https://github.com/sancarn/awesome-vba#readme) - Uma versão orientada para eventos do Visual Basic 6.0 incorporada à maioria dos aplicativos do Microsoft Office para automação e scripting.
-
 ## Relacionado
-
 Todas as listas no GitHub.
 - Pesquisa rápida para listas impressionantes.
 - [StumbleUponAwesome](https://github.com/basharovV/StumbleUponAwesome) - Descubra páginas aleatórias do conjunto de dados Impressionante usando uma extensão do navegador.
