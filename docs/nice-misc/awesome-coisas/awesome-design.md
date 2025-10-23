@@ -1,6 +1,6 @@
 ---
-title: Conteúdo Otimizado
-description: Conteúdo selecionado com 294 links e 3 imagens preservados
+title: Awesome Design
+description: Lista curada de recursos incríveis sobre Design
 category: gaming
 ---
 

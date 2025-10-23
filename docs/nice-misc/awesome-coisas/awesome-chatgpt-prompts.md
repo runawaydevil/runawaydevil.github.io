@@ -1,6 +1,6 @@
 ---
-title: Conteúdo Otimizado
-description: Conteúdo selecionado com 180 links e 0 imagens preservados
+title: Awesome ChatGPT Prompts
+description: Uma coleção de prompts criativos e úteis para ChatGPT e outros modelos de IA
 category: security
 ---
 

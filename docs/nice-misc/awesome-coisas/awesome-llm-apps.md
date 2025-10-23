@@ -1,6 +1,6 @@
 ---
-title: Conteúdo Otimizado
-description: Conteúdo selecionado com 15 links e 0 imagens preservados
+title: Awesome LLM Apps
+description: Lista curada de recursos incríveis sobre LLM Apps
 category: gaming
 ---
 

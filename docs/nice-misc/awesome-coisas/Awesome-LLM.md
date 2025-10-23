@@ -1,6 +1,6 @@
 ---
-title: Conteúdo Otimizado
-description: Conteúdo selecionado com 210 links e 1 imagens preservados
+title: Awesome LLM
+description: Lista curada de recursos incríveis sobre LLM
 category: security
 ---
 

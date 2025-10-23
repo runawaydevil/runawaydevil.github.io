@@ -1,6 +1,6 @@
 ---
-title: Conteúdo Otimizado
-description: Conteúdo selecionado com 245 links e 0 imagens preservados
+title: Awesome Security
+description: Lista curada de recursos incríveis sobre Security
 category: security
 ---
 

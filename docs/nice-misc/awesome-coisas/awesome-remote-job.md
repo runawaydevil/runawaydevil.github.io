@@ -1,6 +1,6 @@
 ---
-title: Conteúdo Otimizado
-description: Conteúdo selecionado com 419 links e 3 imagens preservados
+title: Awesome Remote Job
+description: Lista curada de recursos incríveis sobre Remote Job
 category: security
 ---
 
