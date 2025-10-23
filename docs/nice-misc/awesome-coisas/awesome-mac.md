@@ -27,7 +27,6 @@ Lista curada de recursos incríveis para macOS e desenvolvimento na plataforma A
 - [AppImage](https://github.com/AppImage/awesome-appimage#readme) - Aplicativos de pacotes em um único arquivo que funciona em várias distribuições Linux mainstream.
 - [macOS](https://github.com/jaywcjlove/awesome-mac#readme) - Sistema operacional para computadores Mac da Apple.
 - [macOS Screensavers](https://github.com/agarrharr/awesome-macos-screensavers#readme)
-- [Apps](https://github.com/jaywcjlove/awesome-mac#readme)
 - [Aplicativos de código aberto](https://github.com/serhii-londar/open-source-mac-os-apps#readme)
 - [watchOS](https://github.com/yenchenlin/awesome-watchos#readme) - Sistema operacional para o Apple Watch.
 - [JVM](https://github.com/deephacks/awesome-jvm#readme)

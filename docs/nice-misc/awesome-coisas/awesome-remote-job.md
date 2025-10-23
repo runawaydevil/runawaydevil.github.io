@@ -16,55 +16,53 @@ Uma lista com curadoria de recursos impressionantes [remote working](https://en.
 
 Um trabalho fantástico.
 
-- [Tabela de Conteúdo] (# tabela de conteúdos)
+- [Tabela de Conteúdo](#tabela-de-conteúdos)
 
-- [Artigos \& Posts] (#artigos--posts)
+- [Artigos & Posts](#artigos--posts)
 
-- [Vídeos] (#Vídeos)
+- [Vídeos](#vídeos)
 
-- [Livros] (#livros)
+- [Livros](#livros)
 
-- [Humor] (#Humor)
+- [Humor](#humor)
 
-- [Jobboards] (#job-boards)
+- [Jobboards](#job-boards)
 
-- [Agregadores de vagas] (#job-boards-agregators)
+- [Agregadores de vagas](#job-boards-agregators)
 
-- [Housing] (#housing)
+- [Housing](#housing)
 
-- [Incentivos de Relocalização] (#Incentivos de Relocalização)
+- [Incentivos de Relocalização](#incentivos-de-relocalização)
 
-- [Entreviewing] (#entreviewing)
+- [Entreviewing](#entreviewing)
 
-- [Eventos] (#Eventos)
+- [Eventos](#eventos)
 
-- [ Newsletters] (# newsletters)
+- [Newsletters](#newsletters)
 
-- [Podcasts] (#podcasts)
+- [Podcasts](#podcasts)
 
-- [Companhias com DNA remoto] (#companhias com dna remoto)
+- [Companhias com DNA remoto](#companhias-com-dna-remoto)
 
-- [Q\&A](#qa)
+- [Q&A](#qa)
 
-- [Comunidades] (#Comunidades)
+- [Comunidades](#comunidades)
 
-- [Conferências] (#conferências)
+- [Conferências](#conferências)
 
-- [Ferramentas] (#tools)
+- [Ferramentas](#tools)
 
-- [HR] (#hr)
+- [HR](#hr)
 
-- [Comunicação] (#comunicação)
+- [Comunicação](#comunicação)
 
-- [Gestão de Projetos] (#Gestão de Projetos)
+- [Gestão de Projetos](#gestão-de-projetos)
 
-- [Outros] (#outros)
+- [Outros](#outros)
 
-- [Lei \ & Finanças] (#lei - financiamento)
+- [Lei & Finanças](#lei-e-finanças)
 
-- [Outros] (#outros-1)
-
-- [Licença] (#licença)
+- [Licença](#licença)
 
 <!-- /MarkdownTOC -->
 
@@ -74,17 +72,17 @@ Um trabalho fantástico.
 
 1. [5 Coisas que aprendi de trabalhar remotamente](https://www.done.com/blog/five-things-ive-learned-working-remotely)
 
-1. [5 Truques para obter mais feito enquanto trabalha remotamente] (https://rdutel.medium.com/working-remotely-geting-things-done-38dcd0413733)
+1. [5 Truques para obter mais feito enquanto trabalha remotamente](https://rdutel.medium.com/working-remotely-geting-things-done-38dcd0413733)
 
 1. [8 dicas que o tornarão um desenvolvedor remoto mais ativo e mais saudável](https://x-team.com/blog/how-to-be-healthy-remote)
 
-1. [10 Lições de 4 anos trabalhando remotamente em Automattic] (https://whenihavetime.com/2014/07/08/10-lições-de 4 anos-trabalhando remotamente/)
+1. [10 Lições de 4 anos trabalhando remotamente em Automattic](https://whenihavetime.com/2014/07/08/10-lições-de-4-anos-trabalhando-remotamente/)
 
-1. [10 Segredos para se tornar um grande desenvolvedor remoto] (https://x-team.com/blog/10-secrets-to-becoming-a-great-remote-developer)
+1. [10 Segredos para se tornar um grande desenvolvedor remoto](https://x-team.com/blog/10-secrets-to-becoming-a-great-remote-developer)
 
 1. [21 ferramentas que ajudarão a sua equipa remota a trabalhar melhor em conjunto](https://thenextweb.com/news/tools-remote-teams)
 
-1. [30 Dicas para uma comunicação bem sucedida como um trabalhador remoto] (https://www.hanselman.com/blog/30-tips-for-sucessful-communication-as-a-remote-worker)
+1. [30 Dicas para uma comunicação bem sucedida como um trabalhador remoto](https://www.hanselman.com/blog/30-tips-for-sucessful-communication-as-a-remote-worker)
 
 1. [Aceitação da Gestão de Projetos de Teletrabalho cresce](https://www.amanet.org/articles/aceptionance-of-telecommuting-project-management-grows/)
 
@@ -104,23 +102,23 @@ Um trabalho fantástico.
 
 1. [Descobrir Empregos Remotos "Escondidos" com Google Search](https://medium.com/ft-remote-job/how-to-find-hidden-remote-jobs-using-google-search-12ebaa2ea8ea?source=friends_link&sk=3bc251fed25ddddd4c1a024ae4dd58e30)
 
-1. [O Manifesto Remoto de GitLab] (https://about.gitlab.com/blog/2015/04/08/the-remote-manifesto/)
+1. [O Manifesto Remoto de GitLab](https://about.gitlab.com/blog/2015/04/08/the-remote-manifesto/)
 
 1. [Dê às pessoas a liberdade de onde trabalhar](https://www.virgin.com/branson-family/richard-branson-blog)
 
-1. [Segredos de Contratação de uma Empresa Distribuída] (https://www.lullabot.com/articles/hiring-secrets-of-a-distributed-company)
+1. [Segredos de Contratação de uma Empresa Distribuída](https://www.lullabot.com/articles/hiring-secrets-of-a-distributed-company)
 
 1. [Como funciona o GitHub](https://zachholman.com/posts/how-github-works/)
 
-1. [Quantas empresas são 100% distribuídas? (Sumário da investigação)(https://scottberkun.com/2013/how-many-companies-are-100-distributed/)
+1. [Quantas empresas são 100% distribuídas?](https://scottberkun.com/2013/how-many-companies-are-100-distributed/)
 
-1. [Quantas pessoas realmente trabalham em casa? (resumo da investigação)(https://scottberkun.com/2013/how-many- people-really-work-of-home-research-summary/)
+1. [Quantas pessoas realmente trabalham em casa?](https://scottberkun.com/2013/how-many-people-really-work-of-home-research-summary/)
 
 1. [Como se concentrar ao trabalhar remotamente](https://x-team.com/blog/focus-working-remotely)
 
 1. [Como lidar com o cliente que trabalha remotamente: Nossa pilha de comunicação](https://marsbased.com/blog/2015/12/07/how-to-handle-client-work-remotely-our-communication-stack)
 
-1. [Como fazer o trabalho remoto trabalhar para você] (https://www.toptal.com/remote/how-to-make-remote-working-for-you)
+1. [Como fazer o trabalho remoto trabalhar para você](https://www.toptal.com/remote/how-to-make-remote-working-for-you)
 
 1. [Como gerenciar uma equipe de pessoas que nunca se veem](https://qz.com/230998/how-to-run-a-equipe-of-people-who-nunca-ver-se-uns-aos-outros)
 
@@ -128,37 +126,37 @@ Um trabalho fantástico.
 
 1. [Como Trabalhar em Casa Funciona (Para Nós)](https://www.lullabot.com/articles/how-working-at-home-works-for-us)
 
-1. [É Unarly Defined, mas Telecommuting is Fast on the Rise](https://www.nytimes.com/2014/03/08/ your-money/when-working-in- your-pajamas- is-more-productive.html?_r=0)
+1. [É Unarly Defined, mas Telecommuting is Fast on the Rise](https://www.nytimes.com/2014/03/08/your-money/when-working-in-your-pajamas-is-more-productive.html?_r=0)
 
-1. [Estatísticas mais recentes de Telecommutação (Global Workplaceanalytics.com/telecommuting-statistics)
+1. [Estatísticas mais recentes de Telecommutação](https://globalworkplaceanalytics.com/telecommuting-statistics)
 
 1. [Aprender com empresas distribuídas](https://www.lullabot.com/articles/learning-of-distributed-companies)
 
 1. [Gestão de uma Equipa Geograficamente Dispersada: Alcançar Juntos os vossos Objectivos, enquanto aparte](https://www.mindtools.com/awe2ycs/managing-a-geograficamente-dispersed-team)
 
-1. [Meu dia ideal como programador remoto: tomando conta de sua rotina diária] (https://buffer.com/resources/my-ideal-day-as-a-programador-taking-charge-of-your-dayly-rotine/)
+1. [Meu dia ideal como programador remoto: tomando conta de sua rotina diária](https://buffer.com/resources/my-ideal-day-as-a-programador-taking-charge-of-your-dayly-rotine/)
 
-1. [My Remote Developer Life] (https://shift.infinite.red/my-remote-developer-life-ama-bb91fa7bd0bd)
+1. [My Remote Developer Life](https://shift.infinite.red/my-remote-developer-life-ama-bb91fa7bd0bd)
 
 1. [Phoning It In: 3 Years of Lessons From Executing a Remote Business](https://observer.com/2014/02/foning-it-in-3-years-of-listons-of-running-a-remote-business/)
 
-1. [Remote versus Co-located Work] (https://martinfowler.com/articles/remote-or-co-located.html)
+1. [Remote versus Co-located Work](https://martinfowler.com/articles/remote-or-co-located.html)
 
 1. [Trabalho Remoto: Como trabalhar a forma de nutrição de precisão](https://www.precisionnutrition.com/remote-how-to-work-the-pn-way)
 
 1. [Trabalhador remoto vs equipe distribuída](https://opensource.com/life/11/11/remote-worker-vs-distributed-team)
 
-1. [Trabalho Remoto - Retrospectiva de 3 anos] (http://blog.jonliv.es/blog/2015/01/14/retrospectiva de 3 anos/)
+1. [Trabalho Remoto - Retrospectiva de 3 anos](http://blog.jonliv.es/blog/2015/01/14/retrospectiva-de-3-anos/)
 
-1. [Repensando Ágil em um mundo sem escritório] (https://signalvnoise.com/posts/3641-repensando-agile-in-an-office-less-world)
+1. [Repensando Ágil em um mundo sem escritório](https://signalvnoise.com/posts/3641-repensando-agile-in-an-office-less-world)
 
 1. [Seis Estratégias para Gerir os Telecommuters](https://www.cio.com/article/280749/leadership-management-seis-strategies-for-managing-telecommuters.html)
 
 1. [Solo Workers Bond at Shared Workspaces](https://www.nytimes.com/2013/05/05/fashion/solo-workers-bond-at-shared-workspaces.html)
 
-1. [As 5 coisas mais importantes que fazemos como uma empresa remota] (https://x-team.com/blog/5-important-things-remote-company)
+1. [As 5 coisas mais importantes que fazemos como uma empresa remota](https://x-team.com/blog/5-important-things-remote-company)
 
-1. [O caso das empresas all-remote] (https://about.gitlab.com/blog/2018/10/18/the-case-for-all-remote-companies/)
+1. [O caso das empresas all-remote](https://about.gitlab.com/blog/2018/10/18/the-case-for-all-remote-companies/)
 
 1. [O futuro das telecomunicações: Controlando os Yahoos](https://www.economist.com/business/2013/03/02/corralling-the-yahoos?fsrc=scn%2Ftw%2Fte%2Fpe%2Fcorallingtheyahoos)
 
@@ -174,7 +172,7 @@ Um trabalho fantástico.
 
 1. [Para aumentar a produtividade, deixe mais funcionários trabalharem em casa](https://hbr.org/2014/01/to-raise-productivity-let-more-employees-work-of-home)
 
-1. [O que é uma empresa distribuída?] ( https://www.lullabot.com/articles/what-is-a-distributed-company)
+1. [O que é uma empresa distribuída?](https://www.lullabot.com/articles/what-is-a-distributed-company)
 
 1. [Quem Precisa de um Escritório? Como ir 100 Por cento Remoto.](https://www.entreempreneur.com/culture-a-business/who-necessita-um-office-how-to-go-100-percent-remote/242708)
 
@@ -184,21 +182,21 @@ Um trabalho fantástico.
 
 1. [Por que os trabalhadores remotos estão mais (sim, mais) envolvidos](https://hbr.org/2012/08/are-you-taking-your-poople-for)
 
-1. [Por que as pequenas empresas estão construindo forças de trabalho remotas] (https://www.businessider.com/por que-pequenas empresas-estão construindo-remote-workforces-2013-10)
+1. [Por que as pequenas empresas estão construindo forças de trabalho remotas](https://www.businessider.com/por-que-pequenas-empresas-estão-construindo-remote-workforces-2013-10)
 
 1. [Por que nós (ainda) acreditamos em trabalhar remotamente](https://stackoverflow.blog/2013/02/01/why-we-still-create-in-working-remotely/)
 
 1. [Trabalhando remotamente: um guia completo para transformá-lo em um profissional](https://www.paymoapp.com/blog/working-remotely/)
 
-1. [Trabalhando Remotamente para Extroverts] (https://stephyiu.com/2014/12/13/working-remotely-for-extroverts/)
+1. [Trabalhando Remotamente para Extroverts](https://stephyiu.com/2014/12/13/working-remotely-for-extroverts/)
 
-1. [Yahoo, Best Buy, and Telecommuting: Advice from A Distributed Company](https://www.lullabot.com/articles/yahoo-best-buy-and-telecommuting-advice- from-a-distributed-company)
+1. [Yahoo, Best Buy, and Telecommuting: Advice from A Distributed Company](https://www.lullabot.com/articles/yahoo-best-buy-and-telecommuting-advice-from-a-distributed-company)
 
 1. [A sua comuna está matando você](https://slate.com/business/2011/05/long-commutes-cause-obesity-neck-pain-loneliness-divorce-stress-and-insomnia.html)
 
 1. [Por que o trabalho remoto dificulta o desacordo](https://zapier.com/blog/how-to-disagree-remote-work/)
 
-1. [10 Lições de Liderança de 10 Anos Trabalhando em uma Empresa Totalmente Distribuída e Remota](https://whenihavetime.com/2020/07/09/10-leadership-lições de 10-anos-trabalhando-remotely/)
+1. [10 Lições de Liderança de 10 Anos Trabalhando em uma Empresa Totalmente Distribuída e Remota](https://whenihavetime.com/2020/07/09/10-leadership-lições-de-10-anos-trabalhando-remotely/)
 
 1. [Trabalho Remoto para Todos - NY Times](https://www.nytimes.com/2021/07/06/06/technology/remote-work-for-everyone.html)
 
@@ -206,23 +204,23 @@ Um trabalho fantástico.
 
 # # Vídeos
 
-1. [David Copeland: O Desenvolvedor Remoto Eficaz] (https://www.infoq.com/presentations/effective-remote-developer-2017/)
+1. [David Copeland: O Desenvolvedor Remoto Eficaz](https://www.infoq.com/presentations/effective-remote-developer-2017/)
 
 1. [Fluent 2013: Mike Hostetler, "Remote Working Works!"](https://www.youtube.com/watch?v=23oBUH270YU)
 
-1. [Jason Fried: Por que o trabalho não acontece no trabalho] (https://www.youtube.com/watch?v=5XD2kNopsUs)
+1. [Jason Fried: Por que o trabalho não acontece no trabalho](https://www.youtube.com/watch?v=5XD2kNopsUs)
 
 # # Livros
 
-1. [Async Remote] (https://products.arkency.com/async-remote/).
+1. [Async Remote](https://products.arkency.com/async-remote/).
 
-por Robert Pankowecki e Andrzej Krzywda (Arkence), 2014.
+por Robert Pankowecki e Andrzej Krzywda (Arkency), 2014.
 
 1. [Equipes Distribuídas](https://oduinn.com/book/).
 
 por John O'Duinn, 2018.
 
-1. [Remote: Office Not Required] (https://basecamp.com/books/remote).
+1. [Remote: Office Not Required](https://basecamp.com/books/remote).
 
 por Jason Fried e David Heinemeier Hansson (37 sinais), 2013.
 
@@ -236,13 +234,13 @@ por Scott Berkun, 2013.
 
 # # Humor
 
-1. [Por que trabalhar em casa é incrível e horrível] (https://theoatmeal.com/comics/working_home)
+1. [Por que trabalhar em casa é incrível e horrível](https://theoatmeal.com/comics/working_home)
 
 # # Quadros de trabalho
 
-1. [Real Work From Anywhere](https://www.realwork fromwhere.com/) - Um site para trabalhos independentes de localização completa. Todos os trabalhos no site são 100% trabalho de qualquer lugar.
+1. [Real Work From Anywhere](https://www.realworkfromwhere.com/) - Um site para trabalhos independentes de localização completa. Todos os trabalhos no site são 100% trabalho de qualquer lugar.
 
-1. [4 Day Week] (https://4dayweek.io) - Empregos de software com um melhor equilíbrio trabalho / vida.
+1. [4 Day Week](https://4dayweek.io) - Empregos de software com um melhor equilíbrio trabalho / vida.
 
 1. [Trabalhos Autênticos](https://authenticjobs.com/?search_location=remote)
 
@@ -254,11 +252,11 @@ por Scott Berkun, 2013.
 
 1. [Crypto Jobs List](https://cryptojobslist.com/remote) - O maior site de empregos para encontrar e publicar vagas relacionadas a criptomoedas, bitcoin e blockchain.
 
-1. [Trabalhos de Criptomoeda] (https://cryptomorrencyjobs.co/remote/) - Filtro de localização -> *Remote *
+1. [Trabalhos de Criptomoeda](https://cryptomorrencyjobs.co/remote/) - Filtro de localização -> *Remote*
 
 1. [CyberJobHunt.in](https://cyberjobhunt.in/) - Explore oportunidades de emprego em Segurança Cibernética nas principais empresas e startups.
 
-1. [Daily Remote] (https://dailyremote.com) Filtrar e encontrar trabalhos remotos para cada papel!
+1. [Daily Remote](https://dailyremote.com) Filtrar e encontrar trabalhos remotos para cada papel!
 
 1. [Diversify Tech](https://www.diversifytech.com/job-board) - As empresas são transparentes sobre os seus esforços de diversidade e inclusão
 
@@ -272,7 +270,7 @@ por Scott Berkun, 2013.
 
 1. [freelancermap](https://www.freelancermap.com/projects/remote.html) - Trabalhos de freelance e contrato para especialistas em TI (principalmente projetos alemães)
 
-1. [Golangprojects] (https://www.golangprojects.com/golang-remote-jobs.html) filtro -> Apenas remoto
+1. [Golangprojects](https://www.golangprojects.com/golang-remote-jobs.html) filtro -> Apenas remoto
 
 1. [Guru](https://www.guru.com/) - (tem MUITAS categorias diferentes fora do software)
 
@@ -288,9 +286,9 @@ por Scott Berkun, 2013.
 
 1. [JobsCollider](https://jobscollider.com/remote-jobs) - *Centenas de milhares de empregos remotos de mais de 10.000 empresas e startups ao redor do mundo.*
 
-1. [Jobspresso] (https://jobspresso.co/) * Posições remotas de alta qualidade que são abertas e legítimas
+1. [Jobspresso](https://jobspresso.co/) *Posições remotas de alta qualidade que são abertas e legítimas
 
-1. [JustRemote] (https://justremote.co)
+1. [JustRemote](https://justremote.co)
 
 1. [Larajobs](https://larajobs.com/?location=&remote=1) A ligação ao emprego artesanal
 
@@ -308,29 +306,29 @@ por Scott Berkun, 2013.
 
 1. [PyJobs.com](https://www.pyjobs.com/?remoteLevel[0]=1&remoteLevel[1]=2) - Vagas para desenvolvedores Python
 
-1. [Remote Game Jobs] (https://remotegamejobs.com/) - Encontrar trabalho remoto e talento na indústria do jogo.
+1. [Remote Game Jobs](https://remotegamejobs.com/) - Encontrar trabalho remoto e talento na indústria do jogo.
 
 1. [remote-es/remotes](https://github.com/remote-es/remotes) - Repositório de empresas que oferecem empregos remotos em tempo integral com contratos espanhóis.
 
-1. [thatmlopsguy/remote-pt] (https://github.com/thatmlopsguy/remote-pt) - Repositório de empresas que oferecem emprego à distância a tempo inteiro com contratos portugueses
+1. [thatmlopsguy/remote-pt](https://github.com/thatmlopsguy/remote-pt) - Repositório de empresas que oferecem emprego à distância a tempo inteiro com contratos portugueses
 
 1. [remote-jobs](https://github.com/remoteintech/remote-jobs) - Uma lista de empresas semi-amigáveis na área de tecnologia.
 
 1. [Remotes](https://weworkremotely.com/?utm_source=Remotees&utm_medium=Redirect&utm_campaign=Remotees)
 
-1. [RemoteJobs.lat] (https://remotejobs.lat/) - Trabalhos remotos para pessoas LATAM
+1. [RemoteJobs.lat](https://remotejobs.lat/) - Trabalhos remotos para pessoas LATAM
 
 1. [Trabalhos Remotivos](https://remotive.com/)
 
-1. [Remote Works] (https://remote.works-hub.com) - Trabalhos remotos no desenvolvimento de software
+1. [Remote Works](https://remote.works-hub.com) - Trabalhos remotos no desenvolvimento de software
 
-1. [Ruby On Remote] (https://rubyonremote.com/) - Todos os trabalhos remotos rubi em um lugar
+1. [Ruby On Remote](https://rubyonremote.com/) - Todos os trabalhos remotos rubi em um lugar
 
-1. [Skip the Drive] (https://www.skipthedrive.com/)
+1. [Skip the Drive](https://www.skipthedrive.com/)
 
 1. [Slasify](https://slasify.com/en) - Tecnologia remota, arte/design e oportunidades de marketing da Ásia, serviço global de folha de pagamento incluído.
 
-1. [Stream Native Jobs] (https://streamnative.io/careers) - Role para baixo para `Junte-se a nós`
+1. [Stream Native Jobs](https://streamnative.io/careers) - Role para baixo para `Junte-se a nós`
 
 1. [SwissDev Jobs](https://swissdevjobs.ch/) - Filtro -> "Remote / Trabalho de casa"
 
@@ -360,7 +358,7 @@ por Scott Berkun, 2013.
 
 1. [UI/UX Jobs Board](https://uiuxjobsboard.com/design-jobs/remote) - Trabalhos remotos para designers UI/UX
 
-1. [EmbeddedJobs] (https://embedded.jobs) Placa de trabalho remota dedicada a engenheiros e desenvolvedores de sistemas embarcados.
+1. [EmbeddedJobs](https://embedded.jobs) Placa de trabalho remota dedicada a engenheiros e desenvolvedores de sistemas embarcados.
 
 # # Agregadores de quadros de trabalho
 
@@ -370,15 +368,15 @@ por Scott Berkun, 2013.
 
 1. [Google Jobs](https://www.google.com/search?q=remote&ibp=htl;jobs#fpstate=tldetail&htidocid=IO0hI7dpKTSlzSKoAAAA%3D%3D&htin=1&htivrt=jobs) - Agregados de vários conselhos de administração e locais de empregadores com sensibilidade à localização, tipo de trabalho e mais. Saiba como usá-lo [aqui](https://support.google.com/websearch/resposta/7498276?p=job_search_box&sa=X&ved=0ahUKEwid_qyLmJfXAhVD4YMKHYGBAK8Qra4CCGQoAQ&visit_id=1-636449249961631-3229288694&rd=1).
 
-1. [JS Remotely] (https://javascript.jobs/remote) - Todas as tarefas remotas JavaScript em uma placa
+1. [JS Remotely](https://javascript.jobs/remote) - Todas as tarefas remotas JavaScript em uma placa
 
-1. [Remote.io](https://www.remote.io/) -Jobboard e agregador para trabalhos remotos, principalmente tecnologia.
+1. [Remote.io](https://www.remote.io/) - Jobboard e agregador para trabalhos remotos, principalmente tecnologia.
 
-1. [Remote 4 Me] (https://remote4me.com/) Um agregador para trabalhos remotos em tecnologia e não-tecnologia.
+1. [Remote 4 Me](https://remote4me.com/) Um agregador para trabalhos remotos em tecnologia e não-tecnologia.
 
-1. [Índice remoto] (https://remoteindex.co/) - Direcção de trabalho e agregador para trabalhos remotos em tecnologia.
+1. [Índice remoto](https://remoteindex.co/) - Direcção de trabalho e agregador para trabalhos remotos em tecnologia.
 
-1. [Remote OK] (https://remoteok.com/) - Raspa muitos trabalhos para posições remotas.
+1. [Remote OK](https://remoteok.com/) - Raspa muitos trabalhos para posições remotas.
 
 1. [Remote Python](https://www.remotepython.com/) - Plataforma de orientação e agregador focado exclusivamente em oportunidades de trabalho remoto na linguagem Python.
 
@@ -402,17 +400,17 @@ por Scott Berkun, 2013.
 
 1. [HubBOG](https://www.hubbog.com/) - Espaço de trabalho + Acelerador de arranque. Bogotá, Colômbia
 
-1. [Casa Mokrin] (https://mokrinhouse.com/) - Espaço de convívio e de trabalho numa zona rural da Sérvia
+1. [Casa Mokrin](https://mokrinhouse.com/) - Espaço de convívio e de trabalho numa zona rural da Sérvia
 
 1. [Nest Copenhagen](https://www.nestcopenhagen.dk/) - Espaço de convívio em Copenhaga, Dinamarca
 
 1. [NoHatDigital](https://www.nohatdigital.com/mansionpage/) - Espaço de convívio no México
 
-1. [Casa Nômade] (https://nomadhouse.io) - Rede global de alojamento nômade
+1. [Casa Nômade](https://nomadhouse.io) - Rede global de alojamento nômade
 
 1. [Sende](https://www.sende.co/) - Espaço de convívio e de trabalho no norte de Espanha
 
-1. [Sun Desk] (https://sun-desk.com/) - Espaço de co-trabalho em Taghazout, Marrocos
+1. [Sun Desk](https://sun-desk.com/) - Espaço de co-trabalho em Taghazout, Marrocos
 
 1. [Talent Garden](https://talentgarden.com/en/coworking) - Espaço de trabalho em Itália, mas disponível em alguns outros países
 
@@ -430,9 +428,9 @@ por Scott Berkun, 2013.
 
 1. [Tulsa Remote](https://www.tulsaremote.com/) - Arranja 10 mil dólares em dinheiro do Tulsa.
 
-1. [Vermont Remote Worker Grant Program] (https://thinkvermont.com/relocate/) - Receba no máximo 5 mil dólares por ano para trabalhar em Vermont. Não pode exceder US $ 10.000 para a vida do programa por indivíduo.
+1. [Vermont Remote Worker Grant Program](https://thinkvermont.com/relocate/) - Receba no máximo 5 mil dólares por ano para trabalhar em Vermont. Não pode exceder US $ 10.000 para a vida do programa por indivíduo.
 
-1. [Remote Shoals] (https://remoteshoals.com/) - Trabalhar remotamente? Arranja 10 mil dólares para fazeres o teu trabalho nos Shoals.
+1. [Remote Shoals](https://remoteshoals.com/) - Trabalhar remotamente? Arranja 10 mil dólares para fazeres o teu trabalho nos Shoals.
 
 1. [Visto](https://visto.ai/) - Nós realocamos desenvolvedores para o Canadá e ajudamos empresas a trazer desenvolvedores para fora do mundo!
 
@@ -440,7 +438,7 @@ por Scott Berkun, 2013.
 
 1. [andreis/entreview](https://github.com/Olshansk/entreview) - Tudo o que você precisa para chutar o traseiro em sua entrevista de codificação
 
-1. [awesome-entreviews] (https://github.com/DopplerHQ/awesome-entreview-questions) - Uma lista de listas de perguntas de entrevista com curadoria
+1. [awesome-entreviews](https://github.com/DopplerHQ/awesome-entreview-questions) - Uma lista de listas de perguntas de entrevista com curadoria
 
 1. [adaface.com/pair-pro](https://www.adaface.com/online-assessment-platform) - Ferramenta para entrevistas de programação em par remoto, com editor compartilhado, compilador de código e videoconferência.
 
@@ -468,19 +466,17 @@ por Scott Berkun, 2013.
 
 1. [Project Getaway](https://www.projectgetaway.com/) - 30 dias de retiro
 
-1. [Centro de Recurse] (https://www.recurse.com/) - Retirada gratuita de 3 meses
+1. [Centro de Recurse](https://www.recurse.com/) - Retirada gratuita de 3 meses
 
 # # Newsletters
 
-1. [Daily Remote] (https://dailyremote.com/newsletter) - Uma newsletter contendo trabalhos remotos criados e curados especialmente para você
+1. [Daily Remote](https://dailyremote.com/newsletter) - Uma newsletter contendo trabalhos remotos criados e curados especialmente para você
 
 2. [European Remote](https://europeanremote.com/alerts/) - Oportunidades selecionadas para pessoas tecnológicas europeias, todas as semanas em sua caixa de entrada
 
 1. [Making Remote Work](https://www.mailerlite.com) - Boletim mensal remoto da MailerLite compartilhando melhores práticas, erros e aprendizagens, visões de mundo (literalmente) e vagas de emprego remotas.
 
 1. [NODESK](https://nodesk.co/) - Um boletim informativo sobre nômades digitais e trabalho remoto que é enviado de duas em duas semanas.
-
-1. (https://smash.vc/startup-newsletter/)
 
 1. [Remote Jobs Club](https://remotejobsclub.com) - Boletim semanal com uma lista feita manualmente de empregos remotos.
 
@@ -490,7 +486,7 @@ por Scott Berkun, 2013.
 
 1. [Construindo equipas remotas](https://www.buildingremoteteteemes.com/) - Destinado a pessoas que já trabalham remotamente e centra-se nos desafios matizados do trabalho remoto.
 
-1. [Distribuído] (https://distributed.blog/podcast/) - Podcast de entrevista de Matt Mullenweg. Focada nos benefícios e desafios do trabalho distribuído e recrutamento de pessoas em todo o mundo.
+1. [Distribuído](https://distributed.blog/podcast/) - Podcast de entrevista de Matt Mullenweg. Focada nos benefícios e desafios do trabalho distribuído e recrutamento de pessoas em todo o mundo.
 
 1. [Lessons from Distributed Companies](https://www.lullabot.com/podcasts/drupalizeme-podcast/listons-of-distributed-companies)
 
@@ -504,7 +500,7 @@ por Scott Berkun, 2013.
 
 1. [15Cinco](https://www.15five.com/about/careers/) - Junte-se à nossa missão de criar os espaços onde as pessoas se tornam o seu maior eu, juntando-se a alguns dos maiores empregados ao redor.
 
-1. [1Password] (https://1password.com/carreiras) O mais amado gestor de senhas do mundo.
+1. [1Password](https://1password.com/carreiras) O mais amado gestor de senhas do mundo.
 
 1. [Adeva](https://adevait.com) - Uma rede exclusiva de desenvolvedores remotos. A Adeva faz parceria com empresas para escalar equipes de engenharia sob demanda.
 
@@ -580,7 +576,7 @@ por Scott Berkun, 2013.
 
 1. [Canônico](https://canônico.com/carreiras/all) - Ubuntu.
 
-1. [Ceros] (https://labs.ceros.com/jobs/#/) - .
+1. [Ceros](https://labs.ceros.com/jobs/#/) - .
 
 1. [Chef](https://www.chef.io/carreiras) - Nós nos dedicamos à automação de TI para velocidade e excelência. Ruby, JavaScript e scripts de shell. Nossa sede está em Seattle, mas temos funcionários em todo os EUA.
 
@@ -592,7 +588,7 @@ por Scott Berkun, 2013.
 
 1. [Codeship](https://www.cloudbees.com/products/codeship) - Serviço de entrega contínua SaaS
 
-1. [CodeWeavers] (https://www.codeweavers.com/about/jobs) - Software aberto baseado em vinho.
+1. [CodeWeavers](https://www.codeweavers.com/about/jobs) - Software aberto baseado em vinho.
 
 1. [Colabora](https://www.colabora.com/careers.html) - Consultoria baseada em software de código aberto.
 
@@ -606,7 +602,7 @@ por Scott Berkun, 2013.
 
 1. [Crosscan](https://crosscan.com/jobs/) - Análise de Varejo, IoT (PHP, React, Web, Mobile, Rust)
 
-1. [Crossover](https://app.crossover.com/x/marketplace/ available-jobs) - Posições Java, .Net e DevOps baseadas em projetos.
+1. [Crossover](https://app.crossover.com/x/marketplace/available-jobs) - Posições Java, .Net e DevOps baseadas em projetos.
 
 1. [Cliente.io](https://cliente.io/carreiras) - Plataforma de engajamento do cliente. Equipe 100% remota e globalmente distribuída. Ir, MySQL, Tiposcript, Ember, React, etc
 
@@ -618,7 +614,7 @@ por Scott Berkun, 2013.
 
 1. [Deeson](https://manifesto.co.uk/) - Com sede no Reino Unido e equipa europeia. Agências digitais em Drupal, Symfony e Laravel
 
-1. [DigitalOcean] (https://www.digitalocean.com/careers) - Simple Cloud Hosting, Built for Developers
+1. [DigitalOcean](https://www.digitalocean.com/careers) - Simple Cloud Hosting, Built for Developers
 
 1. [Discurso](https://www.discourse.org/team) - Discussão civilizada para sua comunidade.
 
@@ -656,11 +652,11 @@ por Scott Berkun, 2013.
 
 1. [Sentido](https://feeld.co/) - Aplicativo de namoro para casais e solteiros.
 
-1. [Localizar] (https://findifify.io/) - E-commerce pesquisa alimentado por machine learning e big data. Equipa distribuída pela Europa.
+1. [Localizar](https://findifify.io/) - E-commerce pesquisa alimentado por machine learning e big data. Equipa distribuída pela Europa.
 
 1. [Assembleia Geral](https://generalassemb.ly/careers) - Educação física e em linha para tecnologia, negócios e design.
 
-1. [Ghost] (https://ghost.org/about/#careers) - Plataforma de publicação.
+1. [Ghost](https://ghost.org/about/#careers) - Plataforma de publicação.
 
 1. [Giant Swarm](https://www.giantswarm.io/) - A infraestrutura de microservices gerenciada pela Giant Swarm permite que as empresas executem sistemas ágeis, resilientes e distribuídos em escala, enquanto removem as tarefas relacionadas à gestão da infraestrutura complexa subjacente
 
@@ -670,13 +666,13 @@ por Scott Berkun, 2013.
 
 1. [HeadSpin](https://www.headspin.io/) - A primeira plataforma de IA Experiência Digital do mundo que combina infraestrutura global de dispositivos hospedada na nuvem e no local, automação de testes e desempenho e qualidade de análise de experiência orientadas para ML para dispositivos móveis, web, áudio e vídeo.
 
-1. [Gitbook] (https://gitbook.gitbook.io/join-gitbook) - Publishing toolchain based on git. JavaScript, node.js, vai.
+1. [Gitbook](https://gitbook.gitbook.io/join-gitbook) - Publishing toolchain based on git. JavaScript, node.js, vai.
 
 1. [GitHub](https://www.github.careers/careers-home)
 
 1. [GitLab](https://about.gitlab.com/jobs/) - Concorrente ao GitHub.
 
-1. [Gitee] (https://gitee.com) - GitHub alternativa na China.
+1. [Gitee](https://gitee.com) - GitHub alternativa na China.
 
 1. [Gradle](https://gradle.com/careers/) - Open Source Build Tool; Enterprise SaaS e on-premise. Totalmente remoto. Java, Groovy, Kotlin.
 
@@ -708,17 +704,17 @@ por Scott Berkun, 2013.
 
 1. [Inpsyde GmbH](https://syde.com/) - Agência WordPress na Alemanha.
 
-1. [Instituto para Notícias sem fins lucrativos](https://inn.users.membersuite.com/community/career-center/browse-jobs/all Jobs/allCities/allStates) - Organização de notícias sem fins lucrativos.
+1. [Instituto para Notícias sem fins lucrativos](https://inn.users.membersuite.com/community/career-center/browse-jobs/allJobs/allCities/allStates) - Organização de notícias sem fins lucrativos.
 
 1. [Instructure](https://www.instructure.com/about/careers) Tornamos o software que torna as pessoas mais inteligentes.
 
-1. [Intellum] (https://www.intellum.com/) Construímos ferramentas de colaboração, desempenho e aprendizagem de funcionários. Ruby, iOS, Android, AWS, GCS.
+1. [Intellum](https://www.intellum.com/) Construímos ferramentas de colaboração, desempenho e aprendizagem de funcionários. Ruby, iOS, Android, AWS, GCS.
 
 1. [Intevidade](https://www.intevity.com/)
 
 1. [Intuition Machines, Inc.](https://apply.workable.com/imachines/) - A Intuition Machines é especializada em aprendizado profundo e domínio visual em ML em larga escala. Python, JavaScript, Kubernetes, Kafka, Dask/Spark, ML/Visão Computacional
 
-1. [InVision] (https://www.invisionapp.com/company#jobs) - prototipagem, colaboração e plataforma de fluxo de trabalho.
+1. [InVision](https://www.invisionapp.com/company#jobs) - prototipagem, colaboração e plataforma de fluxo de trabalho.
 
 1. [Iterativa](https://iterative.notion.site/Iterativa-ai-is-Harring-852cb978129645e1906e2c9a878a4d22) - ML Model Development para equipas. Remotamente mundial
 
@@ -742,13 +738,13 @@ por Scott Berkun, 2013.
 
 1. [LaunchPotato](https://launchpotato.com/carreiras) - Estúdio startup localizado em Delray Beach, Flórida.
 
-1. [Librato] (https://jobs.solarwinds.com/) - Monitoramento em nuvem.
+1. [Librato](https://jobs.solarwinds.com/) - Monitoramento em nuvem.
 
 1. [Linaro](https://www.linaro.org/careers/) Engenharia OpenSource em ARM.
 
 1. [Lincoln Loop](https://lincolnloop.com) - Loja WebDev.
 
-1. [LiveChat] (https://www.livechat.com/careers/) - software de atendimento ao cliente online com chat online, software de help desk e análise web
+1. [LiveChat](https://www.livechat.com/careers/) - software de atendimento ao cliente online com chat online, software de help desk e análise web
 
 1. [LivingSocial](https://www.grouponcareers.com/) - Suporte em toda a empresa para equipes de desenvolvedores experientes e remotos. Muita autonomia.
 
@@ -758,7 +754,7 @@ por Scott Berkun, 2013.
 
 1. [Lullabot](https://www.lullabot.com/jobs) - Estratégia, design e desenvolvimento usando Drupal.
 
-1. [madewithlove] (https://madewithlove.com/carreiras/) Ajudamos as empresas a construir produtos digitais e trazer novos sucos para equipes que parecem engarrafar.
+1. [madewithlove](https://madewithlove.com/carreiras/) Ajudamos as empresas a construir produtos digitais e trazer novos sucos para equipes que parecem engarrafar.
 
 1. [Maintainer Mountaineer](https://maintainer.io) - Gestão da comunidade de código aberto como serviço.
 
@@ -794,7 +790,7 @@ por Scott Berkun, 2013.
 
 1. [NearForm](https://www.nearform.com/careers/) - A NearForm desenvolve empresas construindo software aberto e de alto desempenho. Nossa equipe global usa processos e ferramentas modernas para ajudar os clientes a inovar rapidamente.
 
-1. [Netlandish] (https://www.netlandish.com/) - Desenvolvimento de software para empresas de todos os tamanhos. Python, Django, DevOps. 100% remoto.
+1. [Netlandish](https://www.netlandish.com/) - Desenvolvimento de software para empresas de todos os tamanhos. Python, Django, DevOps. 100% remoto.
 
 1. [Netsparker](https://www.invicti.com/careers/) - Scanner de Segurança de Aplicações Web.
 
@@ -804,7 +800,7 @@ por Scott Berkun, 2013.
 
 1. [NodeSource](https://nodesource.com/about) - A NodeSource se dedica à criação de um ecossistema sustentável para Node.js.
 
-1. [Nozbe] (https://nozbe.com/carreiras) - Aplicativo GTD para Mac, Windows, Linux, Android, iPad e iPhone.
+1. [Nozbe](https://nozbe.com/carreiras) - Aplicativo GTD para Mac, Windows, Linux, Android, iPad e iPhone.
 
 1. [Neon Postgres Database](https://neon.tech/careers) - Neon é uma equipe completamente remota, distribuída e dedicada ao desenvolvimento de código aberto. Eles oferecem um Postgres nativo na nuvem, que é uma alternativa de código aberto ao AWS Aurora ou Cloud SQL para Postgres.
 
@@ -824,7 +820,7 @@ por Scott Berkun, 2013.
 
 1. [Paylocity](https://www.paylocity.com/careers/) - Soluções de RH e folha de pagamento
 
-2. [Peakforce] (https://www.peakforce.dev) - Atlassian (Jira, Confluência) e Splunk (SIEM, Observabilidade) Parceiro ajudando com licenças, implementação, migrações e consultoria.
+2. [Peakforce](https://www.peakforce.dev) - Atlassian (Jira, Confluência) e Splunk (SIEM, Observabilidade) Parceiro ajudando com licenças, implementação, migrações e consultoria.
 
 1. [Pilot](https://plane.com) - Pilot é uma plataforma de software que remove toda a dor do trabalho contratado. Encontramos trabalho, negociamos contratos, enviamos faturas e perseguimos pagamentos para centenas de engenheiros e designers avançados em todo o mundo.
 
@@ -844,7 +840,7 @@ por Scott Berkun, 2013.
 
 1. [RainforestQA](https://jobs.lever.co/rainforest) A pedido QA como um serviço.
 
-1. [RebelMouse] (https://www.rebelmouse.com/st/blog) - Plataforma de publicação social. Desenvolvedores Python, JS e iOS/Android. Em todo o mundo.
+1. [RebelMouse](https://www.rebelmouse.com/st/blog) - Plataforma de publicação social. Desenvolvedores Python, JS e iOS/Android. Em todo o mundo.
 
 1. [Recurly](https://recurly.com/careers/) - gestão de faturamento recorrente para empresas com base em assinaturas
 
@@ -872,33 +868,33 @@ por Scott Berkun, 2013.
 
 1. [ShakaCode](https://www.shakacode.com/career/) - Uma empresa global de consultoria e produto de software para desenvolvimento web.
 
-1. [Shiphero] (https://shiphero.breezy.hr/?&remote=remote#positions) - ShipHero constrói um Sistema de Gestão de Armazém totalmente caracterizado. 100% remoto.
+1. [Shiphero](https://shiphero.breezy.hr/?&remote=remote#positions) - ShipHero constrói um Sistema de Gestão de Armazém totalmente caracterizado. 100% remoto.
 
-1. [Shogun] (https://getshogun.com/) - Construir e otimizar landing pages eCommerce. Ruby / Rails, Vai, JavaScript, Reagir. 100% remoto.
+1. [Shogun](https://getshogun.com/) - Construir e otimizar landing pages eCommerce. Ruby / Rails, Vai, JavaScript, Reagir. 100% remoto.
 
-1. [Sinal] (https://signal.org/workworkwork/) Estas pessoas fazem o fantástico aplicativo Signal. Só para nós.
+1. [Sinal](https://signal.org/workworkwork/) Estas pessoas fazem o fantástico aplicativo Signal. Só para nós.
 
-1. [Skyscrapers] (https://skyscrapers.eu/join-us/) - Serviços de hospedagem em nuvem e gerenciamento. Trabalhar com vários provedores de nuvem (AWS, Digital Ocean, Linode, ...). 100% remoto.
+1. [Skyscrapers](https://skyscrapers.eu/join-us/) - Serviços de hospedagem em nuvem e gerenciamento. Trabalhar com vários provedores de nuvem (AWS, Digital Ocean, Linode, ...). 100% remoto.
 
 1. [SoftwareMill](https://softwaremill.com/join-us/)
 
-1. [Soshace] (https://soshace.com/) - Angular/React/Vue.js/Java/Python empresa de desenvolvimento remoto
+1. [Soshace](https://soshace.com/) - Angular/React/Vue.js/Java/Python empresa de desenvolvimento remoto
 
 1. [Songspace](https://songspace.com) Ajuda criadores de música a colaborar, catalogar e compartilhar trabalho com sua equipe profissional
 
 1. [Sourcegraph](https://github.com/sourcegraph/careers) - Pesquisa e navegação de código para equipes (auto-hospedado, OSS). Totalmente remoto (entre fusos horários).
 
-1. [Spreaker](https://careers.spreaker.com/oportunities/) Crie, hospede, distribua e monetize seus podcasts. Todos os engenheiros são remotos. Tech stack: Javascript (React, Node.js), PHP (Symfony), iOS, Android. Todos hospedados na AWS..
+1. [Spreaker](https://careers.spreaker.com/oportunidades/) Crie, hospede, distribua e monetize seus podcasts. Todos os engenheiros são remotos. Tech stack: Javascript (React, Node.js), PHP (Symfony), iOS, Android. Todos hospedados na AWS..
 
 1. [StackExchange](https://stackoverflow.co/companhia/trabalho-aqui/)
 
-1. [Stream Native] (https://streamnative.io) Mensagem e transmissão de eventos Cloud-Native powered by Apache Pulsar
+1. [Stream Native](https://streamnative.io) Mensagem e transmissão de eventos Cloud-Native powered by Apache Pulsar
 
 1. [Stripe](https://stripe.com/blog/remote-hub) cria ferramentas financeiras e infraestrutura econômica para a internet.
 
-1. [StyleSeat] (http://static.styleseat.com/jobs/index.html) - adoramos engenheiros remotos de alto impacto, colaboração, criatividade, python, angularjs
+1. [StyleSeat](http://static.styleseat.com/jobs/index.html) - adoramos engenheiros remotos de alto impacto, colaboração, criatividade, python, angularjs
 
-1. [SuperOrbital] (https://superorbital.io/) - Engenharia e formação Kubernetes.
+1. [SuperOrbital](https://superorbital.io/) - Engenharia e formação Kubernetes.
 
 1. [Surevine](https://surevine.com/carreiras)
 
@@ -922,7 +918,7 @@ por Scott Berkun, 2013.
 
 1. [Tesera](https://www.tesera.com/) - Interrompemos o pensamento convencional para expandir o que é possível. Nós acendemos a mudança no futuro que compartilhamos.
 
-1. [A grade] (https://thegrid.io/) - Construtor de sites de IA. Equipa 100% distribuída.
+1. [A grade](https://thegrid.io/) - Construtor de sites de IA. Equipa 100% distribuída.
 
 1. [Thermeon](https://thermeon.com/vacancies/) - Software de aluguer de carros - equipe técnica 100% remota
 
@@ -932,11 +928,11 @@ por Scott Berkun, 2013.
 
 1. [Toggl](https://toggl.com/jobs/)
 
-1. [Toptal](https://www.toptal.com/carreiras) - 100% empresa de desenvolvimento remoto, resolvendo a escassez mundial de talentos
+1. [Toptal](https://www.toptal.com/careiras) - 100% empresa de desenvolvimento remoto, resolvendo a escassez mundial de talentos
 
 1. [Tortuga Backpacks](https://www.tortugabackpacks.com/pages/careers) - Mochilas para viagens na cidade.
 
-1. [Transloadit] (https://transloadit.com/jobs/) O mais versátil serviço de upload e codificação de arquivos do mundo, desde 2009, por devs para devs
+1. [Transloadit](https://transloadit.com/jobs/) O mais versátil serviço de upload e codificação de arquivos do mundo, desde 2009, por devs para devs
 
 1. [Trello](https://trello.com/jobs)
 
@@ -976,15 +972,15 @@ por Scott Berkun, 2013.
 
 - Local de trabalho: [telecommute](https://workplace.stackexchange.com/questions/tagged/telecommute?sort=votes)
 
-- Freelancing: [remote](https://freelancing.stackexchange.com/questions/tagged/remote?sort=votes) / [working from home](https://freelancing.stackexchange.com/questions/tagged/working- from-home?sort=votes)
+- Freelancing: [remote](https://freelancing.stackexchange.com/questions/tagged/remote?sort=votes) / [working from home](https://freelancing.stackexchange.com/questions/tagged/working-from-home?sort=votes)
 
 # # Comunidades
 
-1. [/r/telecommuting] (https://www.reddit.com/r/telecommuting/?rdt=54904) - Subreddit.
+1. [/r/telecommuting](https://www.reddit.com/r/telecommuting/?rdt=54904) - Subreddit.
 
-1. [##remotes] (https://github.com/remotesclub/remotes) - Canal IRC
+1. [##remotes](https://github.com/remotesclub/remotes) - Canal IRC
 
-1. [Hacker Paradise] (https://www.hackerparadise.org/) - Trabalhadores remotos viajantes.
+1. [Hacker Paradise](https://www.hackerparadise.org/) - Trabalhadores remotos viajantes.
 
 1. [Índio remoto](https://remoteindian.com/) - Profissionais remotos da Índia.
 
@@ -996,7 +992,7 @@ por Scott Berkun, 2013.
 
 1. [9punto5](https://9punto5.cl/) - Conferência de trabalho à distância na América Latina.
 
-1. [Git Commit Show] (https://gitcommit.show/) - Desenvolvedor Global Conferência para promover o trabalho à distância uma educação, participar de qualquer coisa
+1. [Git Commit Show](https://gitcommit.show/) - Desenvolvedor Global Conferência para promover o trabalho à distância uma educação, participar de qualquer coisa
 
 # # Ferramentas
 
@@ -1024,110 +1020,4 @@ Comunicação
 
 1. [Precursor](https://precursorapp.com) - Simples prototipagem e brainstorming web app com colaboração em tempo real.
 
-1. [PukkaTeam](https://pukkateam.com/) - Presença real da equipe através de selfies automáticos regulares e chamada de vídeo com um clique
-
-1. [Rocket.Chat](https://www.rocket.chat/) - O quê? A última plataforma WebChat de código aberto.
-
-2. [Sinal](https://signal.org/) - Chamadas de chat e vídeo criptografadas, seguras.
-
-1. [Skype](https://www.skype.com/) - Chamadas de vídeo.
-
-1. [Slack](https://slack.com/) - Sistema de chat por texto, voz e vídeo com diversas opções de integração, incluindo [Hundles](https://slack.com/features/huddles), um sistema de compartilhamento de tela HD em tempo real para colaboração em equipes.
-
-1. [Talky] (https://talky.io/) - O quê? Conversa de vídeo verdadeiramente simples e compartilhamento de tela para grupos
-
-1. [TeamHub] (https://git.live/) - O quê? Estado em tempo real e relatórios de progresso diretamente dentro do seu IDE
-
-1. [Dicas para chamadas de vídeo imersivas] (https://www.benkuhn.net/vc/) - O quê? Dicas para chamadas de vídeo imersivas
-
-1. [Twist](https://twist.com/) - O quê? Uma plataforma de comunicações onde discussões de longa duração e mensagens casuais vivem em harmonia.
-
-1. [Onde] (https://whereby.com) - Chamadas de vídeo baseadas em navegadores, sem plugins.
-
-1. [Zoom] (https://www.zoom.com) Vídeo em grupo de alta qualidade e tela de compartilhamento, executar em linux, gravar sessão e apoiar chamadas telefônicas.
-
-1. [Krisp](https://krisp.ai/) - Ruído de fundo silencioso em qualquer aplicativo de comunicação.
-
-1. [flat.social](https://flat.social/) - Criar espaços virtuais divertidos para reuniões online, atividades de equipe e sociais virtuais.
-
-Gestão de Projetos
-
-1. [Asana](https://asana.com/) - Gestão de projetos boa para equipes distribuídas.
-
-1. [ClickUp] (https://clickup.com/) - Plataforma de produtividade única que reúne equipes, tarefas e ferramentas em um só lugar.
-
-1. [Harvest](https://www.getharvest.com/) - Rastreio do tempo
-
-1. [Staff Watcher](https://staffwatcher.com/) - Monitoramento de tempo
-
-1. [Hitask](https://hitask.com/) - Gerenciamento de tarefas e projetos de forma simples para equipes.
-
-1. [Jira](https://www.atlassian.com/software/jira) - Ferramenta de rastreamento de emissões e projetos.
-
-1. [Noção](https://www.notion.so/) - Todos em um espaço de trabalho para escrever, planejar, colaborar e se organizar.
-
-1. [Outplanr](https://www.outplanr.com/) - Ferramenta de gerenciamento de projetos e tarefas.
-
-1. [Pinitto.me](https://pinitto.me) - Aplicativo virtual de cortiça em tempo real leve (código aberto).
-
-1. [Shortcut](https://www. shortcut.com/) (fka Clubhouse) - Gestão de projectos para equipas de desenvolvimento de software.
-
-1. [Taskade](https://www.taskade.com/) - Notas colaborativas em tempo real, listas de verificação e esboços para equipes.
-
-1. [Trello](https://trello.com/) - Placas de projeto Lean.
-
-1. [gantt-online](https://gantt-online.com/) - Ferramenta de Gerenciamento de Projetos em Gráfico de Gantt.
-
-# # # # Outros
-
-1. [Coffitivity](https://coffitivity.com/) - Cofitividade recria os sons ambientais de um café para aumentar sua criatividade e ajudá-lo a trabalhar melhor.
-
-1. [Fiverr](https://www.fiverr.com/) - Fiverr é o maior mercado de serviços freelance do mundo para empresários magros, onde você pode contratar trabalhadores remotos para fazer pequenas tarefas para você.
-
-1. [EasyRetro](https://easyretro.io) - EasyRetro é um quadro online retrospectivo para equipes distribuídas.
-
-1. [Escute a Wikipédia (Hatnote)](http://listen.hatnote.com) - Ouça o som do feed de mudanças recentes da Wikipédia.
-
-1. [Noisli](https://www.noisli.com/) - Noisli tem uma lista de sons ambientais diferentes que podem ser combinados para aumentar a criatividade e o foco.
-
-1. `
-
-1. [Qbserve](https://qotoqot.com/qbserve/) - Automatização do rastreamento de tempo: monitoramento de projetos freelance, controle de horas, faturamento e retorno de produtividade em tempo real (Mac).
-
-1. [Miro] (https://miro.com) (fka Realtime Board) - Distribuído quadro virtual permanente.
-
-1. [Timing](https://timingapp.com/?lang=en) - Monitoramento automático de tempo e produtividade para Mac. Ajuda você a se manter no caminho certo com seu trabalho (especialmente importante ao trabalhar remotamente). Também garante que nenhuma hora de faturamento seja perdida se você estiver cobrando por hora (Mac).
-
-# # Lei e Finanças
-
-1. [1099 contratantes](https://www.smartcapitalmind.com/what-is-a-1099-contractor.htm) - As empresas americanas podem contratar trabalhadores remotos.
-
-1. [Transferwise](https://wise.com/gb/business/payouts) - Forma fácil de pagar empregados remotos.
-
-## # Outros
-
-1. [awesome-digital-nomads] (https://github.com/cbovis/awesome-digital-nomads) - □ Uma lista de recursos impressionantes para os Digital Nomads.
-
-1. [Established Remote] (https://github.com/yanirs/stablished-remote) - Uma lista de empresas remotas estabelecidas
-
-1. [LiquidSpace](https://liquidspace.com/) - Diário & por hora escritório & sala de reuniões aluguer.
-
-1. [Lista Nômade](https://nomads.com/) - Compare o custo e a qualidade de vida em diferentes cidades.
-
-1. [Regus USA](https://www.regus.com/en-gb) - Suítes executivas, escritórios virtuais e sala de conferências.
-
-1. [Empresas remotas sobre carreira SO](https://stackoverflow.com/jobs/companies?q=&l=&r=true)
-
-1. [Remote Working](https://github.com/greatghoul/remote-working) - Uma lista de recursos de trabalho remoto para o chinês.
-
-1. [WorkFrom](https://workfrom.co/) - Encontre cafés que são bons para trabalhar.
-
-2. [Websoft9](https://github.com/Websoft9/websoft9) - Plataforma de auto-hospedagem de software de código aberto, com um clique para instalar mais de 200 aplicações, incluindo ferramentas remotas como Jiti Meet, Rocket.chat, GitLab e Mattermost.
-
-# # Licença
-
-Claro! Aqui está o texto reescrito em português brasileiro, mantendo os elementos solicitados:
-
-[![CC0](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
-
-Na medida do possível, [Lukasz Madon](https://github.com/lukasz-madon) renunciou a todos os direitos autorais e direitos relacionados ou vizinhos a este trabalho.
+1. [PukkaTeam](https://pukkateam.com/) - Presença real da equipe através de selfies automáticos regulares e chamada de vídeo com
