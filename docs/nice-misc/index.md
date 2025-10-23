@@ -30,6 +30,24 @@ Bibliotecas, frameworks e recursos para desenvolvimento em Python.
 ### 🏠 [Awesome Selfhosted](/nice-misc/awesome-coisas/awesome-selfhosted)
 Aplicações que podem ser hospedadas em servidor próprio.
 
+### 🤖 [Awesome LLM](/nice-misc/awesome-coisas/Awesome-LLM)
+Lista de artigos sobre grandes modelos de linguagem, frameworks de treinamento e ferramentas LLM.
+
+### 💬 [Awesome ChatGPT Prompts](/nice-misc/awesome-coisas/awesome-chatgpt-prompts)
+Coleção de prompts eficazes para maximizar o uso do ChatGPT e outros modelos de IA.
+
+### 🎨 [Awesome Design](/nice-misc/awesome-coisas/awesome-design)
+Recursos e ferramentas de alta qualidade para designers de UI/UX.
+
+### 🚀 [Awesome LLM Apps](/nice-misc/awesome-coisas/awesome-llm-apps)
+Aplicativos LLM construídos com RAG, Agentes de IA, Equipes Multi-agente e muito mais.
+
+### 💼 [Awesome Remote Job](/nice-misc/awesome-coisas/awesome-remote-job)
+Lista curada de recursos para trabalho remoto.
+
+### 🔒 [Awesome Security](/nice-misc/awesome-coisas/awesome-security)
+Coleção de software, bibliotecas, documentos e recursos sobre segurança.
+
 ### 💬 [ChatGPT Prompts](/nice-misc/PromptKing/chatgpt-prompts)
 Coleção de prompts eficazes para maximizar o uso do ChatGPT.
 
