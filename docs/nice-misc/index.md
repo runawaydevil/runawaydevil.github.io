@@ -48,6 +48,10 @@ Lista curada de recursos para trabalho remoto.
 ### 🔒 [Awesome Security](/nice-misc/awesome-coisas/awesome-security)
 Coleção de software, bibliotecas, documentos e recursos sobre segurança.
 
+
+### ₿ [Awesome Bitcoin & Blockchain](/nice-misc/awesome-coisas/awesome-blockchain-bitcoin-awesome-md)
+Lista curada de recursos sobre Bitcoin, Blockchain e criptomoedas.
+
 ### 💬 [ChatGPT Prompts](/nice-misc/PromptKing/chatgpt-prompts)
 Coleção de prompts eficazes para maximizar o uso do ChatGPT.
 
