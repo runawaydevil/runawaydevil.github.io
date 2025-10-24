@@ -126,6 +126,7 @@ export default defineConfig({
           items: [
             { text: 'Referências', link: '/ref/' },
             { text: '🏴‍☠️ A todos os navegantes...', link: '/ref/about' },
+            { text: '🔗 Insira seus links', link: '/ref/insira-seus-links' },
             { text: '🙏 Agradecimentos', link: '/ref/agradecimentos' }
           ]
         }
