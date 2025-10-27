@@ -130,6 +130,15 @@ export default defineConfig({
             { text: '🙏 Agradecimentos', link: '/ref/agradecimentos' }
           ]
         }
+      ],
+      '/nice-misc/another-threads/': [
+        {
+          text: 'Another Threads',
+          items: [
+            { text: 'Another Threads', link: '/nice-misc/another-threads/' },
+            { text: '🔄 Omega Thread', link: '/nice-misc/another-threads/omegathread' }
+          ]
+        }
       ]
     },
 

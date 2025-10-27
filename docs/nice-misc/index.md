@@ -52,8 +52,8 @@ Coleção de software, bibliotecas, documentos e recursos sobre segurança.
 ### ₿ [Awesome Bitcoin & Blockchain](/nice-misc/awesome-coisas/awesome-blockchain-bitcoin-awesome-md)
 Lista curada de recursos sobre Bitcoin, Blockchain e criptomoedas.
 
-### 🔄 [Omega Thread](/nice-misc/awesome-coisas/omegathread)
-Agregadores de pirataria e megathreads para streaming, downloads e recursos.
+### 🔗 [Another Threads](/nice-misc/another-threads/)
+Outras threads e agregadores de recursos para pirataria e tecnologia.
 
 ### 💬 [ChatGPT Prompts](/nice-misc/PromptKing/chatgpt-prompts)
 Coleção de prompts eficazes para maximizar o uso do ChatGPT.
