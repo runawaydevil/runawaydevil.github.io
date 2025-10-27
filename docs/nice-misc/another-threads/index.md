@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: "🔗 Another Threads"
+title: "Another Threads"
 description: "Outras threads e agregadores de recursos pirataria e tecnologia"
 lang: pt-BR
 lastUpdated: true
