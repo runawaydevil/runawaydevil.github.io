@@ -201,7 +201,7 @@ Agradecemos a todos os **hackers, desenvolvedores, pesquisadores e entusiastas**
 - 🏷️ **Tags:** [piratas.club/tags](https://piratas.club/tags/)
 
 ### �C **Mantenedor**
-**Pablo Murad (runawaydevil)**
+**(runawaydevil)**
 - 🌐 **Site Pessoal:** [pablo.space](https://pablo.space)
 - 🐙 **GitHub:** [github.com/runawaydevil](https://github.com/runawaydevil)
 - � **Twitte@r/X:** [@runawayd3vil](https://x.com/runawayd3vil)
