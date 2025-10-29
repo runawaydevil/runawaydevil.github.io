@@ -108,3 +108,101 @@
   color: #ffffff !important;
   border-color: rgba(255, 255, 255, 0.2) !important;
 }
+
+/*
+* Page Enhancements Styles */
+.page-enhancements {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.page-enhancements > * {
+  margin-bottom: 2rem;
+}
+
+.page-enhancements > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Rating System Integration */
+.rating-system {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-enhancements {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+  }
+  
+  .rating-system {
+    padding: 1rem;
+  }
+}/*
+ Aplicar fonte Special Elite em componentes customizados */
+.tags-cloud,
+.search-container,
+.categories-grid,
+.suggestion-form,
+.stats-grid {
+  font-family: 'Special Elite', monospace;
+}
+
+/* Tags e elementos interativos */
+.tag-item,
+.tag-link,
+.category-card,
+.suggestion-card {
+  font-family: 'Special Elite', monospace;
+}
+
+/* Botões e inputs */
+.search-btn,
+.submit-btn,
+.retry-btn,
+.search-input,
+.form-group input,
+.form-group textarea,
+.form-group select {
+  font-family: 'Special Elite', monospace;
+}
+
+/* Títulos e textos importantes */
+.category-card h3,
+.suggestion-card h4,
+.stat-number,
+.empty-state h3 {
+  font-family: 'Special Elite', monospace;
+}
+
+/* Melhorar legibilidade da fonte Special Elite */
+.tags-cloud .tag-item,
+.categories-grid .category-card,
+.suggestion-form {
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+}
+
+/* Ajustar tamanhos para melhor legibilidade */
+.search-input,
+.form-group input,
+.form-group textarea {
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.category-card h3 {
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.tag-item,
+.tag-link {
+  font-size: 0.85rem;
+  letter-spacing: 0.3px;
+}

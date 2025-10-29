@@ -7,6 +7,7 @@ import IconsResolver from 'unplugin-icons/resolver'
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
 
+
 // Lê a versão do package.json
 const packageJson = JSON.parse(readFileSync(resolve(__dirname, '../../package.json'), 'utf-8'))
 const version = packageJson.version
@@ -70,7 +71,8 @@ export default defineConfig({
             enabledCollections: ['mdi', 'carbon', 'fa-solid']
           })
         ]
-      })
+      }),
+
     ]
   },
   appearance: 'dark', // FORÇAR TEMA ESCURO
@@ -80,18 +82,23 @@ export default defineConfig({
 
     nav: [
       { text: 'Início', link: '/' },
-      { text: 'Diário de Bordo', link: '/dbordo/' },
-      { text: 'Misc', link: '/nice-misc/' },
       { text: 'Blog', link: '/blog/' },
-      { text: 'Sobre', link: '/ref/' },
+      {
+        text: 'Conteúdo',
+        items: [
+          { text: '📖 Diário de Bordo', link: '/dbordo/' },
+          { text: '🎯 Misc', link: '/nice-misc/' },
+          { text: '🏷️ Tags', link: '/tags/' }
+        ]
+      },
+
       {
         text: 'Redes',
         items: [
           { text: '🌐 Site Pessoal', link: 'https://pablo.space' },
           { text: '🐙 GitHub', link: 'https://github.com/runawaydevil' },
           { text: '🐦 Twitter (X)', link: 'https://x.com/runawayd3vil' },
-          { text: '🧠 Reddit', link: 'https://reddit.com/u/runawaydevil' },
-          { text: '📸 Flickr', link: 'https://flickr.com/photos/pablomub/' }
+          { text: '🧠 Reddit', link: 'https://reddit.com/u/runawaydevil' }
         ]
       }
     ],
@@ -101,9 +108,7 @@ export default defineConfig({
       { icon: 'twitter', link: 'https://x.com/runawayd3vil' }
     ],
 
-    search: {
-      provider: 'local'
-    },
+
 
     outline: {
       level: [2, 4],
@@ -120,17 +125,6 @@ export default defineConfig({
 
     // Sidebar específico para diferentes rotas
     sidebar: {
-      '/ref/': [
-        {
-          text: 'Referências',
-          items: [
-            { text: 'Referências', link: '/ref/' },
-            { text: '🏴‍☠️ A todos os navegantes...', link: '/ref/about' },
-            { text: '🔗 Insira seus links', link: '/ref/insira-seus-links' },
-            { text: '🙏 Agradecimentos', link: '/ref/agradecimentos' }
-          ]
-        }
-      ],
       '/nice-misc/another-threads/': [
         {
           text: 'Another Threads',

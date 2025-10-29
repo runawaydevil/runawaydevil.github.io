@@ -15,20 +15,6 @@ features:
     details: Tutoriais diretos sobre tecnologia underground, automação e cultura hacker. Aprenda truques, métodos e ferramentas que ampliam seus limites digitais.
 ---
 
-## 📰 Última Atualização
-
-### 🚀 [Adicionando várias listas awesome ao projeto](/blog/posts/adicionando-listas-awesome)
-
-**20 de janeiro de 2025**
-
-Muito bom, muito bom, meus amigos! Estou reunindo várias listas awesome e anexando tudo ao projeto. Você pode conferir em **[Misc](/nice-misc)** 😄
-
-Acabei de integrar **12 listas incríveis** ao projeto incluindo Awesome ChatGPT Prompts, Awesome Design, Awesome LLM, Awesome Bitcoin & Blockchain e muito mais. Todas com HTML limpo e prontas para uso!
-
-👉 [Leia mais](/blog/posts/adicionando-listas-awesome) | [Ver todas as postagens](/blog/)
-
----
-
 <script setup>
 import { onMounted } from 'vue'
 

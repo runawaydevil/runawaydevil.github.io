@@ -1,0 +1,40 @@
+{
+  "tags": [
+    { "name": "autobrr", "count": 15, "category": "dbordo", "color": "#3B82F6" },
+    { "name": "sonarr", "count": 12, "category": "dbordo", "color": "#10B981" },
+    { "name": "radarr", "count": 10, "category": "dbordo", "color": "#F59E0B" },
+    { "name": "plex", "count": 8, "category": "dbordo", "color": "#8B5CF6" },
+    { "name": "privacy", "count": 25, "category": "misc", "color": "#EF4444" },
+    { "name": "awesome", "count": 20, "category": "misc", "color": "#EC4899" },
+    { "name": "tools", "count": 18, "category": "misc", "color": "#06B6D4" },
+    { "name": "guides", "count": 16, "category": "dbordo", "color": "#84CC16" },
+    { "name": "security", "count": 14, "category": "misc", "color": "#F97316" },
+    { "name": "automation", "count": 13, "category": "dbordo", "color": "#6366F1" }
+  ],
+  "categories": [
+    { 
+      "name": "dbordo", 
+      "description": "Diário de Bordo - Guias curados e recursos especializados",
+      "tags": ["autobrr", "sonarr", "radarr", "plex", "guides", "automation"],
+      "resourceCount": 45
+    },
+    { 
+      "name": "nice-misc", 
+      "description": "Miscelânea - Recursos diversos, listas awesome e ferramentas",
+      "tags": ["privacy", "awesome", "tools", "security"],
+      "resourceCount": 38
+    },
+    { 
+      "name": "blog", 
+      "description": "Blog - Atualizações, novidades e artigos do projeto",
+      "tags": ["updates", "news"],
+      "resourceCount": 12
+    },
+    { 
+      "name": "ref", 
+      "description": "Referências - Informações sobre o projeto, créditos e documentação",
+      "tags": ["about", "credits"],
+      "resourceCount": 8
+    }
+  ]
+}
