@@ -106,4 +106,4 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
         run: |
           echo "Deploying to Cloudflare Pages..."
-          npx wrangler pages deploy docs/.vitepress/dist --project-name=piratas-club-vault
+          npx wrangler pages deploy docs/.vitepress/dist --project-name=piratasclub
