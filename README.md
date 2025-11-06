@@ -40,49 +40,12 @@ Guias práticos e tutoriais diretos sobre tecnologia underground, automação e 
   - **Compressão** — Otimização de arquivos
   - **Subtítulos** — Edição e sincronização
 
-### 📚 **Miscelânea (Misc)**
-Coleção massiva de recursos organizados por categoria:
-
-#### 🌟 **Awesome Lists** (12 listas curadas)
-- **Awesome ChatGPT Prompts** — Prompts criativos para IA
-- **Awesome Design** — Recursos para UI/UX designers
-- **Awesome LLM** — Grandes modelos de linguagem
-- **Awesome Bitcoin & Blockchain** — Criptomoedas e tecnologia
-- **Awesome Privacy** — Ferramentas de privacidade digital
-- **Awesome Security** — Software e bibliotecas de segurança
-- **Awesome Python** — Frameworks e bibliotecas Python
-- **Awesome Mac** — Recursos para desenvolvimento macOS
-- **Awesome Nuxt** — Framework Vue.js moderno
-- **Awesome Selfhosted** — Aplicações para servidor próprio
-- **Awesome Remote Job** — Trabalho remoto
-- **Awesome LLM Apps** — Aplicativos com IA e RAG
-
-#### 🤖 **PromptKing**
-- **ChatGPT Prompts** — Coleção de prompts eficazes
-- **Nano Banana** — Geração de imagens com IA
-- **Prompt Engineering** — Técnicas avançadas
-
-#### 🔧 **Utilitários & Ferramentas**
-- **Antivírus & Segurança** — Proteção e limpeza
-- **Nomenclaturas** — Padrões e convenções
-- **Coletâneas de Privacidade** — Ferramentas essenciais
-- **Sites Úteis** — Recursos online organizados
-
 ### 📝 **Blog**
 Arquivo vivo do projeto com:
 - **Atualizações** — Novidades e melhorias
 - **Experimentos** — Testes e descobertas
 - **Notas Técnicas** — Insights e aprendizados
 - **Comunidade** — Agradecimentos e colaborações
-
-### 🏷️ **Sistema de Tags**
-Navegação inteligente por categorias:
-- **Automação** — Ferramentas de automatização
-- **Privacidade** — Recursos de proteção
-- **Gaming** — Jogos e entretenimento
-- **Desenvolvimento** — Programação e DevOps
-- **Mídia** — Streaming e conteúdo
-- **Segurança** — Proteção e ethical hacking
 
 ## ⚡ Tecnologias que Impulsionam o Navio
 
@@ -94,12 +57,9 @@ Navegação inteligente por categorias:
 
 ## 📊 Estatísticas do Projeto
 
-- **📚 Seções Principais:** 3 (Diário de Bordo, Miscelânea, Blog)
-- **🌟 Awesome Lists:** 12 listas curadas e organizadas
-- **🤖 Recursos IA:** Guias PromptKing e ChatGPT
+- **📚 Seções Principais:** 2 (Diário de Bordo, Blog)
 - **📖 Documentos:** 100+ páginas de conteúdo
 - **🔗 Links Úteis:** 2000+ recursos organizados
-- **�️ dTags:** Sistema de navegação inteligente
 - **🌐 Idiomas:** Português (pt-BR)
 - **📅 Última Atualização:** Outubro 2025
 - **⭐ Versão:** 1.0.0 (Estável)
@@ -116,7 +76,6 @@ Este projeto segue os **princípios do software livre** e pertence à comunidade
 - 📖 **Traduzir** para outros idiomas
 - 🔗 **Compartilhar recursos** úteis
 - 💡 **Sugerir melhorias** na organização
-- 🏷️ **Melhorar tags** e categorização
 
 ### 🌍 **Filosofia Open Source**
 > *"A informação quer ser livre"* — Stewart Brand
@@ -198,7 +157,6 @@ Agradecemos a todos os **hackers, desenvolvedores, pesquisadores e entusiastas**
 - 🌐 **Site Oficial:** [piratas.club](https://piratas.club)
 - � ***Repositório:** [github.com/runawaydevil/runawaydevil.github.io](https://github.com/runawaydevil/runawaydevil.github.io)
 - 📝 **Blog:** [piratas.club/blog](https://piratas.club/blog/)
-- 🏷️ **Tags:** [piratas.club/tags](https://piratas.club/tags/)
 
 ### �C **Mantenedor**
 **(runawaydevil)**
