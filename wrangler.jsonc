@@ -1,0 +1,8 @@
+{
+  "name": "piratas-club-vault",
+  "compatibility_date": "2025-01-29",
+  "assets": {
+    "directory": "./docs/.vitepress/dist"
+  }
+}
+

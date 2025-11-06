@@ -13,6 +13,7 @@
     "build": "vitepress build docs",
     "dev": "vitepress dev docs",
     "preview": "vitepress preview docs",
+    "deploy:cloudflare": "npm run build && npx wrangler pages deploy docs/.vitepress/dist",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
     "lint:fix": "eslint . --ext .ts,.tsx,.js,.jsx --fix",
     "type-check": "tsc --noEmit"
@@ -41,7 +42,8 @@
     "unplugin-vue-components": "^29.1.0",
     "vitepress": "^1.5.0",
     "vitepress-plugin-rss": "^0.3.2",
-    "vue": "^3.5.22"
+    "vue": "^3.5.22",
+    "wrangler": "^4.45.4"
   },
   "engines": {
     "node": ">=20.0.0"
