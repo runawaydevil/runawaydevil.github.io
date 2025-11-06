@@ -97,11 +97,8 @@ export class PageMetadataExtractor {
     // Map URL segments to categories
     const categoryMap: Record<string, string> = {
       'dbordo': 'dbordo',
-      'nice-misc': 'misc',
-      'misc': 'misc',
       'blog': 'blog',
       'ref': 'ref',
-      'tags': 'navigation',
       'search': 'navigation',
       'about': 'ref'
     }
@@ -177,7 +174,6 @@ export class PageMetadataExtractor {
   private static getDefaultTagsForCategory(category: string): string[] {
     const defaultTags: Record<string, string[]> = {
       'dbordo': ['guide', 'curated'],
-      'misc': ['resource', 'tool'],
       'blog': ['update', 'news'],
       'ref': ['reference', 'about'],
       'geral': ['general'],

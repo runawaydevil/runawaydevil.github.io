@@ -64,13 +64,6 @@ const props = withDefaults(defineProps<Props>(), {
 // Mock resources - simplified version
 const mockResources = ref([
   {
-    title: "Explore Misc",
-    url: "/nice-misc/",
-    excerpt: "Descubra ferramentas e recursos úteis na seção Misc",
-    tags: ["ferramentas", "recursos", "misc"],
-    category: "misc"
-  },
-  {
     title: "Diário de Bordo",
     url: "/dbordo/",
     excerpt: "Confira guias curados e anotações técnicas",

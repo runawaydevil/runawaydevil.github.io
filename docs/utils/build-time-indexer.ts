@@ -196,7 +196,6 @@ export class BuildTimeIndexer {
   private getCategoryDescription(categoryName: string): string {
     const descriptions: Record<string, string> = {
       'dbordo': 'Guias curados e recursos especializados',
-      'misc': 'Recursos diversos e listas awesome',
       'blog': 'Atualizações e artigos do projeto',
       'ref': 'Referências e informações do projeto',
       'geral': 'Recursos gerais e ferramentas diversas',

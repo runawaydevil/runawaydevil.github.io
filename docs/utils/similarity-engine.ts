@@ -280,15 +280,13 @@ export class SimilarityEngine {
   private getRelatedCategories(category: string): string[] {
     const categoryRelations: Record<string, string[]> = {
       'dbordo': ['guides', 'tutorials', 'automation'],
-      'misc': ['tools', 'resources', 'awesome'],
       'blog': ['news', 'updates'],
       'ref': ['about', 'documentation'],
       'guides': ['dbordo', 'tutorials'],
-      'tools': ['misc', 'utilities'],
+      'tools': ['utilities'],
       'privacy': ['security', 'tools'],
       'security': ['privacy', 'tools'],
-      'automation': ['dbordo', 'tools'],
-      'awesome': ['misc', 'resources']
+      'automation': ['dbordo', 'tools']
     }
     
     return categoryRelations[category] || []

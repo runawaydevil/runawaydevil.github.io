@@ -8,7 +8,7 @@ tags: [Awesome, Recursos, Atualização, Projeto]
 
 # 🚀 Adicionando várias listas awesome ao projeto
 
-Muito bom, muito bom, meus amigos! Estou reunindo várias listas awesome e anexando tudo ao projeto. Vocês podem conferir em **[Misc](/nice-misc)** 😄
+Muito bom, muito bom, meus amigos! Estou reunindo várias listas awesome e anexando tudo ao projeto para facilitar o acesso aos melhores recursos. 😄
 
 ## 📚 O que foi adicionado
 
@@ -37,12 +37,9 @@ Durante o processo, também fiz uma limpeza geral:
 - ✅ Ajustei títulos para aparecerem corretamente na sidebar
 - ✅ Formatei tudo para funcionar perfeitamente com o VitePress
 
-## 🎯 Como acessar
+## 🎯 Status
 
-Todas essas listas estão disponíveis em:
-**[Misc > Awesome Coisas](/nice-misc/awesome-coisas/awesome-coisas)**
-
-Cada lista foi curada e organizada para facilitar o acesso aos melhores recursos de cada área. Espero que seja útil para vocês! 🎉
+Essas listas foram integradas ao projeto e organizadas para facilitar o acesso aos melhores recursos de cada área. 🎉
 
 ---
 

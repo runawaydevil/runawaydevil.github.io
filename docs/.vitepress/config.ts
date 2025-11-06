@@ -86,9 +86,7 @@ export default defineConfig({
       {
         text: 'Conteúdo',
         items: [
-          { text: '📖 Diário de Bordo', link: '/dbordo/' },
-          { text: '🎯 Misc', link: '/nice-misc/' },
-          { text: '🏷️ Tags', link: '/tags/' }
+          { text: '📖 Diário de Bordo', link: '/dbordo/' }
         ]
       },
 
@@ -125,15 +123,6 @@ export default defineConfig({
 
     // Sidebar específico para diferentes rotas
     sidebar: {
-      '/nice-misc/another-threads/': [
-        {
-          text: 'Another Threads',
-          items: [
-            { text: 'Another Threads', link: '/nice-misc/another-threads/' },
-            { text: '🔄 Omega Thread', link: '/nice-misc/another-threads/omegathread' }
-          ]
-        }
-      ]
     },
 
     footer: {
