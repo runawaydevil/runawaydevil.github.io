@@ -11,7 +11,7 @@ pagination:
 
 <p>My likes across the IndieWeb.</p>
 
-<div class="h-feed" style="margin-top: 2rem;">
+<div class="h-feed h-feed--entries" style="margin-top: 2rem;">
   <h2 class="p-name" style="display:none;">Likes</h2>
   <div style="display:none;">
     <a class="u-url" href="/likes"></a>
@@ -46,16 +46,17 @@ pagination:
   {% endfor %}
   </ul>
 
-  {% if pagination.href.previous or pagination.href.next %}
-  <nav class="pagination" aria-label="Pagination" style="display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color, #333); font-size: 0.9em;">
+  {% if pagination.pages and pagination.pages.length > 1 %}
+  <nav class="pagination" aria-label="Pagination">
     <div>
       {% if pagination.href.previous %}
-        <a href="{{ pagination.href.previous }}" style="color: var(--text-muted); text-decoration: none;">← Newer entries</a>
+        <a href="{{ pagination.href.previous }}">{% icon "chevron-left", "sm", true %} Newer entries</a>
       {% endif %}
     </div>
+    <div class="pagination__status" role="status">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</div>
     <div>
       {% if pagination.href.next %}
-        <a href="{{ pagination.href.next }}" style="color: var(--text-muted); text-decoration: none;">Older entries →</a>
+        <a href="{{ pagination.href.next }}">Older entries {% icon "chevron-right", "sm", true %}</a>
       {% endif %}
     </div>
   </nav>

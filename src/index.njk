@@ -1,99 +1,49 @@
 ---
 layout: base.njk
-title: Being Pablo - A quieter transmission
+title: Being Pablo
 ---
 
 {% set featured = collections.article | homeFeatured %}
 {% set featuredUrl = featured.url if featured else "" %}
-{% set updates = collections.homeFeed | homeHighlights(featuredUrl, 4) %}
+{% set updates = collections.homeFeed | homeHighlights(featuredUrl, 8) %}
 
-<section class="home-stack home-stack--editorial" aria-labelledby="hub-intro-title">
-  <section class="hub-intro home-module home-module--atmospheric">
-    <header class="hub-hero__masthead">
-      <p class="hub-kicker">A QUIETER TRANSMISSION</p>
-      <h1 id="hub-intro-title" class="hub-title">The true mystery of the world is the visible, not the invisible.</h1>
-      <p class="hub-identity-line">São Lourenço, Brazil. Static pages, on purpose.</p>
+<section class="home-stack home-stack--narrow" aria-labelledby="home-intro-title">
+  <section class="home-hero--narrow">
+    <header>
+      <h1 id="home-intro-title" class="sr-only">Pablo Murad</h1>
+      <div class="page-content home-hero-intro">
+        <div class="content">
+          <p>I am from Sao Lourenco, Minas Gerais, a small town in southeastern Brazil. I am the founder of a leading online school in Latin America, and I also work as a software developer.</p>
+          <p>I am naturally introverted, but I am always happy to meet new people and build genuine connections. I like staying active in my community and taking part in social projects that can help change lives.</p>
+          <p>I have been a developer since 1997, and computers have been one of my lifelong passions.</p>
+          <p>You can also see my <em><a href="https://pablo.space/photos">photographs</a></em> and read my <em><a href="https://pablo.space/articles">articles</a></em>.</p>
+          <p><em>São Lourenço, Brazil. through strange times</em></p>
+        </div>
+      </div>
     </header>
   </section>
 
-  {% glyph "ornament-divider", "lg", true, "", "icon--ornament" %}
-
-  {% if featured %}
-  <section class="hub-featured home-module home-module--spotlight" aria-labelledby="featured-heading">
-    <div class="hub-featured__frame">
-      <div class="hub-featured__meta">
-        <p class="hub-kicker">Lead story</p>
-        <h2 id="featured-heading" class="hub-featured__title">{{ featured | homeTitle }}</h2>
-        <p class="hub-featured__dek">{{ featured.data.dek if featured.data.dek else (featured | homeSummary(24)) }}</p>
-        <p class="hub-featured__cta-wrap">
-          <a class="hub-featured__cta" href="{{ featured.url }}">{{ featured.data.featuredCta if featured.data.featuredCta else "Follow the seam" }}</a>
-        </p>
-      </div>
-
-      <div class="hub-featured__aside">
-        <p class="hub-featured__eyebrow">{{ featured | homeTypeLabel }}</p>
-        <time class="hub-featured__date" datetime="{{ featured.date | dateToISO }}">{{ featured.date.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' }) }}</time>
-        <p class="hub-featured__reason">{{ featured.data.featuredReason if featured.data.featuredReason else "Featured because it leaves a mark wider than its own URL." }}</p>
-      </div>
-    </div>
-  </section>
-  {% endif %}
-
-  <section class="hub-discovery home-module home-module--discovery" aria-labelledby="recent-heading">
-    <div class="hub-section-head">
-      <p class="hub-kicker">Open next</p>
-      <h2 id="recent-heading" class="hub-section-title">Recent things with a pulse</h2>
-      <p class="hub-section-note">Not everything recent deserves the front door. These do.</p>
-    </div>
-
-    <div class="hub-discovery__grid">
+  <section class="home-writing home-module" aria-labelledby="home-writing-heading">
+    <h2 id="home-writing-heading" class="home-writing-section-label">Recent things with a pulse</h2>
+    <ul class="home-writing-list" role="list">
+      {% if featured %}
+      <li class="home-writing-row home-writing-row--featured">
+        <a class="home-writing-row__link" href="{{ featured.url }}">
+          <span class="home-writing-type">{{ featured | homeTypeDisplay }}</span>
+          <span class="home-writing-row__title">{{ featured | homeTitle }}</span>
+        </a>
+        <time class="home-writing-date" datetime="{{ featured.date | dateToISO }}">{{ featured.date.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' }) }}</time>
+      </li>
+      {% endif %}
       {% for post in updates %}
-      <article class="hub-update-card{% if loop.first %} hub-update-card--lead{% endif %}">
-        <p class="hub-update-card__type">{{ post | homeTypeLabel }}</p>
-        <h3 class="hub-update-card__title"><a href="{{ post.url }}">{{ post | homeTitle }}</a></h3>
-        <time class="hub-update-card__date" datetime="{{ post.date | dateToISO }}">{{ post.date.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' }) }}</time>
-        <p class="hub-update-card__summary">{{ post | homeSummary(24 if loop.first else 20) }}</p>
-        <p class="hub-update-card__link-wrap">
-          <a class="hub-update-card__link" href="{{ post.url }}">
-            {% if post | homeTypeLabel == "journal" %}
-              Keep the note open
-            {% elif loop.first %}
-              Follow the thread
-            {% else %}
-              Step inside
-            {% endif %}
-          </a>
-        </p>
-      </article>
+      <li class="home-writing-row">
+        <a class="home-writing-row__link" href="{{ post.url }}">
+          <span class="home-writing-type">{{ post | homeTypeDisplay }}</span>
+          <span class="home-writing-row__title">{{ post | homeTitle }}</span>
+        </a>
+        <time class="home-writing-date" datetime="{{ post.date | dateToISO }}">{{ post.date.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' }) }}</time>
+      </li>
       {% endfor %}
-    </div>
-  </section>
-
-  <section class="hub-explore home-module home-module--index" aria-labelledby="explore-heading">
-    <div class="hub-section-head">
-      <p class="hub-kicker">Elsewhere in the house</p>
-      <h2 id="explore-heading" class="hub-section-title">Browse by instinct, not obligation</h2>
-    </div>
-
-    <div class="hub-explore__layout">
-      <section class="hub-stats" aria-label="Site overview">
-        <ul class="hub-stats__list">
-          <li><a href="/articles/">{% icon "library", "sm", true %} <strong>{{ collections.article.length }}</strong> articles</a></li>
-          <li><a href="/journal/">{% icon "notebook-pen", "sm", true %} <strong>{{ collections.journalNotes.length }}</strong> journal notes</a></li>
-          <li><a href="/bookmarks/">{% icon "bookmark", "sm", true %} <strong>{{ collections.bookmark.length }}</strong> bookmarks</a></li>
-          <li><a href="/photos/">{% icon "image", "sm", true %} <strong>{{ collections.photo.length }}</strong> photos</a></li>
-        </ul>
-      </section>
-
-      <aside class="hub-aside">
-        <p class="hub-aside__line">The useful routes still tend to be the sideways ones.</p>
-        <ul class="hub-aside__list">
-          <li><a href="/journal/">Journal archive</a></li>
-          <li><a href="/articles/">Longer pieces</a></li>
-          <li><a href="/links/">Loose ends</a></li>
-          <li><a href="/search/">Search the whole thing</a></li>
-        </ul>
-      </aside>
-    </div>
+    </ul>
   </section>
 </section>

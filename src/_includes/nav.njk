@@ -1,12 +1,13 @@
 <nav class="site-nav" aria-label="Navegação principal">
     <ul class="nav-list">
-        <li><a class="nav-list__link" href="/search/" {% if page.url == '/search/' %}aria-current="page"{% endif %}>{% icon "search", "sm", true %} search</a></li>
         <li><a class="nav-list__link" href="/articles/" {% if page.url == '/articles/' %}aria-current="page"{% endif %}>{% icon "library", "sm", true %} articles</a></li>
+        <li><a class="nav-list__link" href="/journal" {% if page.url == '/journal/' %}aria-current="page"{% endif %}>{% icon "notebook-pen", "sm", true %} notes</a></li>
         <li><a class="nav-list__link" href="/now" {% if page.url == '/now/' %}aria-current="page"{% endif %}>{% icon "clock", "sm", true %} now</a></li>
-        <li><a class="nav-list__link" href="/about" {% if page.url == '/about/' %}aria-current="page"{% endif %}>{% icon "user-round", "sm", true %} about</a></li>
-        <li><a class="nav-list__link" href="/journal" {% if page.url == '/journal/' %}aria-current="page"{% endif %}>{% icon "notebook-pen", "sm", true %} journal</a></li>
-        <li><a class="nav-list__link" href="/links" {% if page.url == '/links/' %}aria-current="page"{% endif %}>{% icon "link-2", "sm", true %} links</a></li>
+        <li><a class="nav-list__link" href="/photos/" {% set _up = page.url | default('') %}{% if _up.slice(0, 7) == '/photos' %}aria-current="page"{% endif %}>{% icon "image", "sm", true %} photos</a></li>
+        <li><a class="nav-list__link" href="/pages" {% if page.url == '/pages/' %}aria-current="page"{% endif %}>{% icon "layout-list", "sm", true %} pages</a></li>
         <li><a class="nav-list__link" href="/guestbook" {% if page.url == '/guestbook/' %}aria-current="page"{% endif %}>{% icon "messages-square", "sm", true %} guestbook</a></li>
+        <li><a class="nav-list__link" href="/bookmarks/" {% set _u = page.url | default('') %}{% if _u.slice(0, 10) == '/bookmarks' %}aria-current="page"{% endif %}>{% icon "bookmark", "sm", true %} bookmarks</a></li>
+        <li><a class="nav-list__link" href="/search/" {% if page.url == '/search/' %}aria-current="page"{% endif %}>{% icon "search", "sm", true %} search</a></li>
         <li><a class="nav-list__link" href="/contact" {% if page.url == '/contact/' %}aria-current="page"{% endif %}>{% icon "mail", "sm", true %} contact</a></li>
     </ul>
 </nav>

@@ -3,7 +3,7 @@ layout: page.njk
 title: Articles
 pagination:
   data: collections.article
-  size: 10
+  size: 15
   alias: posts
   reverse: true
   generatePageOnEmptyData: true
@@ -11,9 +11,9 @@ pagination:
 
 <p>{% icon "layout-list", "sm", true %} My longer-form articles and essays.</p>
 
-<div class="h-feed h-feed--entries" style="margin-top: 2rem;">
-  <h2 class="p-name" style="display:none;">Articles</h2>
-  <div style="display:none;">
+<div class="h-feed h-feed--entries">
+  <h2 class="p-name sr-only">Articles</h2>
+  <div class="h-feed__mf2" aria-hidden="true">
     <a class="u-url" href="/articles"></a>
     <a rel="author" class="p-author h-card" href="/">Pablo Murad</a>
   </div>
@@ -21,18 +21,22 @@ pagination:
   <ul class="post-list">
   {% for post in posts %}
     <li class="h-entry">
-      <h3 style="margin-bottom: 0.5rem;">
-        <a class="u-url p-name" href="{{ post.url }}" style="text-decoration: none;">
+      <h3 class="post-list__title">
+        <a class="u-url p-name post-list__title-link" href="{{ post.url }}">
           {{ post.data.title | default('Article') }}
         </a>
       </h3>
-      <div class="meta" style="color: var(--text-muted); font-size: 0.9em; margin-bottom: 1rem;">
+      <div class="meta h-feed__entry-meta">
         <time class="dt-published" datetime="{{ post.date | dateToISO }}">{{ post.date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }) }}</time>
-        <a rel="author" class="p-author h-card" href="/" style="display:none;">Pablo Murad</a>
+        <a rel="author" class="p-author h-card mf2-only" href="/">Pablo Murad</a>
       </div>
-      <div class="e-content">
-        {{ post.templateContent | safe }}
-      </div>
+      {% set listSummary = post | homeSummary(28) %}
+      {% if listSummary %}
+      <p class="p-summary">{{ listSummary }}</p>
+      {% endif %}
+      <p class="post-list__read-more">
+        <a href="{{ post.url }}">Read full article {% icon "chevron-right", "xs", true %}</a>
+      </p>
     </li>
     {% if not loop.last %}
     <li class="post-divider" aria-hidden="true">
@@ -40,20 +44,23 @@ pagination:
     </li>
     {% endif %}
   {% else %}
-    <li class="empty-archive-item">{% glyph "empty-state", "md", true, "", "icon--empty" %} <em style="color: var(--text-muted)">No articles yet — they are coming soon.</em></li>
+    <li class="empty-archive-item">{% glyph "empty-state", "md", true, "", "icon--empty" %} <em class="empty-archive__hint">No articles yet — they are coming soon.</em></li>
   {% endfor %}
   </ul>
 
-  {% if pagination.href.previous or pagination.href.next %}
-  <nav class="pagination" aria-label="Pagination" style="display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color, #333); font-size: 0.9em;">
+  {% if pagination.pages and pagination.pages.length > 1 %}
+  <nav class="pagination" aria-label="Pagination">
     <div>
       {% if pagination.href.previous %}
-        <a href="{{ pagination.href.previous }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">{% icon "chevron-left", "sm", true %} Newer entries</a>
+        <a href="{{ pagination.href.previous }}">{% icon "chevron-left", "sm", true %} Newer entries</a>
       {% endif %}
     </div>
+    {% if pagination.pages and pagination.pages.length > 1 %}
+    <div class="pagination__status" role="status">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</div>
+    {% endif %}
     <div>
       {% if pagination.href.next %}
-        <a href="{{ pagination.href.next }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">Older entries {% icon "chevron-right", "sm", true %}</a>
+        <a href="{{ pagination.href.next }}">Older entries {% icon "chevron-right", "sm", true %}</a>
       {% endif %}
     </div>
   </nav>

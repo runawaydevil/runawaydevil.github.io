@@ -51,7 +51,7 @@ src/
   assets/          # css/, icons/, images/, js/
   errors/          # 404, 403, 410, 500, 503 (front matter + error.njk)
   posts/           # journal/, articles/, bookmarks/, photos/, replies/, likes/
-  *.njk            # Páginas de índice e conteúdo estático (index, about, now, …)
+  *.njk            # Páginas de índice e conteúdo estático (index, now, …)
 ```
 
 - **Saída de build:** pasta `_site/` (não versionar como fonte de verdade).  
@@ -88,10 +88,10 @@ Na implementação: tokens `--section-gap-*`, `--content-measure` (resto do site
 ## Layout e navegação
 
 - **`base.njk`:** HTML completo, SEO, OG/Twitter, feed, Micropub (`pub.dega.wtf`), `rel="me"`, rodapé com **h-card**, lista do sitemap e webring.  
-- **`nav.njk`:** Search, Articles, Now, About, Journal, Links, Guestbook, Contact (com ícones).  
+- **`nav.njk`:** Search, Articles, Notes, Now, Photos, Pages, Guestbook, Bookmarks, Contact (com ícones).  
 - **`post.njk`:** Artigos/notas com meta (data, tags, tipo), opcional barra de leitura.
 
-Páginas estáticas relevantes: `about`, `now`, `links`, `contact`, `guestbook`, `machines`, `servers`, `personal`, `search`, feeds de secção (`journal.njk`, `articles.njk`, etc.).
+Páginas estáticas relevantes: `now`, `pages`, `contact`, `guestbook`, `machines`, `servers`, `personal`, `search`, feeds de secção (`journal.njk`, `articles.njk`, etc.).
 
 ---
 

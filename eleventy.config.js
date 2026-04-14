@@ -1,5 +1,5 @@
 import pluginRss from "@11ty/eleventy-plugin-rss";
-import { execFile } from "child_process";
+import { execFile, execFileSync } from "child_process";
 import fs from "fs";
 import path from "path";
 import { promisify } from "util";
@@ -12,6 +12,48 @@ const iconsCustomDir = path.join(__dirname, "src", "assets", "icons", "custom");
 const outputDir = path.join(__dirname, "_site");
 const pagefindBin = path.join(__dirname, "node_modules", "pagefind", "lib", "runner", "bin.cjs");
 const execFileAsync = promisify(execFile);
+
+const SITE_VERSION = "0.0.2";
+const SITE_VERSION_YEAR = "2026";
+
+/** Short SHA + last commit subject for footer (no URLs). CI: set BUILD_COMMIT_SUBJECT if git metadata unavailable. */
+function getGitBuildFooter() {
+  try {
+    const sha = execFileSync("git", ["rev-parse", "--short", "HEAD"], {
+      cwd: __dirname,
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+    let subject = "";
+    try {
+      subject = execFileSync("git", ["log", "-1", "--format=%s"], {
+        cwd: __dirname,
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "ignore"],
+      }).trim();
+    } catch {
+      subject = "";
+    }
+    if (sha || subject) {
+      return { sha, subject: truncateBuildCommitSubject(subject) };
+    }
+  } catch {
+    // not a git checkout or git missing
+  }
+  const long = process.env.VERCEL_GIT_COMMIT_SHA || process.env.GITHUB_SHA || "";
+  const sha = long ? long.slice(0, 7) : "";
+  const rawSubject = String(
+    process.env.BUILD_COMMIT_SUBJECT || process.env.VERCEL_GIT_COMMIT_MESSAGE || ""
+  ).trim();
+  const subject = truncateBuildCommitSubject(rawSubject.split(/\r?\n/)[0] || "");
+  return { sha, subject };
+}
+
+function truncateBuildCommitSubject(s, max = 96) {
+  const t = String(s || "").trim();
+  if (t.length <= max) return t;
+  return `${t.slice(0, max - 1)}…`;
+}
 
 /** Lucide filenames (no .svg) — keep in sync with scripts/fetch-lucide-icons.mjs */
 const ALLOWED_LUCIDE = new Set([
@@ -129,7 +171,8 @@ function trimWords(text, maxWords = 26) {
 
 function getTypeLabel(item) {
   const inputPath = item?.inputPath?.replace(/\\/g, "/") || "";
-  if (inputPath.includes("/src/posts/journal/") || item?.data?.type === "note") return "journal";
+  // Path first: type: "note" in front matter must not label articles/ as journal.
+  if (inputPath.includes("/src/posts/journal/")) return "journal";
   if (inputPath.includes("/src/posts/articles/")) return "article";
   return item?.data?.type || "post";
 }
@@ -240,6 +283,10 @@ function assertSafeName(name) {
 }
 
 export default function(eleventyConfig) {
+  eleventyConfig.addGlobalData("siteVersion", SITE_VERSION);
+  eleventyConfig.addGlobalData("siteVersionYear", SITE_VERSION_YEAR);
+  eleventyConfig.addGlobalData("buildFooter", getGitBuildFooter());
+
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.on("eleventy.before", () => {
@@ -313,6 +360,10 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/pets.ico");
   eleventyConfig.addPassthroughCopy("src/assets/js");
   eleventyConfig.addPassthroughCopy("notecards");
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/@fontsource-variable/geist/files": "assets/fonts/geist",
+    "node_modules/@fontsource-variable/geist-mono/files": "assets/fonts/geist-mono",
+  });
 
   // Filters for date formatting (Vanilla JS)
   eleventyConfig.addFilter("dateToISO", (date) => {
@@ -326,6 +377,30 @@ export default function(eleventyConfig) {
     const mm = String(d.getUTCMonth() + 1).padStart(2, '0');
     const dd = String(d.getUTCDate()).padStart(2, '0');
     return `${yyyy}/${mm}/${dd}`;
+  });
+
+  function hostnameFromUrlValue(url) {
+    if (url === undefined || url === null || String(url).trim() === "") return "";
+    try {
+      const u = new URL(String(url).trim());
+      return u.hostname || "";
+    } catch {
+      return "";
+    }
+  }
+
+  /** Public bookmark URL → hostname (favicons / labels). Invalid URLs → "". */
+  eleventyConfig.addFilter("hostnameFromUrl", (url) => hostnameFromUrlValue(url));
+
+  /**
+   * Favicon URL via third-party resolver (loads at runtime in the browser, not at build).
+   * Default size 64 matches common card thumbnails.
+   */
+  eleventyConfig.addFilter("remoteFavicon", (url, size = 64) => {
+    const host = hostnameFromUrlValue(url);
+    if (!host) return "";
+    const sz = Math.min(128, Math.max(16, Number(size) || 64));
+    return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&sz=${sz}`;
   });
 
   eleventyConfig.addFilter("relatedItems", (collection, pageUrl, limit = 3) => {
@@ -346,6 +421,15 @@ export default function(eleventyConfig) {
   });
 
   eleventyConfig.addFilter("homeTypeLabel", (item) => getTypeLabel(item));
+
+  /** Presentation labels for home writing type (journal stream → Note, articles → Article). */
+  eleventyConfig.addFilter("homeTypeDisplay", (item) => {
+    const raw = getTypeLabel(item);
+    if (raw === "journal") return "Note";
+    if (raw === "article") return "Article";
+    if (!raw || typeof raw !== "string") return "Post";
+    return raw.charAt(0).toUpperCase() + raw.slice(1);
+  });
 
   eleventyConfig.addFilter("homeTitle", (item) => getDisplayTitle(item));
 

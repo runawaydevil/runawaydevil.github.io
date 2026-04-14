@@ -1,6 +1,6 @@
 {
   "name": "being-pablo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Pablo Murad's IndieWeb Personal Site",
   "type": "module",
   "main": "eleventy.config.js",
@@ -16,6 +16,8 @@
     "pagefind": "^1.3.0"
   },
   "dependencies": {
-    "@11ty/eleventy-plugin-rss": "^3.0.0"
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "@fontsource-variable/geist": "^5.2.8",
+    "@fontsource-variable/geist-mono": "^5.2.7"
   }
 }

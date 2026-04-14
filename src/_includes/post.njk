@@ -4,8 +4,8 @@ layout: base.njk
 <article class="h-entry">
   <header>
     {% if replyTo %}
-      <div class="meta" style="margin-bottom: var(--space-sm); font-size: 0.9em; color: var(--text-muted);">
-        <span style="opacity: 0.8;">↩ Replying to:</span> <a href="{{ replyTo }}" class="u-in-reply-to" style="color: var(--accent-color); text-decoration: none;">{{ replyTo | replace('https://', '') | replace('http://', '') }}</a>
+      <div class="meta post-reply-context">
+        <span class="post-reply-context__label">↩ Replying to:</span> <a href="{{ replyTo }}" class="u-in-reply-to post-reply-context__link">{{ replyTo | replace('https://', '') | replace('http://', '') }}</a>
       </div>
     {% endif %}
 
@@ -15,33 +15,38 @@ layout: base.njk
       <h1 class="p-name">{{ title }}</h1>
     {% endif %}
     
-    <div class="meta post-meta" style="margin-bottom: var(--space-md); color: var(--text-muted);">
+    <div class="meta post-meta">
       <span class="post-meta__line">{% icon "calendar", "sm", true %} Published on <time class="dt-published" datetime="{{ page.date | dateToISO }}">{{ page.date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }) }}</time></span>
       {% if updated %}
         (Updated: <time class="dt-updated" datetime="{{ updated | dateToISO }}">{{ updated.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }) if updated.toLocaleDateString else updated }}</time>)
       {% endif %}
-      <a class="u-url" href="{{ page.url }}" style="display:none;">Permalink</a>
-      <a rel="author" class="p-author h-card" href="/" style="display:none;">Pablo Murad</a>
+      <a class="u-url mf2-only" href="{{ page.url }}">Permalink</a>
+      <a rel="author" class="p-author h-card mf2-only" href="/">Pablo Murad</a>
     </div>
   </header>
+
+  <nav class="post-toc" id="post-toc" aria-labelledby="post-toc-heading" hidden>
+    <h2 id="post-toc-heading" class="post-toc__title">On this page</h2>
+    <ol class="post-toc__list" id="post-toc-list"></ol>
+  </nav>
 
   <div id="reading-progress-bar" class="reading-progress" aria-hidden="true"></div>
 
   <div class="e-content">
     {% if likeOf %}
-       <div style="margin-bottom: var(--space-md); padding-left: 1rem; border-left: 2px solid var(--accent-color);">
-          <span class="micro-label" style="color: var(--text-muted);">{% icon "heart", "sm", true %} Liked:</span> <a href="{{ likeOf }}" class="u-like-of" style="text-decoration: none;">{{ likeOf }}</a>
+       <div class="post-indie-block">
+          <span class="micro-label">{% icon "heart", "sm", true %} Liked:</span> <a href="{{ likeOf }}" class="u-like-of post-indie-block__link">{{ likeOf }}</a>
        </div>
     {% endif %}
 
     {% if bookmarkOf %}
-       <div style="margin-bottom: var(--space-md); padding-left: 1rem; border-left: 2px solid var(--accent-color);">
-          <span class="micro-label" style="color: var(--text-muted);">{% icon "bookmark", "sm", true %} Bookmarked:</span> <a href="{{ bookmarkOf }}" class="u-bookmark-of" style="text-decoration: none;">{{ bookmarkOf }}</a>
+       <div class="post-indie-block">
+          <span class="micro-label">{% icon "bookmark", "sm", true %} Bookmarked:</span> <a href="{{ bookmarkOf }}" class="u-bookmark-of post-indie-block__link">{{ bookmarkOf }}</a>
        </div>
     {% endif %}
 
     {% if photos %}
-       <div style="margin-bottom: var(--space-md);">
+       <div class="post-photos">
        {% for photo in photos %}
           {% set photoUrl = photo %}
           {% if photo.url %}
@@ -51,7 +56,7 @@ layout: base.njk
           {% endif %}
           {% set finalUrl = photoUrl | replace('/src/', '/') %}
           {% set photoAlt = photo.alt if photo.alt else "Photo" %}
-          <img src="{{ finalUrl }}" alt="{{ photoAlt }}" class="u-photo" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin-bottom: 1rem;">
+          <span class="photo-vintage"><img src="{{ finalUrl }}" alt="{{ photoAlt }}" class="u-photo post-photo"></span>
        {% endfor %}
        </div>
     {% endif %}
@@ -86,7 +91,7 @@ layout: base.njk
   </section>
   {% endif %}
 
-  <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color, #333);">
+  <footer class="post-footer">
     {% if '/journal/' in page.inputPath %}
       {% set activeCollectionName = 'journalNotes' %}
     {% elif '/articles/' in page.inputPath %}
@@ -102,14 +107,14 @@ layout: base.njk
     {% set previousPost = activeCollection | getPreviousCollectionItem(page) %}
     {% set nextPost = activeCollection | getNextCollectionItem(page) %}
     
-    <nav class="post-navigation" style="display: flex; justify-content: space-between; font-size: 0.9em;">
+    <nav class="post-navigation" aria-label="Adjacent posts">
       <div>
         {% if previousPost %}
           {% set prevText = 'Note #' ~ previousPost.data.globalNoteId if previousPost.data.globalNoteId else previousPost.data.title | default('Previous') %}
           {% if previousPost.data.globalNoteId and previousPost.data.title %}
             {% set prevText = 'Note #' ~ previousPost.data.globalNoteId ~ ' &mdash; ' ~ previousPost.data.title %}
           {% endif %}
-          <a href="{{ previousPost.url }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">{% icon "chevron-left", "sm", true %} {{ prevText | safe }}</a>
+          <a href="{{ previousPost.url }}">{% icon "chevron-left", "sm", true %} {{ prevText | safe }}</a>
         {% endif %}
       </div>
       <div>
@@ -118,15 +123,16 @@ layout: base.njk
           {% if nextPost.data.globalNoteId and nextPost.data.title %}
             {% set nextText = 'Note #' ~ nextPost.data.globalNoteId ~ ' &mdash; ' ~ nextPost.data.title %}
           {% endif %}
-          <a href="{{ nextPost.url }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">{{ nextText | safe }} {% icon "chevron-right", "sm", true %}</a>
+          <a href="{{ nextPost.url }}">{{ nextText | safe }} {% icon "chevron-right", "sm", true %}</a>
         {% endif %}
       </div>
     </nav>
   </footer>
 </article>
 
+<script src="/assets/js/post-toc.js" defer></script>
 <script src="/assets/js/reading-progress.js" defer></script>
 
-<section id="webmentions" class="webmentions-placeholder" style="margin-top: 3rem;">
+<section id="webmentions" class="webmentions-placeholder">
   <!-- Future integration point for Indiekit / Webmentions -->
 </section>

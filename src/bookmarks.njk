@@ -3,59 +3,89 @@ layout: page.njk
 title: Bookmarks
 pagination:
   data: collections.bookmark
-  size: 10
+  size: 15
   alias: posts
   reverse: true
   generatePageOnEmptyData: true
 ---
 
-<p>{% icon "bookmark", "sm", true %} Things I found interesting from around the web.</p>
+<section class="bookmarks-intro" aria-labelledby="bookmarks-page-heading">
+  <p>{% icon "bookmark", "sm", true %} Things I found interesting from around the web.</p>
+</section>
 
-<div class="h-feed" style="margin-top: 2rem;">
-  <h2 class="p-name" style="display:none;">Bookmarks</h2>
-  <div style="display:none;">
-    <a class="u-url" href="/bookmarks"></a>
+<div class="h-feed h-feed--entries h-feed--bookmarks">
+  <h2 id="bookmarks-page-heading" class="p-name sr-only">Bookmarks</h2>
+  <div class="h-feed__mf2" aria-hidden="true">
+    <a class="u-url" href="/bookmarks/"></a>
     <a rel="author" class="p-author h-card" href="/">Pablo Murad</a>
   </div>
-  
-  <ul class="post-list" style="list-style: none; padding: 0;">
-  {% for post in posts %}
-    <li class="h-entry" style="margin-bottom: 3rem;">
-      <h3 style="margin-bottom: 0.5rem;">
-        <a class="u-url p-name" href="{{ post.url }}" style="text-decoration: none;">
-          {{ post.data.title | default('Bookmark') }}
-        </a>
-      </h3>
-      <div class="meta" style="color: var(--text-muted); font-size: 0.9em; margin-bottom: 1rem;">
-        <time class="dt-published" datetime="{{ post.date | dateToISO }}">{{ post.date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }) }}</time>
-        <a rel="author" class="p-author h-card" href="/" style="display:none;">Pablo Murad</a>
-      </div>
-      
-      {% if post.data.bookmarkOf %}
-       <div style="margin-bottom: var(--space-md); padding-left: 1rem; border-left: 2px solid var(--accent-color);">
-          <span class="micro-label" style="color: var(--text-muted);">{% icon "bookmark", "sm", true %} Bookmarked:</span> <a href="{{ post.data.bookmarkOf }}" class="u-bookmark-of" style="text-decoration: none;">{{ post.data.bookmarkOf }}</a>
-       </div>
-      {% endif %}
 
-      <div class="e-content">
-        {{ post.templateContent | safe }}
+  <ul class="post-list">
+  {% for post in posts %}
+    <li class="h-entry bookmarks-list__item">
+      <a class="u-url sr-only" href="{{ post.url }}">{{ post.data.title | default('Bookmark') }}</a>
+      <div class="bookmarks-list__row">
+        <div class="bookmarks-list__favicon" aria-hidden="true">
+          {% if post.data.bookmarkOf %}
+            <img
+              class="bookmarks-list__favicon-img"
+              src="{{ post.data.bookmarkOf | remoteFavicon(64) }}"
+              alt=""
+              width="20"
+              height="20"
+              loading="lazy"
+              decoding="async"
+            />
+          {% else %}
+            <div class="bookmarks-list__favicon-placeholder">{% icon "bookmark", "md", true %}</div>
+          {% endif %}
+        </div>
+        <div class="bookmarks-list__content">
+          {% set cardSummary = post | homeSummary(18) %}
+          <div class="bookmarks-list__headline">
+            {% if post.data.bookmarkOf %}
+              <a href="{{ post.data.bookmarkOf }}" class="u-bookmark-of bookmarks-list__title-link">
+                <span class="bookmarks-list__title-text p-name">{{ post.data.title | default('Bookmark') }}</span>
+              </a>
+            {% else %}
+              <a href="{{ post.url }}" class="bookmarks-list__title-link p-name u-url">
+                <span class="bookmarks-list__title-text">{{ post.data.title | default('Bookmark') }}</span>
+              </a>
+            {% endif %}
+            {% if cardSummary %}
+              <span class="bookmarks-list__slash" aria-hidden="true">/</span>
+              <span class="bookmarks-list__desc p-summary">{{ cardSummary }}</span>
+            {% endif %}
+          </div>
+        </div>
+        <div class="bookmarks-list__meta h-feed__entry-meta">
+          {% if post.data.bookmarkOf %}
+            <span class="bookmarks-list__host">{{ post.data.bookmarkOf | hostnameFromUrl }}</span>
+          {% endif %}
+          <div class="bookmarks-list__sub mf2-only">
+            <time class="dt-published" datetime="{{ post.date | dateToISO }}">{{ post.date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'short', day: 'numeric' }) }}</time>
+            <a class="bookmarks-list__plink" href="{{ post.url }}">Access</a>
+          </div>
+          <span class="p-author h-card mf2-only"><a rel="author" href="/">Pablo Murad</a></span>
+        </div>
       </div>
     </li>
   {% else %}
-    <li class="empty-archive-item">{% glyph "empty-state", "md", true, "", "icon--empty" %} <em style="color: var(--text-muted)">No bookmarks yet.</em></li>
+    <li class="empty-archive-item">{% glyph "empty-state", "md", true, "", "icon--empty" %} <em class="empty-archive__hint">No bookmarks yet.</em></li>
   {% endfor %}
   </ul>
 
-  {% if pagination.href.previous or pagination.href.next %}
-  <nav class="pagination" aria-label="Pagination" style="display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color, #333); font-size: 0.9em;">
+  {% if pagination.pages and pagination.pages.length > 1 %}
+  <nav class="pagination" aria-label="Pagination">
     <div>
       {% if pagination.href.previous %}
-        <a href="{{ pagination.href.previous }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">{% icon "chevron-left", "sm", true %} Newer entries</a>
+        <a href="{{ pagination.href.previous }}">{% icon "chevron-left", "sm", true %} Newer entries</a>
       {% endif %}
     </div>
+    <div class="pagination__status" role="status">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</div>
     <div>
       {% if pagination.href.next %}
-        <a href="{{ pagination.href.next }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">Older entries {% icon "chevron-right", "sm", true %}</a>
+        <a href="{{ pagination.href.next }}">Older entries {% icon "chevron-right", "sm", true %}</a>
       {% endif %}
     </div>
   </nav>

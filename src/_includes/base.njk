@@ -23,18 +23,26 @@
     <!-- Favicon -->
     <link rel="icon" href="/assets/pets.ico" type="image/x-icon">
 
+    <!-- Preload self-hosted fonts (latin subsets; same URLs as @font-face in style.css) -->
+    <link rel="preload" href="/assets/fonts/geist/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/geist-mono/geist-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+
     <link rel="stylesheet" href="/assets/css/style.css">
     {% if usePagefind %}
     <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
     {% endif %}
+    {% if pagination and pagination.href %}
+    {% if pagination.href.previous %}<link rel="prev" href="{{ pagination.href.previous }}">{% endif %}
+    {% if pagination.href.next %}<link rel="next" href="{{ pagination.href.next }}">{% endif %}
+    {% endif %}
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
-<body class="{% if page.url == '/' %}is-home{% endif %}">
+<body>
     <a href="#main-content" class="skip-link">Ir para o conteúdo</a>
     <div class="site-wrapper">
         <header class="site-header">
             <div class="site-brand-row">
-                <a href="/" class="site-title">{% icon "home", "sm", true %} Being Pablo</a>
+                <a href="/" class="site-title">Being Pablo</a>
                 <lottie-player class="site-brand-mark" src="/assets/images/sleep.json" background="transparent" speed="1" loop autoplay></lottie-player>
             </div>
             {% include "nav.njk" %}
@@ -44,9 +52,10 @@
             {{ content | safe }}
         </main>
 
-        <!-- IndieWeb h-card -->
+        <!-- IndieWeb h-card: máquina no DOM; bloco decorativo oculto como .mf2-only -->
         <footer>
             <div class="h-card site-footer-card">
+                <div class="footer-hcard-visual-hide">
                 <div class="site-footer-ornament">
                     <svg width="100%" viewBox="0 0 600 75" version="1.1" xmlns="http://www.w3.org/2000/svg" style="height: auto; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;">
                         <path transform="matrix(1,0,0,1,92.3579,4.11772)" d="M105.809,48.397C105.809,44.506 102.473,43.931 102.473,33.503" style="fill: none; stroke: currentColor; stroke-width: 1.5px;"/>
@@ -65,9 +74,9 @@
                 
                 <a class="p-name u-url u-uid site-footer-name" rel="me" href="https://pablo.space/">Pablo Murad</a>
                 
-                <a href="https://proof.1208.pro" title="Proof" class="site-footer-proof">
-                    <img src="/assets/images/verify.svg" alt="Verify">
-                </a>
+                <span class="site-footer-proof" title="Proof">
+                    <img src="/assets/images/verify.svg" alt="">
+                </span>
                 
                 <p class="p-note site-footer-note">Wandering through strange worlds woven into the web.</p>
 
@@ -93,34 +102,40 @@
                     <span class="site-footer-dot">·</span>
                     <a class="u-url" rel="me" href="https://twitter.com/runawayd3vil">X</a>
                 </div>
+                </div>
 
                 <div class="meta site-footer-meta">
+                    <p class="site-footer-proof-contact">
+                        <a href="https://proof.1208.pro" class="site-footer-proof-contact-link">
+                            <img src="/assets/images/verify.svg" alt="" width="16" height="16" class="site-footer-verify-inline" decoding="async">
+                        </a>
+                        <code class="site-footer-proof-email">pablomurad[at]pm[dot]me</code>
+                    </p>
                     <div class="webring">
                         <a href="https://xn--sr8hvo.ws/previous" class="site-footer-plain-link">←</a> 
                         An <a href="https://xn--sr8hvo.ws" class="site-footer-plain-link">IndieWeb Webring</a> 🕸💍 
                         <a href="https://xn--sr8hvo.ws/next" class="site-footer-plain-link">→</a>
                     </div>
                     <p class="footer-feed-wrap">
-                        <a href="/feed.xml" class="footer-feed">
-                            {% icon "rss", "sm", true %} RSS / Atom
-                        </a>
+                        <a href="/feed.xml" class="footer-feed">{% icon "rss", "sm", true %} RSS / Atom</a>
+                        <span class="site-footer-dot" aria-hidden="true">·</span>
+                        <a href="/colophon/" class="footer-feed">Colophon</a>
                     </p>
-                    <nav class="footer-sitemap" aria-label="Mapa do site">
-                        <ul class="footer-sitemap__list">
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/search/">Search</a></li>
-                            <li><a href="/articles/">Articles</a></li>
-                            <li><a href="/journal/">Journal</a></li>
-                            <li><a href="/bookmarks/">Bookmarks</a></li>
-                            <li><a href="/photos/">Photos</a></li>
-                            <li><a href="/links/">Links</a></li>
-                            <li><a href="/now/">Now</a></li>
-                            <li><a href="/about/">About</a></li>
-                            <li><a href="/guestbook/">Guestbook</a></li>
-                            <li><a href="/contact/">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <div class="site-footer-version">version 0.0.1</div>
+                    <div class="site-footer-credits">
+                        <div class="site-footer-version">
+                            <span class="site-footer-version-line">version {{ siteVersion }} — {{ siteVersionYear }}</span>
+                            {% if buildFooter.sha or buildFooter.subject %}
+                            <span class="site-footer-build" translate="no">
+                                {% if buildFooter.sha %}<kbd class="site-footer-build-sha">{{ buildFooter.sha }}</kbd>{% endif %}
+                                {% if buildFooter.sha and buildFooter.subject %}<span class="site-footer-build-sep" aria-hidden="true">·</span>{% endif %}
+                                {% if buildFooter.subject %}<span class="site-footer-build-subject">{{ buildFooter.subject }}</span>{% endif %}
+                            </span>
+                            {% endif %}
+                        </div>
+                        <p class="site-footer-powered">
+                            <a href="https://pages.github.com/" class="site-footer-powered-link" rel="noopener noreferrer">Powered by GitHub</a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
