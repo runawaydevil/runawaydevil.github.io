@@ -17,7 +17,13 @@
   --space-xl: 6rem;
 
   /* Minimal Obsidian palette (default) - blue-black night air */
-  --bg-color: #060C16;
+  --bg-color: #050B14;
+  --bg-gradient: linear-gradient(
+    90deg,
+    rgba(5, 11, 20, 1) 0%,
+    rgba(4, 10, 18, 1) 50%,
+    rgba(6, 12, 22, 1) 100%
+  );
   --text-color: #fcfcfc; /* Corpo do texto bem claro, quase branco puro */
   --heading-color: #f2f2f2; /* Tom que você aprovou antes */
   --text-muted: #aaaaaa; /* Letras secundárias/mutadas mais claras também */
@@ -206,6 +212,7 @@ body {
   margin: 0;
   padding: var(--space-md);
   background-color: var(--bg-color);
+  background-image: var(--bg-gradient);
   color: var(--text-color);
   font-family: var(--font-body);
   font-size: 1.125rem;
