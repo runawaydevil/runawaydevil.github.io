@@ -9,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const iconsLucideDir = path.join(__dirname, "src", "assets", "icons", "lucide");
 const iconsCustomDir = path.join(__dirname, "src", "assets", "icons", "custom");
+const outputDir = path.join(__dirname, "_site");
 const pagefindBin = path.join(__dirname, "node_modules", "pagefind", "lib", "runner", "bin.cjs");
 const execFileAsync = promisify(execFile);
 
@@ -191,9 +192,23 @@ async function buildPagefindIndex() {
     return;
   }
 
+  const pagefindOutputDir = path.join(outputDir, "pagefind");
+  fs.rmSync(pagefindOutputDir, { recursive: true, force: true });
+
   await execFileAsync(process.execPath, [pagefindBin, "--site", "_site"], {
     cwd: __dirname,
   });
+}
+
+function cleanOutputDirectory() {
+  const resolvedOutputDir = path.resolve(outputDir);
+  const expectedOutputDir = path.resolve(path.join(__dirname, "_site"));
+
+  if (resolvedOutputDir !== expectedOutputDir || path.basename(resolvedOutputDir) !== "_site") {
+    throw new Error(`Refusing to clean unexpected output directory: ${resolvedOutputDir}`);
+  }
+
+  fs.rmSync(resolvedOutputDir, { recursive: true, force: true });
 }
 
 /**
@@ -227,6 +242,12 @@ function assertSafeName(name) {
 export default function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
+  eleventyConfig.on("eleventy.before", () => {
+    cleanOutputDirectory();
+  });
+  eleventyConfig.on("eleventy.beforeWatch", () => {
+    cleanOutputDirectory();
+  });
   eleventyConfig.on("eleventy.after", async () => {
     await buildPagefindIndex();
   });
