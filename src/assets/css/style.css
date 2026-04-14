@@ -16,6 +16,12 @@
   --space-lg: 4rem;
   --space-xl: 6rem;
 
+  /* Layout measure: long-form stays narrow; home can breathe wider (same URLs) */
+  --content-measure: 65ch;
+  --home-measure: min(72rem, 92vw);
+  --section-gap-tight: 2.25rem;
+  --section-gap-loose: 3.75rem;
+
   /* Minimal Obsidian palette (default) - blue-black night air */
   --bg-color: #050B14;
   --bg-gradient: linear-gradient(
@@ -223,10 +229,14 @@ body {
 
 /* Layout */
 .site-wrapper {
-  max-width: 65ch;
+  max-width: var(--content-measure);
   margin: 0 auto;
   padding-top: var(--space-lg);
   padding-bottom: var(--space-xl);
+}
+
+.is-home .site-wrapper {
+  max-width: var(--home-measure);
 }
 
 /* Typography elements */
@@ -275,11 +285,6 @@ a:hover {
 /* UI / Meta */
 .meta, footer {
   font-family: var(--font-ui);
-  font-size: 0.875rem;
-}
-
-.nav-list {
-  font-family: var(--font-brand);
   font-size: 0.875rem;
 }
 
@@ -334,10 +339,17 @@ a:hover {
   font-size: 0.8em;
 }
 
-/* Navigation */
-header {
+/* Navigation — site chrome only (not article mastheads inside .h-entry) */
+header.site-header {
   display: grid;
   gap: 1rem;
+  margin-bottom: 3.25rem;
+  padding-bottom: 1.15rem;
+  border-bottom: 1px solid var(--surface-border-quiet);
+}
+
+article.h-entry > header {
+  display: block;
   margin-bottom: 3.25rem;
   padding-bottom: 1.15rem;
   border-bottom: 1px solid var(--surface-border-quiet);
@@ -374,13 +386,13 @@ header {
 
 .nav-list {
   list-style: none;
-  padding: 0;
+  padding: 0.75rem 0 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 0.65rem 1.15rem;
-  padding: 0.9rem 0 0;
-  border-top: 1px solid var(--surface-border-quiet);
+  font-family: var(--font-brand);
+  font-size: 0.875rem;
 }
 
 .nav-list a {
@@ -395,6 +407,12 @@ header {
   color: var(--accent-color);
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.nav-list a:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 /* Footer / IndieWeb h-card */
@@ -584,11 +602,19 @@ footer .h-card {
   gap: 3rem;
 }
 
+.home-stack--editorial {
+  gap: var(--section-gap-loose);
+}
+
+.home-stack--editorial .icon--ornament {
+  margin: var(--section-gap-tight) 0;
+}
+
 .is-home .site-wrapper {
   padding-top: 3rem;
 }
 
-.is-home header {
+.is-home header.site-header {
   margin-bottom: 2.2rem;
 }
 
@@ -608,6 +634,12 @@ footer .h-card {
   padding-top: 0.25rem;
 }
 
+.hub-hero__masthead {
+  display: grid;
+  gap: 0.75rem;
+  max-width: min(42rem, 100%);
+}
+
 .hub-kicker {
   margin: 0;
   color: var(--text-muted);
@@ -620,8 +652,8 @@ footer .h-card {
 .hub-title {
   margin: 0;
   font-size: clamp(2.05rem, 5.8vw, 3.75rem);
-  line-height: 0.98;
-  max-width: 12ch;
+  line-height: 1.02;
+  max-width: min(18ch, 100%);
   letter-spacing: -0.03em;
 }
 
@@ -712,6 +744,11 @@ footer .h-card {
   color: var(--accent-color);
 }
 
+.hub-stats__list a:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
 .hub-stats__list strong {
   color: var(--text-color);
   font-weight: 600;
@@ -743,14 +780,18 @@ footer .h-card {
   margin: 0;
 }
 
+.home-stack--editorial .home-module--spotlight {
+  margin-block: 0.75rem 0.35rem;
+}
+
 .hub-featured__frame {
   display: grid;
   grid-template-columns: minmax(0, 1.7fr) minmax(14rem, 0.9fr);
   gap: var(--space-md);
-  padding: clamp(1.3rem, 3vw, 2.1rem);
+  padding: clamp(1.35rem, 3vw, 2.25rem);
   border: 1px solid var(--surface-border-soft);
   background: var(--surface-2);
-  box-shadow: 0 22px 48px rgba(2, 6, 12, 0.28);
+  box-shadow: 0 26px 56px rgba(2, 6, 12, 0.34);
 }
 
 .hub-featured__meta,
@@ -773,8 +814,8 @@ footer .h-card {
 .hub-featured__title {
   margin: 0;
   font-size: clamp(1.8rem, 4.6vw, 3rem);
-  line-height: 1;
-  max-width: 12ch;
+  line-height: 1.02;
+  max-width: min(14ch, 100%);
   letter-spacing: -0.03em;
 }
 
@@ -809,6 +850,11 @@ footer .h-card {
   background: #142131;
 }
 
+.hub-featured__cta:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
 .hub-featured__eyebrow,
 .hub-update-card__type {
   margin: 0;
@@ -832,6 +878,10 @@ footer .h-card {
   border-top: 1px solid var(--surface-border-quiet);
   color: #dddddd;
   line-height: 1.65;
+}
+
+.home-stack--editorial .home-module--discovery {
+  padding: 1rem 0 0.35rem;
 }
 
 .hub-discovery__grid {
@@ -892,6 +942,13 @@ footer .h-card {
   color: var(--accent-color);
 }
 
+.hub-update-card__title a:focus-visible,
+.hub-update-card__link:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 .hub-explore__layout {
   display: grid;
   grid-template-columns: minmax(0, 1.6fr) minmax(16rem, 0.9fr);
@@ -930,6 +987,27 @@ footer .h-card {
   color: var(--text-color);
 }
 
+.hub-aside__list a:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Explore / stats: level 3 — quieter than lead + discovery */
+.hub-explore .hub-stats {
+  background: rgba(8, 14, 22, 0.88);
+  border-color: var(--surface-border-quiet);
+}
+
+.hub-explore .hub-aside {
+  background: rgba(10, 16, 25, 0.55);
+  border-color: var(--surface-border-quiet);
+}
+
+.home-stack--editorial .home-module--index {
+  padding: 0.35rem 0 0.6rem;
+}
+
 @media (max-width: 900px) {
   .hub-featured__frame,
   .hub-explore__layout {
@@ -950,7 +1028,8 @@ footer .h-card {
 }
 
 @media (max-width: 640px) {
-  .home-stack {
+  .home-stack,
+  .home-stack--editorial {
     gap: var(--space-md);
   }
 

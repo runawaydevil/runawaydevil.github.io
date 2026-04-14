@@ -7,13 +7,13 @@ title: Being Pablo - A quieter transmission
 {% set featuredUrl = featured.url if featured else "" %}
 {% set updates = collections.homeFeed | homeHighlights(featuredUrl, 4) %}
 
-<section class="home-stack" aria-labelledby="hub-intro-title">
+<section class="home-stack home-stack--editorial" aria-labelledby="hub-intro-title">
   <section class="hub-intro home-module home-module--atmospheric">
-    <p class="hub-kicker">A QUIETER TRANSMISSION</p>
-    <h1 id="hub-intro-title" class="hub-title">The true mystery of the world is the visible, not the invisible.</h1>
-
-    <p class="hub-identity-line">Brazil. Static by choice, not by accident.</p>
-
+    <header class="hub-hero__masthead">
+      <p class="hub-kicker">A QUIETER TRANSMISSION</p>
+      <h1 id="hub-intro-title" class="hub-title">The true mystery of the world is the visible, not the invisible.</h1>
+      <p class="hub-identity-line">São Lourenço, Brazil. Static pages, on purpose.</p>
+    </header>
   </section>
 
   {% glyph "ornament-divider", "lg", true, "", "icon--ornament" %}

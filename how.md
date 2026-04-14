@@ -70,6 +70,19 @@ Definidas em `eleventy.config.js`:
 
 A **home** (`src/index.njk`) usa layout tipo hub: artigo em destaque (`homeFeatured`), lista recente (`homeHighlights`), divisor com `glyph "ornament-divider"`, e cópia atual (“A quieter transmission”, etc.).
 
+### Referência local (benchmark, só leitura)
+
+Há um projeto de referência em `.experiment/Designerdadacom/` (Tailwind, paleta “olive”). **Não** copiamos stack nem componentes; usámo-lo só para decidir o que vale a pena trazer para *este* site.
+
+| Absorver (conceito) | Rejeitar (para este repo) |
+|---------------------|---------------------------|
+| Largura de leitura disciplinada e ritmo vertical entre secções | Minimalismo estéril ou “product designer” genérico |
+| Entrada e saída claras de cada bloco (hero → lead → descoberta → auxiliar) | Centralização que achata voz pessoal |
+| Espaçamento propositivo e hierarquia sóbria | Animações de entrada estilo startup |
+| Contenção de molduras (sem competir com o conteúdo) | Substituir IndieWeb / h-card por bio genérica |
+
+Na implementação: tokens `--section-gap-*`, `--content-measure` (resto do site) vs `--home-measure` (home), e pesos visuais distintos entre módulos — tudo em `style.css` sem migrar de Eleventy/Nunjucks.
+
 ---
 
 ## Layout e navegação
