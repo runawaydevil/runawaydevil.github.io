@@ -1,0 +1,132 @@
+---
+layout: base.njk
+---
+<article class="h-entry">
+  <header>
+    {% if replyTo %}
+      <div class="meta" style="margin-bottom: var(--space-sm); font-size: 0.9em; color: var(--text-muted);">
+        <span style="opacity: 0.8;">↩ Replying to:</span> <a href="{{ replyTo }}" class="u-in-reply-to" style="color: var(--accent-color); text-decoration: none;">{{ replyTo | replace('https://', '') | replace('http://', '') }}</a>
+      </div>
+    {% endif %}
+
+    {% if globalNoteId %}
+      <h1 class="p-name">Note #{{ globalNoteId }}{% if title %} &mdash; {{ title }}{% endif %}</h1>
+    {% elif title %}
+      <h1 class="p-name">{{ title }}</h1>
+    {% endif %}
+    
+    <div class="meta post-meta" style="margin-bottom: var(--space-md); color: var(--text-muted);">
+      <span class="post-meta__line">{% icon "calendar", "sm", true %} Published on <time class="dt-published" datetime="{{ page.date | dateToISO }}">{{ page.date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }) }}</time></span>
+      {% if updated %}
+        (Updated: <time class="dt-updated" datetime="{{ updated | dateToISO }}">{{ updated.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }) if updated.toLocaleDateString else updated }}</time>)
+      {% endif %}
+      <a class="u-url" href="{{ page.url }}" style="display:none;">Permalink</a>
+      <a rel="author" class="p-author h-card" href="/" style="display:none;">Pablo Murad</a>
+    </div>
+  </header>
+
+  <div id="reading-progress-bar" class="reading-progress" aria-hidden="true"></div>
+
+  <div class="e-content">
+    {% if likeOf %}
+       <div style="margin-bottom: var(--space-md); padding-left: 1rem; border-left: 2px solid var(--accent-color);">
+          <span class="micro-label" style="color: var(--text-muted);">{% icon "heart", "sm", true %} Liked:</span> <a href="{{ likeOf }}" class="u-like-of" style="text-decoration: none;">{{ likeOf }}</a>
+       </div>
+    {% endif %}
+
+    {% if bookmarkOf %}
+       <div style="margin-bottom: var(--space-md); padding-left: 1rem; border-left: 2px solid var(--accent-color);">
+          <span class="micro-label" style="color: var(--text-muted);">{% icon "bookmark", "sm", true %} Bookmarked:</span> <a href="{{ bookmarkOf }}" class="u-bookmark-of" style="text-decoration: none;">{{ bookmarkOf }}</a>
+       </div>
+    {% endif %}
+
+    {% if photos %}
+       <div style="margin-bottom: var(--space-md);">
+       {% for photo in photos %}
+          {% set photoUrl = photo %}
+          {% if photo.url %}
+            {% set photoUrl = photo.url %}
+          {% elif photo.value %}
+            {% set photoUrl = photo.value %}
+          {% endif %}
+          {% set finalUrl = photoUrl | replace('/src/', '/') %}
+          {% set photoAlt = photo.alt if photo.alt else "Photo" %}
+          <img src="{{ finalUrl }}" alt="{{ photoAlt }}" class="u-photo" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin-bottom: 1rem;">
+       {% endfor %}
+       </div>
+    {% endif %}
+
+    {{ content | safe }}
+  </div>
+
+  {% if globalNoteId %}
+    {% set rel = collections.journalNotes | reverse | relatedItems(page.url, 3) %}
+  {% elif '/articles/' in page.inputPath %}
+    {% set rel = collections.article | reverse | relatedItems(page.url, 3) %}
+  {% else %}
+    {% set rel = [] %}
+  {% endif %}
+  {% if rel | length %}
+  <section class="related-posts" aria-labelledby="related-heading">
+    <h2 id="related-heading" class="related-posts__title"><span class="related-posts__title-inner">{% icon "book-open", "sm", true %} Leia também</span></h2>
+    <ul class="related-posts__list">
+      {% for p in rel %}
+      <li>
+        <a href="{{ p.url }}">
+          {% if p.data.globalNoteId %}
+            Note #{{ p.data.globalNoteId }}{% if p.data.title %} — {{ p.data.title }}{% endif %}
+          {% else %}
+            {{ p.data.title | default('Untitled') }}
+          {% endif %}
+        </a>
+        <time class="related-posts__date" datetime="{{ p.date | dateToISO }}">{{ p.date.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' }) }}</time>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endif %}
+
+  <footer style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color, #333);">
+    {% if '/journal/' in page.inputPath %}
+      {% set activeCollectionName = 'journalNotes' %}
+    {% elif '/articles/' in page.inputPath %}
+      {% set activeCollectionName = 'article' %}
+    {% elif '/bookmarks/' in page.inputPath %}
+      {% set activeCollectionName = 'bookmark' %}
+    {% elif '/photos/' in page.inputPath %}
+      {% set activeCollectionName = 'photo' %}
+    {% else %}
+      {% set activeCollectionName = 'post' %}
+    {% endif %}
+    {% set activeCollection = collections[activeCollectionName] if collections[activeCollectionName] else collections.post %}
+    {% set previousPost = activeCollection | getPreviousCollectionItem(page) %}
+    {% set nextPost = activeCollection | getNextCollectionItem(page) %}
+    
+    <nav class="post-navigation" style="display: flex; justify-content: space-between; font-size: 0.9em;">
+      <div>
+        {% if previousPost %}
+          {% set prevText = 'Note #' ~ previousPost.data.globalNoteId if previousPost.data.globalNoteId else previousPost.data.title | default('Previous') %}
+          {% if previousPost.data.globalNoteId and previousPost.data.title %}
+            {% set prevText = 'Note #' ~ previousPost.data.globalNoteId ~ ' &mdash; ' ~ previousPost.data.title %}
+          {% endif %}
+          <a href="{{ previousPost.url }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">{% icon "chevron-left", "sm", true %} {{ prevText | safe }}</a>
+        {% endif %}
+      </div>
+      <div>
+        {% if nextPost %}
+          {% set nextText = 'Note #' ~ nextPost.data.globalNoteId if nextPost.data.globalNoteId else nextPost.data.title | default('Next') %}
+          {% if nextPost.data.globalNoteId and nextPost.data.title %}
+            {% set nextText = 'Note #' ~ nextPost.data.globalNoteId ~ ' &mdash; ' ~ nextPost.data.title %}
+          {% endif %}
+          <a href="{{ nextPost.url }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">{{ nextText | safe }} {% icon "chevron-right", "sm", true %}</a>
+        {% endif %}
+      </div>
+    </nav>
+  </footer>
+</article>
+
+<script src="/assets/js/reading-progress.js" defer></script>
+
+<section id="webmentions" class="webmentions-placeholder" style="margin-top: 3rem;">
+  <!-- Future integration point for Indiekit / Webmentions -->
+</section>

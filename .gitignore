@@ -1,0 +1,15 @@
+# Dependências do Node.js
+node_modules/
+
+# Diretório de build gerado pelo Eleventy
+_site/
+
+# Logs do npm e arquivos de sistema
+npm-debug.log
+.DS_Store
+*.log
+.env
+
+.cursor/
+.pablo/
+docs/

@@ -1,0 +1,5 @@
+{
+  "tags": ["post", "article"],
+  "type": "article",
+  "permalink": "/articles/{{ page.date | dateToPermalink }}/{{ page.fileSlug }}/index.html"
+}

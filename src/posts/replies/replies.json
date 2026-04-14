@@ -1,0 +1,5 @@
+{
+  "tags": ["post", "reply"],
+  "type": "reply",
+  "permalink": "/replies/{{ page.date | dateToPermalink }}/{{ page.fileSlug }}/index.html"
+}

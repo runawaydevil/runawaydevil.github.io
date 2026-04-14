@@ -1,0 +1,486 @@
+---
+layout: page.njk
+title: Guestbook
+permalink: /guestbook/
+---
+
+<div class="guestbook-page__accent">
+  {% glyph "guestbook-accent", "md", true %}
+  {% icon "messages-square", "sm", true %}
+  {% glyph "terminal-cursor", "xs", true %}
+</div>
+
+<style>
+/* Scoped styles specifically for guestbook */
+.guestbook-form {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 3rem;
+    border-radius: 4px;
+}
+.guestbook-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9em;
+    color: var(--text-color);
+    font-family: inherit;
+}
+.guestbook-form input[type="text"],
+.guestbook-form input[type="url"],
+.guestbook-form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--text-color);
+    font-family: inherit;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+.guestbook-form input:focus,
+.guestbook-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+.guestbook-form button[type="submit"] {
+    background: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95em;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: background 0.2s;
+}
+.guestbook-form button[type="submit"]:hover {
+    background: var(--accent-color);
+}
+.guestbook-form button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.guestbook-feed {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.guestbook-card {
+    position: relative;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #e8e6e1;
+    min-height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.guestbook-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    /* Extra dark overlay to ensure readability on the postcards */
+    background: rgba(26, 25, 24, 0.85); 
+    z-index: 1;
+}
+
+.guestbook-card-content, .guestbook-card-footer {
+    position: relative;
+    z-index: 2;
+}
+
+.guestbook-card-content {
+    font-size: 1.15em;
+    font-family: inherit; /* Matches Lora */
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.6;
+    max-height: 250px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--text-muted) transparent;
+}
+
+.guestbook-card-footer {
+    margin-top: 1.5rem;
+    font-size: 0.85em;
+    font-family: "IBM Plex Mono", monospace;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: var(--text-muted);
+}
+.guestbook-card-footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+.guestbook-card-footer a:hover {
+    text-decoration: underline;
+}
+
+.guestbook-status {
+    text-align: center;
+    padding: 3rem 0;
+    color: var(--text-muted);
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.guestbook-pagination {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    font-family: "IBM Plex Mono", monospace;
+}
+.guestbook-pagination button {
+    background: transparent;
+    border: 1px solid var(--text-muted);
+    color: var(--text-muted);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: 2px;
+}
+.guestbook-pagination button:hover:not(:disabled) {
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+.guestbook-pagination button:disabled {
+    opacity: 0.3;
+    cursor: default;
+}
+
+/* Honeypot */
+.trap { 
+    display: none !important; 
+}
+
+/* Minimalist rotation */
+.guestbook-card:nth-child(even) {
+    transform: rotate(0.5deg);
+}
+.guestbook-card:nth-child(odd) {
+    transform: rotate(-0.5deg);
+}
+
+.vitrine-actions {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.btn-primary {
+    background: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1.05em;
+    cursor: pointer;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: background 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-primary:hover {
+    background: var(--accent-color);
+}
+.btn-secondary {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid var(--text-muted);
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9em;
+    cursor: pointer;
+    font-family: "IBM Plex Mono", monospace;
+    border-radius: 2px;
+    transition: all 0.2s;
+}
+.btn-secondary:hover {
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+</style>
+
+<div id="vitrine-view">
+    <div class="vitrine-actions">
+        <button id="btn-show-form" class="btn-primary">Leave a Message</button>
+    </div>
+
+    <div id="gb-feed" class="guestbook-feed">
+        <!-- Feed injected by JS -->
+    </div>
+
+    <div class="guestbook-status" id="gb-status">Loading signals...</div>
+
+    <div class="guestbook-pagination" id="gb-pagination" style="display: none;">
+        <button id="gb-prev" disabled>← Newer</button>
+        <span id="gb-page-info" style="align-self: center; font-size: 0.9em; font-family: 'IBM Plex Mono', monospace;"></span>
+        <button id="gb-next" disabled>Older →</button>
+    </div>
+</div>
+
+<div id="form-view" class="guestbook-form" style="display: none;">
+    <div style="margin-bottom: 2rem;">
+        <button id="btn-back-vitrine" class="btn-secondary">← Back to Showcase</button>
+    </div>
+
+    <form id="gb-form">
+        <div class="trap">
+            <label for="special">Do not fill this</label>
+            <input type="text" id="special" name="special" tabindex="-1" autocomplete="off">
+        </div>
+
+        <label for="gb-author">Name (up to 28 chars) *</label>
+        <input type="text" id="gb-author" name="author" maxlength="28" required>
+
+        <label for="gb-url">Website URL (optional)</label>
+        <input type="url" id="gb-url" name="url" placeholder="https://...">
+
+        <label for="gb-content">Message (up to 140 chars) *</label>
+        <textarea id="gb-content" name="content" maxlength="140" rows="3" required></textarea>
+
+        <div id="gb-form-status" style="margin-bottom: 1.5rem; font-size: 0.9em; font-family: 'IBM Plex Mono', monospace;"></div>
+
+        <button type="submit" id="gb-submit" style="font-family: 'IBM Plex Mono', monospace;">Transmit Signal</button>
+    </form>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const API_URL = 'https://zvhfozbloerfkljxngft.supabase.co/functions/v1/guestbook-api';
+    const form = document.getElementById('gb-form');
+    const submitBtn = document.getElementById('gb-submit');
+    const statusDiv = document.getElementById('gb-status');
+    const feedDiv = document.getElementById('gb-feed');
+    const formStatusDiv = document.getElementById('gb-form-status');
+    const prevBtn = document.getElementById('gb-prev');
+    const nextBtn = document.getElementById('gb-next');
+    const pageInfo = document.getElementById('gb-page-info');
+    const pagination = document.getElementById('gb-pagination');
+    
+    const vitrineView = document.getElementById('vitrine-view');
+    const formView = document.getElementById('form-view');
+    const btnShowForm = document.getElementById('btn-show-form');
+    const btnBackVitrine = document.getElementById('btn-back-vitrine');
+
+    let currentPage = 1;
+    const perPage = 15;
+
+    const themeFiles = [
+        "01.png", "02.png", "03.png", "04.png",
+        "05.png", "06.png", "07.png", "08.png",
+        "09.jpg", "10.jpg", "11.jpg", "12.jpg",
+        "13.png", "14.png", "15.png", "16.png",
+        "17.png", "18.png", "19.png", "20.png",
+        "21.png", "22.png", "23.png", "24.png",
+        "25.png", "26.png", "27.png", "28.png",
+    ];
+
+    // Preloader agressivo pro cache de memória do navegador local
+    const preloadImages = () => {
+        themeFiles.forEach(file => {
+            const img = new Image();
+            img.src = '/notecards/' + file;
+        });
+    };
+    
+    // Inicia o preloader sem bloquear o render principal
+    window.requestAnimationFrame ? requestAnimationFrame(preloadImages) : setTimeout(preloadImages, 200);
+
+    btnShowForm.addEventListener('click', () => {
+        vitrineView.style.display = 'none';
+        formView.style.display = 'block';
+        formStatusDiv.textContent = '';
+    });
+
+    const goToVitrine = () => {
+        formView.style.display = 'none';
+        vitrineView.style.display = 'block';
+    };
+
+    btnBackVitrine.addEventListener('click', goToVitrine);
+
+    const loadEntries = async (page) => {
+        statusDiv.style.display = 'block';
+        statusDiv.textContent = 'Loading signals...';
+        feedDiv.innerHTML = '';
+        pagination.style.display = 'none';
+        
+        try {
+            const res = await fetch(API_URL + '?page=' + page + '&perPage=' + perPage + '&_t=' + Date.now(), {
+                cache: 'no-store'
+            });
+            if (!res.ok) throw new Error('Failed to fetch from guestbook API');
+            
+            const data = await res.json();
+            const entries = data.entries || [];
+            const hasNext = (page * perPage) < data.total;
+            
+            statusDiv.style.display = 'none';
+
+            if (entries.length === 0) {
+                statusDiv.style.display = 'block';
+                statusDiv.textContent = 'Silence so far. Be the first to leave a message.';
+                return;
+            }
+
+            entries.forEach(entry => {
+                let themeId = parseInt(entry.theme, 10);
+                if (isNaN(themeId) || themeId < 1) {
+                    themeId = 1;
+                }
+                
+                // Map theme id 1..N across themeFiles (wrap for legacy ids beyond current count)
+                const safeThemeIndex = (themeId - 1) % themeFiles.length;
+                const safeTheme = themeFiles[safeThemeIndex];
+
+                const card = document.createElement('div');
+                card.className = 'guestbook-card';
+                card.style.backgroundImage = 'url("/notecards/' + safeTheme + '")';
+
+                const contentDiv = document.createElement('div');
+                contentDiv.className = 'guestbook-card-content';
+                
+                // Extra security: gracefully handle layout breakage from API manipulation
+                let safeContent = entry.content || "";
+                if (safeContent.length > 500) {
+                    safeContent = safeContent.substring(0, 500) + '...';
+                }
+                // Strip excessive newlines (prevents extremely tall cards)
+                safeContent = safeContent.replace(/(?:\r\n|\r|\n){3,}/g, '\n\n');
+                contentDiv.textContent = safeContent; 
+
+                const footerDiv = document.createElement('div');
+                footerDiv.className = 'guestbook-card-footer';
+
+                let safeAuthor = entry.author || "Anonymous";
+                if (safeAuthor.length > 50) safeAuthor = safeAuthor.substring(0, 50) + '...';
+
+                const authorSpan = document.createElement('span');
+                if (entry.url && entry.url.trim().length > 0) {
+                    const urlStr = entry.url.trim();
+                    const a = document.createElement('a');
+                    // Avoid javascript: exploitation even if case-modified
+                    if (/^javascript:/i.test(urlStr) || /^data:/i.test(urlStr) || /^vbscript:/i.test(urlStr)) {
+                        a.href = '#';
+                    } else {
+                        a.href = urlStr.startsWith('http') ? urlStr : 'https://' + urlStr;
+                    }
+                    a.rel = 'noopener noreferrer';
+                    a.target = '_blank';
+                    a.textContent = '— ' + safeAuthor;
+                    authorSpan.appendChild(a);
+                } else {
+                    authorSpan.textContent = '— ' + safeAuthor;
+                }
+
+                const dateSpan = document.createElement('span');
+                if (entry.created_at) {
+                    dateSpan.textContent = new Date(entry.created_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                }
+
+                footerDiv.appendChild(authorSpan);
+                footerDiv.appendChild(dateSpan);
+
+                card.appendChild(contentDiv);
+                card.appendChild(footerDiv);
+                feedDiv.appendChild(card);
+            });
+
+            pagination.style.display = 'flex';
+            pageInfo.textContent = 'Page ' + page;
+            prevBtn.disabled = page === 1;
+            nextBtn.disabled = !hasNext;
+
+        } catch (error) {
+            statusDiv.style.display = 'block';
+            statusDiv.textContent = 'Connection to the void lost. Try again later.';
+            console.error(error);
+        }
+    };
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(form);
+        const special = formData.get('special');
+        
+        if (special) {
+            formStatusDiv.style.color = '#ff6b6b';
+            formStatusDiv.textContent = 'Bot detected.';
+            return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Transmitting...';
+        formStatusDiv.textContent = '';
+
+        // Theme id 1..themeFiles.length — matches notecards/*.png|.jpg filenames
+        const randomTheme = Math.floor(Math.random() * themeFiles.length) + 1;
+
+        const payload = {
+            author: formData.get('author'),
+            content: formData.get('content'),
+            url: formData.get('url'),
+            theme: randomTheme,
+            special: special
+        };
+
+        try {
+            const res = await fetch(API_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            if (!res.ok) {
+                const errData = await res.json().catch(() => ({}));
+                throw new Error(errData.error || 'Failed to transmit message');
+            }
+
+            form.reset();
+            currentPage = 1;
+            
+            // Aguarda meio segundo caso a DB leve um ciclo para consolidar 
+            await new Promise(r => setTimeout(r, 500));
+            await loadEntries(1);
+            
+            goToVitrine();
+
+        } catch (error) {
+            formStatusDiv.style.color = '#d1bfae'; 
+            formStatusDiv.textContent = error.message || 'Network error signal.';
+            console.error(error);
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Transmit Signal';
+        }
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (currentPage > 1) {
+            currentPage--;
+            loadEntries(currentPage);
+            document.querySelector('#vitrine-view').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        currentPage++;
+        loadEntries(currentPage);
+        document.querySelector('#vitrine-view').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+
+    loadEntries(currentPage);
+});
+</script>

@@ -1,0 +1,12 @@
+<nav>
+    <ul class="nav-list">
+        <li><a class="nav-list__link" href="/search/" {% if page.url == '/search/' %}aria-current="page"{% endif %}>{% icon "search", "sm", true %} search</a></li>
+        <li><a class="nav-list__link" href="/articles/" {% if page.url == '/articles/' %}aria-current="page"{% endif %}>{% icon "library", "sm", true %} articles</a></li>
+        <li><a class="nav-list__link" href="/now" {% if page.url == '/now/' %}aria-current="page"{% endif %}>{% icon "clock", "sm", true %} now</a></li>
+        <li><a class="nav-list__link" href="/about" {% if page.url == '/about/' %}aria-current="page"{% endif %}>{% icon "user-round", "sm", true %} about</a></li>
+        <li><a class="nav-list__link" href="/journal" {% if page.url == '/journal/' %}aria-current="page"{% endif %}>{% icon "notebook-pen", "sm", true %} journal</a></li>
+        <li><a class="nav-list__link" href="/links" {% if page.url == '/links/' %}aria-current="page"{% endif %}>{% icon "link-2", "sm", true %} links</a></li>
+        <li><a class="nav-list__link" href="/guestbook" {% if page.url == '/guestbook/' %}aria-current="page"{% endif %}>{% icon "messages-square", "sm", true %} guestbook</a></li>
+        <li><a class="nav-list__link" href="/contact" {% if page.url == '/contact/' %}aria-current="page"{% endif %}>{% icon "mail", "sm", true %} contact</a></li>
+    </ul>
+</nav>

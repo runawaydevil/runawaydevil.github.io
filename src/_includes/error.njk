@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+<div class="error-page" style="text-align: center; max-width: 600px; margin: 4rem auto;">
+  
+
+  <div style="margin-bottom: 2rem;">
+    <img src="https://http.cat/{{ error_code }}.jpg" alt="HTTP Cat {{ error_code }}" style="max-width: 100%; height: auto; border-radius: 4px; opacity: 0.9; filter: grayscale(20%);">
+  </div>
+  
+  <div class="e-content" style="font-size: 1.1em; line-height: 1.6; margin-bottom: 3rem; color: var(--text-color, #ccc);">
+    {{ content | safe }}
+  </div>
+  
+  <nav class="error-navigation" style="display: flex; gap: 1rem; justify-content: center; align-items: center; font-size: 0.95em;">
+    <a href="/" style="color: var(--text-muted, #888); text-decoration: none;">← Home</a>
+    <span style="color: var(--border-color, #333);">·</span>
+    <a href="/journal/" style="color: var(--text-muted, #888); text-decoration: none;">Journal</a>
+    <span style="color: var(--border-color, #333);">·</span>
+    <a href="/links/" style="color: var(--text-muted, #888); text-decoration: none;">Links</a>
+  </nav>
+
+</div>

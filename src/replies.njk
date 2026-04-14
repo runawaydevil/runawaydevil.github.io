@@ -1,0 +1,63 @@
+---
+layout: page.njk
+title: Replies
+pagination:
+  data: collections.reply
+  size: 10
+  alias: posts
+  reverse: true
+  generatePageOnEmptyData: true
+---
+
+<p>My replies and interactions across the web.</p>
+
+<div class="h-feed" style="margin-top: 2rem;">
+  <h2 class="p-name" style="display:none;">Replies</h2>
+  <div style="display:none;">
+    <a class="u-url" href="/replies"></a>
+    <a rel="author" class="p-author h-card" href="/">Pablo Murad</a>
+  </div>
+  
+  <ul class="post-list" style="list-style: none; padding: 0;">
+  {% for post in posts %}
+    <li class="h-entry" style="margin-bottom: 3rem;">
+      <h3 style="margin-bottom: 0.5rem; display:none;">
+        <a class="u-url p-name" href="{{ post.url }}" style="text-decoration: none;">
+          Reply
+        </a>
+      </h3>
+      <div class="meta" style="color: var(--text-muted); font-size: 0.9em; margin-bottom: 1rem;">
+        <time class="dt-published" datetime="{{ post.date | dateToISO }}">{{ post.date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }) }}</time>
+        <a rel="author" class="p-author h-card" href="/" style="display:none;">Pablo Murad</a>
+      </div>
+
+      {% if post.data.replyTo %}
+       <div class="meta" style="margin-bottom: var(--space-sm); font-size: 0.9em; color: var(--text-muted);">
+          <span style="opacity: 0.8;">↩ Replying to:</span> <a href="{{ post.data.replyTo }}" class="u-in-reply-to" style="color: var(--accent-color); text-decoration: none;">{{ post.data.replyTo | replace('https://', '') | replace('http://', '') }}</a>
+       </div>
+      {% endif %}
+
+      <div class="e-content">
+        {{ post.templateContent | safe }}
+      </div>
+    </li>
+  {% else %}
+    <li><em style="color: var(--text-muted)">(No replies yet)</em></li>
+  {% endfor %}
+  </ul>
+
+  {% if pagination.href.previous or pagination.href.next %}
+  <nav class="pagination" aria-label="Pagination" style="display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color, #333); font-size: 0.9em;">
+    <div>
+      {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}" style="color: var(--text-muted); text-decoration: none;">← Newer entries</a>
+      {% endif %}
+    </div>
+    <div>
+      {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}" style="color: var(--text-muted); text-decoration: none;">Older entries →</a>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
+</div>

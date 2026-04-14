@@ -1,0 +1,63 @@
+---
+layout: page.njk
+title: Bookmarks
+pagination:
+  data: collections.bookmark
+  size: 10
+  alias: posts
+  reverse: true
+  generatePageOnEmptyData: true
+---
+
+<p>{% icon "bookmark", "sm", true %} Things I found interesting from around the web.</p>
+
+<div class="h-feed" style="margin-top: 2rem;">
+  <h2 class="p-name" style="display:none;">Bookmarks</h2>
+  <div style="display:none;">
+    <a class="u-url" href="/bookmarks"></a>
+    <a rel="author" class="p-author h-card" href="/">Pablo Murad</a>
+  </div>
+  
+  <ul class="post-list" style="list-style: none; padding: 0;">
+  {% for post in posts %}
+    <li class="h-entry" style="margin-bottom: 3rem;">
+      <h3 style="margin-bottom: 0.5rem;">
+        <a class="u-url p-name" href="{{ post.url }}" style="text-decoration: none;">
+          {{ post.data.title | default('Bookmark') }}
+        </a>
+      </h3>
+      <div class="meta" style="color: var(--text-muted); font-size: 0.9em; margin-bottom: 1rem;">
+        <time class="dt-published" datetime="{{ post.date | dateToISO }}">{{ post.date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }) }}</time>
+        <a rel="author" class="p-author h-card" href="/" style="display:none;">Pablo Murad</a>
+      </div>
+      
+      {% if post.data.bookmarkOf %}
+       <div style="margin-bottom: var(--space-md); padding-left: 1rem; border-left: 2px solid var(--accent-color);">
+          <span class="micro-label" style="color: var(--text-muted);">{% icon "bookmark", "sm", true %} Bookmarked:</span> <a href="{{ post.data.bookmarkOf }}" class="u-bookmark-of" style="text-decoration: none;">{{ post.data.bookmarkOf }}</a>
+       </div>
+      {% endif %}
+
+      <div class="e-content">
+        {{ post.templateContent | safe }}
+      </div>
+    </li>
+  {% else %}
+    <li class="empty-archive-item">{% glyph "empty-state", "md", true, "", "icon--empty" %} <em style="color: var(--text-muted)">No bookmarks yet.</em></li>
+  {% endfor %}
+  </ul>
+
+  {% if pagination.href.previous or pagination.href.next %}
+  <nav class="pagination" aria-label="Pagination" style="display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color, #333); font-size: 0.9em;">
+    <div>
+      {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">{% icon "chevron-left", "sm", true %} Newer entries</a>
+      {% endif %}
+    </div>
+    <div>
+      {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">Older entries {% icon "chevron-right", "sm", true %}</a>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
+</div>

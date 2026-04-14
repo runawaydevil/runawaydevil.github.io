@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title if title else "Being Pablo" }}</title>
+    <meta name="description" content="Pablo's Space - Wandering through strange worlds woven into the web.">
+    
+    <!-- Feed Discovery -->
+    <link rel="alternate" type="application/atom+xml" title="Pablo's Journal" href="/feed.xml">
+    
+    <!-- IndieWeb Rel=Me Links -->
+    <link rel="me" href="mailto:pablomurad@pm.me">
+    <link rel="me" href="https://pablo.space/">
+    <link rel="me" href="https://github.com/runawaydevil">
+    <link rel="me" href="https://bsky.app/profile/pablomurad.bsky.social">
+    <link rel="me" href="https://social.lol/@runawaydevil">
+    <link rel="me" href="https://twitter.com/runawayd3vil">
+    <link rel="authorization_endpoint" href="https://pub.dega.wtf/auth">
+    <link rel="token_endpoint" href="https://pub.dega.wtf/auth/token">
+    <link rel="micropub" href="https://pub.dega.wtf/micropub">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/pets.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+    {% if usePagefind %}
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+    {% endif %}
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Ir para o conteúdo</a>
+    <div class="site-wrapper">
+        <header>
+            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: var(--space-md);">
+                <a href="/" class="site-title" style="margin-bottom: 0; display: inline-flex; align-items: center; gap: 0.4em;">{% icon "home", "sm", true %} Being Pablo</a>
+                <lottie-player src="/assets/images/sleep.json" background="transparent" speed="1" style="width: 48px; height: 48px; filter: invert(1);" loop autoplay></lottie-player>
+            </div>
+            {% include "nav.njk" %}
+        </header>
+
+        <main id="main-content" tabindex="-1">
+            {{ content | safe }}
+        </main>
+
+        <!-- IndieWeb h-card -->
+        <footer>
+            <div class="h-card" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <div style="width: 100%; max-width: 450px; margin-bottom: 2rem; opacity: 0.7; color: var(--text-color);">
+                    <svg width="100%" viewBox="0 0 600 75" version="1.1" xmlns="http://www.w3.org/2000/svg" style="height: auto; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 1.5;">
+                        <path transform="matrix(1,0,0,1,92.3579,4.11772)" d="M105.809,48.397C105.809,44.506 102.473,43.931 102.473,33.503" style="fill: none; stroke: currentColor; stroke-width: 1.5px;"/>
+                        <path transform="matrix(1,0,0,1,92.3579,4.11772)" d="M109.397,38.324L109.397,48.321" style="fill: none; stroke: currentColor; stroke-width: 1.5px;"/>
+                        <path transform="matrix(1,0,0,1,92.3579,4.11772)" d="M112.883,48.152C112.883,44.717 115.053,40.554 115.053,35.084C115.053,29.613 114.393,24.795 114.216,21.81" style="fill: none; stroke: currentColor; stroke-width: 1.5px;"/>
+                        <path transform="matrix(1,0,0,1,92.3579,4.11772)" d="M112.951,22.241C112.951,22.241 116.335,21.976 117.504,16.695" style="fill: none; stroke: currentColor; stroke-width: 1.5px;"/>
+                        <path transform="matrix(1,0,0,1,92.3579,4.11772)" d="M107.788,11.843C107.788,11.843 106.369,7.434 105.169,7.434C103.969,7.434 101.87,13.187 101.87,21.862C101.87,24.103 90.181,29.985 92.659,43.571C93.057,45.751 94.053,49.908 94.053,49.924C94.053,49.94 96.571,59.453 91.184,59.453C90.063,59.453 89.526,58.833 88.405,58.833C87.285,58.833 86.381,59.598 86.381,60.591C86.381,61.584 87.491,64.025 91.446,64.025C98.593,64.025 98.865,58.038 98.865,54.158C98.865,50.278 98.829,51.479 98.829,50.844C98.829,48.717 100.601,48.284 101.259,48.043" style="fill: none; stroke: currentColor; stroke-width: 1.5px;"/>
+                        <ellipse transform="matrix(1.00474,-0.404483,0.370766,0.920982,85.4108,49.8267)" cx="111.892" cy="15.766" rx="1.032" ry="1.449" style="fill: currentColor;"/>
+                        <path transform="matrix(1,0,0,1,92.3579,4.11772)" d="M110.074,10.347C113.617,10.347 114.448,14.635 117.14,14.635" style="fill: none; stroke: currentColor; stroke-width: 1.5px;"/>
+                        <path transform="matrix(1,0,0,1,92.3579,4.11772)" d="M112.568,9.074C112.568,9.074 111.553,6.74 110.677,6.74C109.801,6.74 108.537,9.169 108.537,9.169" style="fill: none; stroke: currentColor; stroke-width: 1.5px;"/>
+                        <path transform="matrix(3.96613,0,0,5.89452,-177.012,-336.835)" d="M93.717,66.428L195.647,66.428" style="fill: none; stroke: currentColor; stroke-width: 0.3px;"/>
+                        <path transform="matrix(1.78906,0,0,2.78204,-166.7,-130.078)" d="M93.717,66.428L195.647,66.428" style="fill: none; stroke: currentColor; stroke-width: 0.64px;"/>
+                    </svg>
+                </div>
+                <img class="u-photo" src="/assets/images/pablo.jpg" alt="Pablo Murad" width="80" height="80" style="border-radius: 50%; object-fit: cover; margin-bottom: 1rem;">
+                
+                <a class="p-name u-url u-uid" rel="me" href="https://pablo.space/" style="font-weight: bold; color: var(--text-color); text-decoration: none; margin-bottom: 0.4rem; display: block; font-size: 1.1em;">Pablo Murad</a>
+                
+                <a href="https://proof.1208.pro" title="Proof" style="display: block; margin-bottom: 0.8rem;">
+                    <img src="/assets/images/verify.svg" alt="Verify" style="height: 1.2em; width: auto;">
+                </a>
+                
+                <p class="p-note" style="margin: 0 0 1.2rem 0; color: var(--text-muted); font-size: 0.95em;">Wandering through strange worlds woven into the web.</p>
+
+                {# Extended h-card properties for mf2 validators (e.g. IndieWebify); visually hidden #}
+                <div class="mf2-only">
+                    <span class="p-locality">São Lourenço</span>
+                    <span class="p-region">Minas Gerais</span>
+                    <span class="p-country-name">Brazil</span>
+                    <span class="p-postal-code">37470-000</span>
+                    <time class="dt-bday" datetime="1987-08-12">12 de agosto de 1987</time>
+                    <span class="p-job-title">CEO &amp; Founder</span>
+                    <span class="p-sex">Male</span>
+                </div>
+                
+                <div style="display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; font-size: 0.9em; margin-bottom: 2rem;">
+                    <a class="u-email" href="mailto:pablomurad@pm.me" style="color: var(--text-muted); text-decoration: none;">pablomurad<span style="color:var(--accent-color);">[at]</span>pm<span style="color:var(--accent-color);">[dot]</span>me</a>
+                    <span style="color: var(--border-color, #333);">·</span>
+                    <a class="u-url" rel="me" href="https://github.com/runawaydevil" style="color: var(--text-muted); text-decoration: none;">GitHub</a>
+                    <span style="color: var(--border-color, #333);">·</span>
+                    <a class="u-url" rel="me" href="https://bsky.app/profile/pablomurad.bsky.social" style="color: var(--text-muted); text-decoration: none;">Bluesky</a>
+                    <span style="color: var(--border-color, #333);">·</span>
+                    <a class="u-url" rel="me" href="https://social.lol/@runawaydevil" style="color: var(--text-muted); text-decoration: none;">Mastodon</a>
+                    <span style="color: var(--border-color, #333);">·</span>
+                    <a class="u-url" rel="me" href="https://twitter.com/runawayd3vil" style="color: var(--text-muted); text-decoration: none;">X</a>
+                </div>
+
+                <div class="meta" style="font-size: 0.85em; display: flex; flex-direction: column; gap: 0.5rem; align-items: center;">
+                    <div class="webring" style="opacity: 0.7;">
+                        <a href="https://xn--sr8hvo.ws/previous" style="text-decoration: none; color: inherit;">←</a> 
+                        An <a href="https://xn--sr8hvo.ws" style="color: inherit;">IndieWeb Webring</a> 🕸💍 
+                        <a href="https://xn--sr8hvo.ws/next" style="text-decoration: none; color: inherit;">→</a>
+                    </div>
+                    <p class="footer-feed-wrap" style="margin: 0 0 0.75rem 0;">
+                        <a href="/feed.xml" class="footer-feed" style="color: var(--text-muted); text-decoration: none; border-bottom: none; display: inline-flex; align-items: center; gap: 0.35em;">
+                            {% icon "rss", "sm", true %} RSS / Atom
+                        </a>
+                    </p>
+                    <nav class="footer-sitemap" aria-label="Mapa do site">
+                        <ul class="footer-sitemap__list">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/search/">Search</a></li>
+                            <li><a href="/articles/">Articles</a></li>
+                            <li><a href="/journal/">Journal</a></li>
+                            <li><a href="/bookmarks/">Bookmarks</a></li>
+                            <li><a href="/photos/">Photos</a></li>
+                            <li><a href="/links/">Links</a></li>
+                            <li><a href="/now/">Now</a></li>
+                            <li><a href="/about/">About</a></li>
+                            <li><a href="/guestbook/">Guestbook</a></li>
+                            <li><a href="/contact/">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div style="opacity: 0.6;">version 0.0.1</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

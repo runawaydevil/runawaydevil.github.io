@@ -1,0 +1,71 @@
+---
+layout: page.njk
+title: Photos
+pagination:
+  data: collections.photo
+  size: 10
+  alias: posts
+  reverse: true
+  generatePageOnEmptyData: true
+---
+
+<p>{% icon "image", "sm", true %} My photo log.</p>
+
+<div class="h-feed" style="margin-top: 2rem;">
+  <h2 class="p-name" style="display:none;">Photos</h2>
+  <div style="display:none;">
+    <a class="u-url" href="/photos"></a>
+    <a rel="author" class="p-author h-card" href="/">Pablo Murad</a>
+  </div>
+  
+  <ul class="post-list" style="list-style: none; padding: 0;">
+  {% for post in posts %}
+    <li class="h-entry" style="margin-bottom: 3rem;">
+      <h3 style="margin-bottom: 0.5rem; display:none;">
+        <a class="u-url p-name" href="{{ post.url }}" style="text-decoration: none;">
+          {{ post.data.title | default('Photo ' + post.date.toLocaleDateString('en-US')) }}
+        </a>
+      </h3>
+      <div class="meta" style="color: var(--text-muted); font-size: 0.9em; margin-bottom: 1rem;">
+        <time class="dt-published" datetime="{{ post.date | dateToISO }}">{{ post.date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }) }}</time>
+        <a rel="author" class="p-author h-card" href="/" style="display:none;">Pablo Murad</a>
+      </div>
+      <div class="e-content">
+        {% if post.data.photos %}
+           <div style="margin-bottom: var(--space-md);">
+           {% for photo in post.data.photos %}
+              {% set photoUrl = photo %}
+              {% if photo.url %}
+                {% set photoUrl = photo.url %}
+              {% elif photo.value %}
+                {% set photoUrl = photo.value %}
+              {% endif %}
+              {% set finalUrl = photoUrl | replace('/src/', '/') %}
+              {% set photoAlt = photo.alt if photo.alt else "Photo" %}
+              <img src="{{ finalUrl }}" alt="{{ photoAlt }}" class="u-photo" style="max-width: 100%; height: auto; border-radius: 4px; display: block; margin-bottom: 1rem;">
+           {% endfor %}
+           </div>
+        {% endif %}
+        {{ post.templateContent | safe }}
+      </div>
+    </li>
+  {% else %}
+    <li class="empty-archive-item">{% glyph "empty-state", "md", true, "", "icon--empty" %} <em style="color: var(--text-muted)">No photos yet.</em></li>
+  {% endfor %}
+  </ul>
+
+  {% if pagination.href.previous or pagination.href.next %}
+  <nav class="pagination" aria-label="Pagination" style="display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color, #333); font-size: 0.9em;">
+    <div>
+      {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">{% icon "chevron-left", "sm", true %} Newer entries</a>
+      {% endif %}
+    </div>
+    <div>
+      {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">Older entries {% icon "chevron-right", "sm", true %}</a>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
+</div>

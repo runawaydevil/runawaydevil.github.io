@@ -1,0 +1,108 @@
+---
+layout: base.njk
+title: Being Pablo - A quieter transmission
+---
+
+{% set featured = collections.article | homeFeatured %}
+{% set featuredUrl = featured.url if featured else "" %}
+{% set updates = collections.homeFeed | homeHighlights(featuredUrl, 4) %}
+
+<section class="home-stack" aria-labelledby="hub-intro-title">
+  <section class="hub-intro home-module home-module--atmospheric">
+    <p class="hub-kicker">A quieter transmission</p>
+    <h1 id="hub-intro-title" class="hub-title">Signals from the long way around.</h1>
+    <p class="hub-lead">Personal systems, old machine ghosts, and the occasional note written before the static settles.</p>
+
+    <div class="hub-signal-strip h-card" aria-label="Author signal strip">
+      <p class="hub-signal-strip__status">
+        <span class="p-note">~ still wiring small doors into a mostly static house</span>
+      </p>
+      <ul class="hub-signal-strip__links">
+        <li><a class="footer-feed" href="/feed.xml">{% icon "rss", "xs", true %} RSS / Atom</a></li>
+        <li><a href="/guestbook/">{% icon "messages-square", "xs", true %} Guestbook</a></li>
+        <li><a href="/about/">{% icon "user-round", "xs", true %} About</a></li>
+      </ul>
+    </div>
+  </section>
+
+  {% glyph "ornament-divider", "lg", true, "", "icon--ornament" %}
+
+  {% if featured %}
+  <section class="hub-featured home-module home-module--spotlight" aria-labelledby="featured-heading">
+    <div class="hub-featured__frame">
+      <div class="hub-featured__meta">
+        <p class="hub-kicker">Lead story</p>
+        <h2 id="featured-heading" class="hub-featured__title">{{ featured | homeTitle }}</h2>
+        <p class="hub-featured__dek">{{ featured.data.dek if featured.data.dek else (featured | homeSummary(24)) }}</p>
+        <p class="hub-featured__cta-wrap">
+          <a class="hub-featured__cta" href="{{ featured.url }}">{{ featured.data.featuredCta if featured.data.featuredCta else "Follow the seam" }}</a>
+        </p>
+      </div>
+
+      <div class="hub-featured__aside">
+        <p class="hub-featured__eyebrow">{{ featured | homeTypeLabel }}</p>
+        <time class="hub-featured__date" datetime="{{ featured.date | dateToISO }}">{{ featured.date.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' }) }}</time>
+        <p class="hub-featured__reason">{{ featured.data.featuredReason if featured.data.featuredReason else "Featured because it leaves a mark wider than its own URL." }}</p>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="hub-discovery home-module home-module--discovery" aria-labelledby="recent-heading">
+    <div class="hub-section-head">
+      <p class="hub-kicker">Open next</p>
+      <h2 id="recent-heading" class="hub-section-title">Recent things with a pulse</h2>
+      <p class="hub-section-note">Not everything recent deserves the front door. These do.</p>
+    </div>
+
+    <div class="hub-discovery__grid">
+      {% for post in updates %}
+      <article class="hub-update-card{% if loop.first %} hub-update-card--lead{% endif %}">
+        <p class="hub-update-card__type">{{ post | homeTypeLabel }}</p>
+        <h3 class="hub-update-card__title"><a href="{{ post.url }}">{{ post | homeTitle }}</a></h3>
+        <time class="hub-update-card__date" datetime="{{ post.date | dateToISO }}">{{ post.date.toLocaleDateString('en-US', { timeZone: 'UTC', month: 'short', day: 'numeric', year: 'numeric' }) }}</time>
+        <p class="hub-update-card__summary">{{ post | homeSummary(24 if loop.first else 20) }}</p>
+        <p class="hub-update-card__link-wrap">
+          <a class="hub-update-card__link" href="{{ post.url }}">
+            {% if post | homeTypeLabel == "journal" %}
+              Keep the note open
+            {% elif loop.first %}
+              Follow the thread
+            {% else %}
+              Step inside
+            {% endif %}
+          </a>
+        </p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="hub-explore home-module home-module--index" aria-labelledby="explore-heading">
+    <div class="hub-section-head">
+      <p class="hub-kicker">Elsewhere in the house</p>
+      <h2 id="explore-heading" class="hub-section-title">Browse by instinct, not obligation</h2>
+    </div>
+
+    <div class="hub-explore__layout">
+      <section class="hub-stats" aria-label="Site overview">
+        <ul class="hub-stats__list">
+          <li><a href="/articles/">{% icon "library", "sm", true %} <strong>{{ collections.article.length }}</strong> articles</a></li>
+          <li><a href="/journal/">{% icon "notebook-pen", "sm", true %} <strong>{{ collections.journalNotes.length }}</strong> journal notes</a></li>
+          <li><a href="/bookmarks/">{% icon "bookmark", "sm", true %} <strong>{{ collections.bookmark.length }}</strong> bookmarks</a></li>
+          <li><a href="/photos/">{% icon "image", "sm", true %} <strong>{{ collections.photo.length }}</strong> photos</a></li>
+        </ul>
+      </section>
+
+      <aside class="hub-aside">
+        <p class="hub-aside__line">The useful routes are still the strange ones.</p>
+        <ul class="hub-aside__list">
+          <li><a href="/journal/">Journal archive</a></li>
+          <li><a href="/articles/">Longer pieces</a></li>
+          <li><a href="/links/">Loose ends</a></li>
+          <li><a href="/search/">Search the whole thing</a></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+</section>

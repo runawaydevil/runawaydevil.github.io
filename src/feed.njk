@@ -1,0 +1,27 @@
+---
+permalink: feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://www.pablo.space/">
+  <title>Pablo's Journal</title>
+  <subtitle>Being Pablo: intersections of design, technology, and philosophy.</subtitle>
+  <link href="https://www.pablo.space/feed.xml" rel="self"/>
+  <link href="https://www.pablo.space/journal/"/>
+  <updated>{{ collections.post | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>https://www.pablo.space/</id>
+  <author>
+    <name>Pablo Murad</name>
+    <email>pablomurad@pm.me</email>
+  </author>
+  {%- for post in collections.post | reverse %}
+  {% set absoluteUrl %}{{ post.url | url | absoluteUrl("https://www.pablo.space/") }}{% endset %}
+  <entry>
+    <title>{%- if '/journal/' in post.inputPath -%}Note #{{ post.data.globalNoteId }}{% if post.data.title %} — {{ post.data.title }}{% endif %}{%- elif post.data.title -%}{{ post.data.title }}{%- else -%}Update on {{ post.date.toLocaleDateString("en-US") }}{%- endif -%}</title>
+    <link href="{{ absoluteUrl }}"/>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ absoluteUrl }}</id>
+    <content type="html"><![CDATA[{{ post.templateContent | htmlToAbsoluteUrls(absoluteUrl) | safe }}]]></content>
+  </entry>
+  {%- endfor %}
+</feed>

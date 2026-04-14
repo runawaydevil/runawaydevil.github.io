@@ -1,0 +1,61 @@
+---
+layout: page.njk
+title: Journal
+pagination:
+  data: collections.journalNotes
+  size: 10
+  alias: posts
+  reverse: true
+  generatePageOnEmptyData: true
+---
+
+<p>{% icon "notebook-pen", "sm", true %} Chronological notes from the journal stream.</p>
+
+<div class="h-feed h-feed--entries" style="margin-top: 2rem;">
+  <h2 class="p-name" style="display:none;">Pablo's Journal</h2>
+  <div style="display:none;">
+    <a class="u-url" href="/journal"></a>
+    <a rel="author" class="p-author h-card" href="/">Pablo Murad</a>
+  </div>
+  
+  <ul class="post-list">
+  {% for post in posts %}
+    <li class="h-entry">
+      <h3 style="margin-bottom: 0.5rem;">
+        <a class="u-url p-name" href="{{ post.url }}" style="text-decoration: none;">
+          Note #{{ post.data.globalNoteId }}{% if post.data.title %} &mdash; {{ post.data.title }}{% endif %}
+        </a>
+      </h3>
+      <div class="meta" style="color: var(--text-muted); font-size: 0.9em; margin-bottom: 1rem;">
+        <time class="dt-published" datetime="{{ post.date | dateToISO }}">{{ post.date.toLocaleDateString('en-US', { timeZone: 'UTC', year: 'numeric', month: 'long', day: 'numeric' }) }}</time>
+        <a rel="author" class="p-author h-card" href="/" style="display:none;">Pablo Murad</a>
+      </div>
+      <div class="e-content">
+        {{ post.templateContent | safe }}
+      </div>
+    </li>
+    {% if not loop.last %}
+    <li class="post-divider" aria-hidden="true">
+      {% glyph "ornament-divider", "lg", true, "", "icon--ornament" %}
+    </li>
+    {% endif %}
+  {% else %}
+    <li class="empty-archive-item">{% glyph "empty-state", "md", true, "", "icon--empty" %} <em style="color: var(--text-muted)">Entries coming soon.</em></li>
+  {% endfor %}
+  </ul>
+
+  {% if pagination.href.previous or pagination.href.next %}
+  <nav class="pagination" aria-label="Pagination" style="display: flex; justify-content: space-between; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color, #333); font-size: 0.9em;">
+    <div>
+      {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">{% icon "chevron-left", "sm", true %} Newer entries</a>
+      {% endif %}
+    </div>
+    <div>
+      {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}" style="color: var(--text-muted); text-decoration: none; display: inline-flex; align-items: center; gap: 0.25em;">Older entries {% icon "chevron-right", "sm", true %}</a>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
+</div>

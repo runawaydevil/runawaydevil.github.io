@@ -1,0 +1,21 @@
+{
+  "name": "being-pablo",
+  "version": "0.0.1",
+  "description": "Pablo Murad's IndieWeb Personal Site",
+  "type": "module",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "build:eleventy": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve"
+  },
+  "author": "Pablo Murad <pablomurad@pm.me>",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5",
+    "pagefind": "^1.3.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy-plugin-rss": "^3.0.0"
+  }
+}

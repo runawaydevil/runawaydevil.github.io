@@ -1,0 +1,26 @@
+---
+layout: base.njk
+title: Search
+permalink: /search/
+usePagefind: true
+---
+
+<article class="page-content search-page">
+  <h1 class="page-title">{% icon "search", "md", true %} Search</h1>
+  <div id="search" class="search-page__ui"></div>
+</article>
+
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    if (!window.PagefindUI) {
+      return;
+    }
+
+    new window.PagefindUI({
+      element: "#search",
+      showSubResults: true,
+      showImages: false,
+    });
+  });
+</script>
