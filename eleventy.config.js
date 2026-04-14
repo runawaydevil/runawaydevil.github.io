@@ -208,7 +208,7 @@ function pickFeaturedItem(collection) {
   const sorted = sortByDateDesc(collection);
   const explicitFeatured = sorted.find((item) => item?.data?.featured);
   if (explicitFeatured) return explicitFeatured;
-  return sorted.find((item) => getTypeLabel(item) === "article") || sorted[0];
+  return null;
 }
 
 function pickHomeHighlights(collection, featuredUrl, limit = 4) {
