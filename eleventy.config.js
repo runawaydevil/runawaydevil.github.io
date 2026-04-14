@@ -9,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const iconsLucideDir = path.join(__dirname, "src", "assets", "icons", "lucide");
 const iconsCustomDir = path.join(__dirname, "src", "assets", "icons", "custom");
+const pabloDir = path.join(__dirname, ".pablo");
 const outputDir = path.join(__dirname, "_site");
 const pagefindBin = path.join(__dirname, "node_modules", "pagefind", "lib", "runner", "bin.cjs");
 const execFileAsync = promisify(execFile);
@@ -363,6 +364,8 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "node_modules/@fontsource-variable/geist/files": "assets/fonts/geist",
     "node_modules/@fontsource-variable/geist-mono/files": "assets/fonts/geist-mono",
+    [path.join(pabloDir, "Portal IDEA.ico")]: "assets/pablo/portal-idea.ico",
+    [path.join(pabloDir, "Grupo Murad.ico")]: "assets/pablo/grupo-murad.ico",
   });
 
   // Filters for date formatting (Vanilla JS)

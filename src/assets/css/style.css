@@ -1065,6 +1065,41 @@ footer .h-card {
   font-weight: 600;
 }
 
+.home-work-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-work-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.home-work-row:first-child {
+  border-top: 1px solid var(--border-color);
+}
+
+.home-work-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.home-work-label {
+  font-family: var(--font-heading);
+  font-size: var(--fs-heading);
+  line-height: 1.28;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
 .home-writing-list {
   list-style: none;
   padding: 0;
