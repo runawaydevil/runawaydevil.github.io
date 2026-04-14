@@ -1,81 +1,115 @@
-# Como o sistema funciona: Being Pablo
+# Como este site funciona
 
-Este arquivo descreve a arquitetura, o visual e o conteúdo do projeto **"Being Pablo"**, um site pessoal criado por Pablo Murad focado nos ideais da **IndieWeb** (Web Independente).
+Documentação rápida da stack, do visual e da organização do código. Útil para lembrar decisões ao editar ou automatizar o projeto.
 
-## 1. O que foi feito e como funciona a arquitetura
+## Stack e ferramentas
 
-O sistema é um site estático e foi construído usando o gerador de sites [Eleventy (11ty)](https://www.11ty.dev/) versão `^3.1.5` rodando no Node.js. 
+| Camada | Escolha |
+|--------|---------|
+| Gerador estático | [Eleventy](https://www.11ty.dev/) **3.1.x** (`eleventy.config.js`) |
+| Templates | **Nunjucks** (`.njk`); Markdown processado com engine Nunjucks |
+| CSS | Um ficheiro principal: `src/assets/css/style.css` (variáveis, componentes, ícones) |
+| Busca no site | [Pagefind](https://pagefind.app/) — índice gerado em `eleventy.after`, UI em `/search/` |
+| Feed | Atom em `feed.xml` (`src/feed.njk`), plugin `@11ty/eleventy-plugin-rss` |
+| Ícones | Shortcode `icon` (SVG Lucide, lista controlada) + shortcode `glyph` (SVGs em `src/assets/icons/custom/`) |
+| Animação | [Lottie](https://airbnb.io/lottie/) no cabeçalho (`base.njk`) |
+| Leitura | Barra de progresso opcional (`reading-progress.js`) em artigos |
 
-### Infraestrutura Básica
-- **Configuração do 11ty:** O arquivo principal de configuração é `./eleventy.config.js`. Ele instrui que os arquivos de entrada (como o conteúdo Markdown) estejam no diretório `src`, e o site compilado deve ser gerado no diretório `_site`.
-- **Motor de Templates:** O Eleventy converte arquivos `.md` (Markdown) para HTML. Ele foi configurado para usar [Nunjucks (njk)](https://mozilla.github.io/nunjucks/) tanto para templates HTML quanto para processamento de Markdown. Os arquivos de template (_layouts_) se encontram em `src/_includes`.
-- **Scripts do NPM:** A compilação é feita com o comando `npm run build` (que chama o pacote da CLI do `@11ty/eleventy`) e o modo de desenvolvimento interativo usa `npm run dev` (que inicia um servidor local via `npx @11ty/eleventy --serve`).
+**Scripts npm:** `npm run dev` (watch), `npm run build` (produção + Pagefind), `npm run clean`.
 
-### Fluxo de Trabalho e Estrutura de Conteúdo
-1. **Pages x Posts:** O sistema diferencia ativamente *páginas estáveis* (como `/about`) de *postagens cronológicas*. 
-   - Postagens ficam na pasta `src/posts/`. Um arquivo `posts.json` de diretório aplica automaticamente os permalinks na estrutura `journal/YYYY/MM/DD/slug/` e as tags dinâmicas. O sistema de classificação de posts do Indiekit foi configurado com um mapeamento explícito: o tipo "note" vai para a sessão `/journal` e o tipo "article" para `/articles`.
-   - **Numeração Global do Journal:** O projeto possui um sistema de numeração contínua, global e monotônica (ex: #1, #2, #3) para todas as notas em `/journal`, indexado e exposto para o Eleventy de maneira estática e constante entre builds.
-   - O guia para clientes Indiekit e uso de Micropub é detalhado no arquivo próprio `src/INDIEKIT-GUIDE.md`.
-   - Recursos utilitários de data (como `dateToISO` e `dateToPermalink`) são gerenciados de forma nativa por blocos Vanilla JS no `eleventy.config.js`, sem usar bibliotecas pesadas de formato.
-2. O conteúdo textual centraliza-se na compilação do Markdown usando loops e paginação Nunjucks integrados.
-3. Arquivos declaram no Front Matter os metadados e o template a ser usado (ex: `layout: page.njk` ou `layout: post.njk`).
-4. Os "assets" estáticos (CSS Vanilla) em `src/assets/css/` são copiados em passthrough para _site (`eleventyConfig.addPassthroughCopy`).
+**Deploy:** GitHub Actions (`.github/workflows/deploy.yml`) — Node 20, `npm ci`, `npm run build`, publicação do artefacto `_site` em **GitHub Pages**.
 
-## 2. Como o sistema se parece (Design e Visual)
+**Domínio / meta:** `url` e metadados em `eleventy.config.js` e `src/_data/site.json` (título, descrição, autor, imagens OG, etc.).
 
-O design foi concebido sob a premissa de **Minimalismo Quente** (_Warm, minimalistic palette_), focado total e estritamente em leitura e reflexão. É um site sem ruídos, cujo visual evita componentes supérfluos para centralizar na experiência de leitura.
+---
 
-### Tipografia
-- **Corpo do Texto (Body):** Fonte *Lora* (serifada) para um tom clássico e confortável.
-- **Cabeçalhos (Headings):** Fonte *Nunito* (sem serifa) para equilibrar com a formalidade da leitura.
-- **Meta-informação e UI (Menus, Rodapé):** *IBM Plex Mono* (monoespaçada) para dar um contraste técnico/digital.
+## Aparência e tipografia
 
-### Paleta de Cores e Estilos
-O sistema utiliza variáveis nativas de CSS e tem o seguinte esquema Dark Mode elegante:
-- **Fundo (`--bg-color`):** `#1a1918` (Um chumbo/marrom extremamente escuro).
-- **Texto Principal (`--text-color`):** `#e8e6e1` e **Texto Secundário/Desbotado:** `#a39f98`.
-- **Detalhes e Interações (`--accent-color`):** `#d1bfae` (Um tom de papel pergaminho para os links quando o usuário passa o mouse).
-- **Caixa de seleção (`--selection-bg`):** `--selection-bg: #4a4642`.
+O tema é um **minimal escuro** (“Minimal Obsidian” no próprio CSS): fundo neutro, texto claro, acentos discretos.
 
-### Layout
-- A largura de leitura é estrategicamente limitada em `max-width: 65ch` (caracteres) para o tamanho de linha ideal garantindo máximo conforto humano e não forçar o movimento dos olhos.
-- O site é totalmente responsivo, ajustando seus espaçamentos quando visto em telas pequenas (menor que `600px`).
-- Estilização pura usando HTML5 semântico com navegação e um rodapé desenhado para ter minimalismo máximo, abrigando marcações IndieWeb e um divisor SVG customizado de um gatinho ("Catito") que dita a personalidade do espaço.
-- **Página 404:** Dinâmica, minimalista e direta. A exibição de "página não encontrada" recorre a uma imagem fornecida pela API estática `http.cat`.
+**Fontes (Google Fonts, carregadas em `base.njk`):**
 
-## 3. O que ele tem (Conteúdo)
+- **Atkinson Hyperlegible** — corpo e leitura longa  
+- **Space Grotesk** — títulos (`h1`–`h6`, `.page-title`)  
+- **IBM Plex Sans** — UI e navegação  
+- **IBM Plex Mono** — marca no header, código, meta
 
-O conteúdo baseia-se na transparência intelectual e nas ideias da comunidade IndieWeb de hospedagem própria. 
+**Tokens principais** (ver `:root` em `style.css`): `--bg-color`, `--text-color`, `--text-muted`, `--border-color`, `--accent-color`, `--link-color`, `--code-bg`, sombras e raios. Há variantes para **print** e suporte a `prefers-reduced-motion`.
 
-### Arquitetura IndieWeb (Microformats e Feeds)
-O sistema incorpora marcações estruturais semânticas exigidas pela comunidade IndieWeb:
-- **`h-card` Global:** Informações do autor centralizadas (como no rodapé e identificações `rel="me"`).
-- **`h-entry` e `h-feed`:** Cada post possui marcação avançada com definição autoral (`p-author`), tempos de atualização (`dt-published`, `dt-updated`) e escopo de leitura (`e-content`). A página `/journal` formatada programaticamente expõe todas as tags como feeds dinâmicos para agentes digitais.
-- **Syndication Feed:** Um arquivo Atom XML completo é gerado nativamente (`/feed.xml`) permitindo o Discovery através do `rel="alternate"` no `<head>` automático para inscrição de leitores de feeds clássicos.
-- **Webmentions & Micropub:** O site está configurado com endpoints de Micropub, authorization e token em seu cabeçalho principal (`<head>`). Adicionalmente, os posts isolados trazem navegação conectada e abrigam conteineres passivos de Webmentions sem comprometer a identidade visual.
+**Ícones:** classe `.icon` com tamanhos (`--icon-sm` … `--icon-xl`) e estados (`.icon--muted`, hover). Ícones Lucide só entram se estiverem na lista permitida no shortcode (sincronização com `scripts/fetch-lucide-icons.mjs`).
 
-### Páginas (Arquivos de origem Markdown)
+**Acessibilidade:** `lang="pt-BR"`, skip link “Saltar para o conteúdo”, foco visível, contraste alinhado ao tema escuro.
 
-1. **/ (Home - `index.md`)**
-   - Título: "Who am I?"
-   - Página inicial de apresentação pessoal. Usa de forma programática scripts Nunjucks para extrair e renderizar dinamicamente contadores com as **10 últimas atualizações** do site exclusivamente das coleções "journal" e "articles", ocultando links como os de tipo "bookmarks".
+---
 
-2. **/about (`about.md`)**
-   - Título: "About"
-   - Expande a missão por trás do site, citando os princípios adotados: "Own Your Data", "Design with Restraint" e "Open Web".
+## Estrutura do repositório
 
-3. **/now (`now.md`)**
-   - Título: "What I'm doing now"
-   - Registra no que o Pablo foca a sua energia em um determinado espaço temporal (atualmente: configuração da IndieWeb, design editorial / calm technology e refinamento da página digital _"Being Pablo"_). Baseia-se no conceito de _Now Page_ de Derek Sivers.
+```
+src/
+  _data/           # Dados globais (site.json, etc.)
+  _includes/       # Layouts e partials (base, nav, post, cards, footer, …)
+  assets/          # css/, icons/, images/, js/
+  errors/          # 404, 403, 410, 500, 503 (front matter + error.njk)
+  posts/           # journal/, articles/, bookmarks/, photos/, replies/, likes/
+  *.njk            # Páginas de índice e conteúdo estático (index, about, now, …)
+```
 
-4. **/journal (`journal.md`)**
-   - Título: "Journal"
-   - É a fundação do blog. Uma página de listagem cronológica (`h-feed`) que utiliza a funcionalidade avançada de paginação nativa do Eleventy (`pagination`), separando dinamicamente postagens antigas em páginas sequenciais com navegação inferior, para não inflar o documento principal.
+- **Saída de build:** pasta `_site/` (não versionar como fonte de verdade).  
+- **Uploads / estáticos:** `src/uploads/`, imagens em `src/assets/images/`, notecards em `notecards/` (passthrough no Eleventy).
 
-5. **/links (`links.md`)**
-   - Título: "Links"
-   - Direcionado ao compartilhamento de referência e ligações. Espaço reservado para listar as amizades, Webrings e espaços favoritos na internet. Serve também de elo para outras subpáginas e listagens.
+---
 
-6. **/machines (`machines.md`)**
-   - Título: "Machines"
-   - Uma galeria em forma de inventário de hardware listando os recursos, computadores e servidores mantidos.
+## Coleções e tipos de conteúdo
+
+Definidas em `eleventy.config.js`:
+
+- **`journalNotes`** — notas do journal, com `globalNoteId` sequencial.  
+- **`homeFeed`** — mistura journal + articles para a home.  
+- **`article`**, **`bookmark`**, **`photo`** — por pasta em `src/posts/`.  
+- **`post`** — união usada no feed Atom.
+
+A **home** (`src/index.njk`) usa layout tipo hub: artigo em destaque (`homeFeatured`), lista recente (`homeHighlights`), divisor com `glyph "ornament-divider"`, e cópia atual (“A quieter transmission”, etc.).
+
+---
+
+## Layout e navegação
+
+- **`base.njk`:** HTML completo, SEO, OG/Twitter, feed, Micropub (`pub.dega.wtf`), `rel="me"`, rodapé com **h-card**, lista do sitemap e webring.  
+- **`nav.njk`:** Search, Articles, Now, About, Journal, Links, Guestbook, Contact (com ícones).  
+- **`post.njk`:** Artigos/notas com meta (data, tags, tipo), opcional barra de leitura.
+
+Páginas estáticas relevantes: `about`, `now`, `links`, `contact`, `guestbook`, `machines`, `servers`, `personal`, `search`, feeds de secção (`journal.njk`, `articles.njk`, etc.).
+
+---
+
+## IndieWeb e integrações
+
+- Identidade no rodapé (**h-card**): nome, foto, localização, links.  
+- Endpoints declarados: Micropub / Media em `pub.dega.wtf`.  
+- Feed principal: `feed.xml` (journal + posts agregados conforme template).
+
+---
+
+## Erros HTTP
+
+Ficheiros em `src/errors/` com `error_code` e `permalink`; layout `error.njk` mostra imagem [HTTP Cats](https://http.cat/) e navegação rápida.
+
+---
+
+## Convenções ao editar
+
+1. **Novos ícones Lucide:** adicionar ao shortcode em `eleventy.config.js` e, se necessário, correr o script em `scripts/` para gerar SVGs.  
+2. **Novos glyphs:** colocar SVG em `src/assets/icons/custom/` e usar `{% glyph "nome" %}`.  
+3. **Estilo:** preferir variáveis CSS existentes; manter coerência com o tema escuro e tipografia já definida.  
+4. **Conteúdo:** posts em Markdown com front matter; journal mantém numeração global via `globalNoteId`.
+
+---
+
+## Referências no código
+
+- Configuração principal: `eleventy.config.js`  
+- Estilos: `src/assets/css/style.css`  
+- Dados do site: `src/_data/site.json`  
+- CI: `.github/workflows/deploy.yml`
+
+Este ficheiro descreve o estado atual do repositório; se algo divergir, o código e a configuração do Eleventy prevalecem.
