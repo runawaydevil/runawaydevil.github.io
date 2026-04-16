@@ -11,5 +11,6 @@ title: Pages
 - [Likes](/likes/) — tiny offerings of approval from my overworked thumbs
 - [Machines](/machines/) — a list of all bad decisions
 - [Proof](https://proof.1208.pro) — cryptographic evidence that I am a real human and not just three algorithms in a trench coat
+- [Fax](https://fax.1208.pro) — go ahead and send me a fax
 - [2Tech](https://1208.pro) — highly technical projects where no sunlight or normal people can reach
 
