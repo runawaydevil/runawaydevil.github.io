@@ -487,6 +487,116 @@ a:hover {
   border-bottom: none;
 }
 
+/* Contact — lista semântica + uma linha por rede */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-lg);
+}
+
+.contact-list .contact-row {
+  margin: 0 0 var(--space-md);
+}
+
+.contact-list .contact-row:last-child {
+  margin-bottom: 0;
+}
+
+.contact-row__link,
+.contact-row__static {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--contact-accent);
+  text-decoration: none;
+  border-bottom: none;
+  font-family: var(--font-body);
+}
+
+.contact-row__link:hover {
+  color: var(--contact-hover);
+}
+
+.contact-row__icon {
+  display: block;
+  flex-shrink: 0;
+}
+
+.contact-row__static {
+  cursor: default;
+}
+
+.contact-row__handle {
+  font-family: var(--font-ui);
+  font-size: 0.95em;
+  color: var(--text-muted);
+  margin-left: 0.15rem;
+}
+
+.contact-row--bluesky {
+  --contact-accent: #1185fe;
+  --contact-hover: #0d6ecd;
+}
+
+.contact-row--mastodon {
+  --contact-accent: #563acc;
+  --contact-hover: #4a2fa3;
+}
+
+.contact-row--x {
+  --contact-accent: #0f1419;
+  --contact-hover: #536471;
+}
+
+.contact-row--codeberg {
+  --contact-accent: #2185d0;
+  --contact-hover: #1a6ba8;
+}
+
+.contact-row--sourcehut {
+  --contact-accent: #ff3508;
+  --contact-hover: #cc2a06;
+}
+
+.contact-row--keybase {
+  --contact-accent: #ff8300;
+  --contact-hover: #cc6900;
+}
+
+.contact-row--instagram {
+  --contact-accent: #e4405f;
+  --contact-hover: #c83652;
+}
+
+.contact-row--omglol {
+  --contact-accent: #ff69ad;
+  --contact-hover: #e04d96;
+}
+
+.contact-row--somepics {
+  --contact-accent: #64748b;
+  --contact-hover: #475569;
+}
+
+.contact-row--discord {
+  --contact-accent: #5865f2;
+  --contact-hover: #4752c4;
+}
+
+.contact-row--fax {
+  --contact-accent: #6b7280;
+  --contact-hover: #4b5563;
+}
+
+.page-content .content .contact-row__link {
+  text-decoration: none;
+}
+
+.page-content .content .contact-row__link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* UI / Meta */
 .meta {
   font-family: var(--font-ui);
