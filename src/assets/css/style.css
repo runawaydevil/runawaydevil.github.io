@@ -302,7 +302,8 @@
 
 .photo-vintage .post-photo,
 .photo-vintage .photo-archive-card__thumb,
-.photo-vintage .photo-archive-item__thumb {
+.photo-vintage .photo-archive-item__thumb,
+.lightbox-dialog__vintage .lightbox-dialog__img {
   filter: blur(0.05rem) saturate(0.7) contrast(1.45) brightness(1.18);
 }
 
@@ -1948,7 +1949,14 @@ footer .h-card {
   backdrop-filter: blur(4px);
 }
 
-.lightbox-dialog img {
+.lightbox-dialog .lightbox-dialog__vintage {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 90vh;
+  vertical-align: middle;
+}
+
+.lightbox-dialog .lightbox-dialog__vintage img.lightbox-dialog__img {
   max-width: 100%;
   max-height: 90vh;
   object-fit: contain;
