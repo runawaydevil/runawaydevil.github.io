@@ -574,8 +574,8 @@ a:hover {
 }
 
 .contact-row--somepics {
-  --contact-accent: #64748b;
-  --contact-hover: #475569;
+  --contact-accent: #ff69ad;
+  --contact-hover: #e04d96;
 }
 
 .contact-row--discord {
