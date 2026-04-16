@@ -62,8 +62,6 @@
   --font-brand: 'Geist Mono Variable', ui-monospace, monospace;
   --fs-body: 12px;
   --fs-heading: 14px;
-  /* Marca no header: mantém peso visual do antigo heading (15pt) */
-  --fs-site-brand: 15pt;
   /* Rodapé global: escala anterior do corpo (não segue html 12px) */
   --fs-footer: 10.5pt;
 
@@ -91,13 +89,13 @@
   --heading-color: #121212;
   --text-muted: #5a5a5a;
   --accent-color: #242424;
-  --border-color: #d8d8d8;
+  --border-color: var(--bg-color);
   --selection-bg: #c8c8c8;
   --surface-1: #f7f7f7;
   --surface-2: #f1f1f1;
   --surface-3: #ebebeb;
-  --surface-border-soft: rgba(0, 0, 0, 0.1);
-  --surface-border-quiet: rgba(0, 0, 0, 0.06);
+  --surface-border-soft: var(--bg-color);
+  --surface-border-quiet: var(--bg-color);
   --surface-veil: rgba(255, 255, 255, 0.92);
 
   --font-mono: 'Geist Mono Variable', ui-monospace, monospace;
@@ -551,12 +549,15 @@ footer:not(.post-footer) .meta {
 
 /* Navigation — site chrome only (not article mastheads inside .h-entry) */
 header.site-header {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /* gap entre .site-ansi e .nav criava faixa “vazia” (subpixel/camadas) — usar padding no bloco ANSI. */
+  gap: 0;
   margin-bottom: 2.2rem;
   padding-bottom: 1.15rem;
   border-bottom: 1px solid var(--surface-border-quiet);
+  background-color: var(--bg-color);
 }
 
 article.h-entry > header {
@@ -566,43 +567,102 @@ article.h-entry > header {
   border-bottom: 1px solid var(--surface-border-quiet);
 }
 
-.site-brand-row {
+/* Arte ANSI no topo (extraída de pablo1.html; não aplicar .ans ao body) */
+.site-ansi {
+  /* Mesmo fundo que o documento; sem isolation (no Windows costuma dar halo azulado à volta do bloco). */
+  background-color: var(--bg-color);
+  color: var(--text-color);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.55rem;
-  margin-bottom: 0.15rem;
+  justify-content: flex-start;
+  width: 100%;
   min-width: 0;
+  overflow: hidden;
+  border: 0;
+  outline: none;
+  box-shadow: none;
+  /* Espaço até a nav com fundo sólido (evita faixa mais escura entre arte e menu). */
+  padding-bottom: 0.35rem;
+  /* Escala o <pre> pela largura *deste* bloco, não pela viewport inteira (evita arte “quebrada” no layout estreito). */
+  container-type: inline-size;
+  container-name: site-ansi;
+}
+
+/* 256 colunas no fragmento ANSI (largura do <pre> em pablo1.html); 100cqw = largura do .site-ansi */
+.site-ansi pre {
+  /*
+   * Consolas / Cascadia / Courier: blocos █ costumam encostar melhor que algumas variáveis
+   * (menos “grelha” e franjas). Geist fica como fallback.
+   */
+  font-family: Consolas, "Cascadia Mono", "Segoe UI Mono", "Liberation Mono", "Courier New",
+    var(--font-mono);
+  /*
+   * Fallback sem cqw: se o browser ignorar 100cqw, a regra com cqw falha por completo
+   * e o <pre> herda ~1rem do body — arte gigante e “imagem partida”.
+   * min(100vw, 56rem) alinha-se a --layout-narrow.
+   */
+  font-size: clamp(0.22rem, calc(1 * min(100vw, 56rem) / 256), 0.65rem);
+  /* Linha compacta: menos faixa clara entre linhas de blocos. */
+  line-height: 0.82;
+  white-space: pre;
+  word-spacing: 0;
+  /* Avanço da monospace deixa fendas; letter-spacing negativo sobrepõe os glifos. */
+  letter-spacing: -0.11em;
+  margin: 0;
+  padding: 0.2rem 0.15rem 0.2rem;
+  /* Largura = conteúdo (256 colunas); evita faixa preta só à direita com texto alinhado à esquerda. */
+  width: max-content;
+  max-width: 100%;
+  margin-inline: auto;
+  box-sizing: border-box;
+  /* Evita cortar meia coluna à direita (borda “partida”); o pai .site-ansi já corta overflow. */
+  overflow-x: visible;
+  overflow-y: visible;
+  border: 0;
+  outline: none;
+  background-color: var(--bg-color);
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* Menos reposicionamento subpixel = menos riscas entre células. */
+  text-rendering: optimizeSpeed;
+  /* antialiased + camada GPU costumam dar franja azul/cinza no Windows; preferir subpixel. */
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+  mix-blend-mode: normal;
+}
+
+@supports (width: 1cqw) {
+  .site-ansi pre {
+    font-size: clamp(0.22rem, calc(1 * 100cqw / 256), 0.65rem);
+  }
+}
+
+.site-ansi pre::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+.site-ansi span {
+  font-family: inherit;
+  border: 0;
+  outline: none;
+  vertical-align: top;
+  letter-spacing: inherit;
+  /* Sobreposição um pouco maior entre █ adjacentes (reduz grelha). */
+  margin: 0 -0.04em;
+  padding: 0;
 }
 
 .site-nav {
   min-width: 0;
 }
 
-.site-title {
-  font-family: var(--font-brand);
-  font-weight: 600;
-  font-size: var(--fs-site-brand);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35em;
-  border-bottom: none;
-  color: var(--text-color);
-  letter-spacing: 0.01em;
-}
-.site-title:hover {
-  border-bottom: none;
-}
-
-.site-brand-mark {
-  width: 52px;
-  height: 52px;
-  flex-shrink: 0;
-  opacity: 1;
-}
-
 .nav-list {
   list-style: none;
-  padding: 0.75rem 0 0;
+  padding: 0.45rem 0 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
@@ -630,24 +690,6 @@ article.h-entry > header {
   outline: 2px solid var(--accent-color);
   outline-offset: 3px;
   border-radius: 2px;
-}
-
-/* Lado a lado só quando o *content box* tiver largura (evita overlap na home ~36rem com viewport larga) */
-@container site (min-width: 37rem) {
-  header.site-header {
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 1rem 1.5rem;
-  }
-
-  .site-brand-row {
-    margin-bottom: 0;
-  }
-
-  .site-nav .nav-list {
-    justify-content: flex-end;
-    padding-top: 0;
-  }
 }
 
 /* Footer / IndieWeb h-card — site chrome only (article usa .post-footer) */
@@ -737,7 +779,8 @@ footer:not(.post-footer) {
 }
 
 .site-footer-dot {
-  color: var(--surface-border-soft);
+  color: var(--text-muted);
+  opacity: 0.45;
 }
 
 .site-footer-meta {
@@ -982,7 +1025,7 @@ footer .h-card {
 
 /*
  * Home main column: corpo 12px (1rem); títulos hero/secção com --fs-heading (14px).
- * A marca “Being Pablo” (.site-title) está no header global, fora deste bloco.
+ * O topo global usa arte ANSI (.site-ansi) + nav, fora deste bloco.
  */
 .home-stack--narrow .home-kicker,
 .home-stack--narrow .home-identity-line,
@@ -1073,11 +1116,32 @@ footer .h-card {
 }
 
 .home-work-row {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.home-work-row__link {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.7rem 0;
-  border-bottom: 1px solid var(--border-color);
+  text-decoration: none;
+  color: inherit;
+  border-bottom: none;
+}
+
+.home-work-row__link:hover {
+  border-bottom: none;
+}
+
+.home-work-row__link:hover .home-work-label,
+.home-work-row__link:focus-visible .home-work-label {
+  text-decoration: underline;
+}
+
+.home-work-row__link:focus-visible {
+  border-bottom: none;
+  outline: 2px solid var(--accent-color, currentColor);
+  outline-offset: 2px;
 }
 
 .home-work-row:first-child {
@@ -1595,10 +1659,6 @@ footer .h-card {
 
   .site-wrapper {
     padding-top: 2.2rem;
-  }
-
-  .site-brand-row {
-    gap: 0.45rem;
   }
 
   .hub-title,
@@ -2259,11 +2319,11 @@ footer .h-card {
 
 /* Search (Pagefind UI theming) */
 .search-page {
-  --pagefind-ui-primary: #1a1a1a;
-  --pagefind-ui-text: #171717;
+  --pagefind-ui-primary: var(--accent-color);
+  --pagefind-ui-text: var(--text-color);
   --pagefind-ui-background: transparent;
   --pagefind-ui-border: var(--surface-border-quiet);
-  --pagefind-ui-tag: rgba(0, 0, 0, 0.06);
+  --pagefind-ui-tag: var(--bg-color);
   --pagefind-ui-border-width: 1px;
   --pagefind-ui-border-radius: 0px;
   --pagefind-ui-font: var(--font-body);
@@ -2283,7 +2343,7 @@ footer .h-card {
   left: 1rem;
   top: 1.25rem;
   opacity: 0.82;
-  background-color: #1a1a1a;
+  background-color: var(--text-color);
 }
 
 .search-page .pagefind-ui__form::after {
@@ -2292,7 +2352,7 @@ footer .h-card {
   right: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #1a1a1a;
+  color: var(--text-color);
   font-family: var(--font-mono);
   font-size: 1rem;
   line-height: 1;
@@ -2308,11 +2368,11 @@ footer .h-card {
   font-family: var(--font-mono);
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: #171717;
-  background: #f5f5f5;
-  border: 3px solid #1a1a1a;
+  color: var(--text-color);
+  background: var(--surface-1);
+  border: 3px solid var(--bg-color);
   border-radius: 0;
-  box-shadow: 8px 8px 0 #1a1a1a;
+  box-shadow: none;
   transition:
     transform 0.22s ease,
     box-shadow 0.22s ease,
@@ -2329,13 +2389,13 @@ footer .h-card {
 
 .search-page .pagefind-ui__search-input:hover {
   transform: translate(-4px, -4px);
-  box-shadow: 12px 12px 0 #1a1a1a;
+  box-shadow: none;
 }
 
 .search-page .pagefind-ui__search-input:focus {
-  background: #ffffff;
-  color: #171717;
-  border-color: #1a1a1a;
+  background: var(--bg-color);
+  color: var(--text-color);
+  border-color: var(--bg-color);
 }
 
 .search-page .pagefind-ui__search-input:focus::placeholder {
@@ -2343,11 +2403,11 @@ footer .h-card {
 }
 
 .search-page .pagefind-ui__form:focus-within::before {
-  background-color: #1a1a1a;
+  background-color: var(--text-color);
 }
 
 .search-page .pagefind-ui__form:focus-within::after {
-  color: #1a1a1a;
+  color: var(--text-color);
 }
 
 .search-page .pagefind-ui__search-clear {
@@ -2369,7 +2429,7 @@ footer .h-card {
 }
 
 .search-page .pagefind-ui__search-clear:hover {
-  color: #1a1a1a;
+  color: var(--accent-color);
 }
 
 .search-page .pagefind-ui__drawer {
@@ -2414,10 +2474,10 @@ footer .h-card {
 
 .search-page .pagefind-ui__button {
   border-radius: 0;
-  border-color: #c8c8c8;
-  background: #1a1a1a;
-  color: #fafafa;
-  box-shadow: 6px 6px 0 #1a1a1a;
+  border-color: var(--bg-color);
+  background: var(--accent-color);
+  color: var(--bg-color);
+  box-shadow: none;
   transition:
     transform 0.22s ease,
     box-shadow 0.22s ease,
@@ -2427,10 +2487,10 @@ footer .h-card {
 
 .search-page .pagefind-ui__button:hover {
   transform: translate(-3px, -3px);
-  box-shadow: 9px 9px 0 #1a1a1a;
-  border-color: #e0e0e0;
+  box-shadow: none;
+  border-color: var(--bg-color);
   background: #262626;
-  color: #fafafa;
+  color: var(--bg-color);
 }
 
 @keyframes search-caret-blink {
@@ -2447,7 +2507,7 @@ footer .h-card {
   .search-page .pagefind-ui__search-input {
     min-height: 3.55rem;
     font-size: 1rem;
-    box-shadow: 6px 6px 0 #1a1a1a;
+    box-shadow: none;
   }
 
   .search-page .pagefind-ui__search-input:hover,
