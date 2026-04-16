@@ -568,9 +568,13 @@ article.h-entry > header {
   border-bottom: 1px solid var(--surface-border-quiet);
 }
 
+/*
+ * Header ANSI: overflow no .site-ansi__viewport, não no <a> (hairline na aresta de clip).
+ * Evitar contain/clip-path no <pre> — em Chromium geram recorte errado e manchas pretas à direita.
+ */
 /* Arte ANSI no topo (extraída de pablo1.html; não aplicar .ans ao body) */
 .site-ansi {
-  /* Mesmo fundo que o documento; sem isolation (no Windows costuma dar halo azulado à volta do bloco). */
+  /* Mesmo fundo que o documento. */
   background-color: var(--bg-color);
   color: var(--text-color);
   display: flex;
@@ -579,10 +583,13 @@ article.h-entry > header {
   justify-content: flex-start;
   width: 100%;
   min-width: 0;
-  overflow: hidden;
+  /*
+   * overflow visível no <a> evita hairline azul/cinza na aresta de clip (Chromium/Windows).
+   * O recorte horizontal fica em .site-ansi__viewport.
+   */
+  overflow: visible;
   border: 0;
   outline: none;
-  box-shadow: none;
   /* Espaço até a nav com fundo sólido (evita faixa mais escura entre arte e menu). */
   padding-bottom: 0.35rem;
   /* Escala o <pre> pela largura *deste* bloco, não pela viewport inteira (evita arte “quebrada” no layout estreito). */
@@ -590,12 +597,32 @@ article.h-entry > header {
   container-name: site-ansi;
 }
 
+/*
+ * Centrar com text-align — evita flex no <pre>: com justify-content:center + max-width:100%
+ * o item podia ficar com largura = 100% do viewport enquanto o texto (letter-spacing negativo)
+ * ficava mais estreito → faixa preta à direita *dentro* do <pre>.
+ */
+.site-ansi__viewport {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  text-align: center;
+  overflow-x: hidden;
+  overflow-y: visible;
+  background-color: var(--bg-color);
+}
+
 /* Link para a home: sem sublinhado global nem mudança de cor no hover (arte permanece legível). */
 a.site-ansi {
   text-decoration: none;
+  border: 0;
   border-bottom: none;
   color: var(--text-color);
   cursor: pointer;
+  /* Evita animar todas as propriedades (regra global `a { transition: all }`) — menos camadas estranhas. */
+  transition: none;
+  /* Evita faixa/azul de realce ao toque (iOS/Android/WebKit). */
+  -webkit-tap-highlight-color: transparent;
 }
 
 a.site-ansi:hover,
@@ -604,9 +631,14 @@ a.site-ansi:focus-visible {
   border-bottom: none;
 }
 
+/* Foco por teclado: anel no <pre> (arte), não outline no <a>. */
 a.site-ansi:focus-visible {
-  outline: 2px solid var(--accent-color);
-  outline-offset: 3px;
+  outline: none;
+}
+
+a.site-ansi:focus-visible pre {
+  box-shadow: 0 0 0 2px var(--accent-color);
+  border-radius: 3px;
 }
 
 /* 256 colunas no fragmento ANSI (largura do <pre> em pablo1.html); 100cqw = largura do .site-ansi */
@@ -627,29 +659,36 @@ a.site-ansi:focus-visible {
   line-height: 0.82;
   white-space: pre;
   word-spacing: 0;
-  /* Avanço da monospace deixa fendas; letter-spacing negativo sobrepõe os glifos. */
-  letter-spacing: -0.11em;
+  /* Avanço da monospace deixa fendas; valor moderado — valores fortes + max-width:100% geravam caixa mais larga que o texto pintado. */
+  letter-spacing: -0.06em;
   margin: 0;
   padding: 0.2rem 0.15rem 0.2rem;
-  /* Largura = conteúdo (256 colunas); evita faixa preta só à direita com texto alinhado à esquerda. */
-  width: max-content;
+  /* Largura = só o que o texto ocupa (sem esticar a 100% e deixar #000 vazio à direita). */
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  width: fit-content;
   max-width: 100%;
-  margin-inline: auto;
   box-sizing: border-box;
-  /* Evita cortar meia coluna à direita (borda “partida”); o pai .site-ansi já corta overflow. */
-  overflow-x: visible;
+  /* Se max-width:100% cortar, não deixar texto a sair em faixa estranha. */
+  overflow-x: hidden;
   overflow-y: visible;
-  border: 0;
+  /* Moldura alinhada ao fundo da página (branco no tema atual); isola bordas/subpixel. */
+  border: 3px solid var(--bg-color);
+  border-radius: 2px;
   outline: none;
-  background-color: var(--bg-color);
+  /* Mesmo preto dos spans da arte — evita faixa clara/azul na junção com o fundo branco da página. */
+  background-color: #000000;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  /* Menos reposicionamento subpixel = menos riscas entre células. */
-  text-rendering: optimizeSpeed;
-  /* antialiased + camada GPU costumam dar franja azul/cinza no Windows; preferir subpixel. */
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: auto;
+  text-rendering: geometricPrecision;
+  /*
+   * Subpixel antialiasing nas bordas verticais dos blocos █ no Windows costuma gerar franja azul/ciano
+   * (ClearType). O body usa grayscale; aqui alinhamos para eliminar essa linha sem tocar no HTML.
+   */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   mix-blend-mode: normal;
 }
 
@@ -671,8 +710,8 @@ a.site-ansi:focus-visible {
   outline: none;
   vertical-align: top;
   letter-spacing: inherit;
-  /* Sobreposição um pouco maior entre █ adjacentes (reduz grelha). */
-  margin: 0 -0.04em;
+  /* Sobreposição entre █ — alinhado ao letter-spacing do <pre> mais suave. */
+  margin: 0 -0.02em;
   padding: 0;
 }
 
