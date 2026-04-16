@@ -674,11 +674,10 @@ a.site-ansi:focus-visible pre {
   overflow-x: hidden;
   overflow-y: visible;
   /* Moldura alinhada ao fundo da página (branco no tema atual); isola bordas/subpixel. */
-  border: 3px solid var(--bg-color);
-  border-radius: 2px;
+  border: 0;
+  border-radius: 0;
   outline: none;
-  /* Mesmo preto dos spans da arte — evita faixa clara/azul na junção com o fundo branco da página. */
-  background-color: #000000;
+  background-color: transparent;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -713,6 +712,7 @@ a.site-ansi:focus-visible pre {
   /* Sobreposição entre █ — alinhado ao letter-spacing do <pre> mais suave. */
   margin: 0 -0.02em;
   padding: 0;
+  background: transparent !important;
 }
 
 .site-nav {
@@ -2303,6 +2303,65 @@ footer .h-card {
   width: 1.5em;
   height: 1.5em;
   display: block;
+}
+
+.deferred-embed {
+  margin: var(--space-md) 0;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--surface-border-quiet);
+  background: var(--surface-1);
+  display: grid;
+  gap: 0.85rem;
+}
+
+.deferred-embed__copy {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.deferred-embed__button {
+  justify-self: start;
+  appearance: none;
+  border: 1px solid var(--bg-color);
+  background: var(--text-color);
+  color: var(--bg-color);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.deferred-embed__button:hover:not(:disabled),
+.deferred-embed__button:focus-visible {
+  background: var(--accent-color);
+}
+
+.deferred-embed__button:disabled {
+  opacity: 0.65;
+  cursor: progress;
+}
+
+.deferred-embed__mount {
+  min-width: 0;
+}
+
+.deferred-embed__frame {
+  width: 100%;
+  display: block;
+  border: 0;
+  aspect-ratio: 4 / 3;
+  min-height: min(70vw, 32rem);
+  background: #000;
+}
+
+.deferred-embed__fallback {
+  margin: 0;
+}
+
+.deferred-embed--loaded .deferred-embed__button {
+  display: none;
 }
 
 /* Related posts */

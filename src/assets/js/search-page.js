@@ -1,0 +1,39 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const searchElement = document.getElementById("search");
+  if (!searchElement || !window.PagefindUI) {
+    return;
+  }
+
+  new window.PagefindUI({
+    element: "#search",
+    showSubResults: true,
+    showImages: false,
+    translations: {
+      placeholder: "Search the archive...",
+      clear_search: "Clear",
+      load_more: "Load more results",
+      search_label: "Search this site",
+      filters_label: "Filters",
+      zero_results: "No results for [SEARCH_TERM]",
+      many_results: "[COUNT] results for [SEARCH_TERM]",
+      one_result: "[COUNT] result for [SEARCH_TERM]",
+      total_zero_results: "No results",
+      total_one_result: "[COUNT] result",
+      total_many_results: "[COUNT] results",
+      alt_search: "No results for [SEARCH_TERM]. Showing results for [DIFFERENT_TERM] instead",
+      search_suggestion: "No results for [SEARCH_TERM]. Try one of the suggested searches.",
+      searching: "Searching for [SEARCH_TERM]...",
+      results_label: "Search results",
+      keyboard_navigate: "Navigate",
+      keyboard_select: "Select",
+      keyboard_clear: "Clear",
+      keyboard_close: "Close",
+      keyboard_search: "Search",
+      error_search: "Search failed",
+      filter_selected_one: "[COUNT] filter selected",
+      filter_selected_many: "[COUNT] filters selected",
+      input_hint: "Results will appear as you type",
+      loading: "Loading",
+    },
+  });
+});

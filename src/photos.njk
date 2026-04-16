@@ -94,29 +94,4 @@ pagination:
   </div>
 </dialog>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  const dialog = document.getElementById("photo-lightbox");
-  const imgElement = document.getElementById("lightbox-img");
-
-  document.querySelectorAll(".photo-archive-item__img-link").forEach(link => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault(); // Prevent navigating to the post page implicitly
-      const img = link.querySelector("img");
-      if(img) {
-        // Handle potential resized source using large original paths if mapped, else use the default src.
-        imgElement.src = img.src;
-        imgElement.alt = img.alt || "Enlarged photo";
-        dialog.showModal();
-      }
-    });
-  });
-
-  // Close when clicking directly on the backdrop (dialog wrapper)
-  dialog.addEventListener("click", (e) => {
-    if (e.target === dialog) {
-      dialog.close();
-    }
-  });
-});
-</script>
+<script src="/assets/js/photo-lightbox.js" defer></script>

@@ -5,7 +5,19 @@ title: Contact
 
 <p style="text-align: center; margin-bottom: 1rem;">{% icon "mail", "sm", true %} <span style="color: var(--text-muted); font-style: italic;">Send a message with Letterbird below.</span></p>
 
-<script data-letterbirduser="pablo" src="https://letterbird.co/embed/v1.js"></script>
+<section
+  class="deferred-embed"
+  data-embed-provider="letterbird"
+  data-embed-title="Letterbird contact form"
+  data-embed-src="https://letterbird.co/embed/v1.js"
+  data-letterbird-user="pablo">
+  <p class="deferred-embed__copy">The form is loaded only when you ask for it, which keeps this page lighter and avoids third-party audit noise on first paint.</p>
+  <button type="button" class="deferred-embed__button">Open contact form</button>
+  <div class="deferred-embed__mount" data-embed-mount></div>
+  <noscript>
+    <p class="deferred-embed__fallback"><a href="https://letterbird.co/pablo">Open the contact form on Letterbird</a></p>
+  </noscript>
+</section>
 
 <p style="text-align: center; margin-top: 2rem; font-family: var(--font-body); font-style: italic; color: var(--text-muted);">
   ...or <a href="https://fax.1208.pro">send me a fax</a>

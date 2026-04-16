@@ -20,6 +20,8 @@ I built this site myself. If something looks polished, thank Eleventy. If someth
 
 **Icons:** Custom shortcodes render a carefully allow-listed subset of **Lucide** SVGs, because nothing says “indie personal site” like “I wrote a Node script to stop myself from importing all 1,400 icons at once.”
 
+**ANSI header art:** The loud “PABLO” strip at the top is not a PNG you can right‑click—it’s a `<pre>` full of `<span>`s and inline colours, the way nature intended. The pipeline that gets textmode art into that shape lives in **[htmlansi](https://github.com/runawaydevil/htmlansi)**, a project of mine for turning `.ans` (and friends) into HTML you can drop into a static site without apologising to your linter. If the blocks line up, thank the converter; if they shimmer like a cheap CRT, blame subpixel rounding and move on.
+
 **Motion:** A **Lottie** animation loads from unpkg for the header mark. It’s a sleeping blob. It has done more emotional labour than some of my dependencies.
 
 **CSS:** Hand-tended in `src/assets/css/style.css`. Not Tailwind, not “a design system you can buy.” Just rules, regret, and the occasional `!important` that I will deny under oath.

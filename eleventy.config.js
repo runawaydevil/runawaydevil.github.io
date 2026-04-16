@@ -9,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const iconsLucideDir = path.join(__dirname, "src", "assets", "icons", "lucide");
 const iconsCustomDir = path.join(__dirname, "src", "assets", "icons", "custom");
+const ansiFragmentPath = path.join(__dirname, "src", "_includes", "_ansi-pre-fragment.html");
 const outputDir = path.join(__dirname, "_site");
 const pagefindBin = path.join(__dirname, "node_modules", "pagefind", "lib", "runner", "bin.cjs");
 const execFileAsync = promisify(execFile);
@@ -85,6 +86,7 @@ const ALLOWED_GLYPH = new Set(["ornament-divider", "empty-state", "guestbook-acc
 const VALID_SIZES = new Set(["xs", "sm", "md", "lg"]);
 
 const svgDataCache = new Map();
+let ansiFragmentCache = null;
 
 function escapeHtml(s) {
   return String(s)
@@ -132,6 +134,34 @@ function sanitizeClassToken(s) {
     .split(/\s+/)
     .filter((t) => /^[a-zA-Z0-9_-]+$/.test(t))
     .join(" ");
+}
+
+function sanitizeAnsiInlineStyle(styleText) {
+  const declarations = String(styleText || "")
+    .split(";")
+    .map((chunk) => chunk.trim())
+    .filter(Boolean)
+    .filter((chunk) => {
+      const match = chunk.match(/^([a-z-]+)\s*:\s*(.+)$/i);
+      if (!match) return true;
+      const property = match[1].toLowerCase();
+      const value = match[2].trim().toLowerCase().replace(/\s+/g, "");
+      const isBackgroundProperty = property === "background" || property === "background-color";
+      const isBlackValue = value === "#000" || value === "#000000" || value === "rgb(0,0,0)";
+      return !(isBackgroundProperty && isBlackValue);
+    });
+
+  return declarations.join("; ");
+}
+
+function getSanitizedAnsiFragment() {
+  if (ansiFragmentCache) return ansiFragmentCache;
+  const raw = fs.readFileSync(ansiFragmentPath, "utf8");
+  ansiFragmentCache = raw.replace(/\sstyle="([^"]*)"/gi, (_match, styleText) => {
+    const cleaned = sanitizeAnsiInlineStyle(styleText);
+    return cleaned ? ` style="${cleaned}"` : "";
+  });
+  return ansiFragmentCache;
 }
 
 function stripHtml(input) {
@@ -251,7 +281,10 @@ function cleanOutputDirectory() {
     throw new Error(`Refusing to clean unexpected output directory: ${resolvedOutputDir}`);
   }
 
-  fs.rmSync(resolvedOutputDir, { recursive: true, force: true });
+  fs.mkdirSync(resolvedOutputDir, { recursive: true });
+  for (const entry of fs.readdirSync(resolvedOutputDir)) {
+    fs.rmSync(path.join(resolvedOutputDir, entry), { recursive: true, force: true });
+  }
 }
 
 /**
@@ -290,9 +323,6 @@ export default function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.on("eleventy.before", () => {
-    cleanOutputDirectory();
-  });
-  eleventyConfig.on("eleventy.beforeWatch", () => {
     cleanOutputDirectory();
   });
   eleventyConfig.on("eleventy.after", async () => {
@@ -351,6 +381,10 @@ export default function(eleventyConfig) {
       extraClass: extra,
       strokeWidth,
     });
+  });
+
+  eleventyConfig.addShortcode("ansiArt", function ansiArtShortcode() {
+    return getSanitizedAnsiFragment();
   });
 
   // Passthrough copy for CSS and Images

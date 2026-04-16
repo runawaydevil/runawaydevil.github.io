@@ -8,6 +8,17 @@ tags: ["life","shows"]
 
 <p>At the beginning of 2025, I might have gone to the best concert I’ve ever seen: The Cult in São Paulo, at Espaço Viva. It was absolutely incredible.</p>
 <p>I hadn’t been to a concert in over ten years because my social anxiety was that bad. But for this one, I finally broke through that wall and went anyway. Funny enough, I was probably one of the youngest people there, which honestly made the whole thing even better. Most of the crowd had to be over 50, and that was totally fine. I got a box seat and watched the show from above, and even though I was far from the stage, it was still an amazing experience.</p>
-<iframe width="700" height="525" src="https://www.youtube.com/embed/5HFVC7cehp0?si=D04CQ2oLB-6PLV0r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div
+  class="deferred-embed"
+  data-embed-provider="youtube"
+  data-embed-title="The Cult live video on YouTube"
+  data-embed-src="https://www.youtube.com/embed/5HFVC7cehp0?si=D04CQ2oLB-6PLV0r">
+  <p class="deferred-embed__copy">The video player is loaded only after you click, so the post stays lighter and avoids third-party document issues on first load.</p>
+  <button type="button" class="deferred-embed__button">Load video</button>
+  <div class="deferred-embed__mount" data-embed-mount></div>
+  <noscript>
+    <p class="deferred-embed__fallback"><a href="https://www.youtube.com/watch?v=5HFVC7cehp0">Watch the video on YouTube</a></p>
+  </noscript>
+</div>
 <p>The crowd didn’t jump around much or scream that much either, which seemed to annoy <a href="https://en.wikipedia.org/wiki/Ian_Astbury">Ian Astbury</a> a little at one point. But come on, cut the 50-somethings some slack. Knees have limits.</p>
 <p>Still, yeah, the show was absolutely badass.</p>
