@@ -119,13 +119,16 @@ permalink: /guestbook/
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    color: var(--text-muted);
+    color: #fff;
 }
 .guestbook-card-footer a {
-    color: var(--accent-color);
+    color: #fff;
     text-decoration: none;
+    border-bottom: none;
 }
-.guestbook-card-footer a:hover {
+.guestbook-card-footer a:hover,
+.guestbook-card-footer a:focus-visible {
+    color: #fff;
     text-decoration: underline;
 }
 

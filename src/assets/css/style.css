@@ -589,6 +589,25 @@ article.h-entry > header {
   container-name: site-ansi;
 }
 
+/* Link para a home: sem sublinhado global nem mudança de cor no hover (arte permanece legível). */
+a.site-ansi {
+  text-decoration: none;
+  border-bottom: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+a.site-ansi:hover,
+a.site-ansi:focus-visible {
+  color: var(--text-color);
+  border-bottom: none;
+}
+
+a.site-ansi:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
 /* 256 colunas no fragmento ANSI (largura do <pre> em pablo1.html); 100cqw = largura do .site-ansi */
 .site-ansi pre {
   /*
