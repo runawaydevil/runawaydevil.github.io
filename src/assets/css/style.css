@@ -1323,7 +1323,8 @@ footer .h-card {
   border-bottom: 1px solid var(--border-color);
 }
 
-.home-work-row__link {
+.home-work-row__link,
+.home-work-row__static {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -1332,12 +1333,37 @@ footer .h-card {
   border-bottom: none;
 }
 
+.home-work-row__static {
+  cursor: default;
+}
+
+.home-work-line {
+  min-width: 0;
+  font-family: var(--font-heading);
+  font-size: var(--fs-heading);
+  line-height: 1.28;
+  color: var(--heading-color);
+}
+
+.home-work-name {
+  font-weight: 600;
+  font-style: normal;
+}
+
+.home-work-tail {
+  font-size: calc(var(--fs-heading) * 0.78);
+  line-height: 1.35;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
 .home-work-row__link:hover {
   border-bottom: none;
 }
 
-.home-work-row__link:hover .home-work-label,
-.home-work-row__link:focus-visible .home-work-label {
+.home-work-row__link:hover .home-work-line,
+.home-work-row__link:focus-visible .home-work-line {
   text-decoration: underline;
 }
 
@@ -1356,14 +1382,6 @@ footer .h-card {
   height: 1.75rem;
   flex-shrink: 0;
   object-fit: contain;
-}
-
-.home-work-label {
-  font-family: var(--font-heading);
-  font-size: var(--fs-heading);
-  line-height: 1.28;
-  font-weight: 600;
-  color: var(--heading-color);
 }
 
 .home-writing-list {
