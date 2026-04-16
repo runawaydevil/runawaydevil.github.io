@@ -124,11 +124,11 @@
                         <div class="site-footer-version">
                             <span class="site-footer-version-line">version {{ siteVersion }} — {{ siteVersionYear }}</span>
                             {% if buildFooter.sha or buildFooter.subject %}
-                            <span class="site-footer-build" translate="no">
+                            <a class="site-footer-build site-footer-build-link" href="https://github.com/runawaydevil/runawaydevil.github.io" rel="noopener noreferrer" translate="no">
                                 {% if buildFooter.sha %}<kbd class="site-footer-build-sha">{{ buildFooter.sha }}</kbd>{% endif %}
                                 {% if buildFooter.sha and buildFooter.subject %}<span class="site-footer-build-sep" aria-hidden="true">·</span>{% endif %}
                                 {% if buildFooter.subject %}<span class="site-footer-build-subject">{{ buildFooter.subject }}</span>{% endif %}
-                            </span>
+                            </a>
                             {% endif %}
                         </div>
                         <p class="site-footer-powered">

@@ -1043,6 +1043,30 @@ footer:not(.post-footer) {
   color: var(--text-muted, inherit);
 }
 
+a.site-footer-build-link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+a.site-footer-build-link:hover,
+a.site-footer-build-link:focus-visible {
+  color: var(--accent-color);
+}
+
+a.site-footer-build-link:hover .site-footer-build-sha,
+a.site-footer-build-link:focus-visible .site-footer-build-sha {
+  color: var(--accent-color);
+  border-color: color-mix(in srgb, var(--accent-color) 42%, transparent);
+}
+
+a.site-footer-build-link:hover .site-footer-build-subject,
+a.site-footer-build-link:focus-visible .site-footer-build-subject {
+  color: var(--accent-color);
+  opacity: 1;
+}
+
 .site-footer-proof-contact {
   margin: 0 0 0.35rem 0;
   display: inline-flex;
