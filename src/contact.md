@@ -3,6 +3,15 @@ layout: page.njk
 title: Contact
 ---
 
+<ul class="contact-list contact-list--lead">
+  <li class="contact-row contact-row--pgp">
+    <a class="contact-row__link" href="/pgp.txt">
+      <img class="contact-row__icon" src="/assets/images/pgp.svg" width="18" height="18" alt="" decoding="async" />
+      <span class="contact-row__label"><strong><em>PGP</em></strong></span>
+    </a>
+  </li>
+</ul>
+
 ## Social & federated
 
 <ul class="contact-list">
@@ -76,17 +85,23 @@ title: Contact
       <span class="contact-row__label"><strong><em>OMG.lol</em></strong></span>
     </a>
   </li>
+  <li class="contact-row contact-row--tildeclub">
+    <a class="contact-row__link" href="https://tilde.club/~pmurad/" rel="me noopener noreferrer">
+      <img class="contact-row__icon" src="/assets/images/tilde.svg" width="18" height="18" alt="" decoding="async" />
+      <span class="contact-row__label"><strong><em>tilde.club</em></strong></span>
+    </a>
+  </li>
+</ul>
+
+## Fotos
+
+<ul class="contact-list">
   <li class="contact-row contact-row--somepics">
     <a class="contact-row__link" href="https://pmurad.some.pics" rel="me noopener noreferrer">
       <img class="contact-row__icon" src="/assets/images/omg.svg" width="18" height="18" alt="" decoding="async" />
       <span class="contact-row__label"><strong><em>Some.pics</em></strong></span>
     </a>
   </li>
-</ul>
-
-## Photos
-
-<ul class="contact-list">
   <li class="contact-row contact-row--instagram">
     <a class="contact-row__link" href="https://www.instagram.com/murad.pablo/" rel="me noopener noreferrer">
       <img class="contact-row__icon" src="/assets/images/instagram.svg" width="18" height="18" alt="" decoding="async" />

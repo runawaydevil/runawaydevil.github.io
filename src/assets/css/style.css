@@ -563,6 +563,11 @@ a:hover {
   --contact-hover: #cc6900;
 }
 
+.contact-row--pgp {
+  --contact-accent: #0f766e;
+  --contact-hover: #0d9488;
+}
+
 .contact-row--instagram {
   --contact-accent: #e4405f;
   --contact-hover: #c83652;
@@ -571,6 +576,11 @@ a:hover {
 .contact-row--omglol {
   --contact-accent: #ff69ad;
   --contact-hover: #e04d96;
+}
+
+.contact-row--tildeclub {
+  --contact-accent: #00c853;
+  --contact-hover: #00e676;
 }
 
 .contact-row--somepics {

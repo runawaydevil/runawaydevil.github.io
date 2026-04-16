@@ -32,6 +32,7 @@ const ICONS = [
   "calendar",
   "book-open",
   "heart",
+  "key",
 ];
 
 const VERSION = "1.8.0";

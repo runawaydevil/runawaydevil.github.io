@@ -79,6 +79,7 @@ const ALLOWED_LUCIDE = new Set([
   "calendar",
   "book-open",
   "heart",
+  "key",
 ]);
 
 const ALLOWED_GLYPH = new Set(["ornament-divider", "empty-state", "guestbook-accent", "terminal-cursor"]);
@@ -393,6 +394,7 @@ export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/uploads");
   eleventyConfig.addPassthroughCopy("src/assets/pets.ico");
   eleventyConfig.addPassthroughCopy("src/assets/js");
+  eleventyConfig.addPassthroughCopy("src/pgp.txt");
   eleventyConfig.addPassthroughCopy("src/assets/pablo");
   eleventyConfig.addPassthroughCopy("notecards");
   eleventyConfig.addPassthroughCopy({
